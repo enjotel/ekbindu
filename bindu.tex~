@@ -1,0 +1,238 @@
+\documentclass[12pt]{article}%{scrartcl}
+
+%%% babel
+\usepackage[english]{babel}
+\usepackage{babel-iast/babel-iast}
+\babelfont[iast]{rm}[Renderer=Harfbuzz]{Murty Sanskrit}%AdishilaSan}
+\babelfont[english]{rm}{Adobe Text Pro}
+
+%%% ekdosis
+\usepackage[teiexport=tidy,parnotes=true]{ekdosis}
+\SetLineation{lineation=page,modulo}
+\renewcommand{\linenumberfont}{\selectlanguage{english}\footnotesize}
+%\renewcommand{\lem}{\bfseries}
+%\NewDocumentCommand{\blem}{m}{{\lem[alt=\textbf{#1}]{#1}}
+
+\SetTEIxmlExport{autopar=false}
+\SetHooks{
+refnumstyle=\bfseries,
+}
+
+\DeclareApparatus{testium}[
+bhook = \selectlanguage{english},
+  sep = {] }
+]
+
+\DeclareApparatus{default}[
+  bhook = \selectlanguage{english},
+  sep = {] },
+  delim=\hskip 0.75em,
+rule=\rule{0.7in}{0.4pt}
+]
+
+\DeclareApparatus{philcomm}[
+sep={: },
+bhook=\selectlanguage{english},
+]
+
+% Macros und Definitionen für den Druck der Siglen
+\def\acpc#1#2#3{{#1}\rlap{\textrm{\textsuperscript{#3}}}\textsubscript{\textrm{#2}}\space}
+\def\sigl#1#2{{{#1}}\textsubscript{\textrm{#2}}}
+\def\None{{\sigl{N}{1}}} \def\Noneac{\acpc{N}{1}{ac}\,} \def\Nonepc{\acpc{N}{1}{pc}\,}
+\def\Done{{\sigl{D}{1}}} \def\Doneac{\acpc{D}{1}{ac}\,} \def\Donepc{\acpc{D}{1}{pc}\,}
+\def\Dtwo{{\sigl{D}{2}}} \def\Dtwoac{\acpc{D}{2}{ac}\,} \def\Dtwopc{\acpc{D}{2}{pc}\,}
+\def\Uone{{\sigl{U}{1}}} \def\Uoneac{\acpc{U}{1}{ac}\,} \def\Uonepc{\acpc{U}{1}{pc}\,}                 
+\def\Utwo{{\sigl{U}{2}}} \def\Utwoac{\acpc{U}{2}{ac}\,} \def\Utwopc{\acpc{U}{2}{pc}\,}
+
+\def\om{\textrm{\foreignlanguage{english}{\footnotesize om.\ }}} %prints om. for omitted in apparatus
+\def\emend{\textrm{\foreignlanguage{english}{\footnotesize em.\ }}} %prints em. for emended in apparatus
+\def\conj{\textrm{\foreignlanguage{english}{\footnotesize conj.\ }}} %prints conj. for conjectured in apparatus
+
+%%%%%%%%%%%%%%    Tattvabinduyoga - List of Witnesses   %%%%%%%%%%%%%%%%%%%
+
+\DeclareWitness{E}{E}{Printed Edition}[]    
+\DeclareWitness{P}{P}{Pune BORI 664}[]  
+\DeclareWitness{B}{B}{Bodleian 485}[]       
+\DeclareWitness{N1}{N\textsubscript{1}}{NGMPP 38/31}[]
+%\DeclareWitness{N2}{\Jtwo}{Jodhpur 02232}[]  % too many simple writing mistakes  not collated further: 
+%\DeclareWitness{N3}{\Jthree}{Jodhpur 02233}[]  % 4 chapters, 93 jpgs,  very readable, but many writing mistakes
+\DeclareWitness{L}{L}{LALCHAND 5876}[]  
+\DeclareWitness{D1}{D\textsubscript{1}}{IGNCA 30019}[] 
+\DeclareWitness{D2}{D\textsubscript{2}}{IGNCA 30020}[]  % 4 chapters, 41 jpgs
+\DeclareWitness{U1}{U\textsubscript{1}}{SORI 1574}[]  % 4 chapters,  87 jpgs.   saṃvat 1724
+\DeclareWitness{U2}{U\textsubscript{2}}{SORI 6082}[]  %  fragment, 20 jpgs. 
+%  Haṭhapradīpikā with (non-Sanskrit) Bhāṣya RORI Jodhpur ACC.NO.18552 
+%  Haṭhapradīpikā with (non-Sanskrit) commentary, RORI Alwar 952, 4 chapters,  colophon of the comm: iti śrīlāhorīmiśravrajabhūṣanaviracitāyāṃ bhāvārthadīpikāyāṃ caturthodhyāya ..    
+%  Haṭhapradīpikā (5 chapter) MSPP Jodhpur ACC.NO.02229/
+%  Haṭhapradīpikā (10 chapter with the Prakāśikā MSPP JodhpurACC.NO.02228:     Sanskrit commentary!!
+% List of Scholars
+\DeclareScholar{edi}{editor}[
+forename=Ed,
+surname=Itor]
+
+\usepackage{xparse}
+
+%%% define environments and commands
+\NewDocumentEnvironment{tlg}{O{}O{}}{\begin{verse}}{\hfill #1\\ \end{verse}}
+\NewDocumentCommand{\tl}{m}{{\selectlanguage{iast} #1}}
+
+\NewDocumentEnvironment{prose}{O{}}{\begin{otherlanguage}{iast}}{\end{otherlanguage}}
+%\NewDocumentEnvironment{cpra}{O{}}{\begin{center}[\emph{prakāśikā}-commentary to ten-chapter-version]\end{center} \begin{otherlanguage}{iast}}{\end{otherlanguage}}
+
+%%% modify environments and commands
+
+
+%%% TEI mapping
+\TeXtoTEIPat{\begin {tlg}}{<lg>}
+\TeXtoTEIPat{\end {tlg}}{</lg>}
+
+\TeXtoTEIPat{\begin {prose}}{<p>}
+  \TeXtoTEIPat{\end {prose}}{</p>}
+
+%\TeXtoTEIPat{\begin {cpra}[#1]}{<p xml:id="prakAzikA_#1">}
+%  \TeXtoTEIPat{\end {cpra}}{</p>}
+
+\TeXtoTEIPat{\\}{}
+
+%\TeXtoTEI{tl}{l}
+\TeXtoTEI{emph}{hi}
+\TeXtoTEI{bigskip}{}
+\TeXtoTEI{None}{N1}
+\TeXtoTEI{Done}{D1}
+\TeXtoTEI{Dtwo}{D2}
+\TeXtoTEI{Uone}{U1}
+\TeXtoTEI{Utwo}{U2}
+
+\author{Nils Jacob Liersch}
+\title{Yogatattvabindu of Rāmacandra\\ A Critical Edition and Annotated Translation}
+\date{\today}
+
+
+\parindent=3pt
+\begin{document}
+\maketitle
+\clearpage
+
+
+\section{Conventions in the Critical Apparatus}
+\subsection{Sigla in the Critical Apparatus}
+
+\begin{itemize}
+\item E : Printed Edition
+\item P : Pune BORI 664
+\item L : Lalchand Research Library LRL5876
+\item B : Bodleian Oxford D 4587
+\item \None : NGMPP B 38-31
+\item \Done : IGNCA 30019
+\item \Dtwo : IGNCA 30020
+\item \Uone : SORI 1574
+\item \Utwo: SORI 6082
+\end{itemize}
+
+The order of the readings in the critical apparatus is arranged according to the quality of readings in decending order.  
+
+\subsection{Punctuation}
+
+The very inconsistent use of punctuation marks in the witnesses at hand makes standardization necessary. Deviation of punctuation marks will not be documented in the critical apparatus. The usual standard conventions are followed:
+
+Especially in the verse poetry, a \textit{daṇḍa} marks the end of a half verse, half of the \textit{śloka}, and the double \textit{daṇḍa} marks the end of a verse. A half verse is a \textit{pāda}, at least in some literary works, this is concluded by a \textit{daṇḍa} and the end of a \textit{śloka} by a double \textit{daṇḍa}. In the prose the single \textit{daṇḍa} indicates the end of a sentence and the double \textit{daṇḍa} marks the end of a paragraph.
+
+\subsection{Sandhi}
+
+Among the witnesses we see deviating and inconsistent application of \textit{sandhi}. There is no clear evidence that originally \textit{sandhi} was intentionally not applied. This edition will therefore apply \textit{sandhi} consistently throughout the constituted text to provide a readable text sticking to contemporary conventions in Sanskrit. To simplyfy the apparatus the variant readings concerning \textit{sandhi} are not recorded to the most part. Exceptions are made in remarkable cases. 
+
+\subsection{Class Nasals}
+
+Again, due to inconsistent use of class nasals among the witnesses \textit{anusvāra}s have been substituted with the respective class nasals throughout the critical edition. To simplyfy the apparatus deviating usage of class nasals is not documented in the apparatus.
+
+%\section{Notes}
+%\begin{itemize}
+%\item probelm with the strongly deviating structuration of the sentences between the two groups of witnesses 1. \edprint \pune \lalchand \oxford und 2. \nepal \dehlia: Even though it is not entirely clear which of the group is closer to the supposedly original of the author, as an hypothesis I suspect that given the cummulative evidence of a) \nepal and \dehlia generally have the better, more consistent and meaningful readings, b) are in several cases more extensive in their descriptions and c) generally there seems to be stemmatic hints pointing towards the inferiority of group 1., currently I decided to prefer the structuration of sentences of group 2.
+%\item it is clear that the author of \edprint has not understood the specific tantric-haṭhayogic terminology. This is evident by his ambitions to emend the terminology of the śakta-pīṭhas, which are very important in the haṭhayogic traditions. He takes uḍḍīyāna as upayana and jālaṃdhāra as jatyadana etc.
+%\item in many cases the manuscripts do not utilize \textit{sandhi}
+%\item Notiz für mich selbst: ENTSCHEIDEN OB SANDHI SETZEN ODER NICHT! HANDSCHRIFTEN VS. EDPRINT! DURCHGÄNGIG BISHER IMMER SANDHI BIS ZUM 1/3 DES NAVAMACAKRAABSCHNITTES
+%\item jetzt klar: die prakriyā-Formen sind charakteristisch und der Sandhi wird wahrscheinlich bewusst im Prosa ausgelassen!
+%\item in cakra 9 unbedingt die Verweise für das siebzehnte kalā ergänzen! Jürgen fragen nach e-texts?!
+%\item kurzen Abschnitt zum Titel verfassen und diskutieren 
+%\end{itemize}
+\clearpage
+
+\section{Critical Edition of the \textit{Yogatattvabindu}}
+  
+%\title{Yogatattvabindu}\markboth{\devanagarifont Yogatattvabindu}{\devanagarifont Yogatattvabindu}
+\begin{ekdosis}
+
+\centerline{\textrm{\small{[Introduction]}}}
+\bigskip
+%\begin{otherlanguage}{iast}
+%    
+%śrī gaṇeśāya namaḥ /                                                    rājayogāntargataḥ //  binduyogaḥ   \edprint 
+%śrī gaṇeśāya namaḥ /                                                    atha tattvabiṃduyogaprāraṃbhaḥ    \lalchand
+%śrī ṇe ya maḥ /                                                         atha rājayoga         liṣyate      \pune
+%śrī gaṇeśāya namaḥ // śrī gurave namaḥ //                               atha rājayogaprakāro  likhyate //  \nepal
+%śrī gaṇeśāya namaḥ // śrī sarasvatyai namaḥ // śrī nirañjanāya namaḥ // atha rājayogaprakāro  likhyate //  \dehlia
+%śrī gaṇeśāya namaḥ / oṃ śrī niraṃjanāya //                              atha rājayogaprakāra  likhyate //  \ujjaina
+%śrī gaṇeśāya namaḥ /                                                    atha rājayoga         likhyate //  \ujjainb
+%
+%
+%
+  \begin{alignment}
+    \begin{edition}
+     \ekddiv{head=XIII, depth=2, n=6.13, type=section} 
+\begin{prose}
+  \app{\lem[wit={E,L,N1,D1,U1,U2}]{śrī gaṇeśāya namaḥ}\rdg[wit={P}]{śrī ṇe ya maḥ}\rdg[wit={N1}]{śrī gurave namaḥ}\rdg[wit={D1}]{śrī sarasvatyai namaḥ śrī nirañjanāya namaḥ}\rdg[wit={U1}]{oṃ śrī niraṃjanāya}} //
+\app{\lem[wit={N1,D1}]{atha rājayogaprakāro likhyate}\rdg[wit={U1}]{atha rājayogaprakāra  likhyate}\rdg[wit={E}]{rājayogāntargataḥ / binduyogaḥ}\rdg[wit={L}]{atha tattvabiṃduyogaprāraṃbhaḥ}\rdg[wit={P}]{atha rājayoga liṣyate}\rdg[wit={U2}]{atha rājayoga likhyate}} //
+\end{prose}
+\end{edition}
+    \begin{translation}
+      \ekddiv{head=XIII, depth=2, n=6.13, type=section}
+      Homage to Śrī Gaṇeśa. Now the methods of rājayoga are laid down.
+    \end{translation}
+    \begin{edition}
+      \ekddiv{head=XIIII, depth=2, n=6.13, type=section}
+%----
+% \om                       \edprint
+% \om                       \lalchand
+% \om                       \oxford
+%rājayogasyedaṃ phalaṃ      \pune
+%rājayogasya idaṃ phalaṃ    \nepal
+%rājayogasya idaṃ phalaṃ // \dehlia
+%rājayogasya idaṃ phalaṃ    \ujjaina
+%rājayogasyedaṃ phalaṃ /    \ujjainb
+%
+\begin{prose}
+  rājayogasyedaṃ phalaṃ /
+ %
+%this is the result of rājayoga:
+%
+%-------------------------
+%
+% \om                                                                                                                                                                \edprint
+% \om                                                                                                                                                                \lalchand
+% \om                                                                                                                                                                \oxford
+%yena rājayogenānekarājyabhogasamaya   eva    anekapārthivavinodaprekṣaṇasamaya  eva    bahutarakālaṃ śarīrasthitirbhavati    sa eva  rājayogaḥ tasyaite     bhedāḥ      \pune
+%yena rājayogenānekarājyabhogasamaya   eva /  anekapārthivavinodaprekṣaṇasamaya  eva /  bahutarakālaṃ śarīrasthitirbhavati    sa eva  rājayogaḥ /  tasya ete bhedāḥ /  \nepal
+%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣaṇasamaya  eva // bahutarakālaṃ śarīrasthitirbhavati // sa eva  rājayogaḥ // tasya ete bhedāḥ / \dehlia
+%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣaṇasamaya  eva // bahutarakālaṃ śarīrasthitirbhavati    sa evaṃ rājayogaḥ    tasya ete bhedāḥ //   \ujjaina 
+%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣyaṇasamaya eva // bahutarakālaṃ śarīrasthitirbhavati // sa eva  rājayogastaisyaite     bhedāḥ //   \ujjainb
+%
+%
+yena rājayogenānekarājyabhogasamaya eva / anekapārthivavinoda\app{\lem[wit={P,N1,D1,U1}]{prekṣaṇasamaya}\rdg[wit={U2}]{prekṣyaṇasamaya}} eva / bahutarakālaṃ śarīrasthitirbhavati / sa \app{\lem[wit={P,N1,D1,U2}]{eva}\rdg[wit={U2}]{evaṃ}} rājayogaḥ / tasyaite bhedāḥ / 
+\end{prose}
+    \end{edition}
+    \begin{translation}
+      \ekddiv{head=XIIII, depth=2, n=6.13, type=section}
+      Rājayoga is that by which longterm durability of the body arises even amongst manifold royal pleasures even amongst the manifold royal entertainments and spectacle. This truly is rājayoga. Of this [rājayoga] these are the varieties:
+      \end{translation}
+%
+%Rājayoga is that by which longterm durability of the body arises even amongst manifold royal pleasures even amongst the manifold royal entertainments and spectacle. This truly is rājayoga. Of this [rājayoga] these are the varieties:
+%
+%-------------------------
+
+
+
+
+    
+  \end{alignment}
+\end{ekdosis}
+\end{document}
