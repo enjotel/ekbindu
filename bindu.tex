@@ -3,6 +3,12 @@
 %%% more functions
 \usepackage{xcolor}
 
+%%% Hyphenation settings
+
+\usepackage{hyphenat}
+\hyphenation{he-lio-trope opos-sum}
+\tracingparagraphs=1
+
 %%% babel
 \usepackage[english]{babel}
 \usepackage{babel-iast/babel-iast}
@@ -116,7 +122,6 @@ surname=Liersch]
 
 
 \TeXtoTEIPat{\\}{}
-
 %\TeXtoTEI{tl}{l}
 \TeXtoTEI{emph}{hi}
 \TeXtoTEI{bigskip}{}
@@ -230,7 +235,7 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
       yena rājayogenānekarājyabhogasamaya eva/ anekapārthivavinoda
       \app{\lem[wit={P,N1,D1,U1}]{prekṣaṇasamaya}
         \rdg[wit={U2}]{prekṣyaṇasamaya}}
-      eva/ bahutarakālaṃ śarīrasthitirbhavati/ sa
+      eva/ bahutarakālaṃ śarīrasthitir-bhavati/ sa
       \app{\lem[wit={P,N1,D1,U2}]{eva}
         \rdg[wit={U2}]{evaṃ}}
       rājayogaḥ/ \bigskip
@@ -402,7 +407,7 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
 %  rāgadoṣau  ghṛṇālasyaṃ bhrāṃti    daṃbha kṣamī bhramaḥ 4    \ujjaina
 %  rāgadveṣau ghṛṇālasyaṃ bhrāṃtir   daṃbho kṣamā bhramaḥ //    \ujjainb
 %-----------------------
-\tl{\app{\lem[wit={E,P,N1,D1,U2}]{rāgadveṣau}\rdg[wit={U1}]{rāgadoṣau}\rdg[wit={L}]{athadveṣo}}\note[type=philcomm, labelb=s6.z13a, labele=s6.z13b, lem={rāga°}, labelb=3]{\getsiglum{L} starts here.} ghṛṇālasyaṃ \app{\lem[wit={P,L,N1,U2}, alt={bhraṃtir daṃbho}]{bhraṃtir-daṃbho}\rdg[wit={D1}]{bhrāṃtir debho}\rdg[wit={E}]{bhrāntitvaṃ}\rdg[wit={U1}]{bhrāṃti daṃbha}} \app{\lem[wit={L,N1,D1,U2}]{kṣamā bhramaḥ}\rdg[wit={E}]{mokṣamābhramaḥ}\rdg[wit={U1}]{°kṣamī bhramaḥ}}/}\\
+\tl{\app{\lem[wit={E,P,N1,D1,U2}]{rāgadveṣau}\rdg[wit={U1}]{rāgadoṣau}\rdg[wit={L}]{athadveṣo}}\note[type=philcomm, labelb=s6.z13a, labele=s6.z13b, lem={rāga°}, labelb=3]{\getsiglum{L} starts here.} ghṛṇālasyaṃ \app{\lem[wit={P,L,N1,U2}, alt={bhraṃtir daṃbho}]{bhrantir-daṃbho}\rdg[wit={D1}]{bhrāṃtir debho}\rdg[wit={E}]{bhrāntitvaṃ}\rdg[wit={U1}]{bhrāṃti daṃbha}} \app{\lem[wit={L,N1,D1,U2}]{kṣamā bhramaḥ}\rdg[wit={E}]{mokṣamābhramaḥ}\rdg[wit={U1}]{°kṣamī bhramaḥ}}/}\\
 %-----------------------
 %  \om                                               \oxford
 %  yasyai tāni na vidyaṃte kriyāyogī sa ucyate //    \lalchand
@@ -447,10 +452,9 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
           \rdg[wit={E}]{santoṣādīny}
           \rdg[wit={L}]{ityādīno°}
           \rdg[wit={U1}]{ityādīna niraṃtaram}
-          \rdg[wit={U2}]{ityādayoniraṃtaraṃ}}
-        \app{\lem[wit={P,N1,D1,U2},alt={utpādyante}]{tpādyante}
+          \rdg[wit={U2}]{ityādayoniraṃtaraṃ}}\app{\lem[wit={P,N1,D1,U2},alt={utpādyante}]{tpādyante}
           \rdg[wit={E}]{utpadyante}
-          \rdg[wit={U1}]{utyaṃte}}/
+          \rdg[wit={U1}]{utyaṃte}}/ \\
 %-----------------------
 % \om \oxford
 %  sa eva bahukriyāyogī kathyate /      \edprint
@@ -472,8 +476,7 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
     \begin{translation}
    \ekddiv{type=trans}
     \begin{tlate} Patience, discrimination, equanimity, peace, contentment etc. are generated in his mind. He alone is called a \textit{yogī} of many actions (\textit{bahukriyāyogī})\footnote{The term \textit{bahukriyāyogī} seems to be unique in the whole yoga literature.}. \bigskip\end{tlate}
-    \end{translation}
-    
+    \end{translation}  
     \begin{edition}
     \ekddiv{type=ed}
     \begin{prose}
@@ -499,8 +502,9 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
       \app{\lem[wit={E,P}]{vittaṃ}
         \rdg[wit={L}]{vitaṃ}
         \rdg[wit={N1,D1,U1}]{vitvaṃ}
-        \rdg[wit={U2}]{titaṃ}}hiṃsā tṛṣṇā
-      \app{\lem[wit={E}, alt={mātsaryam}]{mātsaryama}
+        \rdg[wit={U2}]{titaṃ}}
+      hiṃsā tṛṣṇā
+      \app{\lem[wit={E}, alt={mātsaryam}]{mātsaryam-a}
         \rdg[wit={P,L,N1,U2}]{mātsaryaṃ}
         \rdg[wit={P,L,N1,U2}]{mātsarya}}haṃkāraḥ
       \app{\lem[wit={P,L,N1,D1,U2}]{roṣobhayaṃ}
@@ -509,18 +513,16 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
         \rdg[wit={U1}]{lajā}}
       \app{\lem[wit={E,N1,D1,U1}]{lobhamohā}
         \rdg[wit={P,L}]{lobhaḥ mohaḥ}
-        \rdg[wit={U2}]{mohā}}aśucitvaṃ
-      \app{\lem[alt={rāgo dveṣaḥ}]{rāgo dveṣaḥ}
-        \rdg[wit={P}]{\textbf{conj.} rāgaḥ dveṣaḥ}
+        \rdg[wit={U2}]{mohā}}
+      aśucitvaṃ
+      \app{\lem[alt={rāgo dveṣaḥ}]{rāgo dveṣa}
+        \rdg[wit={P}]{\textbf{em.} rāgaḥ dveṣaḥ}
         \rdg[wit={N1,D1,U1,U2}]{rāgadveṣaḥ}
-        \rdg[wit={L}]{rājadveṣa}
-        \rdg[wit={E}]{\textbf{omitted in}}}\note[type=philcomm, labelb=s8.z2a, lem={rāgo dveṣaḥ}]{I conjectured to \textit{rāgo dveṣaḥ} to provide a sentence with correct grammar. Another possible conjecture would be to read \textit{rāgadveṣau}.}
-      \app{\lem[wit={P,L,N1,D1,U1,U2}]{ālasyaṃ}
+        \rdg[wit={L}]{rājadveṣa}\rdg[wit={E}]{\textbf{omitted in}}}\note[type=philcomm, labelb=s8.z2a, lem={rāgo dveṣaḥ}]{I conjectured to \textit{rāgo dveṣaḥ} to provide a sentence with correct grammar. Another possible conjecture would be to read \textit{rāgadveṣau}.}\app{\lem[wit={P,L,N1,D1,U1,U2}]{-ālasyaṃ}
         \rdg[wit={E}]{\textbf{omitted in}}}
       \app{\lem[wit={P,L,U1,U2}]{pākhaṃḍitvaṃ}
         \rdg[wit={D1,N1}]{pāṣaṃḍitvaṃ}
-        \rdg[wit={E}]{pākhaṃḍatvaṃ}} bhrāntiḥ
-      \app{\lem[wit={E,N1,D1,U2}, alt={indriyavikāraḥ}]{rindiryavikāraḥ}
+        \rdg[wit={E}]{pākhaṃḍatvaṃ}} bhrānti\app{\lem[wit={E,N1,D1,U2}, alt={indriyavikāraḥ}]{r-indiryavikāraḥ}
         \rdg[wit={U1}]{iṃdriyavīkāraḥ}
         \rdg[wit={P}]{iṃdriyaṃ vīkāraḥ}
         \rdg[wit={L}]{itivikāraḥ}}
@@ -530,7 +532,7 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
         \rdg[wit={L}]{eta}\rdg[wit={U1}]{rāte}
         \rdg[wit={U2}]{etate}} yasya manasi pradidinaṃ nyūna
       \app{\lem[wit={E,P,L,D1,U1,U2}]{bhavanti}
-        \rdg[wit={N1}]{bhavīti}}/
+        \rdg[wit={N1}]{bhavīti}}/ \\
 %-----------------------       
 %sa eva bahukriyāyogī kathyate // \edprint
 %sa eva bahukriyāyogī kathyate // \pune
@@ -647,7 +649,7 @@ Again, due to inconsistent use of class nasals among the witnesses \textit{anusv
 %iyaṃ ekā nāḍī  iḍāpiṃgalāsuṣumnā      etān bhedān prāpnoti     \ujjaina
 %iyaṃ eka nāḍī  iḍāpiṃgalāsuṣumṇā      etān bhegān prāpnoti     \ujjainb
 %-----------------------
-\app{\lem[wit={E}, alt={iyam}]{iyame}\rdg[wit={E,P,N1,D1,U1,U1}]{iyaṃ}\rdg[wit={L}]{trayaṃ}}\app{\lem[wit={N1,D1,U1,U2}, alt={ekā}]{kā}\rdg[wit={E,P}]{eka}\rdg[wit={L}]{kā}}
+\app{\lem[wit={E}, alt={iyam}]{iyam-e}\rdg[wit={E,P,N1,D1,U1,U1}]{iyaṃ}\rdg[wit={L}]{trayaṃ}}\app{\lem[wit={N1,D1,U1,U2}, alt={ekā}]{kā}\rdg[wit={E,P}]{eka}\rdg[wit={L}]{kā}}
 nāḍī iḍāpiṅgalā\app{\lem[wit={N1,D1},alt={°suṣumṇān}]{suṣumṇān}
     \rdg[wit={E,P,U1,U2}]{suṣumṇā}}
   \app{\lem[wit={E,P,L,U1,U2}]{etān}
@@ -752,7 +754,7 @@ nāḍī iḍāpiṅgalā\app{\lem[wit={N1,D1},alt={°suṣumṇān}]{suṣumṇ
       \rdg[wit={U1}]{suṣumnāya°}
       \rdg[wit={N1,D1}]{suṣumṇāyāḥ}
       \rdg[wit={L}]{suṣumnā°}}
-    \app{\lem[wit={E}]{jñānotpattāvupāyāḥ}
+    \app{\lem[wit={E}]{jñānotpattāv-upāyāḥ}
       \rdg[wit={P,L,D1,U1}]{jñānotpattau upāyāḥ}
       \rdg[wit={U2}]{jñānotpattau upāyā}
       \rdg[wit={N1}]{jñānotpanno 'pāyāḥ}}
@@ -762,7 +764,7 @@ nāḍī iḍāpiṅgalā\app{\lem[wit={N1,D1},alt={°suṣumṇān}]{suṣumṇ
   \end{edition}
    \begin{translation}
     \ekddiv{type=trans}
-      \begin{tlate}She \extra{emerges as the central channel, assuming the form of benevolence (\textit{śiva}),} is the bestower of enjoyment and liberation. While abiding in (\textit{satyāṃ}) her (\textit{asyāṃ}) knowledge arises [to the point of which] the person becomes all-knowing. The means for the genesis of knowledge in the central channel \textit{suṣumnā} will now be described.\footnote{It is not clear if the list given at the beginning of the text codifying the fifteen \textit{yoga}s belongs to the original text or was a later addition by a another hand. One primary reason for this suspicion is that the structure of the \textit{yoga}s in the text does not equal the list. The text begins with a description of \textit{kriyāyoga} and continues to describe \textit{siddhakuṇḍaliniyoga} and somewhat suprisingly mentions \textit{mantrayoga} in the same breath. One starts wondering why the structure of the text does not follow the codification. However the mention of \textit{jñānotpattau upāyaḥ} might be a clue why the second \textit{yoga} in the list might be \textit{jñānayoga}. So far it seems to me that there are three options or a combination of these to explain these apparent inconsistencies: 1. The text is highly corrupted. 2. The codification was a later addition of another hand. 3. The term \textit{jñānayoga} is listed due to the results of \textit{siddhakuṇḍalinīyoga}, which is the generation of knowledge due to the practice of a certain \textit{yoga} involving the central channel, as mentioned in this section of the text.}\end{tlate}
+      \begin{tlate}She \extra{emerges as the central channel, assuming the form of benevolence (\textit{śiva}),} is the bestower of enjoyment and liberation. While abiding in (\textit{satyāṃ}) her (\textit{asyāṃ}) knowledge arises [to the point of which] the person becomes all-knowing. The means for the genesis of knowledge in the central channel will now be described.\footnote{It is not clear if the list given at the beginning of the text codifying the fifteen \textit{yoga}s belongs to the original text or was a later addition by a another hand. One primary reason for this suspicion is that the structure of the \textit{yoga}s in the text does not equal the list. The text begins with a description of \textit{kriyāyoga} and continues to describe \textit{siddhakuṇḍaliniyoga} and somewhat suprisingly mentions \textit{mantrayoga} in the same breath. One starts wondering why the structure of the text does not follow the codification. However the mention of \textit{jñānotpattau upāyaḥ} might be a clue why the second \textit{yoga} in the list might be \textit{jñānayoga}. So far it seems to me that there are three options or a combination of these to explain these apparent inconsistencies: 1. The text is highly corrupted. 2. The codification was a later addition of another hand. 3. The term \textit{jñānayoga} is listed due to the results of \textit{siddhakuṇḍalinīyoga}, which is the generation of knowledge due to the practice of a certain \textit{yoga} involving the central channel, as mentioned in this section of the text.}\end{tlate}
    \end{translation}
    \end{alignment}
 \clearpage
@@ -802,29 +804,29 @@ nāḍī iḍāpiṅgalā\app{\lem[wit={N1,D1},alt={°suṣumṇān}]{suṣumṇ
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------tanmadhye trikoṇākāraṃ kāmapiṭhaṃ varttate /  \dehlia 
       %---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------tanmadhye trikoṇākāraṃ kāmapiṭhaṃ varttate /   \ujjaina
 %-----------------------
-                  \app{\lem[wit={P,L,U2}]{prathamaṃ ādhāracakraṃ}
-                 \rdg[wit={E}]{prathamādhāracakraṃ vartate}}
-gudāsthānaṃ raktavarṇaṃ
+                  \extra{\app{\lem[wit={P,L,U2}]{prathamaṃ ādhāracakraṃ}
+                 \rdg[wit={E}]{prathamādhāracakraṃ vartate}}/
+                  gudāsthānaṃ/ raktavarṇaṃ/
             \app{\lem[wit={E,L,U2}]{gaṇeśadaivataṃ}
                  \rdg[wit={P}]{gaṇeśāṃ daivataṃ}}
             \app{\lem[alt={siddhibuddhiśaktiṃ muṣako vāhanaṃ}]{siddhibuddhiśaktiṃ muṣako vāhanaṃ} %Emendation!!!
                  \rdg[wit={E}]{\textbf{em.} siddhibuddhiśaktimuṣakavāhanam}
                  \rdg[wit={P}]{siddhibuddhiśaktir mukhako vāhanam}
                  \rdg[wit={L}]{siddhibuddhiśaktimuṣako vāhanaṃ}
-                 \rdg[wit={U2}]{siddhibuddhiśaktiḥ muṣako vāhanaṃ}}
-kurmaṛṣiḥ
-            \app{\lem[wit={P,L,U2}]{ākuñcanamudrā}
-              \rdg[wit={E}]{ākuṃcamudrā}}
-            \app{\lem[wit={P}]{apānavāyuś}
-                 \rdg[wit={E,L}]{°vāyuḥ}
-                 \rdg[wit={U2}]{°vāyu}} %umīrkalā ojakhinīdhāraṇā}} Lesart oder zusätzliches Material?   
-            \extra{umīrkalā ojasvinīdhāraṇā} caturdaleṣu rajaḥsattvatamomanāṃsi vaṃ śaṃ ṣaṃ saṃ madhyatrikoṇe
+                 \rdg[wit={U2}]{siddhibuddhiśaktiḥ muṣako vāhanaṃ}}/
+kurmaṛṣiḥ /
+            \app{\lem[wit={P,L,U2}]{ākuñcanamudrā} 
+              \rdg[wit={E}]{ākuṃcamudrā}}/
+            \app{\lem[wit={E,L}]{apānavāyuḥ}
+                 \rdg[wit={P}]{°vāyuś}
+                 \rdg[wit={U2}]{°vāyu}}/ 
+            \extra{umīrkalā/ ojasvinīdhāraṇā/} caturdaleṣu/ rajaḥsattvatamomanāṃsi/ vaṃ śaṃ ṣaṃ saṃ/ madhyatrikoṇe
             \app{\lem[wit={P,L}]{triśikhā}
                  \rdg[wit={E}]{triśikhāt}
-                 \rdg[wit={U2}]{trirekhā}}
+                 \rdg[wit={U2}]{trirekhā}}/}
             \app{\lem[wit={E,P,D1,U1,U2}]{tanmadhye}
                  \rdg[wit={L,N1}]{tanmadhya}}
-            trikoṇākāraṃ kāmapiṭhaṃ vartate /\note[type=philcomm, labelb=s10.zx, lem={prathamaṃ ... triśikhā}]{The whole section from \textit{prathamaṃ} to \textit{triśikhā} is missing in \getsiglum{N1},\getsiglum{D1} and \getsiglum{U1}.}
+            trikoṇākāraṃ kāmapiṭhaṃ vartate/\note[type=philcomm, labelb=s10.zx, lem={prathamaṃ ... triśikhā}]{The whole section from \textit{prathamaṃ} to \textit{triśikhā} is missing in \getsiglum{N1},\getsiglum{D1} and \getsiglum{U1}.}
 %-----------------------
  %\om                                       \oxford
 %tatpīṭhamadhye 'gniśikhākāraikā mūrtir varttate /   \edprint
@@ -835,12 +837,12 @@ kurmaṛṣiḥ
 %tatpīṭhamadhye  agniśikhākārā ekā mūrttir varttate //   \ujjaina
 %tatpīṭhamadhye  agniśikhākārā ekā mūrttirasmi      //   \ujjainb
 %-----------------------
- tatpīṭhamadhye
+ -tatpīṭhamadhye
 \app{\lem[wit={E}]{'gniśikhākāraikā}
   \rdg[wit={N1,D1,U1,U2}]{agniśikhākārā ekā}
   \rdg[wit={P}]{magniśikhākārā ekā}
   \rdg[wit={L}]{jñiśikhākarāṇakā}}
-murtirvarta\app{\lem[wit={E,P,L,N1,D1,U1}, alt={vartate}]{te}
+murtir-varta\app{\lem[wit={E,P,L,N1,D1,U1}, alt={vartate}]{te}
   \rdg[wit={U2}]{asmi}}/
 %-----------------------%
 %\om                                       \oxford
@@ -854,18 +856,16 @@ murtirvarta\app{\lem[wit={E,P,L,N1,D1,U1}, alt={vartate}]{te}
 %-----------------------
 \app{\lem[wit={P,L,U1,U2}]{tasyā}
   \rdg[wit={E,N1,D1}]{tasyāḥ}}
-\app{\lem[wit={P,N1,D1}, alt={mūrter}]{mūrterdhyāna}
+\app{\lem[wit={P,N1,D1}, alt={mūrter}]{mūrter-dhyāna}
   \rdg[wit={E,L}]{mūrtir}
   \rdg[wit={U1}]{mūrtair}
-  \rdg[wit={U2}]{\textbf{omitted in}}}
-  karaṇāt sakalaśāstrakāvyanāṭakādi
+  \rdg[wit={U2}]{\textbf{omitted in}}}karaṇāt sakalaśāstrakāvyanāṭakādi
   \app{\lem[wit={E,P,N1,D1,U1,U2}, alt={°sakala}]{sakala}
-    \rdg[wit={L}]{\textbf{omitted in}}}
-  vāṅmayaṃ vinābhyāsena puruṣasya manomadhye
+    \rdg[wit={L}]{\textbf{omitted in}}}vāṅmayaṃ vinābhyāsena puruṣasya manomadhye
   \app{\lem[wit={E,P,N1,D1,U1,U2}]{sphurati}
-    \rdg[wit={L}]{sphuraṃti}} /
+    \rdg[wit={L}]{sphuraṃti}}/
  % \rdg[wit={U2}]{sphurati // asya bahir mānaṃdā // yogānaṃdā virānaṃdā // uparamānaṃdā // ajapājapaśāt // 600 // ghaṭi 1 palāni 40 //}} / % Lesart oder zusätzliches Material? 
-  \extra{asya bahirmānaṃdā / yogānaṃdā virānaṃdā / uparamānaṃdā /}
+  \extra{asya bahir-mānandā/ yogānandā virānandā/ uparamānandā/}
     \end{prose}
    \end{edition}
 \begin{translation}
@@ -873,7 +873,7 @@ murtirvarta\app{\lem[wit={E,P,L,N1,D1,U1}, alt={vartate}]{te}
   \bigskip
     \centerline{\textrm{\small{[Description of the first Cakra]}}}
     \bigskip
- \begin{tlate}At the beginning [of the central channel?] exists the root-cakra having four petals. The first cakra of support (\textit{ādhāra}) is at the anus, [it] is red-colored, [it] has Gaṇeśa as its deity, [he] is success, intelligence and power, [and has] a rat as [his] mount, the Ṛṣi [of it] is Kūrma, [its seal] is the seal of contraction (\textit{ākuñcanamudrā}), [its] vitalwind is \textit{apāna}, \extra{[its] \textit{kalā} is \textit{umīr}, its \textit{dhāraṇā} is \textit{ojasvinī}} in the four petals [of it resides] \textit{rajas}, \textit{sattva}, \textit{tamas} and the mind-faculties (\textit{manāṃsi}) [symbolized by the syllables] “\textit{vaṃ}”, “\textit{śaṃ}”, “\textit{ṣaṃ}” and “\textit{saṃ}”, in the middle [of it] is a triangle, in the middle [of the triangle] is a trident, and \textit {kāmapīṭha} in the shape of a triangle. In the middle of this seat (\textit{pīṭha}) exists a single form having the shape of a flame. Trough the practice of meditation on this form the whole literature, all \textit{śāstra}s, all poems, dramas etc., everything [related to] elocution, appears in the mind of the person without [prior] learning. \extra{[Assigned to it] is external bliss, yogic bliss, heroic bliss [and] the bliss of coming to rest.}\footnote{It is strange that only the first \textit{cakra} has a detailled description of mounts, Ṛṣis, gods, seals and so forth. All other descriptions of the remaining eight \textit{cakra}s leave this out. The only exception is \getsiglum{U2}, a relatively late witness that adds those descriptions. They are added to the edition and are highlighted in red color.}\footnote{Find out more about the four blisses.} \end{tlate}
+ \begin{tlate}At the beginning [of the central channel?] exists the root-cakra having four petals. \extra{The first cakra of support (\textit{ādhāra}) is at the anus, [it] is red-colored, [it] has Gaṇeśa as its deity, [he] is success, intelligence and power, [and has] a rat as [his] mount, the Ṛṣi [of it] is Kūrma, [its seal] is the seal of contraction (\textit{ākuñcanamudrā}), [its] vitalwind is \textit{apāna}, \extra{[its] \textit{kalā} is \textit{umīr}, its \textit{dhāraṇā} is \textit{ojasvinī}} in the four petals [of it resides] \textit{rajas}, \textit{sattva}, \textit{tamas} and the mind-faculties (\textit{manāṃsi}) [symbolized by the syllables] “\textit{vaṃ}”, “\textit{śaṃ}”, “\textit{ṣaṃ}” and “\textit{saṃ}”, in the middle [of it] is a triangle.} In the middle is a trident, and \textit {kāmapīṭha} in the shape of a triangle. In the middle of this seat (\textit{pīṭha}) exists a single form having the shape of a flame. Trough the practice of meditation on this form the whole literature, all \textit{śāstra}s, all poems, dramas etc., everything [related to] elocution, appears in the mind of the person without [prior] learning. \extra{[Assigned to it] is external bliss, yogic bliss, heroic bliss [and] the bliss of coming to rest.}\footnote{It is very strange that only the first \textit{cakra} adds a detailled description of mounts, Ṛṣis, gods, seals and so forth among the current majority of witnesses at hand: \getsiglum{E}, \getsiglum{P}, \getsiglum{L} and \getsiglum{U2}. All other descriptions of the remaining eight \textit{cakra}s leave this out. The only exception is \getsiglum{U2}, a relatively late witness that adds those descriptions for the other \textit{cakra}s as well. Since it is probable that those descriptions are later additions to the text and the witnesses are partially quite conflated, I think this is very interesting for the history of this text, they are added to the edition as well as the translation and are highlighted in color.}\footnote{Find out more about the four blisses.} \end{tlate}
    \end{translation}
    \begin{edition}
      \ekddiv{type=ed}
@@ -903,9 +903,9 @@ murtirvarta\app{\lem[wit={E,P,L,N1,D1,U1}, alt={vartate}]{te}
             \rdg[wit={L}]{uḍḍīyān pīṭhaṃ}
             \rdg[wit={N1}]{uḍyānapīṭha°}
             \rdg[wit={D1}]{uḍyāṇāpīṭha°}
-            \rdg[wit={U1}]{uḍāganapīṭa°}}saṃjñakaṃ bhavati /
-       %         \rdg[wit={U2}]{bhavati // liṃgasthānaṃ // pītavarṇaṃ // pītaprabhā // rajoguṇa // brahmādevatā // vaikharīvāca //sāvitrīśaktiḥ // haṃsavāhanaṃ // vahaṇaṛṣiḥ // kāmāgniprabhā //sthūladehā // jāgradavasthā // ṛgveda // ācāryaliṃgaṃ // braṃhmasalokatāmokṣaḥ // śuddhabhumikātatvaṃ // gaṃdho viṣayaḥ // apānavāyuḥ // aṃtarmātṛkā // vaṃ bhaṃ maṃ yaṃ raṃ laṃ // bahirmātrā // kāmā // kāmākhyā // tejasī // ceṣṭṛikā // alasā // mithunā // ajapājapaḥ sahasra // 6000 //gha 0 16 pa 0 40//}} /
-\extra{liṃgasthānaṃ/ pītavarṇaṃ/ pītaprabhā/ rajoguṇa/ brahmādevatā/ vaikharīvāca/ sāvitrīśaktiḥ/ haṃsavāhanaṃ/ vahaṇaṛṣiḥ/ kāmāgniprabhā/ sthūladehā/ jāgradavasthā/ ṛgveda/ ācāryaliṃgaṃ/ braṃhmasalokatāmokṣaḥ/ śuddhabhumikātatvaṃ/ gaṃdho viṣayaḥ/ apānavāyuḥ/ aṃtarmātṛkā/ vaṃ bhaṃ maṃ yaṃ raṃ laṃ/ bahirmātrā/ kāmā/ kāmākhyā/ tejasī/ ceṣṭṛikā/ alasā/ mithunā/}    %-----------------------
+            \rdg[wit={U1}]{uḍāganapīṭa°}}saṃjñakaṃ bhavati/
+       %         \rdg[wit={U2}]{bhavati // liṅgasthānaṃ // pītavarṇaṃ // pītaprabhā // rajoguṇa // brahmādevatā // vaikharīvāca //sāvitrīśaktiḥ // haṃsavāhanaṃ // vahaṇaṛṣiḥ // kāmāgniprabhā //sthūladehā // jāgradavasthā // ṛgveda // ācāryaliṃgaṃ // braṃhmasalokatāmokṣaḥ // śuddhabhumikātatvaṃ // gaṃdho viṣayaḥ // apānavāyuḥ // aṃtarmātṛkā // vaṃ bhaṃ maṃ yaṃ raṃ laṃ // bahirmātrā // kāmā // kāmākhyā // tejasī // ceṣṭṛikā // alasā // mithunā // ajapājapaḥ sahasra // 6000 //gha 0 16 pa 0 40//}} /
+\extra{liṅgasthānaṃ/ pītavarṇaṃ/ pītaprabhā/ rajoguṇa/ brahmādevatā/ vaikharīvāca/ sāvitrīśaktiḥ/ haṃsavāhanaṃ/ vahaṇaṛṣiḥ/ kāmāgniprabhā/ sthūladehā/ jāgradavasthā/ ṛgveda/ ācāryaliṅgaṃ/ braṃhmasalokatāmokṣaḥ/ śuddhabhumikātatvaṃ/ gaṃdho viṣayaḥ/ apānavāyuḥ/ aṃtarmātṛkā/ vaṃ bhaṃ maṃ yaṃ raṃ laṃ/ bahir-mātrā/ kāmā/ kāmākhyā/ tejasī/ ceṣṭṛikā/ alasā/ mithunā/}    %-----------------------
 %
 % \om                                       \oxford
 %tanmadhye atiraktavarṇaṃ tejo varttate /  \edprint
@@ -940,7 +940,7 @@ tasya dhyānāt sādhako 'tisundaro bhavati/
 %dinaṃ dinaṃ prati āyurvarddhate  \ujjaina
 %pratidinaṃ āyur varddhate //  \ujjainb
 %-----------------------
-\app{\lem[wit={E,P,L,U2}, alt={pratidinam}]{pratidinamā}
+\app{\lem[wit={E,P,L,U2}, alt={pratidinam}]{pratidinam-ā}
   \rdg[wit={N1,U1}]{dinaṃ dinaṃ prati}
   \rdg[wit={D1}]{dinaṃ prati}}yurvardhate/
     \end{prose}
@@ -991,7 +991,9 @@ tasya dhyānāt sādhako 'tisundaro bhavati/
     \app{\lem[wit={E,P,L,N1,D1,U1}]{vartate}
       \rdg[wit={U2}]{\textbf{omitted in}}}/
      % \rdg[wit={U2}]{kapilavarṇaṃ // viṣṇudevatā // lakṣmīśaktiḥ // vāyuṛṣiḥ // samānavāyuḥ // garuḍavāhanaṃ // sūkṣmaliṃgadevatāha // svapnāvasthā // madhyamāvāk // yajurvedaḥ // dakṣināgniḥ // samipatāmokṣaḥ // guruliṃgaviṣṇuḥ // āpastatvaṃ // rajoviṣayaḥ daśadalāni // daśamātrāḥ // aṃtarmātrā // ḍaṃ ṭaṃ ṇaṃ taṃ thaṃ daṃ dhaṃ naṃ paṃ phaṃ // bahirmātrāḥ // śāṃtiḥ // kṣamā // medhā // tanyā // medhāvinī // puṣkarā // ahaṃsagamanā // lakṣyā //tanmayā // amṛtā // ajapājapa // 6000 gha 016 pa 040 //}}
-    \extra{kapilavarṇaṃ/ viṣṇudevatā/ lakṣmīśaktiḥ/ vāyuṛviḥ/ samānavāyuḥ/ garuḍavāhanaṃ/ sūkṣmaliṃgadevatāha/ svapnāvasthā/ madhyamāvāk/ yajurvedaḥ/ dakṣināgniḥ/ samipatāmokṣaḥ/ guruliṃgaviṣṇuḥ/ āpastatvaṃ/ rajo viṣayaḥ daśadalāni/ daśamātrāḥ/ aṃtarmātrā/ ḍaṃ ṭaṃ ṇaṃ taṃ thaṃ daṃ dhaṃ naṃ paṃ phaṃ/ bahirmātrāḥ/ śāṃtiḥ/ kṣamā/ medhā/ tanyā/ medhāvinī/ puṣkarā/ ahaṃsagamanā/ lakṣyā/ tanmayā/ amṛtā/}
+    \extra{kapilavarṇaṃ/ viṣṇudevatā/ lakṣmīśaktiḥ/ vāyuṛṣiḥ/ samānavāyuḥ/ garuḍavāhanaṃ/
+      \app{\lem[]{sūkṣmaliṅgadevatā}
+   \rdg[wit={U2}]{\textbf{em.} sūkṣmaliṅgadevatāha}}/ svapnāvasthā/ madhyamāvāk/ yajurvedaḥ/ dakṣināgniḥ/ samipatāmokṣaḥ/ guruliṅgaviṣṇuḥ/ āpastatvaṃ/ rajo viṣayaḥ daśadalāni/ daśamātrāḥ/ antarmātrā/ ḍaṃ ṭaṃ ṇaṃ taṃ thaṃ daṃ dhaṃ naṃ paṃ phaṃ/ bahir-mātrāḥ/ śāṃtiḥ/ kṣamā/ medhā/ tanyā/ medhāvinī/ puṣkarā/ ahaṃsagamanā/ lakṣyā/ tanmayā/ amṛtā/}
 %-----------------------
 % \om                         \oxford
 %tanmadhye paṃcakoṇaṃ cakraṃ varttate //   \edprint
@@ -1002,7 +1004,7 @@ tasya dhyānāt sādhako 'tisundaro bhavati/
 %tanmadhye paṃcakoṇaṃ cakraṃ varttate   \ujjaina
 %tanmadhye paṃcakoṇaṃ cakraṃ vartate //   \ujjainb
 %-----------------------
-tanmadhye pancakoṇaṃ cakraṃ varttate/ \note[type=philcomm, labelb=s14.z5, lem={tanmadhye ... vartate}]{The whole sentence is \textbf{omitted in} \getsiglum{L}.}
+tanmadhye pancakoṇaṃ cakraṃ vartate/ \note[type=philcomm, labelb=s14.z5, lem={tanmadhye ... vartate}]{The whole sentence is \textbf{omitted in} \getsiglum{L}.}
 %-----------------------
 % \om                         \oxford
 %tanmadhye ekā mūrtir vartate /   \edprint
@@ -1013,7 +1015,7 @@ tanmadhye pancakoṇaṃ cakraṃ varttate/ \note[type=philcomm, labelb=s14.z5, 
 %tanmadhye ekā mūrtir vartate    \ujjaina
 %tanmadhye ekā mūrtir asmi //   \ujjainb
 %-----------------------
-tanmadhye ekā mūrti\app{\lem[wit={E,P,N1,D1,U1}, alt={vartate}]{rvartate}
+tanmadhye ekā mūrti\app{\lem[wit={E,P,N1,D1,U1}, alt={vartate}]{r-vartate}
   \rdg[wit={U2}]{asmi}}/ \note[type=philcomm, labelb=s14.z6, lem={tanmadhye ... vartate}]{The whole sentence is \textbf{omitted in} \getsiglum{L}.}
 %-----------------------
 % \om                         \oxford
@@ -1025,7 +1027,7 @@ tanmadhye ekā mūrti\app{\lem[wit={E,P,N1,D1,U1}, alt={vartate}]{rvartate}
 %tasyāstejo jihvayā kathatuṃ na śakyate        \ujjaina
 %tasyāstejo jihvayā vaktuṃ na śakyate //   \ujjainb
 %-----------------------
- \app{\lem[wit={E,P,L,U1,U2}, alt={tasyās}]{tasyāstejo}
+ \app{\lem[wit={E,P,L,U1,U2}, alt={tasyās}]{tasyās-tejo}
   \rdg[wit={N1,D1}]{tasyā}}
   jihvayā
   \app{\lem[wit={E,P,N1,D1}]{kathayituṃ}
@@ -1044,7 +1046,7 @@ tanmadhye ekā mūrti\app{\lem[wit={E,P,N1,D1,U1}, alt={vartate}]{rvartate}
 %tasyāḥ dhyānakaraṇāt          puruṣasya śarīraṃ sthiraṃ bhavati //   \ujjainb
 %-----------------------
  tasyāḥ
-  \app{\lem[wit={E,P,N1,D1,U1}, alt={mūrter}]{mūrterdhyāna}
+  \app{\lem[wit={E,P,N1,D1,U1}, alt={mūrter}]{mūrter-dhyāna}
       \rdg[wit={L}]{mūrtir}
       \rdg[wit={U2}]{\textbf{omitted in}}}\app{\lem[wit={P,L,N1,D1,U1,U2}, alt={°karaṇāt}]{karaṇāt}
       \rdg[wit={E}]{°kāraṇāt}}
@@ -1084,9 +1086,8 @@ The third, a lotus with ten petals exists at the location of the navel.\extra{[I
 % anāhatacakraṃ hṛdayasthānaṃ // śvetavarṇaṃ tamoguṇaḥ // rudrodevatā // umāśaktiḥ // hiraṇyagarbhaṛṣiḥ // naṃdivāhanaṃ // prāṇavāyuḥ // jyotiḥ kalākāraṇaṃ dehe // suṣuptir avasthā // paśyaṃtivācā // sāmavedaḥ // gārhasyatyogniḥ? // śivaliṇgaṃ // prāptibhūmikā // sarū?patāmuktiḥ // dvādaśādalāni //dvādaśamātrā // kaṃ khaṃ gaṃ ghaṃ ṇaṃ caṃ chaṃ jaṃ jhaṃ yaṃ taṃ thaṃ // bahirmātrā // rudrāṇī // tejasā // tāpinī // spha?kadā // caitanyā // śivadā // Śānti // umā // gaurī // mātara // jvālā // prajvālinī // ajapājapasahasra // cha 000 gha 0 1 6? pa 040 // U2
 caturthaṃ hṛdayamadhye dvādaśadalaṃ
     \app{\lem[wit={E,P,L,N1,D1,U1}]{vartate}
-      \rdg[wit={U2}]{asti}}
-    \extra{anāhatacakraṃ hṛdayasthānaṃ / śvetavarṇaṃ tamoguṇaḥ / rudrodevatā / umāśaktiḥ / hiraṇyagarbhaṛṣiḥ / naṃdivāhanaṃ / prāṇavāyuḥ / jyotiḥ kalākāraṇaṃ dehe / suṣuptir avasthā / \app{\lem[]{paśyantīvācā}\rdg[wit={U2}]{\textbf{em.} paśyaṃtivācā}}
-      / sāmadedaḥ / \app{\lem[]{gārhapatyāgniḥ}\rdg[wit={U2}]{\textbf{em.} gārhasyatyogniḥ}} / śivaliṇgaṃ / prāptibhūmikā / sarū?patāmuktiḥ / dvādaśādalāni / dvādaśamātrā / kaṃ khaṃ gaṃ ghaṃ ṇaṃ caṃ chaṃ jaṃ jhaṃ yaṃ taṃ thaṃ / bahirmātrā / rudrāṇī / tejasā / tāpinī / sphakadā / caitanyā / śivadā / śānti / umā / gaurī / mātara / jvālā / prajvālinī /} 
+      \rdg[wit={U2}]{asti}}/
+    \extra{anāhatacakraṃ hṛdayasthānaṃ/ śvetavarṇaṃ tamoguṇaḥ/ rudrodevatā /umāśaktiḥ/ hiraṇyagarbhaṛṣiḥ/ nandivāhanaṃ/ prāṇavāyuḥ/ jyotiḥ kalākāraṇaṃ dehe/ suṣuptir-avasthā/ \app{\lem[]{paśyantīvācā}\rdg[wit={U2}]{\textbf{em.} paśyaṃtivācā}}/ sāmadedaḥ/ \app{\lem[]{gārhapatyāgniḥ}\rdg[wit={U2}]{\textbf{em.} gārhasyatyogniḥ}}/ śivaliṇgaṃ/ prāptibhūmikā/ sarū?patāmuktiḥ/ dvādaśādalāni/ dvādaśamātrā/ kaṃ khaṃ gaṃ ghaṃ ṇaṃ caṃ chaṃ jaṃ jhaṃ yaṃ taṃ thaṃ/ bahir-mātrā/ rudrāṇī/ tejasā/ tāpinī/ sphakadā/ caitanyā/ śivadā/ śānti/ umā/ gaurī/ mātara/ jvālā/ prajvālinī/} 
 %-----------------------
 %atitejomayatvād   dṛṣṭigocaraṃ na bhavati E  
 %atitejomayatvāt   dṛṣṭigocaraṃ na bhavati  P
@@ -1096,7 +1097,7 @@ caturthaṃ hṛdayamadhye dvādaśadalaṃ
 %atitejomayatvāt / dṛṣṭigocaraṃ na bhavati / U1
 %atitejomayatvād   dṛṣṭigocaratāṃ na yāti // U2 
 %-----------------------
-atitejomayatvāddṛṣṭi\app{\lem[wit={E,P,L,N1,D1,U1}, alt={°gocaraṃ}]{gocaraṃ}
+atitejomayatvād-dṛṣṭi\app{\lem[wit={E,P,L,N1,D1,U1}, alt={°gocaraṃ}]{gocaraṃ}
                          \rdg[wit={U2}]{gocaratāṃ}}
 na
     \app{\lem[wit={E,P,L,N1,D1,U1}]{bhavati}
@@ -1117,16 +1118,16 @@ na
         \rdg[wit={P}]{mukhaṃ kamalaṃ}}
       \app{\lem[wit={E,P,L,N1,D1,U1}]{vartate}
         \rdg[wit={U2}]{asti}}/    
-      \extra{manaścakre/ manodevatā/
+      \extra{manaś-cakre/ manodevatā/
         \app{\lem[]{bhaiśaktiḥ}
           \rdg[wit={U2}]{bahiśaktiḥ}}
         / ātmaṛṣih/ nābhimadhye sthitaṃ padmaṃ nālaṃ tasya
         \app{\lem[]{daśāṅgulaṃ}
           \rdg[wit={U2}]{\textbf{em.} daśāgulaṃ}}/
-        komalaṃ tasya tannālaṃ nirmalaṃ cāpyadhomukhaṃ/ kadalīpuṣpasaṃkāśaṃ tanmadhye ca pratiṣṭhitaṃ/ mana unnatyasaṃkalpa/ vikalpātmakameva ca/ pūrvadale svetavarṇe yadā viśrāmate manaḥ/ dharmakīrtividyādi sadbuddhirbhavati/ agnikoṇe āraktavarṇe nidrā ālasyamāyāmaṃdamatirbhavati/ dakṣiṇe kṛṣṇavarṇeti tadā krodhotpattirbhavati/ naiṛtye nīlavarṇe mamatāmatirbhavati/ paścime kapilavarṇe/ krīḍāhāsotsavotsāhamatirbhavati/ vāyavye śāmavarṇe ciṃtodvegamatirbhavati/ uttare pītavarṇe bhogaśṛṃgāramahodayamatirbhavati/ īśāne gauravarṇe
+        komalaṃ tasya tan-nālaṃ nirmalaṃ cāpy-adhomukhaṃ/ kadalīpuṣpasaṃkāśaṃ tanmadhye ca pratiṣṭhitaṃ/ mana unnatyasaṃkalpa/ vikalpātmakameva ca/ pūrvadale svetavarṇe yadā viśrāmate manaḥ/ dharmakīrtividyādi sadbuddhir-bhavati/ agnikoṇe āraktavarṇe nidrā ālasyamāyāmandamatir-bhavati/ dakṣiṇe kṛṣṇavarṇeti tadā krodhotpattir-bhavati/ naiṛtye nīlavarṇe mamatāmatir-bhavati/ paścime kapilavarṇe/ krīḍāhāsotsavotsāhamatir-bhavati/ vāyavye śāmavarṇe cintodvegamatir-bhavati/ uttare pītavarṇe bhogaśṛṇgāramahodayamatir-bhavati/ īśāne gauravarṇe
         \app{\lem[alt={jñānasaṃdhāna°}]{jñānasaṃdhāna}
           \rdg[wit={U2}]{jñānasaṃdhāne}}
-        matirbhavati/}
+        matir-bhavati/}
  %The mind resides in this \textit{cakra}, [the] god [presiding over it] is the mind [itself], [its] power is Bhai, [its] Ṛṣi is the self. In the middle of the navel [exists] a place, being a lotus, its tube measures ten \textit{aṅgula}s, the water [being in] the tube is pure and facing upwards. In its middle is the location of a shining banana-flower. The mind is intended to rise upwards?. [There are] several options to arise in oneself. If the mind takes rest in the eastern petal [which is] while in color the natural law, fame, knowledge etc. [and] a clear intellect arises. [If the mind rests] in south-east, [which is] reddish in color, sleep, laziness, illusion and a weak mind arises. [If it rests] on the right south, [which is] black in color then anger is generated. [If it rests] in the southwest, [which is] blue in color a mind that is selfish arises. [If it rests] in the west, [which is] brown in color a mind of payfulness, laughing, and party-mood arises. [If it rests] in the northwest, [which is] dark in color a mind of restless thought arises. [If it rests] in the north, [which is] yellow in color a mind of great happiness, erotic and enjoyment arises. [If it rests] in north-east [which is] whitish in color a mind endowed with unified knowledge arises.      
 
 %-----------------------  
@@ -1152,10 +1153,10 @@ na
 \end{prose}
 \end{edition}
 \begin{translation}
-   \bigskip
+  \ekddiv{type=trans}
+     \bigskip
     \centerline{\textrm{\small{[Description of the fourth Cakra]}}}
     \bigskip
- \ekddiv{type=trans}
  \begin{tlate}The fourth lotus having twelve-petals exists in the middle at the heart. \extra{[The] Anāhatacakra is placed in the heart. [It is] white in color, has the quality of \textit{tamas}, [its] deity is Rudra, [its] power is Umā, [its] Ṛṣi is Hiraṇyagarbha, [its] mount is Nandi, [its] vitalwind is Prāṇa, in the body it is the light that causes fragmentation? (\textit{kalākaraṇa}), [its] state is deep sleep, [its] speech is \textit{paśyantī}\footnote{Add footnote of entry in \textit{Tāntrikābhidhānakośa}.}, [it is attributed to the] Sāmaveda, the fire of the house, Śivaliṅgam, the ability to attach everything on the earth [and] the uniform liberation. [It has] twelve petals, [associated with] twelve measures, [having the syllables] kaṃ khaṃ gaṃ ghaṃ ṇaṃ caṃ chaṃ jaṃ jhaṃ yaṃ taṃ [and] thaṃ. [Its] external measure [is]: Rudras wife, light (\textit{tejasā?}), glow, sphakadā?, consciousness (\textit{caitanyā}), bestower of Śiva, peace, Umā, Gaurī, Mātara, the flame [and] Prajvālinī.} Due to being made of [such an] intense light [the fourth lotus] is not in the range of sight. In its middle exists a lotus facing downward having eight petals.\extra{The mind resides in this \textit{cakra}, [the] god [presiding over it] is the mind [itself], [its] power is Bhai, [its] Ṛṣi is the self. In the middle of the navel [exists] a place, being a lotus, its tube measures ten \textit{aṅgula}s, the water [being in] the tube is pure and facing upwards. In its middle is the location of a shining banana-flower. The mind is intended to rise upwards?. [There are] several options to arise in oneself. If the mind takes rest in the eastern petal [which is] while in color the natural law, fame, knowledge etc. [and] a clear intellect arises. [If the mind rests] in south-east, [which is] reddish in color, sleep, laziness, illusion and a weak mind arises. [If it rests] on the right south, [which is] black in color then anger is generated. [If it rests] in the southwest, [which is] blue in color a mind that is selfish arises. [If it rests] in the west, [which is] brown in color a mind of payfulness, laughing, and party-mood arises. [If it rests] in the northwest, [which is] dark in color a mind of restless thought arises. [If it rests] in the north, [which is] yellow in color a mind of great happiness, erotic and enjoyment arises. [If it rests] in north-east [which is] whitish in color a mind endowed with unified knowledge arises.} \end{tlate}
   \end{translation}
 
