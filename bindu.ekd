@@ -306,13 +306,13 @@
 <14-0-2>{\selectlanguage {english}\textbf {omitted in}} \getsiglum {P}</14-0-2>
 <14-0-2>\hskip 0.75em{\bfseries \LRnum {7}}~{\selectlanguage {english}vartate} \getsiglum {E,P,L,N1,D1,U1}\ekdsep </14-0-2>
 <14-0-2>{\selectlanguage {english}asti} \getsiglum {U2}</14-0-2>
-<14-0-2>\hskip 0.75em{\bfseries \LRnum {9}}~{\selectlanguage {english}paśyantīvācā}\ekdsep </14-0-2>
+<14-0-2>\hskip 0.75em{\bfseries \LRnum {8}--\LRnum {9}}~{\selectlanguage {english}paśyantīvācā}\ekdsep </14-0-2>
 <14-0-2>{\selectlanguage {english}\textbf {em.} paśyaṃtivācā} \getsiglum {U2}</14-0-2>
-<14-0-2>\hskip 0.75em{\bfseries }~{\selectlanguage {english}gārhapatyāgniḥ}\ekdsep </14-0-2>
+<14-0-2>\hskip 0.75em{\bfseries \LRnum {9}}~{\selectlanguage {english}gārhapatyāgniḥ}\ekdsep </14-0-2>
 <14-0-2>{\selectlanguage {english}\textbf {em.} gārhasyatyogniḥ} \getsiglum {U2}</14-0-2>
-<14-0-2>\hskip 0.75em{\bfseries \LRnum {12}}~{\selectlanguage {english}°gocaraṃ} \getsiglum {E,P,L,N1,D1,U1}\ekdsep </14-0-2>
+<14-0-2>\hskip 0.75em{\bfseries \LRnum {11}}~{\selectlanguage {english}°gocaraṃ} \getsiglum {E,P,L,N1,D1,U1}\ekdsep </14-0-2>
 <14-0-2>{\selectlanguage {english}gocaratāṃ} \getsiglum {U2}</14-0-2>
-<14-0-2>\hskip 0.75em{\bfseries }~{\selectlanguage {english}bhavati} \getsiglum {E,P,L,N1,D1,U1}\ekdsep </14-0-2>
+<14-0-2>\hskip 0.75em{\bfseries \LRnum {12}}~{\selectlanguage {english}bhavati} \getsiglum {E,P,L,N1,D1,U1}\ekdsep </14-0-2>
 <14-0-2>{\selectlanguage {english}yāti} \getsiglum {U2}</14-0-2>
 <14-0-2>\hskip 0.75em{\bfseries }~{\selectlanguage {english}'ṣṭadalam} \getsiglum {E,L,N1,D1,U1,U2}\ekdsep </14-0-2>
 <14-0-2>{\selectlanguage {english}'ṣṭadale} \getsiglum {P}</14-0-2>
@@ -327,3 +327,5 @@
 <14-0-2>{\selectlanguage {english}\textbf {em.} daśāgulaṃ} \getsiglum {U2}</14-0-2>
 <14-0-2>\hskip 0.75em{\bfseries \LRnum {18}}~{\selectlanguage {english}jñānasaṃdhāna°}\ekdsep </14-0-2>
 <14-0-2>{\selectlanguage {english}jñānasaṃdhāne} \getsiglum {U2}</14-0-2>
+<14-0-2>\hskip 0.75em{\bfseries \LRnum {19}}~{\selectlanguage {english}karṇikā} \getsiglum {E,P,L,N1,U1,U2}\ekdsep </14-0-2>
+<14-0-2>{\selectlanguage {english}karṇi} \getsiglum {U2}</14-0-2>

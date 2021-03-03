@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.28)  3 MAR 2021 10:51
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.28)  3 MAR 2021 13:15
  restricted system commands enabled.
 **bindu.tex
 (./bindu.tex
@@ -7353,349 +7353,365 @@ U$[][]$
 @\math via @44 b=804 p=0 d=662596
 @\math via @45 b=2119 p=0 d=4542641
 @@58: line 7.0 t=4406624 -> @43
-  \TU/TeXGyreTermes(0)/bx/n/10 9 []\TU/TeXGyreTermes(0)/m/n/10 paśyan-
-@\discretionary via @44 b=43 p=50 d=15309
-@\discretionary via @45 b=0 p=50 d=2600
-@\discretionary via @46 b=111 p=50 d=17141
-@\discretionary via @47 b=628 p=50 d=419544
-@\discretionary via @48 b=2837 p=50 d=8107909
-@@59: line 7.0- t=1188092 -> @47
+  \TU/TeXGyreTermes(0)/bx/n/10 8--9 []\TU/TeXGyreTermes(0)/m/n/10 paśyan-
+@\discretionary via @45 b=40 p=50 d=5000
+@\discretionary via @46 b=10 p=50 d=12900
+@\discretionary via @47 b=206 p=50 d=59156
+@\discretionary via @48 b=1442 p=50 d=2110804
+@@59: line 7.0- t=827704 -> @47
 tīvācā[]] 
-@ via @46 b=10 p=0 d=10400
-@ via @47 b=12 p=0 d=10484
-@ via @48 b=406 p=0 d=173056
-@@60: line 7.2 t=779032 -> @47
+@ via @47 b=0 p=0 d=10100
+@ via @48 b=94 p=0 d=10816
+@@60: line 7.1 t=702608 -> @48
 []\TU/TeXGyreTermes(0)/bx/n/10 em.
-@\kern via @47 b=38 p=0 d=12304
-@\kern via @48 b=10 p=0 d=400
-@\kern via @49 b=4995 p=0 d=25050025
-@@61: line 7.2 t=692192 -> @48
+@\kern via @48 b=0 p=0 d=100
+@\kern via @49 b=2884 p=0 d=8375236
+@\kern via @50 b=6110 p=0 d=37464400
+@@61: line 7.2 t=691892 -> @48
  \TU/TeXGyreTermes(0)/m/n/10 paśyaṃ-
-@\discretionary via @49 b=151 p=50 d=28421
-@\discretionary via @50 b=638 p=50 d=442404
-@@62: line 7.0- t=121442 -> @49
+@\discretionary via @49 b=27 p=50 d=3869
+@\discretionary via @50 b=248 p=50 d=89064
+@@62: line 7.1- t=96890 -> @49
 tivācā[] 
-@ via @49 b=0 p=0 d=10100
-@ via @50 b=59 p=0 d=4761
-@@63: line 7.1 t=23818 -> @50
+@ via @49 b=28 p=0 d=11444
+@ via @50 b=4 p=0 d=196
+@@63: line 7.2 t=19253 -> @50
 U$[][]$
-@\math via @49 b=78 p=0 d=17744
-@\math via @50 b=0 p=0 d=100
-@@64: line 7.2 t=19157 -> @50
-   []gārha-
-@\discretionary via @51 b=1221 p=50 d=1517861
-@\discretionary via @52 b=2932 p=50 d=8657864
-@\discretionary via @53 b=7832 p=50 d=61499464
-@@65: line 8.0- t=100968148 -> @52
+@\math via @50 b=19 p=0 d=841
+@@64: line 7.3 t=19898 -> @50
+  \TU/TeXGyreTermes(0)/bx/n/10 9 []\TU/TeXGyreTermes(0)/m/n/10 gārha-
+@\discretionary via @51 b=338 p=50 d=123604
+@\discretionary via @52 b=1107 p=50 d=1250189
+@\discretionary via @53 b=3780 p=50 d=14366600
+@@65: line 8.0- t=72378235 -> @53
 p-
-@\discretionary via @51 b=841 p=50 d=726701
-@\discretionary via @52 b=2197 p=50 d=4873349
-@\discretionary via @53 b=6268 p=50 d=39415784
-@@66: line 8.0- t=97183633 -> @52
+@\discretionary via @51 b=189 p=50 d=42101
+@\discretionary via @52 b=733 p=50 d=554549
+@\discretionary via @53 b=2837 p=50 d=8107909
+@@66: line 8.0- t=66119544 -> @53
 atyāg-
-@\discretionary via @51 b=72 p=50 d=9224
-@\discretionary via @52 b=394 p=50 d=165716
-@\discretionary via @53 b=1881 p=50 d=3578381
-@\discretionary via @54 b=7576 p=50 d=57559896
-@@67: line 8.0- t=61590016 -> @53
+@\discretionary via @51 b=0 p=50 d=12600
+@\discretionary via @52 b=37 p=50 d=4709
+@\discretionary via @53 b=521 p=50 d=284461
+@\discretionary via @54 b=3375 p=50 d=11470725
+@@67: line 8.0- t=46901910 -> @54
 niḥ[]] 
-@ via @51 b=1 p=0 d=10121
-@ via @52 b=61 p=0 d=5041
-@ via @53 b=656 p=0 d=443556
-@ via @54 b=3861 p=0 d=14984641
-@@68: line 8.0 t=50415826 -> @54
+@ via @52 b=0 p=0 d=10100
+@ via @53 b=86 p=0 d=9216
+@ via @54 b=1348 p=0 d=1844164
+@ via @55 b=5607 p=0 d=31550689
+@@68: line 8.0 t=37275349 -> @54
 []\TU/TeXGyreTermes(0)/bx/n/10 em.
-@\kern via @52 b=2 p=0 d=10144
-@\kern via @53 b=38 p=0 d=2304
-@\kern via @54 b=832 p=0 d=708964
-@\kern via @55 b=3668 p=0 d=13527684
-@@69: line 8.0 t=36140149 -> @54
+@\kern via @53 b=1 p=0 d=10121
+@\kern via @54 b=135 p=0 d=21025
+@\kern via @55 b=1253 p=0 d=1595169
+@@69: line 8.0 t=35452210 -> @54
  \TU/TeXGyreTermes(0)/m/n/10 gārhasy-
-@\discretionary via @54 b=12 p=50 d=22984
-@\discretionary via @55 b=30 p=50 d=4100
-@\discretionary via @56 b=6348 p=50 d=40426664
-@@70: line 8.1- t=34423896 -> @55
+@\discretionary via @55 b=3 p=50 d=12669
+@\discretionary via @56 b=3068 p=50 d=9476584
+@@70: line 8.0- t=14658662 -> @56
 atyo-
-@\discretionary via @55 b=14 p=50 d=13076
-@\discretionary via @56 b=2781 p=50 d=7792181
-@\discretionary via @57 b=7740 p=50 d=60065000
-@@71: line 8.0- t=12974259 -> @56
+@\discretionary via @56 b=1028 p=50 d=1079944
+@\discretionary via @57 b=3724 p=50 d=13945256
+@@71: line 8.0- t=6262022 -> @56
 g-
-@\discretionary via @56 b=2065 p=50 d=4308125
-@\discretionary via @57 b=6188 p=50 d=38417704
-@@72: line 8.0- t=9490203 -> @56
+@\discretionary via @56 b=674 p=50 d=470356
+@\discretionary via @57 b=2790 p=50 d=7842500
+@@72: line 8.0- t=5652434 -> @56
 niḥ[] 
-@ via @56 b=1072 p=0 d=1170724
-@ via @57 b=3838 p=0 d=14807104
-@@73: line 8.0 t=6352802 -> @56
+@ via @56 b=244 p=0 d=64516
+@ via @57 b=1472 p=0 d=2196324
+@ via @58 b=6741 p=0 d=45576001
+@@73: line 8.0 t=5246594 -> @56
 U$[][]$
-@\math via @56 b=233 p=0 d=59049
-@\math via @57 b=1297 p=0 d=1708249
-@\math via @58 b=5637 p=0 d=31888609
-@@74: line 8.0 t=5241127 -> @56
-  \TU/TeXGyreTermes(0)/bx/n/10 12 []\TU/TeXGyreTermes(0)/m/n/10 °go-
-@\discretionary via @57 b=0 p=50 d=2600
-@\discretionary via @58 b=172 p=50 d=35624
-@\discretionary via @59 b=3536 p=50 d=12586616
-@@75: line 8.0- t=4442248 -> @58
+@\math via @56 b=14 p=0 d=576
+@\math via @57 b=332 p=0 d=116964
+@\math via @58 b=2469 p=0 d=6145441
+@@74: line 8.0 t=4902415 -> @57
+  \TU/TeXGyreTermes(0)/bx/n/10 11 []\TU/TeXGyreTermes(0)/m/n/10 °go-
+@\discretionary via @58 b=6 p=50 d=12756
+@\discretionary via @59 b=2698 p=50 d=7345764
+@@75: line 8.2- t=4419380 -> @58
 caraṃ[] 
-@ via @58 b=0 p=0 d=10100
-@ via @59 b=896 p=0 d=820836
-@ via @60 b=6641 p=0 d=44245801
-@@76: line 8.0 t=2008928 -> @59
+@ via @59 b=574 p=0 d=341056
+@ via @60 b=5245 p=0 d=27615025
+@@76: line 8.0 t=1168760 -> @59
 EPLN$[][]$D$[][]$U$[][]$] 
-@ via @60 b=12 p=0 d=484
-@ via @61 b=772 p=0 d=621524
-@ via @62 b=7273 p=0 d=53042089
-@@77: line 8.2 t=779516 -> @60
+@ via @60 b=1 p=0 d=121
+@ via @61 b=419 p=0 d=194041
+@ via @62 b=5533 p=0 d=30724849
+@@77: line 8.2 t=702729 -> @60
 []go-
-@\discretionary via @60 b=72 p=50 d=9224
-@\discretionary via @61 b=43 p=50 d=5309
-@\discretionary via @62 b=2134 p=50 d=4609236
-@@78: line 8.1- t=697501 -> @61
+@\discretionary via @61 b=8 p=50 d=2824
+@\discretionary via @62 b=1454 p=50 d=2155796
+@@78: line 8.2- t=694716 -> @61
 caratāṃ[] 
-@ via @62 b=69 p=0 d=6241
-@ via @63 b=2351 p=0 d=5574321
-@@79: line 8.1 t=127683 -> @62
+@ via @62 b=17 p=0 d=729
+@ via @63 b=1565 p=0 d=2490625
+@@79: line 8.1 t=97619 -> @62
 U$[][]$
-@\math via @62 b=0 p=0 d=10100
-@\math via @63 b=500 p=0 d=260100
-@\math via @64 b=6173 p=0 d=38239489
-@@80: line 8.2 t=131542 -> @62
-   []bha-
-@\discretionary via @63 b=11 p=50 d=2941
-@\discretionary via @64 b=208 p=50 d=60024
-@\discretionary via @65 b=2065 p=50 d=4318125
-@\discretionary via @66 b=2913 p=50 d=8556429
-@@81: line 8.2- t=26759 -> @63
+@\math via @62 b=25 p=0 d=11225
+@\math via @63 b=261 p=0 d=83441
+@\math via @64 b=2828 p=0 d=8064244
+@@80: line 8.0 t=102694 -> @63
+@@81: line 8.3 t=108115 -> @62
+  \TU/TeXGyreTermes(0)/bx/n/10 12 []\TU/TeXGyreTermes(0)/m/n/10 bha-
+@\discretionary via @64 b=0 p=50 d=2600
+@\discretionary via @65 b=896 p=50 d=833336
+@\discretionary via @66 b=1400 p=50 d=2000600
+@\discretionary via @67 b=5637 p=50 d=31901109
+@@82: line 8.2- t=22498 -> @64
 vati[] 
-@ via @64 b=15 p=0 d=625
-@ via @65 b=800 p=0 d=656100
-@ via @66 b=1270 p=0 d=1638400
-@ via @67 b=5302 p=0 d=28217344
-@@82: line 8.1 t=19782 -> @64
+@ via @65 b=237 p=0 d=61009
+@ via @66 b=463 p=0 d=223729
+@ via @67 b=2951 p=0 d=8767521
+@@83: line 9.0 t=55669431 -> @67
 EPLN$[][]$D$[][]$U$[][]$] 
-@ via @67 b=0 p=0 d=10100
-@ via @68 b=165 p=0 d=30625
-@ via @69 b=3364 p=0 d=11383876
-@@83: line 9.0 t=47524025 -> @69
+@ via @68 b=14 p=0 d=576
+@ via @69 b=1281 p=0 d=1666681
+@@84: line 9.0 t=37118891 -> @69
 []yāti[] 
-@ via @68 b=0 p=0 d=10100
-@ via @69 b=359 p=0 d=136161
-@ via @70 b=6300 p=0 d=39816100
-@@84: line 9.0 t=36276310 -> @69
+@ via @69 b=39 p=0 d=2401
+@ via @70 b=3209 p=0 d=10361961
+@@85: line 9.0 t=25020623 -> @70
 U$[][]$
-@\math via @69 b=6 p=0 d=10256
-@\math via @70 b=1796 p=0 d=3261636
-@\math via @71 b=5667 p=0 d=32228329
-@\math via @72 b=7433 p=0 d=55398249
-@@85: line 9.2 t=36150405 -> @69
+@\math via @69 b=12 p=0 d=10484
+@\math via @70 b=677 p=0 d=471969
+@\math via @71 b=3019 p=0 d=9174841
+@\math via @72 b=4205 p=0 d=17766225
+@@86: line 9.0 t=15130631 -> @70
    []’ṣṭadalam[] 
-@ via @71 b=0 p=0 d=10100
-@ via @72 b=6 p=0 d=10256
-@ via @73 b=303 p=0 d=97969
-@ via @74 b=3049 p=0 d=9357481
-@@86: line 9.0 t=6450771 -> @73
+@ via @71 b=48 p=0 d=13364
+@ via @72 b=3 p=0 d=10169
+@ via @73 b=48 p=0 d=3364
+@ via @74 b=1377 p=0 d=1923769
+@@87: line 9.1 t=5249958 -> @73
 ELN$[][]$D$[][]$U$[][]$U$[][]$] 
-@ via @75 b=11 p=0 d=10441
-@ via @76 b=1917 p=0 d=3713329
-@@87: line 9.2 t=4452689 -> @75
+@ via @75 b=5 p=0 d=225
+@ via @76 b=659 p=0 d=447561
+@@88: line 9.0 t=1616321 -> @76
 []’ṣṭadale[] 
-@ via @76 b=0 p=0 d=10100
-@@88: line 9.2 t=2019028 -> @76
+@ via @77 b=5359 p=0 d=28836161
+@@89: line 9.0 t=29538890 -> @77
 P 
-@ via @76 b=55 p=0 d=14225
-@ via @77 b=4543 p=0 d=20739809
-@ via @78 b=7925 p=0 d=62964225
-@@89: line 9.3 t=2023153 -> @76
+@ via @77 b=2293 p=0 d=5313809
+@ via @78 b=4543 p=0 d=20739809
+@@90: line 9.0 t=6016538 -> @77
   []ad-
-@\discretionary via @77 b=314 p=50 d=117476
-@\discretionary via @78 b=896 p=50 d=833336
-@@90: line 9.0- t=896992 -> @77
-ho-
 @\discretionary via @77 b=61 p=50 d=7541
-@\discretionary via @78 b=314 p=50 d=117476
+@\discretionary via @78 b=314 p=50 d=127476
 @\discretionary via @79 b=5756 p=50 d=33249256
-@@91: line 9.1- t=787057 -> @77
-mukhaṃ 
-@ via @78 b=38 p=0 d=12304
-@ via @79 b=536 p=0 d=298116
-@ via @80 b=6396 p=0 d=41046836
-@@92: line 9.0 t=425799 -> @79
-ka-
-@\discretionary via @79 b=31 p=50 d=4181
-@\discretionary via @80 b=1609 p=50 d=2633661
-@\discretionary via @81 b=4479 p=50 d=20173621
-@@93: line 9.1- t=131864 -> @79
-malaṃ[] 
-@ via @80 b=49 p=0 d=3481
-@ via @81 b=597 p=0 d=378449
-@ via @82 b=3849 p=0 d=14891881
-@@94: line 9.1 t=135023 -> @80
-EN$[][]$D$[][]$U$[][]$U$[][]$] 
-@ via @83 b=3977 p=0 d=15896169
-@@95: line 10.0 t=63420194 -> @83
-[]ad-
-@\discretionary via @83 b=791 p=50 d=644101
-@\discretionary via @84 b=4543 p=50 d=20732309
-@@96: line 10.0- t=48168126 -> @83
+@@91: line 9.1- t=710270 -> @77
 ho-
-@\discretionary via @83 b=203 p=50 d=47869
-@\discretionary via @84 b=2119 p=50 d=4535141
-@@97: line 10.0- t=40811451 -> @84
-mukhaka-
-@\discretionary via @84 b=1 p=50 d=12621
-@\discretionary via @85 b=1014 p=50 d=1061076
-@@98: line 10.2- t=36288931 -> @84
-malaṃ[] 
-@ via @85 b=4 p=0 d=196
-@@99: line 10.2 t=36150601 -> @85
-L 
-@ via @86 b=2846 p=0 d=8156736
-@@100: line 10.0 t=14607507 -> @86
-[]mukhaṃ 
-@ via @86 b=78 p=0 d=17744
-@@101: line 10.3 t=6468515 -> @86
+@\discretionary via @77 b=1 p=50 d=2621
+@\discretionary via @78 b=61 p=50 d=17541
+@\discretionary via @79 b=3260 p=50 d=10695400
+@@92: line 9.1- t=712257 -> @78
+@@93: line 9.2- t=705350 -> @77
+mukhaṃ 
+@ via @79 b=127 p=0 d=18769
+@ via @80 b=2027 p=0 d=4149369
+@ via @81 b=2027 p=0 d=4159369
+@@94: line 9.0 t=116388 -> @79
 ka-
-@\discretionary via @87 b=4739 p=50 d=22565501
-@@102: line 10.0- t=27018190 -> @87
+@\discretionary via @79 b=0 p=50 d=2600
+@\discretionary via @80 b=325 p=50 d=114725
+@\discretionary via @81 b=325 p=50 d=124725
+@\discretionary via @82 b=4479 p=50 d=20173621
+@@95: line 9.2- t=100219 -> @79
 malaṃ[] 
-@ via @87 b=334 p=0 d=128336
-@@103: line 10.0 t=4581025 -> @87
+@ via @80 b=0 p=0 d=10100
+@ via @81 b=0 p=0 d=100
+@ via @82 b=597 p=0 d=378449
+@ via @83 b=3849 p=0 d=14891881
+@@96: line 9.2 t=108215 -> @81
+EN$[][]$D$[][]$U$[][]$U$[][]$] 
+@ via @84 b=3977 p=0 d=15896169
+@@97: line 10.0 t=53015060 -> @84
+[]ad-
+@\discretionary via @84 b=791 p=50 d=644101
+@\discretionary via @85 b=4543 p=50 d=20732309
+@@98: line 10.0- t=37762992 -> @84
+ho-
+@\discretionary via @84 b=203 p=50 d=47869
+@\discretionary via @85 b=2119 p=50 d=4535141
+@@99: line 10.0- t=29555764 -> @85
+mukhaka-
+@\discretionary via @85 b=1 p=50 d=12621
+@\discretionary via @86 b=1014 p=50 d=1051076
+@@100: line 10.0- t=16181707 -> @86
+malaṃ[] 
+@ via @86 b=4 p=0 d=10196
+@@101: line 10.2 t=15140827 -> @86
+L 
+@ via @87 b=2846 p=0 d=8156736
+@@102: line 10.0 t=13406694 -> @87
+[]mukhaṃ 
+@ via @87 b=78 p=0 d=17744
+@@103: line 10.3 t=5267702 -> @87
+ka-
+@\discretionary via @88 b=4739 p=50 d=22555501
+@@104: line 10.0- t=24171822 -> @88
+malaṃ[] 
+@ via @88 b=334 p=0 d=118336
+@@105: line 10.0 t=1734657 -> @88
 P 
-@ via @87 b=34 p=0 d=1936
-@ via @88 b=5331 p=0 d=28536281
-@@104: line 10.1 t=4454625 -> @87
+@ via @88 b=34 p=0 d=1936
+@ via @89 b=5331 p=0 d=28526281
+@@106: line 10.1 t=1618257 -> @88
   []var-
-@\discretionary via @88 b=116 p=50 d=28376
-@\discretionary via @89 b=2409 p=50 d=5864061
-@\discretionary via @90 b=5189 p=50 d=27042101
-@@105: line 10.0- t=2047404 -> @88
+@\discretionary via @89 b=116 p=50 d=18376
+@\discretionary via @90 b=2409 p=50 d=5854061
+@\discretionary via @91 b=5189 p=50 d=27042101
+@@107: line 10.0- t=11870599 -> @90
 tate[] 
-@ via @88 b=1 p=0 d=121
-@ via @89 b=624 p=0 d=411956
-@ via @90 b=1924 p=0 d=3740356
-@ via @91 b=4543 p=0 d=20729809
-@@106: line 10.2 t=2019149 -> @88
+@ via @89 b=1 p=0 d=10121
+@ via @90 b=624 p=0 d=401956
+@ via @91 b=1924 p=0 d=3740356
+@ via @92 b=4543 p=0 d=20729809
+@ via @93 b=4543 p=0 d=20739809
+@@108: line 10.0 t=4450626 -> @91
 EPLN$[][]$D$[][]$U$[][]$] 
-@ via @92 b=594 p=0 d=364816
-@ via @93 b=1859 p=0 d=3493161
-@@107: line 10.0 t=790615 -> @92
+@ via @94 b=594 p=0 d=364816
+@ via @95 b=1859 p=0 d=3503161
+@@109: line 10.0 t=481204 -> @94
 []asti[] 
-@ via @92 b=4 p=0 d=10196
-@ via @93 b=127 p=0 d=18769
-@ via @94 b=5696 p=0 d=32558436
-@@108: line 10.0 t=150633 -> @93
+@ via @94 b=4 p=0 d=10196
+@ via @95 b=127 p=0 d=28769
+@ via @96 b=5696 p=0 d=32568436
+@@110: line 10.0 t=128988 -> @95
+@@111: line 10.2 t=126584 -> @94
 U$[][]$
-@\math via @93 b=0 p=0 d=100
-@\math via @94 b=1325 p=0 d=1782225
-@@109: line 10.2 t=131964 -> @93
+@\math via @95 b=0 p=0 d=100
+@\math via @96 b=1325 p=0 d=1792225
+@@112: line 10.2 t=100319 -> @95
    []bhaiśak-
-@\discretionary via @95 b=2582 p=50 d=6720964
-@\discretionary via @96 b=4832 p=50 d=23457464
-@@110: line 11.0- t=70141158 -> @95
+@\discretionary via @97 b=2582 p=50 d=6720964
+@\discretionary via @98 b=4832 p=50 d=23457464
+@@113: line 11.0- t=59736024 -> @97
 tiḥ[]] 
-@ via @95 b=981 p=0 d=982081
-@ via @96 b=2261 p=0 d=5157441
-@ via @97 b=4492 p=0 d=20268004
-@@111: line 11.0 t=53325567 -> @96
+@ via @97 b=981 p=0 d=982081
+@ via @98 b=2261 p=0 d=5157441
+@ via @99 b=4492 p=0 d=20268004
+@@114: line 11.0 t=42920433 -> @98
 []bahiśak-
-@\discretionary via @95 b=24 p=50 d=13656
-@\discretionary via @96 b=1 p=50 d=22621
-@\discretionary via @97 b=68 p=50 d=18584
-@\discretionary via @98 b=3657 p=50 d=13469389
-@@112: line 11.1- t=40830035 -> @97
+@\discretionary via @97 b=24 p=50 d=13656
+@\discretionary via @98 b=1 p=50 d=22621
+@\discretionary via @99 b=68 p=50 d=18584
+@\discretionary via @100 b=3657 p=50 d=13459389
+@@115: line 11.1- t=29574348 -> @99
 tiḥ[] 
-@ via @96 b=10 p=0 d=10400
-@ via @97 b=4 p=0 d=10196
-@ via @98 b=2181 p=0 d=4810481
-@@113: line 11.2 t=40821647 -> @97
+@ via @98 b=10 p=0 d=10400
+@ via @99 b=4 p=0 d=10196
+@ via @100 b=2181 p=0 d=4800481
+@@116: line 11.0 t=20982188 -> @100
 U$[][]$
-@\math via @97 b=46 p=0 d=13136
-@\math via @98 b=524 p=0 d=295156
-@\math via @99 b=5756 p=0 d=33256756
-@@114: line 11.0 t=36584087 -> @98
+@\math via @99 b=46 p=0 d=13136
+@\math via @100 b=524 p=0 d=285156
+@\math via @101 b=5756 p=0 d=33256756
+@@117: line 11.0 t=16466863 -> @100
   \TU/TeXGyreTermes(0)/bx/n/10 13 []\TU/TeXGyreTermes(0)/m/n/10 daśāṅgu-
-@\discretionary via @99 b=0 p=50 d=2600
-@\discretionary via @100 b=12 p=50 d=12984
-@\discretionary via @101 b=2781 p=50 d=7802181
-@\discretionary via @102 b=4899 p=50 d=24110781
-@@115: line 11.0- t=14270696 -> @101
+@\discretionary via @101 b=0 p=50 d=2600
+@\discretionary via @102 b=12 p=50 d=12984
+@\discretionary via @103 b=2781 p=50 d=7802181
+@\discretionary via @104 b=4899 p=50 d=24110781
+@@118: line 11.0- t=13069883 -> @103
 laṃ[]] 
-@ via @100 b=27 p=0 d=11369
-@ via @101 b=836 p=0 d=725716
-@ via @102 b=1881 p=0 d=3575881
-@@116: line 11.0 t=7194231 -> @101
+@ via @102 b=27 p=0 d=11369
+@ via @103 b=836 p=0 d=725716
+@ via @104 b=1881 p=0 d=3575881
+@@119: line 11.0 t=5993418 -> @103
 []\TU/TeXGyreTermes(0)/bx/n/10 em.
-@\kern via @101 b=48 p=0 d=13364
-@\kern via @102 b=252 p=0 d=68644
-@\kern via @103 b=4120 p=0 d=17056900
-@@117: line 11.1 t=6481879 -> @101
+@\kern via @103 b=48 p=0 d=13364
+@\kern via @104 b=252 p=0 d=68644
+@\kern via @105 b=4120 p=0 d=17056900
+@@120: line 11.1 t=5281066 -> @103
  \TU/TeXGyreTermes(0)/m/n/10 daśāgu-
-@\discretionary via @103 b=80 p=50 d=10600
-@\discretionary via @104 b=1038 p=50 d=1100804
-@\discretionary via @105 b=2608 p=50 d=6866424
-@\discretionary via @106 b=8189 p=50 d=67236101
-@@118: line 11.1- t=4591625 -> @103
+@\discretionary via @105 b=80 p=50 d=10600
+@\discretionary via @106 b=1038 p=50 d=1100804
+@\discretionary via @107 b=2608 p=50 d=6866424
+@\discretionary via @108 b=8189 p=50 d=67226101
+@@121: line 11.1- t=1745257 -> @105
 laṃ[] 
-@ via @103 b=3 p=0 d=10169
-@ via @104 b=314 p=0 d=104976
-@ via @105 b=1137 p=0 d=1315609
-@ via @106 b=4531 p=0 d=20630681
-@@119: line 11.0 t=3363013 -> @105
+@ via @105 b=3 p=0 d=10169
+@ via @106 b=314 p=0 d=104976
+@ via @107 b=1137 p=0 d=1315609
+@ via @108 b=4531 p=0 d=20620681
+@@122: line 11.0 t=1723233 -> @106
 U$[][]$
-@\math via @103 b=36 p=0 d=12116
-@\math via @104 b=19 p=0 d=841
-@\math via @105 b=223 p=0 d=54289
-@\math via @106 b=1466 p=0 d=2188576
-@@120: line 11.0 t=2101693 -> @105
+@\math via @105 b=36 p=0 d=12116
+@\math via @106 b=19 p=0 d=841
+@\math via @107 b=223 p=0 d=54289
+@\math via @108 b=1466 p=0 d=2178576
+@@123: line 11.1 t=1619098 -> @106
   \TU/TeXGyreTermes(0)/bx/n/10 18 []\TU/TeXGyreTermes(0)/m/n/10 jñā-
-@\discretionary via @106 b=0 p=50 d=2600
-@\discretionary via @107 b=3826 p=50 d=14717396
-@@121: line 11.2- t=2021749 -> @106
+@\discretionary via @108 b=0 p=50 d=12600
+@\discretionary via @109 b=3826 p=50 d=14717396
+@@124: line 11.2- t=4463226 -> @108
 nasaṃd-
-@\discretionary via @107 b=430 p=50 d=196100
-@\discretionary via @108 b=2080 p=50 d=4370600
-@@122: line 11.0- t=986715 -> @107
+@\discretionary via @109 b=430 p=50 d=196100
+@\discretionary via @110 b=2080 p=50 d=4370600
+@\discretionary via @111 b=2080 p=50 d=4380600
+@@125: line 11.0- t=677304 -> @109
 hāna°[]] 
-@ via @107 b=3 p=0 d=10169
-@ via @108 b=242 p=0 d=63504
-@ via @109 b=3635 p=0 d=13296025
-@@123: line 11.0 t=214137 -> @108
+@ via @109 b=3 p=0 d=10169
+@ via @110 b=242 p=0 d=63504
+@ via @111 b=242 p=0 d=73504
+@ via @112 b=3635 p=0 d=13296025
+@@126: line 11.0 t=192492 -> @110
 []jñā-
-@\discretionary via @108 b=1 p=50 d=12621
-@\discretionary via @109 b=614 p=50 d=401876
-@\discretionary via @110 b=5787 p=50 d=33617709
-@@124: line 11.2- t=163254 -> @108
+@\discretionary via @110 b=1 p=50 d=12621
+@\discretionary via @111 b=1 p=50 d=2621
+@\discretionary via @112 b=614 p=50 d=401876
+@\discretionary via @113 b=5787 p=50 d=33617709
+@@127: line 11.2- t=129205 -> @111
 nasaṃd-
-@\discretionary via @109 b=6 p=50 d=2756
-@\discretionary via @110 b=614 p=50 d=401876
-@\discretionary via @111 b=3250 p=50 d=10630100
-@@125: line 11.2- t=134720 -> @109
+@\discretionary via @112 b=6 p=50 d=2756
+@\discretionary via @113 b=614 p=50 d=401876
+@\discretionary via @114 b=3250 p=50 d=10630100
+@@128: line 11.2- t=103075 -> @112
 hāne[] 
-@ via @110 b=50 p=0 d=3600
-@ via @111 b=874 p=0 d=781456
-@ via @112 b=7851 p=0 d=61795321
-@@126: line 12.0 t=54107023 -> @111
+@ via @113 b=50 p=0 d=3600
+@ via @114 b=874 p=0 d=781456
+@ via @115 b=7851 p=0 d=61795321
+@@129: line 12.0 t=43701889 -> @114
+U$[][]$
+@\math via @113 b=1 p=0 d=10121
+@\math via @114 b=92 p=0 d=10404
+@\math via @115 b=2726 p=0 d=7485696
+@\math via @116 b=7576 p=0 d=57547396
+@@130: line 12.0 t=37060044 -> @115
+  \TU/TeXGyreTermes(0)/bx/n/10 19 []\TU/TeXGyreTermes(0)/m/n/10 karṇikā[] 
+@ via @115 b=46 p=0 d=13136
+@ via @116 b=4 p=0 d=10196
+@ via @117 b=578 p=0 d=345744
+@@131: line 12.0 t=16812607 -> @117
+EPLN$[][]$U$[][]$U$[][]$] 
+@ via @118 b=99 p=0 d=11881
+@ via @119 b=1762 p=0 d=3139984
+@@132: line 12.0 t=9133402 -> @119
+[]karṇi[] 
+@ via @118 b=82 p=0 d=18464
+@ via @119 b=61 p=0 d=5041
+@ via @120 b=2158 p=0 d=4700224
+@@133: line 12.1 t=5998459 -> @119
 U$[][]$[] 
-@\par via @110 b=1 p=-10000 d=10121
-@\par via @111 b=0 p=-10000 d=10100
-@\par via @112 b=0 p=-10000 d=100
-@\par via @113 b=0 p=-10000 d=100
-@\par via @114 b=0 p=-10000 d=10100
-@\par via @115 b=0 p=-10000 d=10100
-@\par via @116 b=0 p=-10000 d=10100
-@\par via @117 b=0 p=-10000 d=100
-@\par via @118 b=0 p=-10000 d=100
 @\par via @119 b=0 p=-10000 d=10100
-@\par via @120 b=0 p=-10000 d=10100
+@\par via @120 b=0 p=-10000 d=100
 @\par via @121 b=0 p=-10000 d=100
 @\par via @122 b=0 p=-10000 d=10100
-@\par via @123 b=0 p=-10000 d=10100
+@\par via @123 b=0 p=-10000 d=100
 @\par via @124 b=0 p=-10000 d=100
-@\par via @125 b=0 p=-10000 d=100
+@\par via @125 b=0 p=-10000 d=10100
 @\par via @126 b=0 p=-10000 d=10100
-@@127: line 12.2- t=134820 -> @125
+@\par via @127 b=0 p=-10000 d=100
+@\par via @128 b=0 p=-10000 d=100
+@\par via @129 b=0 p=-10000 d=10100
+@\par via @130 b=0 p=-10000 d=10100
+@\par via @131 b=0 p=-10000 d=10100
+@\par via @132 b=0 p=-10000 d=10100
+@\par via @133 b=0 p=-10000 d=100
+@@134: line 12.2- t=103175 -> @128
 
 @firstpass
 [] 
@@ -8752,15 +8768,45 @@ strong.
 @\discretionary via @117 b=36 p=50 d=14616
 @@136: line 12.1- t=70408 -> @117
 वति।[][] 
-@\par via @120 b=1 p=-10000 d=5121
-@\par via @121 b=0 p=-10000 d=5100
-@\par via @122 b=0 p=-10000 d=5100
-@\par via @123 b=0 p=-10000 d=5100
-@\par via @124 b=0 p=-10000 d=100
-@\par via @125 b=0 p=-10000 d=5100
-@\par via @126 b=0 p=-10000 d=5100
-@\par via @127 b=0 p=-10000 d=5100
-@\par via @128 b=0 p=-10000 d=100
+@ via @120 b=1 p=0 d=121
+@ via @121 b=51 p=0 d=3721
+@@137: line 12.1 t=48714 -> @121
+@@138: line 12.2 t=47362 -> @120
+त
+@\discretionary via @121 b=0 p=50 d=12600
+@\discretionary via @122 b=20 p=50 d=13400
+@@139: line 12.1- t=56665 -> @122
+@@140: line 12.2- t=57593 -> @121
+न्म
+@\discretionary via @122 b=6 p=50 d=12756
+@@141: line 12.2- t=56021 -> @122
+ध्ये प्रा
+@\discretionary via @123 b=6 p=50 d=12756
+@@142: line 12.2- t=37589 -> @123
+ण
+@\discretionary via @123 b=9 p=50 d=12861
+@\discretionary via @124 b=140 p=50 d=35000
+@@143: line 12.2- t=37694 -> @123
+वा
+@\discretionary via @124 b=0 p=50 d=2600
+@\discretionary via @125 b=124 p=50 d=30456
+@@144: line 12.2- t=37353 -> @124
+योः 
+@ via @125 b=1 p=0 d=121
+@ via @126 b=11 p=0 d=441
+@ via @127 b=147 p=0 d=34649
+@@145: line 12.2 t=38745 -> @126
+स्था
+@\discretionary via @127 b=35 p=50 d=14525
+@\discretionary via @128 b=15 p=50 d=3125
+@@146: line 12.1- t=78315 -> @128
+नम् अष्टदलकमलमध्ये लिंगाकार
+ा [][][]कर्णिका[] कथ्यते। 
+@ via @129 b=5 p=0 d=10225
+@ via @130 b=109 p=0 d=14161
+@ via @131 b=109 p=0 d=24161
+@@147: line 13.0 t=220419 -> @130
+[][] 
 @\par via @129 b=0 p=-10000 d=15100
 @\par via @130 b=0 p=-10000 d=15100
 @\par via @131 b=0 p=-10000 d=5100
@@ -8769,7 +8815,18 @@ strong.
 @\par via @134 b=0 p=-10000 d=5100
 @\par via @135 b=0 p=-10000 d=5100
 @\par via @136 b=0 p=-10000 d=5100
-@@137: line 12.2- t=29933 -> @123
+@\par via @137 b=0 p=-10000 d=100
+@\par via @138 b=0 p=-10000 d=100
+@\par via @139 b=0 p=-10000 d=5100
+@\par via @140 b=0 p=-10000 d=5100
+@\par via @141 b=0 p=-10000 d=5100
+@\par via @142 b=0 p=-10000 d=5100
+@\par via @143 b=0 p=-10000 d=5100
+@\par via @144 b=0 p=-10000 d=5100
+@\par via @145 b=0 p=-10000 d=100
+@\par via @146 b=0 p=-10000 d=5100
+@\par via @147 b=0 p=-10000 d=10100
+@@148: line 13.2- t=38845 -> @145
 
 @firstpass
 [][]\TU/TeXGyreTermes(0)/m/n/10 Add foot-note of en-try in \TU/TeXGyreTermes(0)
@@ -10379,13 +10436,13 @@ arises.[][]
 ] [15] [16] [17] (./bindu.aux))
 
 Here is how much of LuaTeX's memory you used:
- 11117 strings out of 478824
+ 11120 strings out of 478824
  125011,794899 words of node,token memory allocated
- 11996 words of node memory still in use:
-   3 hlist, 9 vlist, 1 rule, 53 glue, 3 kern, 1349 glyph, 508 attribute, 91 glue
-_spec, 255 attribute_list, 1 write nodes
-   avail lists: 2:3358,3:1370,4:114,5:981,6:44,7:9542,8:2,9:733,10:29,11:1060
- 30276 multiletter control sequences out of 65536+600000
+ 12203 words of node memory still in use:
+   3 hlist, 9 vlist, 1 rule, 53 glue, 3 kern, 1376 glyph, 514 attribute, 91 glue
+_spec, 258 attribute_list, 1 write nodes
+   avail lists: 2:3349,3:1412,4:118,5:981,6:44,7:9667,8:2,9:733,10:29,11:1096
+ 30279 multiletter control sequences out of 65536+600000
  83 fonts using 11338015 bytes
  98i,10n,141p,6276b,1521s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf></usr/local/texlive/20
@@ -10394,7 +10451,7 @@ local/texlive/2020/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-itali
 c.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/tex-gyre/texgyre
 termes-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/tex-gy
 re/texgyretermes-regular.otf>
-Output written on bindu.pdf (17 pages, 87867 bytes).
+Output written on bindu.pdf (17 pages, 88082 bytes).
 
 PDF statistics: 93 PDF objects out of 1000 (max. 8388607)
  58 compressed objects within 1 object stream
