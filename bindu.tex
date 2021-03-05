@@ -23,23 +23,32 @@
 %\NewDocumentCommand{\blem}{m}{{\lem[alt=\textbf{#1}]{#1}}
 
 \SetTEIxmlExport{autopar=false}
+
 \SetHooks{
-refnumstyle=\bfseries,
+  lemmastyle=\color{blue},
+  refnumstyle=\selectlanguage{english}\bfseries, 
 }
 
+
+%\DeclareApparatus{<...>}[<...>, lang=english]
+
+
 \DeclareApparatus{testium}[
-bhook = \selectlanguage{english},
+  %bhook = \selectlanguage{english},
+  lang=english,
   sep = {] }
 ]
 
 \DeclareApparatus{default}[
-  bhook = \selectlanguage{english},
+  %bhook = \selectlanguage{english},
+  lang=english,
   sep = {] },
   delim=\hskip 0.75em,
 rule=\rule{0.7in}{0.4pt}
 ]
 
 \DeclareApparatus{philcomm}[
+lang=english,
 sep={: },
 bhook=\selectlanguage{english},
 ]
@@ -58,18 +67,17 @@ bhook=\selectlanguage{english},
 \def\conj{\textrm{\foreignlanguage{english}{\footnotesize conj.\ }}} %prints conj. for conjectured in apparatus
 
 %%%%%%%%%%%%%%    Tattvabinduyoga - List of Witnesses   %%%%%%%%%%%%%%%%%%%
-
-\DeclareWitness{E}{E}{Printed Edition}[]    
-\DeclareWitness{P}{P}{Pune BORI 664}[]  
-\DeclareWitness{B}{B}{Bodleian 485}[]       
-\DeclareWitness{N1}{N\textsubscript{1}}{NGMPP 38/31}[]
+\DeclareWitness{E}{\selectlanguage{english}E}{Printed Edition}[]    
+\DeclareWitness{P}{\selectlanguage{english}P}{Pune BORI 664}[]  
+\DeclareWitness{B}{\selectlanguage{english}B}{Bodleian 485}[]       
+\DeclareWitness{N1}{\selectlanguage{english}N\textsubscript{1}}{NGMPP 38/31}[]
 %\DeclareWitness{N2}{\Jtwo}{Jodhpur 02232}[]  % too many simple writing mistakes  not collated further: 
 %\DeclareWitness{N3}{\Jthree}{Jodhpur 02233}[]  % 4 chapters, 93 jpgs,  very readable, but many writing mistakes
-\DeclareWitness{L}{L}{LALCHAND 5876}[]  
-\DeclareWitness{D1}{D\textsubscript{1}}{IGNCA 30019}[] 
-\DeclareWitness{D2}{D\textsubscript{2}}{IGNCA 30020}[]  % 4 chapters, 41 jpgs
-\DeclareWitness{U1}{U\textsubscript{1}}{SORI 1574}[]  % 4 chapters,  87 jpgs.   saṃvat 1724
-\DeclareWitness{U2}{U\textsubscript{2}}{SORI 6082}[]  %  fragment, 20 jpgs. 
+\DeclareWitness{L}{\selectlanguage{english}L}{LALCHAND 5876}[]  
+\DeclareWitness{D1}{\selectlanguage{english}D\textsubscript{1}}{IGNCA 30019}[] 
+\DeclareWitness{D2}{\selectlanguage{english}D\textsubscript{2}}{IGNCA 30020}[]  % 4 chapters, 41 jpgs
+\DeclareWitness{U1}{\selectlanguage{english}U\textsubscript{1}}{SORI 1574}[]  % 4 chapters,  87 jpgs.   saṃvat 1724
+\DeclareWitness{U2}{\selectlanguage{english}U\textsubscript{2}}{SORI 6082}[]  %  fragment, 20 jpgs. 
 %  Haṭhapradīpikā with (non-Sanskrit) Bhāṣya RORI Jodhpur ACC.NO.18552 
 %  Haṭhapradīpikā with (non-Sanskrit) commentary, RORI Alwar 952, 4 chapters,  colophon of the comm: iti śrīlāhorīmiśravrajabhūṣanaviracitāyāṃ bhāvārthadīpikāyāṃ caturthodhyāya ..    
 %  Haṭhapradīpikā (5 chapter) MSPP Jodhpur ACC.NO.02229/
@@ -120,7 +128,6 @@ surname=Liersch]
 %\TeXtoTEIPat{\begin {tadd}}{<span class="padd">}
 %\TeXtoTEIPat{\end {tadd}}{</span>}
 
-
 \TeXtoTEIPat{\\}{}
 %\TeXtoTEI{tl}{l}
 \TeXtoTEI{emph}{hi}
@@ -135,18 +142,14 @@ surname=Liersch]
 \TeXtoTEIPat{-}{ }
 \TeXtoTEIPat{\textcolor {#1}{#2}}{<hi rend="#1">#2</hi>} %korrekte Syntax mit xslt2 Problem
 
-
 \author{Nils Jacob Liersch}
 \title{Yogatattvabindu of Rāmacandra\\ A Critical Edition and Annotated Translation}
 \date{\today}
-
 
 \parindent=3pt
 \begin{document}
 \maketitle
 \clearpage
-
-
 
 \section{Conventions in the Critical Apparatus}
 \subsection{Sigla in the Critical Apparatus}
@@ -1113,13 +1116,31 @@ na
 %tanmadhye aṣṭadalaṃ adhomukhaṃ kamalaṃ vartate /   \U1
 %tanmadhye 'ṣṭadalaṃ adhomukhaṃ kamalaṃ asti /      \U2
 %-----------------------
-    tanmadhye \app{\lem[wit={E,L,N1,D1,U1,U2}]{'ṣṭadalam}
-      \rdg[wit={P}]{'ṣṭadale}}
-      \app{\lem[wit={E,N1,D1,U1,U2}]{adhomukhaṃ kamalaṃ}
+    tanmadhye \app{\lem[wit={E,L,N1,D1,U1,U2},alt={'ṣṭadalam}]{'ṣṭadalama}\rdg[wit={P}]{'ṣṭadale}}\app{\lem[wit={E,N1,D1,U1,U2},alt={adhomukhaṃ kamalaṃ}]{dhomukhaṃ kamalaṃ}
         \rdg[wit={L}]{adhomukhakamalaṃ}
         \rdg[wit={P}]{mukhaṃ kamalaṃ}}
       \app{\lem[wit={E,P,L,N1,D1,U1}]{vartate}
         \rdg[wit={U2}]{asti}}/    
+\end{prose}
+\end{edition}
+\begin{translation}
+  \ekddiv{type=trans}
+       \bigskip
+    \centerline{\textrm{\small{[Description of the fourth Cakra]}}}
+    \bigskip
+  \begin{tlate}
+The fourth lotus having twelve-petals exists in the middle at the heart. \extra{[The] Anāhatacakra is placed in the heart. [It is] white in color, has the quality of \textit{tamas}, [its] deity is Rudra, [its] power is Umā, [its] Ṛṣi is Hiraṇyagarbha, [its] mount is Nandi, [its] vitalwind is Prāṇa, in the body it is the light that causes fragmentation? (\textit{kalākaraṇa}), [its] state is deep sleep, [its] speech is \textit{paśyantī}\footnote{Add footnote of entry in \textit{Tāntrikābhidhānakośa}.}, [it is attributed to the] Sāmaveda, the fire of the house, Śivaliṅgam, the ability to attach everything on the earth [and] the uniform liberation. [It has] twelve petals, [associated with] twelve measures, [having the syllables] kaṃ khaṃ gaṃ ghaṃ ṇaṃ caṃ chaṃ jaṃ jhaṃ yaṃ taṃ [and] thaṃ. [Its] external measure [is]: Rudras wife, light (\textit{tejasā?}), glow, sphakadā?, consciousness (\textit{caitanyā}), bestower of Śiva, peace, Umā, Gaurī, Mātara, the flame [and] Prajvālinī.} Due to being made of [such an] intense light [the fourth lotus] is not in the range of sight. In its middle exists a lotus facing downward having eight petals.
+  \end{tlate}
+   \end{translation}
+ \end{alignment}
+\clearpage
+\begin{alignment}[
+    texts=edition[class="edition"];
+    translation[class="translation"],
+  ]
+  \begin{edition}
+     \ekddiv{type=ed}
+\begin{prose}
       \extra{manaś-cakre/ manodevatā/
         \app{\lem[]{bhaiśaktiḥ}
           \rdg[wit={U2}]{bahiśaktiḥ}}
@@ -1141,7 +1162,7 @@ na
 %tanmadhye prāṇavāyo  sthānam    aṣṭadalakamalamadhye liṃgākārā karṇikā  kathyate    \U1
 %tanmadhye prāṇavāyo  sthānam // aṣṭadalakamalamadhye liṃgākārā karṇikā  kathyate    \U2
 %-----------------------        
-tanmadhye prāṇavāyoḥ sthānam aṣṭadalakamalamadhye liṃgākārā \app{\lem[wit={E,P,L,N1,U1,U2}]{karṇikā}\rdg[wit={U2}]{karṇi}} kathyate/   
+tanmadhye prāṇavāyoḥ sthānam-aṣṭadalakamalamadhye liṃgākārā \app{\lem[wit={E,P,L,N1,U1,U2}]{karṇikā}\rdg[wit={U2}]{karṇi}} kathyate/   
 %-----------------------
 % \om                                                     \B
 %tasyāḥ karṇiketi saṃjñā tatkarṇikāmadhye padmarāgasamānavarṇāṃ guṣṭhapramāṇaikā puttalikā varttate //          \E  
@@ -1152,19 +1173,141 @@ tanmadhye prāṇavāyoḥ sthānam aṣṭadalakamalamadhye liṃgākārā \app
 %tasyāḥ kaliketi saṃjñā tatkalikāmadhye   padmarāgaratnasamānavarṇā aṃguṣṭhapramāṇāt ekā puttalikā varttate /   \U1
 %tasyāḥ kaliketi saṃjñā tatkalikāmadhye   padmarāgaratnasamānavarṇā  // aṃguṣṭhapramāṇā ekā puttalikā varttate / \U2
 %-----------------------
+tasyāḥ \app{\lem[wit={P,N1,D1,U1,U2}]{kaliketi}
+  \rdg[wit={L}]{kalikeli}
+  \rdg[wit={E}]{karṇiketi}}
+\app{\lem[wit={E,P,N1,D1,U1,U2}]{saṃjñā}
+  \rdg[wit={L}]{\textbf{omitted in}}}
+\app{\lem[wit={E,P,N1,D1,U1,U2}]{tatkalikāmadhye}
+  \rdg[wit={L}]{\textbf{omitted in}}}
+\app{\lem[]{padmarāgaratnasamānavarṇāṅguṣṭhapramāṇaikā}
+  \rdg[wit={E}]{\textbf{em.} padmarāgasamānavarṇāṃguṣṭhapramāṇaikā}
+  \rdg[wit={P,N1}]{padmarāgaratnasamānavarṇāṃ// aṃguṣṭhapramāṇā// ekā}
+  \rdg[wit={L}]{padmaratnasamānavarṇā aṃguṣṭhapramāṇā ekā}
+  \rdg[wit={D1,U1}]{padmarāgaratnasamānavarṇā aṃguṣṭhapramāṇāt ekā}
+  \rdg[wit={U2}]{padmarāgaratnasamānavarṇā// aṃguṣṭhapramāṇā ekā}} puttalikā vartate/   
+%The technical designation of her is kalikā. In the middle of this kalikā exists a single thumbsized (divine) figurine (puttalikā) being similiar to a ruby-gem in color. Her technical designation is embodied soul (jīva).
 %-----------------------
-\end{prose}
+%
+%tasyā  jīvasaṃjñā           tasyā  balamadhyasvarūpaṃ        koṭijihvābhir  vaktuṃ naiva śakyate // \E
+%tasyā  jīvasaṃjñā           tasyā  balam atha svarūpaṃ       koṭijihvābhir  vaktuṃ naiva śakyate // \P 
+%tasya                              bala sappa svarūpaṃ       koṭijihvāyābhi vaktuṃ na    śakyate // \L 
+%tasyāḥ jīveti saṃjñāḥ       tasyāḥ balaṃ atha ca svarūpaṃ    koṭijihvābhir  vaktuṃ na    śakyate // \N1
+%tasyāḥ jīveti saṃjña /      tasyāḥ balaṃ atha ca svarūpaṃ    koṭijihvābhir  vaktuṃ na    śakyate // \D1
+%tasyāḥ jīveti saṃjñā        tasyāḥ balaṃ atha ca svarūpaṃ    koṭijihvābhir  vaktuṃ na    śakyate // \U1
+%tasyā  jīvasaṃjñā //        tasya  balaṃ tasya atha svarūpaṃ koṭijihvābhir  vaktuṃ na    śakyate // \U2
+%-----------------------
+\app{\lem[wit={E,P}]{tasyā}
+     \rdg[wit={N1,D1,U1}]{tasyāḥ}
+     \rdg[wit={L}]{tasya}}
+\app{\lem[wit={U2}]{jīveti saṃjñā}
+  \rdg[wit={N1}]{jīveti saṃjñāḥ}
+  \rdg[wit={D1}]{jīveti saṃjña}
+  \rdg[wit={E,P,U2}]{jīvasaṃjñā}
+  \rdg[wit={L}]{\textbf{omitted in}}}
+\app{\lem[wit={E,P}]{tasyā}
+  \rdg[wit={N1,D1,U1}]{tasyāḥ}
+    \rdg[wit={U2}]{tasya}}
+    \app{\lem[wit={N1,D1,U1,U2}]{balaṃ atha ca svarūpaṃ}
+    \rdg[wit={P}]{balam atha svarūpaṃ}
+    \rdg[wit={U2}]{balaṃ tasya atha svarūpaṃ}
+    \rdg[wit={L}]{bala sappa svarūpaṃ}
+    \rdg[wit={E}]{balamadhyasvarūpaṃ}}
+  \app{\lem[wit={E,P,N1,D1,U1,U2}, alt={koṭijihvābhir}]{koṭijihvābhir-va}
+    \rdg[wit={L}]{koṭijihvāyābhi}}ktuṃ
+  \app{\lem[wit={L,N1,D1,U1,U2}]{na}
+    \rdg[wit={E,P}]{naiva}}
+  śakyate/
+%-----------------------  
+%Her technical designation is embodied soul. Not even with a thousand tongues it is possible to talk about her nature and her power.
+%-----------------------
+%asyā mūrter   dhyānakāraṇāt      svarga-pātāl--ākaśamanuṣyagandharvakinnaraguhyakavidyādharalokasambandhinyaḥ strīyo 'pi-------------------- vaśyā bhavanti / \E
+%asyā mūrter   dhyānakaraṇāt      svarga-pātāl--ākāśamanuṣyagandharvakiṃnaraguhyakavidyādharalokasaṃbaṃdhinyaḥ strīyo 'pi-------------------- vaśyā bhavanti / \P
+%asyā mūrtir   dhyānāt            svarga-pātāl--ākāśamanuṣyagaṃdharvakinnaraguhyakavidyādharalokasambandhinyaḥ strīyo 'pi-------------------- vaśyā bhavanti /L
+%asyāḥ mūrter  dhyānakaraṇāt      svarga-pātāla ākāśamanuṣyagaṃdharvakinnaraguhyakavidyādharalokasaṃbaṃdhinyaḥ strīyaḥ sādhakasya puruṣasya   vaśyā bhavanti // \N1
+%asyāḥ mūrter  dhyānakaraṇāt      svarga-pātāla ākāśamanuṣyagaṃdharvakiṃnaraguhyakavidyādharalokasaṃbaṃdhinyaḥ strīyaḥ sādhakasya puruṣasya   vaśyā bhavanti // \D1
+%asyāḥ mūrter  dhyānakaraṇāt      svarga-pātāla ākāśamanuṣyagaṃdharvakiṃnaraguhyakavidyādharalokasaṃbaṃdhinyaḥ strīyaḥ sādhakasya puruṣasya   vaśyā bhavanti // \U1
+%pṛthvī lokasaṃbaṃdhanyo pi striyaḥ vaśyā bhavaṃti/  
+%tasyāḥ mūrter dhyānaṃ karaṇāt // svarga-pātāl--ākāśamanuṣyagandharvakinnaraguhyakavidyādharalokasaṃbadhinya---striyo  pi---------------------vaśyā bhavaṃti // \U2
+
+%-----------------------
+%“Because of the exercise of meditation on this form the inhabitants of the universe (which are) Humans, Gandharvas, Kinnaras, Guhyakas, Vidyādharas and (their) females, in the heavenly world, underworld and open space are obedient to the will of the practicing person.”, is what said here.  
+%-----------------------
+   \app{\lem[wit={E,P,L}]{asyā}
+    \rdg[wit={N1,D1,U1}]{asyāḥ}
+    \rdg[wit={U2}]{tasyāḥ}}
+ \app{\lem[wit={E,P,N1,D1,U1,U2}, alt={mūrter}]{mūrte}
+    \rdg[wit={L}]{mūrtir}}
+   \app{\lem[wit={E,P,N1,D1,U1}, alt={dhyānakāraṇāt}]{rdhyānakāraṇāt}
+    \rdg[wit={U2}]{dhyānaṃ karaṇāt}
+    \rdg[wit={L}]{dhyānāt}}
+  svargapātālākaśamanuṣyagandharvakinnaraguhyakavidyādharaloka\app{\lem[wit={E,P,L,N1,D1,U1}]{saṃbandhinyaḥ}\rdg[wit={U2}]{saṃdadhinya}}
+  \app{\lem[wit={N1,D1,U1}]{strīyaḥ sādhakasya puruṣasya}
+    \rdg[wit={E,P,L}]{strīyo 'pi}
+      \rdg[wit={U2}]{striyo pi}}
+vaśyā bhavanti/\note[type=philcomm, labelb=s16, lem={bhavanti}]{\getsiglum{U1} adds a flawed phrase hereafter: \textit{pṛtvī lokasaṃbaṃdhanyo pi striyaḥ vaśyā bhavaṃti/}. I refrained to include it in the apparatus due to its redundance.}
+%-----------------------
+%ityatra kathyate// /E
+%ityatra kathyate// \P
+%ityatra kathyate// \L
+%ityatra kiṃ kathyate // \N1
+%ityaṃtra kiṃ kathyate // \D1
+%ityatra kiṃ kathyate vā \U1
+%  ityatra kathyate // \U2
+%-----------------------
+ityatra \app{\lem[wit={N1,D1,U1}]{kiṃ}
+  \rdg[wit={E,P,L,U2}]{\textbf{omitted in}}}
+\app{\lem[wit={E,P,L,N1,D1,U2}]{kathyate}
+  \rdg[wit={U1}]{kathyate vā}}//
+  \end{prose}
 \end{edition}
 \begin{translation}
   \ekddiv{type=trans}
-     \bigskip
-    \centerline{\textrm{\small{[Description of the fourth Cakra]}}}
-    \bigskip
- \begin{tlate}The fourth lotus having twelve-petals exists in the middle at the heart. \extra{[The] Anāhatacakra is placed in the heart. [It is] white in color, has the quality of \textit{tamas}, [its] deity is Rudra, [its] power is Umā, [its] Ṛṣi is Hiraṇyagarbha, [its] mount is Nandi, [its] vitalwind is Prāṇa, in the body it is the light that causes fragmentation? (\textit{kalākaraṇa}), [its] state is deep sleep, [its] speech is \textit{paśyantī}\footnote{Add footnote of entry in \textit{Tāntrikābhidhānakośa}.}, [it is attributed to the] Sāmaveda, the fire of the house, Śivaliṅgam, the ability to attach everything on the earth [and] the uniform liberation. [It has] twelve petals, [associated with] twelve measures, [having the syllables] kaṃ khaṃ gaṃ ghaṃ ṇaṃ caṃ chaṃ jaṃ jhaṃ yaṃ taṃ [and] thaṃ. [Its] external measure [is]: Rudras wife, light (\textit{tejasā?}), glow, sphakadā?, consciousness (\textit{caitanyā}), bestower of Śiva, peace, Umā, Gaurī, Mātara, the flame [and] Prajvālinī.} Due to being made of [such an] intense light [the fourth lotus] is not in the range of sight. In its middle exists a lotus facing downward having eight petals.\extra{The mind resides in this \textit{cakra}, [the] god [presiding over it] is the mind [itself], [its] power is Bhai, [its] Ṛṣi is the self. In the middle of the navel [exists] a place, being a lotus, its tube measures ten \textit{aṅgula}s, the water [being in] the tube is pure and facing upwards. In its middle is the location of a shining banana-flower. The mind is intended to rise upwards?. [There are] several options to arise in oneself. If the mind takes rest in the eastern petal [which is] while in color the natural law, fame, knowledge etc. [and] a clear intellect arises. [If the mind rests] in south-east, [which is] reddish in color, sleep, laziness, illusion and a weak mind arises. [If it rests] on the right south, [which is] black in color then anger is generated. [If it rests] in the southwest, [which is] blue in color a mind that is selfish arises. [If it rests] in the west, [which is] brown in color a mind of payfulness, laughing, and party-mood arises. [If it rests] in the northwest, [which is] dark in color a mind of restless thought arises. [If it rests] in the north, [which is] yellow in color a mind of great happiness, erotic and enjoyment arises. [If it rests] in north-east [which is] whitish in color a mind endowed with unified knowledge arises.} \end{tlate}
+ \begin{tlate}\extra{The mind resides in this \textit{cakra}, [the] god [presiding over it] is the mind [itself], [its] power is Bhai, [its] Ṛṣi is the self. In the middle of the navel [exists] a place, being a lotus, its tube measures ten \textit{aṅgula}s, the water [being in] the tube is pure and facing upwards. In its middle is the location of a shining banana-flower. The mind is intended to rise upwards?. [There are] several options to arise in oneself. If the mind takes rest in the eastern petal [which is] while in color the natural law, fame, knowledge etc. [and] a clear intellect arises. [If the mind rests] in south-east, [which is] reddish in color, sleep, laziness, illusion and a weak mind arises. [If it rests] on the right south, [which is] black in color then anger is generated. [If it rests] in the southwest, [which is] blue in color a mind that is selfish arises. [If it rests] in the west, [which is] brown in color a mind of payfulness, laughing, and party-mood arises. [If it rests] in the northwest, [which is] dark in color a mind of restless thought arises. [If it rests] in the north, [which is] yellow in color a mind of great happiness, erotic and enjoyment arises. [If it rests] in north-east [which is] whitish in color a mind endowed with unified knowledge arises.} It is said that in its middle is the place of the \textit{prāṇa}-vitalwind [and] in the middle [of] the eight-petalled lotus is a pericarp (\textit{karṇikā}) in the form of a \textit{liṅga}. The technical designation of her is kalikā. In the middle of this kalikā exists a single thumbsized (divine) figurine (puttalikā) being similiar to a ruby-gem in color. Her technical designation is embodied soul (\textit{jīva}). Not even with a thousand tongues it is possible to talk about her nature and her power. “Because of the exercise of meditation on this form the inhabitants of the universe (which are) Humans, Gandharvas, Kinnaras, Guhyakas, Vidyādharas and (their) females, in the heavenly world, underworld and open space are obedient to the will of the practicing person.”, is said here.   \end{tlate}
   \end{translation}
-
 \end{alignment}
 \end{document}
+
+
+\begin{alignment}[
+    texts=edition[class="edition"];
+    translation[class="translation"],
+  ]
+\begin{edition}
+  \ekddiv{type=ed}
+  \bigskip
+    \centerline{\textrm{\small{[Description of the fifth Cakra]}}}
+    \bigskip  
+    \begin{prose}
+%-----------------------      
+%-------pañcamaṃ kaṇṭhasthāne ṣoḍaśadalaṃ kamalaṃ      vartate //  \E
+%-------paṃcamaṃ kaṃṭhasthāne ṣoḍaśadalaṃ kamalaṃ      vartate     \P
+%-------paṃcamaṃ kaṃṭhasthāne ṣoḍaśadalaṃ kamalaṃ      vartate     \L
+%idānīṃ paṃcamaṃ kamalaṃ      ṣodaśadalaṃ kaṃṭhasthāne varttate // \N1
+%idānīṃ paṃcamaṃ kamalaṃ      ṣodaśadalaṃ kaṃṭhasthāne varttate // \D1 --------> Was in diesem Falle machen?
+%idānīṃ paṃcamaṃ kamalaṃ      ṣodaśadalaṃ kaṃṭhasthāne varttate // \U1
+%-------paṃcamaṃ viśuddhacakraṃ kaṃṭhastāne  \U2     
+%-----------------------
+%dhūmra?varṇe jīvodevatā// avidyāśaktiḥ// virāṭharṣiḥ// vāyurvāhanaṃ// udānavāyuḥ// jvālākalājālaṃdharobaṃdhaḥ mahākāraṇadeha// tūryāvasthā// parāvācā// atharvaṇavedaḥ// jaṃgamaliṅgaṃ jīvaprāptābhūmikā// sāyujyatāmokṣaḥ// ṣoḍaśadalāni// ṣoḍaśamātrāḥ// atarmātrār-carāḥ// aṃ āṃ iṃ īṃ u ūṃ ṛṃ ṝṃ ḷṃ ḹṃ eṃ aiṃ oṃ auṃ aṃ aṃḥ// bahirmātrāvidyā// avidyā// ichā// śakti// jñānaśaktiḥ// śatalā// mahāvidyā// mahāmāyā// buddhiḥ// tamasī// maitrā?// kumārī// maitrāyaṇī// rudrā// puṣṭa// siṃhanī// ajapājapasahasra/ 1000 gha 02 pa 046 akṣara 40//
+      
+%Now (follows the description of) the fifth lotus having sixteen petals (which) exists at the location of the throat.
+%-----------------------      
+%idānīṃ \varc{idānīṃ \nepal \dehlia}{\om \edprint \pune \lalchand}pañcamaṃ kamalaṃ ṣodaśadalaṃ kaṇṭhasthāne \varc{kamalaṃ ṣodaśadalaṃ kaṇṭhasthāne \nepal \dehlia}{kaṇṭasthāne ṣoḍaśadalaṃ kamalaṃ \edprint \pune \lalchand}vartate /
+
+
+
+    \end{prose}
+\end{edition}
+\begin{translation}
+  \ekddiv{type=trans}
+  \bigskip
+    \centerline{\textrm{\small{[Description of the fifth Cakra]}}}
+    \bigskip
+   \begin{tlate}\end{tlate}
+  \end{translation}
+ \end{alignment}
+
+
 
 
 %\begin{alignment}[

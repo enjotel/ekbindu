@@ -2,7 +2,7 @@
 This file is part of the `ekdosis' package
 
 ekdosis -- Typesetting TEI xml-compliant critical editions
-Copyright (C) 2020  Robert Alessi
+Copyright (C) 2020--2021  Robert Alessi
 
 Please send error reports and suggestions for improvements to Robert
 Alessi <alessi@robertalessi.net>
@@ -409,7 +409,13 @@ local texpatttotags = {
    {a="\\altrfont%s+", b=""},
    {a="\\mbox%s+{(.-)}", b="%1"},
    {a="\\LR%s+{(.-)}", b="%1"},
-   {a="\\RL%s+{(.-)}", b="%1"}
+   {a="\\RL%s+{(.-)}", b="%1"},
+   {a="\\%=%=%=%s?", b="—"},
+   {a="\\%-%-%-%s?", b="—"},
+   {a="\\%=%=%s?", b="–"},
+   {a="\\%-%-%s?", b="–"},
+   {a="\\%=%/%s?", b="‐"},
+   {a="\\%-%/%s?", b="‐"}
 }
 
 local envtotags = {
@@ -457,8 +463,16 @@ function ekdosis.newpatttotag(pat, repl)
    pat = string.gsub(pat, "([%[%]])", "%%%1")
    pat = string.gsub(pat, "%#[1-9]", "(.-)")
    repl = string.gsub(repl, "%#([1-9])", "%%%1")
-   table.insert(texpatttotags, { a = pat, b = repl })
-   table.sort(texpatttotags, function(a ,b) return(#a.a > #b.a) end)
+   if isintable(texpatttotags, pat)
+   then
+      local index = get_a_index(pat, texpatttotags)
+      table.remove(texpatttotags, index)
+      table.insert(texpatttotags, { a = pat, b = repl })
+      table.sort(texpatttotags, function(a ,b) return(#a.a > #b.a) end)
+   else
+      table.insert(texpatttotags, { a = pat, b = repl })
+      table.sort(texpatttotags, function(a ,b) return(#a.a > #b.a) end)
+   end
    return true
 end
 
@@ -1725,7 +1739,8 @@ function ekdosis.newapparatus(teitype,
 			      appsep,
 			      appbhook,
 			      appehook,
-			      applimit)
+			      applimit,
+			      applang)
    if isintable(apparatuses, teitype)
    then
       tex.print("\\unexpanded{\\PackageWarning{ekdosis}{\""
@@ -1739,10 +1754,21 @@ function ekdosis.newapparatus(teitype,
 				 sep = appsep,
 				 bhook = appbhook,
 				 ehook = appehook,
-				 limit = applimit})
+				 limit = applimit,
+				 lang = applang})
    end
    bagunits[teitype] = 1
    return true
+end
+
+function ekdosis.getapplang(teitype)
+   i = get_a_index(teitype, apparatuses)
+   if apparatuses[i].lang ~= ""
+   then
+      return apparatuses[i].lang
+   else
+      return "\\languagename"
+   end
 end
 
 function ekdosis.getappdelim(str)

@@ -15,7 +15,7 @@
 %% This file is part of the `ekdosis' package
 %% 
 %% ekdosis -- Typesetting TEI xml compliant critical editions
-%% Copyright (C) 2020  Robert Alessi
+%% Copyright (C) 2020--2021  Robert Alessi
 %% 
 %% Please send error reports and suggestions for improvements to Robert
 %% Alessi <alessi@robertalessi.net>
@@ -41,7 +41,7 @@
 %% Running "make inst" installs the files in the user's TeX tree.
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
 \ProvidesPackage{ekdosis}
-    [2020/11/04 v1.1 Typesetting TEI xml-compliant critical editions]
+    [2021/03/05 v1.2-dev Typesetting TEI xml-compliant critical editions]
 \RequirePackage{iftex}
 \RequireLuaTeX
 \RequirePackage{expkv-opt}
@@ -112,9 +112,11 @@
   store appfontsize = \ekd@appfontsize,
   store refnumstyle = \ekd@refnumstyle,
   store postrefnum = \ekd@postrefnum,
+  store lemmastyle = \ekd@lemmastyle,
   initial appfontsize = \footnotesize,
   initial refnumstyle = \bfseries,
-  initial postrefnum = ~
+  initial postrefnum = ~,
+  initial lemmastyle = {}
 }
 \NewDocumentCommand{\SetHooks}{m}{\ekvset{ekd@hooks}{#1}}
 \ekvdefinekeys{ekd@witness}{
@@ -239,6 +241,7 @@
   store bhook = \bhook@val,
   store ehook = \ehook@val,
   store maxentries = \limit@val,
+  store lang = \lang@val,
   initial direction = LR,
   initial delim = {},
   initial ehook = {\csname ekd@end@apparatus\endcsname}
@@ -257,7 +260,8 @@
     \luastringO{\sep@val},
     \luastringO{\bhook@val},
     \luastringO{\ehook@val},
-    \luastringO{\limit@val}
+    \luastringO{\limit@val},
+    \luastringO{\lang@val}
     )}
   \egroup
 }
@@ -265,6 +269,29 @@
 \NewDocumentCommand{\addentries}{O{\ekdan@type} m}{%
   \luadirect{ekdosis.addto_bagunits(\luastringO{#1}, \luastringN{#2})}%
   \ignorespaces
+}
+\NewDocumentCommand{\ekdpb}{o m}{%
+  \def\@tmpoarg{#1}%
+  \def\@tmpmarg{#2}%
+  \luadirect{ekdosis.dolnlab(\luastringN{#2})}%
+  \linelabel{\luadirect{tex.sprint(ekdosis.getlnlab())}}%
+  \def\tmp@ln{%
+    \getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}}}%
+  \def\tmp@pg{%
+    \getpagerefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}}}%
+  \IfNoValueTF{#1}
+  {\ifnum
+    \pdf@strcmp{\@tmpmarg}{\tmp@ln} = 0
+    \pagebreak
+    \fi}
+  {\ifnum
+    \pdf@strcmp{\@tmpoarg}{\tmp@pg} = 0
+    \ifnum
+    \pdf@strcmp{\@tmpmarg}{\tmp@ln} = 0
+    \pagebreak
+    \fi
+    \fi
+  }\ignorespaces
 }
 \newbool{do@app}
 \newif\ifekd@state
@@ -318,7 +345,9 @@
   initial delim = {},
   store rule = \ekd@default@rule,
   initial rule = \rule{0.4\columnwidth}{0.4pt},
-  noval norule = \def\ekd@default@rule{\mbox{}}
+  noval norule = \def\ekd@default@rule{\mbox{}},
+  store lang = \ekd@singleapp@lang,
+  initial lang = \ltx@ifpackageloaded{babel}{\languagename}{}
 }
 \NewDocumentCommand{\SetApparatus}{m}{
   \ekvset{default@app}{#1}
@@ -329,6 +358,8 @@
 \NewDocumentCommand{\SetBeginApparatus}{m}{\edef\ekd@begin@apparatus{#1}}
 \NewDocumentCommand{\SetEndApparatus}{m}{\edef\ekd@end@apparatus{#1}}
 \NewDocumentCommand{\SetUnitDelimiter}{m}{\def\ekd@unit@delim{#1}}
+\NewDocumentCommand{\SetApparatusLanguage}{m}{%
+  \def\ekd@singleapp@lang{#1}}
 \newif\iffootnoterule
 \footnoteruletrue
 \let\dflt@footnoterule\footnoterule
@@ -486,16 +517,17 @@
     =
     0
     \ifnum%
-    \getrefnumber{#1}
+    \pdf@strcmp{\getrefnumber{#1}}{\getrefnumber{#2}}
     =
-    \getrefnumber{#2}
+    0
     %
     \ifekd@mapps%
     \ifbool{subsq@unit@\ekdan@type}{%
       \ifnum%
-      \getrefnumber{#1}
+      \pdf@strcmp{\getrefnumber{#1}}{%
+        \getrefnumber{\luadirect{tex.sprint(ekdosis.getprevnotelab())}}}
       =
-      \getrefnumber{\luadirect{tex.sprint(ekdosis.getprevnotelab())}}
+      0
       \else
       \LRnum{\getrefnumber{#1}}% issue the no
       \fi%
@@ -505,9 +537,10 @@
     \ifsubsq@unit%
     %
     \ifnum%
-    \getrefnumber{#1}
+    \pdf@strcmp{\getrefnumber{#1}}{%
+      \getrefnumber{\luadirect{tex.sprint(ekdosis.getprevnotelab())}}}
     =
-    \getrefnumber{\luadirect{tex.sprint(ekdosis.getprevnotelab())}}
+    0
     \else
     \LRnum{\getrefnumber{#1}}% issue the no
     \fi
@@ -542,16 +575,19 @@
     =
     0
     \ifnum%
-    \getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}
+    \pdf@strcmp{%
+      \getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+      {\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}
     =
-    \getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}
+    0
     %
     \ifekd@mapps%
     \ifbool{subsq@unit@\ekdan@type}{%
       \ifnum%
-      \getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}
+      \pdf@strcmp{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+      {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-b}}
       =
-      \getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-b}
+      0
       \else
       \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}% issue the no
       \fi%
@@ -560,9 +596,10 @@
     \ifsubsq@unit%
     %
     \ifnum%
-    \getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}
+    \pdf@strcmp{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+    {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-b}}
     =
-    \getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-b}
+    0
     \else
     \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}% issue the no
     \fi
@@ -619,6 +656,13 @@
 \NewDocumentCommand{\rdgGrp}{O{} > {\TrimSpaces } m}{%
   \luadirect{tex.sprint(ekdosis.removesp(\luastringN{#2}))}%
 }
+\def\app@lang{%
+  \ifekd@mapps
+  \luadirect{tex.sprint(ekdosis.getapplang(\luastring{\ekdan@type}))}%
+  \else
+  \ekd@singleapp@lang
+  \fi
+}
 \NewDocumentCommand{\lem}{O{} m}{%
   \ekd@isinlemtrue%
   \luadirect{ekdosis.dolnlab(\luastringN{#2})}%
@@ -638,7 +682,6 @@
   \fi%
   \ifekdl@nolem\edef\lem@app{%
     % \hskip .75em
-    \textbf
     \ifekd@mapps
     \ifbool{subsq@unit@\ekdan@type}%
     {\ekd@munit@delim}{}%
@@ -650,7 +693,6 @@
   \ifbool{al@rlmode}{%
     \edef\lem@app{%
       % \hskip .75em
-      \bfseries
       \ifekd@mapps
       \ifbool{subsq@unit@\ekdan@type}%
       {\ekd@munit@delim}{}%
@@ -661,13 +703,15 @@
       \ifdefined\ekdlr@alt%
         \ifdefined\ekdlr@post%
           \space\unexpanded\expandafter{\ekdlr@post}\space\else\fi
-        {\textdir TRT\unexpanded\expandafter{\ekdlr@alt}}%
+          {\textdir TRT\unexpanded\expandafter{\ekd@lemmastyle}%
+            \unexpanded\expandafter{\ekdlr@alt}}%
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
       \else
         \ifdefined\ekdlr@post%
           \space\unexpanded\expandafter{\ekdlr@post}\space\else\fi
-        {\textdir TRT\unexpanded{#2}}%
+          {\textdir TRT\unexpanded\expandafter{\ekd@lemmastyle}%
+            \unexpanded{#2}}%
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
       \fi
@@ -683,7 +727,7 @@
   }%
   {%
     \edef\lem@app{%
-       %\textbf %text im lem wird fett gedruckt :) Nils Jacobs Idee
+      % \hskip .75em
       \ifekd@mapps
       \ifbool{subsq@unit@\ekdan@type}%
       {\ekd@munit@delim}{}%
@@ -695,17 +739,21 @@
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
         \ltx@ifpackageloaded{babel}%
-          {{\noexpand\selectlanguage{english}%
+        {{\unexpanded\expandafter{\ekd@lemmastyle}%
+            \noexpand\selectlanguage{\app@lang}%
             \unexpanded\expandafter{\ekdlr@alt}}}%
-          {\unexpanded\expandafter{\ekdlr@alt}}%
+        {\unexpanded\expandafter{\ekd@lemmastyle}%
+          \unexpanded\expandafter{\ekdlr@alt}}%
         \ifdefined\ekdlr@post%
           \space\unexpanded\expandafter{\ekdlr@post}\space\else\fi
       \else
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
           \ltx@ifpackageloaded{babel}%
-          {{\noexpand\selectlanguage{english}\unexpanded{#2}}}{%
-            {\unexpanded{#2}}}%
+          {{\unexpanded\expandafter{\ekd@lemmastyle}%
+              \noexpand\selectlanguage{\app@lang}%
+              \unexpanded{#2}}}{%
+            {\unexpanded\expandafter{\ekd@lemmastyle}\unexpanded{#2}}}%
         \ifdefined\ekdlr@post%
           \space\unexpanded\expandafter{\ekdlr@post}\space\else\fi
       \fi
@@ -772,7 +820,7 @@
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
         \ltx@ifpackageloaded{babel}%
-          {{\noexpand\selectlanguage{english}%
+          {{\noexpand\selectlanguage{\app@lang}%
             \unexpanded\expandafter{\ekdlr@alt}}}%
           {\unexpanded\expandafter{\ekdlr@alt}}%
         \ifdefined\ekdlr@post%
@@ -781,7 +829,7 @@
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
           \ltx@ifpackageloaded{babel}%
-          {{\noexpand\selectlanguage{english}\unexpanded{#2}}}{%
+          {{\noexpand\selectlanguage{\app@lang}\unexpanded{#2}}}{%
             {\unexpanded{#2}}}%
         \ifdefined\ekdlr@post%
           \space\unexpanded\expandafter{\ekdlr@post}\space\else\fi
@@ -849,7 +897,8 @@
       \fi%
       \current@ref@arg{\ekdn@labelb}{\ekdn@labele}%\hskip .25em
       \ifdefined\ekdn@lem%
-          {\textdir TRT\unexpanded\expandafter{\ekdn@lem}}%
+      {\textdir TRT\unexpanded\expandafter{\ekd@lemmastyle}%
+        \unexpanded\expandafter{\ekdn@lem}}%
           \unless\ifekdn@nosep
           \unexpanded\expandafter{\ekdn@sep}\fi
           \else\fi%
@@ -865,14 +914,16 @@
       \current@ref@arg{\ekdn@labelb}{\ekdn@labele}%\hskip .25em
       \ifdefined\ekdn@lem
         \ltx@ifpackageloaded{babel}%
-          {{\noexpand\selectlanguage{english}%
-            \unexpanded\expandafter{\ekdn@lem}}}%
-          {\unexpanded\expandafter{\ekdn@lem}}%
+        {{\unexpanded\expandafter{\ekd@lemmastyle}%
+            \noexpand\selectlanguage{\app@lang}%
+              \unexpanded\expandafter{\ekdn@lem}}}%
+          {\unexpanded\expandafter{\ekd@lemmastyle}%
+            \unexpanded\expandafter{\ekdn@lem}}%
           \unless\ifekdn@nosep
           \unexpanded\expandafter{\ekdn@sep}\fi
           \else\fi%
           \ltx@ifpackageloaded{babel}%
-          {{\noexpand\selectlanguage{english}\unexpanded{#2}}}{%
+          {{\noexpand\selectlanguage{\app@lang}\unexpanded{#2}}}{%
             {\unexpanded{#2}}}}}%
   \ifekd@mapps%
   \unconditional@appin[\ekdan@type]{\note@contents}%
@@ -898,7 +949,11 @@
     \ekvifdefinedNoVal{ekd@note}{post}{}{%
       \unexpanded\expandafter{\post@value}}%
   }%
+  \ifekd@mapps%
+  \append@app[\ekdan@type]{\note@contents}%
+  \else%
   \append@app{\note@contents}%
+  \fi%
   \egroup%
 }
 \NewDocumentCommand{\ekd@note@star}{O{} m}{%
@@ -915,7 +970,11 @@
       \append@app{\note@contents}%
     \egroup%
   \else
-    \append@app{\unskip\footnote{#2}}%
+    \ifekd@mapps%
+    \append@app[\ekdan@type]{\note@contents}%
+    \else%
+    \append@app{\note@contents}%
+    \fi%
   \fi%
 }
 \NewDocumentCommand{\note@app}{s O{} +m}{%

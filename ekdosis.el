@@ -2,7 +2,7 @@
 ;; This file is part of the `ekdosis' package
 
 ;; ekdosis -- TEI xml compliant critical editions
-;; Copyright (C) 2020  Robert Alessi
+;; Copyright (C) 2020--2021  Robert Alessi
 
 ;; Please send error reports and suggestions for improvements to Robert
 ;; Alessi <alessi@robertalessi.net>
