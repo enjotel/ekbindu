@@ -51,6 +51,7 @@ bhook=\selectlanguage{english},
 \def\acpc#1#2#3{{#1}\rlap{\textrm{\textsuperscript{#3}}}\textsubscript{\textrm{#2}}\space}
 \def\sigl#1#2{{{#1}}\textsubscript{\textrm{#2}}}
 \def\None{{\sigl{N}{1}}} \def\Noneac{\acpc{N}{1}{ac}\,} \def\Nonepc{\acpc{N}{1}{pc}\,}
+\def\Ntwo{{\sigl{N}{2}}} \def\Noneac{\acpc{N}{2}{ac}\,} \def\Nonepc{\acpc{N}{2}{pc}\,}
 \def\Done{{\sigl{D}{1}}} \def\Doneac{\acpc{D}{1}{ac}\,} \def\Donepc{\acpc{D}{1}{pc}\,}
 \def\Dtwo{{\sigl{D}{2}}} \def\Dtwoac{\acpc{D}{2}{ac}\,} \def\Dtwopc{\acpc{D}{2}{pc}\,}
 \def\Uone{{\sigl{U}{1}}} \def\Uoneac{\acpc{U}{1}{ac}\,} \def\Uonepc{\acpc{U}{1}{pc}\,}                 
@@ -64,6 +65,7 @@ bhook=\selectlanguage{english},
 \DeclareWitness{P}{\selectlanguage{english}P}{Pune BORI 664}[]  
 \DeclareWitness{B}{\selectlanguage{english}B}{Bodleian 485}[]       
 \DeclareWitness{N1}{\selectlanguage{english}N\textsubscript{1}}{NGMPP 38/31}[]
+\DeclareWitness{N2}{\selectlanguage{english}N\textsubscript{2}}{NGMPP B 38/35}[]
 \DeclareWitness{L}{\selectlanguage{english}L}{LALCHAND 5876}[]  
 \DeclareWitness{D1}{\selectlanguage{english}D\textsubscript{1}}{IGNCA 30019}[] 
 \DeclareWitness{D2}{\selectlanguage{english}D\textsubscript{2}}{IGNCA 30020}[]  
@@ -112,12 +114,14 @@ surname=Liersch]
 \TeXtoTEI{emph}{hi}
 \TeXtoTEI{bigskip}{}
 \TeXtoTEI{None}{N1}
+\TeXtoTEI{Ntwo}{N2}
 \TeXtoTEI{Done}{D1}
 \TeXtoTEI{Dtwo}{D2}
 \TeXtoTEI{Uone}{U1}
 \TeXtoTEI{Utwo}{U2}
 \TeXtoTEI{/}{|}
 \TeXtoTEIPat{emend}{em.}
+\TeXtoTEIPat{english}{}
 \TeXtoTEIPat{-}{ }
 \TeXtoTEIPat{\textcolor {#1}{#2}}{<hi rend="#1">#2</hi>} 
 
@@ -1284,6 +1288,48 @@ pañcamaṃ
 %tanmadhye koṭicaṃdrasamaprabhaḥ // eka pumān varttate // \U2
 %----------------------- 
 %In its  middle exists a single person which shines like a thousand moons.
+%----------------------- 
+tanmadhye
+\app{\lem[wit={P,N1,U1,U2}]{koṭicandrasamaprabhaḥ}
+  \rdg[wit={L,D1}]{°prabhā}
+  \rdg[wit={E}]{koṭisūryasamāna}}
+\app{\lem[wit={E,P,L,N1,U1}]{ekaḥ puruṣo}
+  \rdg[wit=D1]{ekapuruṣo}
+  \rdg[wit={U2}]{eka pumān}}
+vartate/
+%----------------------- 
+%tasya puruṣasya dhyānakāraṇād--- asādhyarogā naśyanti // \E
+%tasya puruṣasya dhyānakāraṇād--- asādhyarogā naśyanti // \L
+%tasya puruṣasya dhyānakāraṇād--- asādhyarogā naśyaṃti // \P
+%tasya puruṣasya dhyānakaraṇāt--  asādhyarogā naśyaṃti // \N1
+%tasya puruṣasya dhyānakaraṇāt    asādhyarogā naśyaṃti    \N2
+%tasya puruṣasya dhyānakaraṇāt /  asādhyarogā naśyaṃti // \D1
+%tasya puruṣasya dhyānakaraṇāt /  asādhyarogā naśyaṃti    \U1
+%tasya puṃsaḥ    dhyānakaraṇāt // asādhyarogā naśyaṃti // \U2
+%----------------------- 
+%Because of the exercise of meditation on this person all diseases which are (otherwise) not possible to be controlled vanish.
+%----------------------- 
+tasya
+\app{\lem[wit={E,L,P,N1,N2,D1,U1}]{puruṣasya}
+  \rdg[wit={U2}]{puṃsaḥ}}
+dhyānakaraṇād-asādhyarogā naśyanti/
+%----------------------- 
+%ekasahasravarṣaparyaṃtaṃ sa puruṣo jīvatīdānīṃ     \E
+%ekasahasravarṣaparyaṃtaṃ sa puruṣo jīvati          \P
+%ekasahasravarṣa             puruṣo jīvati //       \L
+%ekasahasravarṣaparyaṃtaṃ    puruṣo jīvati /        \N1
+%ekasahasravarṣaparyaṃta     puruṣo jīvati /        \N2
+%ekasahasravarṣaparyaṃtaṃ    puruṣo jīvati /        \D1
+%ekasahasravarṣaparyaṃtaṃ    puruṣo jīvati          \U1
+%ekasahasravarṣaparyaṃtaṃ    puruṣo jīvati //       \U2
+%----------------------- 
+%The person lives up to 1001 years. 
+ekasahasravarṣa\app{\lem[wit={E,P,N1,D1,U1,U2},alt={°paryantaṃ}]{paryantaṃ}
+  \rdg[wit={N2}]{°paryaṃta}
+  \rdg[wit={L}]{\textbf{omitted in}}}
+\app{\lem[wit={L,N1,N2,D1,U1,U2}]{puruṣo}
+\rdg[wit={E,P}]{sa puruṣo}}
+  jīvati/
     \end{prose}
 \end{edition}
 \begin{translation}
@@ -1291,8 +1337,31 @@ pañcamaṃ
   \bigskip
     \centerline{\textrm{\small{[Description of the fifth Cakra]}}}
     \bigskip
-   \begin{tlate}Now the fifth lotus having sixteen petals exists at the location of the throat.\extra{[It is] smoke-colored, [its] god is the embodied soul (\textit{jīva}), [its] power is ignorance (\textit{avidyā}), [its] Ṛṣi is Virāṭha, [its] mount is the vitalwind (\textit{vāyu}), [its] vitalwind is \textit{udāna}, [it belongs to] Jvālākalā (?), [associated with it is] Jālandharabandha, [and the] supra-causel body (\textit{mahākāraṇadeha}), [its] state is the fourth state (\textit{tūrya}), [its] speech is Parā\footnote{Im Kaśm. Śiv. °das ewige Wort, in welchem potentiell alle Begriffe und Worte ruhen; vgl. das śabdabrahma des Vyākaraṇa. [B.]― Schmidt S. 246}, [it is associated with the] Atharvaveda, Jaṅgamaliṅga [and] Jīvaprāptābhūmikā?, [its] liberation is absorption into the divine essence (\textit{sāyujyatāmokṣaḥ}), [it has] sixteen petals [with] sixteen measures. [Its] internal measures sounds are: aṃ āṃ iṃ īṃ u ūṃ ṛṃ ṝṃ ḷṃ ḹṃ eṃ aiṃ oṃ auṃ aṃ aṃḥ. [Its] external measures are: knowledge, ignorance, desire, power, the power of knowledge, \textit{śatala}?, great knowledge, great illusion, intellect, \textit{tamasī}?, love, young girl?, Maitrāyaṇī?, sun-ray?, abundance, lioness?.} \end{tlate}
-  \end{translation}
+   \begin{tlate}Now the fifth lotus having sixteen petals exists at the location of the throat.\extra{[It is] smoke-colored, [its] god is the embodied soul (\textit{jīva}), [its] power is ignorance (\textit{avidyā}), [its] Ṛṣi is Virāṭha, [its] mount is the vitalwind (\textit{vāyu}), [its] vitalwind is \textit{udāna}, [it belongs to] Jvālākalā (?), [associated with it is] Jālandharabandha, [and the] supra-causel body (\textit{mahākāraṇadeha}), [its] state is the fourth state (\textit{tūrya}), [its] speech is Parā\footnote{Im Kaśm. Śiv. °das ewige Wort, in welchem potentiell alle Begriffe und Worte ruhen; vgl. das śabdabrahma des Vyākaraṇa. [B.]― Schmidt S. 246}, [it is associated with the] Atharvaveda, Jaṅgamaliṅga [and] Jīvaprāptābhūmikā?, [its] liberation is absorption into the divine essence (\textit{sāyujyatāmokṣaḥ}), [it has] sixteen petals [with] sixteen measures. [Its] internal measures sounds are: aṃ āṃ iṃ īṃ u ūṃ ṛṃ ṝṃ ḷṃ ḹṃ eṃ aiṃ oṃ auṃ aṃ aṃḥ. [Its] external measures are: knowledge, ignorance, desire, power, the power of knowledge, \textit{śatala}?, great knowledge, great illusion, intellect, \textit{tamasī}?, love, young girl?, Maitrāyaṇī?, sun-ray?, abundance, lioness?.} In its  middle exists a single person which shines like a thousand moons. Because of the exercise of meditation on this person all diseases which are (otherwise) not possible to be controlled vanish. The person lives up to 1001 years.\end{tlate}
+\end{translation}
+\clearpage
+\begin{edition}
+ \ekddiv{type=ed}
+ \begin{prose}
+%----------------------- 
+%īdānīṃ ṣaṣṭhaṃ bhrūmadhye ājñācakraṃ vartate//   \E
+%īdānīṃ ṣaṣṭhaṃ bhrūmadhye ājñācakraṃ vartate//   \P
+%īdānīṃ ṣaṣṭhaḥ bhrūmadhye ājñācakraṃ vartate//   \L
+%idānīṃ ṣaṣṭhacakraṃ ajñānāmakaṃ      varttate // \N1
+%idānīṃ ṣaṣṭhacakraṃ ajñānāmaka       varttate    \N2
+%idānīṃ ṣaṣṭhacakraṃ ajñānāmakaṃ      varttate // \D1
+%idānīṃ ṣaṣṭacakraṃ  ājñānāmakaṃ      vartate     \U1
+%idānīṃ ṣaṣṭa bhrūmadhye ājñācakraṃ raktavarṇaṃ // \U2
+%-----------------------
+%āgnirdevatā suṣumṇāśaktiḥ// hiṃsaṛṣiḥ// caitanyavāhanaṃ// jñānadehī// vijñānāvathā// anupamavācā// sāmadevaḥ// pramādaliṃgaṃ// ardhamātrā// ākāśātatvaṃ// jīvahiṃsa// caitanyalīlraṃbhaḥ// dvemātrā// hiṃkṣaṃ// aṃtarmātrā// bahirmātrā//sthiti//prabhā?// ajapājapasahasra// 1000 gha 02 pa 046 akṣara 40// \U2  
+%-----------------------    
+ \end{prose}
+\end{edition}
+\begin{translation}
+  \ekddiv{type=trans}
+  \begin{tlate}\end{tlate}
+   \end{translation}
+
  \end{alignment}
 \end{document}
 

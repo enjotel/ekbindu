@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.28)  10 MAR 2021 12:59
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.28)  12 MAR 2021 11:49
  restricted system commands enabled.
 **bindu.tex
 (./bindu.tex
@@ -610,27 +610,27 @@ tex UTF-8 Sanskrit hyphenation patterns
 tex)))
 \openout1 = bindu.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 129.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 12
-9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 13
+3.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -660,64 +660,64 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 129.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 129.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 129.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 129.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 129.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 129.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 129.
-LaTeX Font Info:    Redeclaring math accent \check on input line 129.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 129.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 129.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 129.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 129.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 129.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 133.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 133.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 133.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 133.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 133.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 133.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 133.
+LaTeX Font Info:    Redeclaring math accent \check on input line 133.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 133.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 133.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 133.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 133.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 129.
+(Font)              `operators' in the math version `normal' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 12
-9.
+(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 13
+3.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 129.
+(Font)              `operators' in the math version `bold' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 1
-29.
+33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on i
-nput line 129.
+nput line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 
-129.
+133.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 1
-29.
+33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 129.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 129.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 133.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on i
-nput line 129.
+nput line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line
- 129.
+ 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 129.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 129.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 133.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -778,9 +778,9 @@ Trans-la-tion
 @@6: line 1.2- t=100 -> @0
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 130.
+(Font)              <14.4> on input line 134.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 130.
+(Font)              <7> on input line 134.
 @firstpass
 [][]
 @\par via @0 b=0 p=-10000 d=100
@@ -790,7 +790,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 []\TU/TeXGyreTermes(0)/m/n/14.4 March 
 @ via @0 b=0 p=0 d=100
 @@1: line 1.2 t=100 -> @0
-10, 
+12, 
 @ via @0 b=0 p=0 d=100
 @ via @1 b=0 p=0 d=100
 @@2: line 1.2 t=100 -> @0
@@ -807,7 +807,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/n' in size <17.28> not av
 ailable
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/n' tried instead on input 
-line 133.
+line 137.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/17.28 Con-ven-tions in the Crit-i-cal Ap-pa-ra-tus 
 @\par via @0 b=0 p=-10000 d=100
@@ -816,7 +816,7 @@ line 133.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/n' in size <14.4> not ava
 ilable
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/n' tried instead on input 
-line 134.
+line 138.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/14.4 Sigla in the Crit-i-cal Ap-pa-ra-tus 
 @\par via @0 b=0 p=-10000 d=100
@@ -843,11 +843,11 @@ line 134.
 @@1: line 1.2- t=100 -> @0
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 141.
+(Font)              <12> on input line 145.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 141.
+(Font)              <8> on input line 145.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 141.
+(Font)              <6> on input line 145.
 @firstpass
 []\TU/TeXGyreTermes(0)/m/n/12 N$[][]$: NGMPP B 38-31 
 @\par via @0 b=0 p=-10000 d=100
@@ -1080,7 +1080,7 @@ ap-pa-ra-tus.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/it' in size <17.28> not a
 vailable
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/it' tried instead on input
- line 165.
+ line 169.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/17.28 Crit-i-cal Edi-tion of the \TU/TeXGyreTermes(0
 )/b/it/17.28 Yo-gatattv-abindu 
@@ -1405,7 +1405,7 @@ the va-ri-eties:
 @@18: line 18.2- t=0 -> @17
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
 
  []
 
@@ -1592,7 +1592,7 @@ n/12 s.[][][]
 @@17: line 17.2- t=0 -> @16
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 
  []
 
@@ -2078,7 +2078,7 @@ TU/TeXGyreTermes(0)/m/n/10 : [][]L starts here.[][][]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/n' in size <12> not avail
 able
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/n' tried instead on input 
-line 324.
+line 328.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/12 1. \TU/TeXGyreTermes(0)/m/n/12 This Yoga is lib-er
 -a-tion through [men-tal] ac-tion. It be-stows suc-cess(\TU/TeXGyreTermes(0)/m/
@@ -3011,7 +3011,7 @@ alone is called a yogī of many ac-tions (\TU/TeXGyreTermes(0)/m/it/12 bahukriy
 @@6: line 4.2- t=344 -> @5
 
 
-Overfull \hbox (3.63615pt too wide) in paragraph at lines 535--535
+Overfull \hbox (3.63615pt too wide) in paragraph at lines 539--539
 []\TU/TeXGyreTermes(0)/m/n/12 Fraud, il-lu-sion, prop-erty,vi-o-lence, crav-ing,
  envy, ego, anger, anx-i-ety, shame, greed,
  []
@@ -3716,7 +3716,7 @@ galā
 @@11: line 5.2- t=14384 -> @10
 
 
-Overfull \hbox (8.0614pt too wide) in paragraph at lines 647--647
+Overfull \hbox (8.0614pt too wide) in paragraph at lines 651--651
 []\TU/TeXGyreTermes(0)/m/n/12 Now va-ri-eties of \TU/TeXGyreTermes(0)/m/it/12 r
 ā-jayoga \TU/TeXGyreTermes(0)/m/n/12 will be de-scribed. Which are these? One 
 is \TU/TeXGyreTermes(0)/m/it/12 sid-dhakuṇḍal-
@@ -6604,7 +6604,7 @@ com-ing to rest.[][][][][][]
 @@9: line 6.2- t=25146 -> @7
 
 
-Overfull \hbox (3.50795pt too wide) in paragraph at lines 929--929
+Overfull \hbox (3.50795pt too wide) in paragraph at lines 933--933
 \TU/MurtySanskrit(0)/m/n/12 प्रभा। रजोगुण। ब्र
 ह्मादेवता। वैखरीवाच। सावित्
 रीशक्तिः। हंसवाहनं। वहणऋषिः
@@ -9351,30 +9351,409 @@ in[]
 @ via @11 b=3623 p=0 d=13198689
 @ via @12 b=7099 p=0 d=50537881
 @@20: line 3.0 t=12521079 -> @10
-[]\TU/TeXGyreTermes(0)/m/n/10 U$[][]$[][][][][][][][][][][][][][][][][][][][][]
- 
-@\par via @6 b=0 p=-10000 d=10100
-@\par via @7 b=0 p=-10000 d=10100
-@\par via @8 b=0 p=-10000 d=10100
-@\par via @9 b=0 p=-10000 d=10100
-@\par via @10 b=0 p=-10000 d=10100
-@\par via @11 b=0 p=-10000 d=10100
-@\par via @12 b=0 p=-10000 d=10100
-@\par via @13 b=0 p=-10000 d=10100
-@\par via @14 b=0 p=-10000 d=10100
-@\par via @15 b=0 p=-10000 d=10100
-@\par via @16 b=0 p=-10000 d=10100
-@\par via @17 b=0 p=-10000 d=10100
-@\par via @18 b=0 p=-10000 d=10100
-@\par via @19 b=0 p=-10000 d=10100
-@\par via @20 b=0 p=-10000 d=10100
-@@21: line 3.2- t=25805 -> @16
+[]\TU/TeXGyreTermes(0)/m/n/10 U$[][]$
+@\math via @6 b=51 p=0 d=3721
+@\math via @7 b=99 p=0 d=11881
+@\math via @8 b=452 p=0 d=213444
+@\math via @9 b=977 p=0 d=974169
+@\math via @10 b=1776 p=0 d=3189796
+@\math via @11 b=2495 p=0 d=6275025
+@\math via @12 b=5133 p=0 d=26450449
+@@21: line 3.0 t=8523114 -> @10
+  []\TU/TeXGyreTermes(0)/bx/n/10 6[] []koṭi-
+@\discretionary via @6 b=0 p=50 d=12600
+@\discretionary via @7 b=1 p=50 d=22621
+@\discretionary via @8 b=55 p=50 d=6725
+@\discretionary via @9 b=201 p=50 d=47021
+@\discretionary via @10 b=500 p=50 d=272600
+@\discretionary via @11 b=808 p=50 d=681624
+@\discretionary via @12 b=2050 p=50 d=4246100
+@\discretionary via @13 b=6157 p=50 d=38034389
+@@22: line 3.0- t=5219198 -> @11
+can-
+@\discretionary via @7 b=5 p=50 d=22725
+@\discretionary via @8 b=14 p=50 d=3076
+@\discretionary via @9 b=86 p=50 d=11716
+@\discretionary via @10 b=275 p=50 d=93725
+@\discretionary via @11 b=488 p=50 d=260504
+@\discretionary via @12 b=1412 p=50 d=2024584
+@\discretionary via @13 b=4752 p=50 d=22679144
+@\discretionary via @14 b=7397 p=50 d=54866149
+@@23: line 3.0- t=4798078 -> @11
+drasamaprab-
+@\discretionary via @10 b=1 p=50 d=22621
+@\discretionary via @11 b=13 p=50 d=13029
+@\discretionary via @12 b=171 p=50 d=35261
+@\discretionary via @13 b=1325 p=50 d=1784725
+@\discretionary via @14 b=2452 p=50 d=6063944
+@\discretionary via @15 b=3838 p=50 d=14819604
+@\discretionary via @16 b=6001 p=50 d=36134621
+@@24: line 3.0- t=1984350 -> @13
+haḥ[] 
+@ via @10 b=3 p=0 d=10169
+@ via @11 b=1 p=0 d=10121
+@ via @12 b=79 p=0 d=7921
+@ via @13 b=909 p=0 d=844561
+@ via @14 b=1796 p=0 d=3261636
+@ via @15 b=2922 p=0 d=8596624
+@ via @16 b=4713 p=0 d=22306729
+@@25: line 3.0 t=1044186 -> @13
+[]\TU/TeXGyreTermes(0)/m/n/10 P[]N$[][]$[]U$[][]$[]U$[][]$] 
+@ via @12 b=0 p=0 d=10100
+@ via @13 b=126 p=0 d=18496
+@ via @14 b=386 p=0 d=156816
+@ via @15 b=783 p=0 d=628849
+@ via @16 b=1515 p=0 d=2325625
+@ via @17 b=5939 p=0 d=35390601
+@@26: line 3.0 t=218121 -> @13
+[]°prabhā[] 
+@ via @13 b=5 p=0 d=10225
+@ via @14 b=54 p=0 d=4096
+@ via @15 b=172 p=0 d=33124
+@ via @16 b=449 p=0 d=210681
+@ via @17 b=2744 p=0 d=7584516
+@ via @18 b=4144 p=0 d=17255716
+@ via @19 b=6110 p=0 d=37454400
+@ via @20 b=8075 p=0 d=65367225
+@@27: line 3.0 t=94764 -> @15
+[]L[]D$[][]$
+@\math via @13 b=2 p=0 d=10144
+@\math via @14 b=6 p=0 d=10256
+@\math via @15 b=42 p=0 d=2704
+@\math via @16 b=162 p=0 d=29584
+@\math via @17 b=1540 p=0 d=2402500
+@\math via @18 b=2495 p=0 d=6275025
+@\math via @19 b=3826 p=0 d=14714896
+@\math via @20 b=5175 p=0 d=26884225
+@@28: line 3.0 t=45289 -> @16
+ []koṭisūryasamāna[] 
+@ via @17 b=76 p=0 d=7396
+@ via @18 b=239 p=0 d=62001
+@ via @19 b=515 p=0 d=275625
+@ via @20 b=832 p=0 d=708964
+@ via @21 b=1735 p=0 d=3045025
+@ via @22 b=3417 p=0 d=11744329
+@ via @23 b=4713 p=0 d=22306729
+@@29: line 4.0 t=11568139 -> @21
+[]E 
+@ via @17 b=35 p=0 d=2025
+@ via @18 b=140 p=0 d=22500
+@ via @19 b=332 p=0 d=116964
+@ via @20 b=562 p=0 d=327184
+@ via @21 b=1242 p=0 d=1567504
+@ via @22 b=2556 p=0 d=6584356
+@ via @23 b=3601 p=0 d=13039321
+@@30: line 4.0 t=10090618 -> @21
+ [][] []\TU/TeXGyreTermes(0)/bx/n/10 ekaḥ 
+@ via @17 b=0 p=0 d=10100
+@ via @18 b=6 p=0 d=10256
+@ via @19 b=40 p=0 d=2500
+@ via @20 b=95 p=0 d=11025
+@ via @21 b=318 p=0 d=107584
+@ via @22 b=853 p=0 d=744769
+@ via @23 b=1348 p=0 d=1844164
+@ via @24 b=4940 p=0 d=24502500
+@ via @25 b=7433 p=0 d=55398249
+@@31: line 4.0 t=5963967 -> @22
+pu-
+@\discretionary via @18 b=0 p=50 d=22600
+@\discretionary via @19 b=5 p=50 d=12725
+@\discretionary via @20 b=23 p=50 d=3589
+@\discretionary via @21 b=124 p=50 d=20456
+@\discretionary via @22 b=425 p=50 d=201725
+@\discretionary via @23 b=737 p=50 d=570509
+@\discretionary via @24 b=3281 p=50 d=10843181
+@\discretionary via @25 b=5091 p=50 d=26022701
+@@32: line 4.0- t=5368587 -> @23
+ruṣo[] 
+@ via @19 b=0 p=0 d=10100
+@ via @20 b=2 p=0 d=10144
+@ via @21 b=41 p=0 d=2601
+@ via @22 b=211 p=0 d=48841
+@ via @23 b=414 p=0 d=179776
+@ via @24 b=2343 p=0 d=5536609
+@ via @25 b=3792 p=0 d=14455204
+@@33: line 4.0 t=4977854 -> @23
+[]\TU/TeXGyreTermes(0)/m/n/10 E[]P[]L[]N$[][]$[]U$[][]$] 
+@ via @22 b=2 p=0 d=10144
+@ via @23 b=20 p=0 d=900
+@ via @24 b=597 p=0 d=368449
+@ via @25 b=1163 p=0 d=1375929
+@ via @26 b=3713 p=0 d=13860729
+@ via @27 b=7451 p=0 d=55666521
+@@34: line 4.0 t=2352799 -> @24
+[]eka-
+@\discretionary via @22 b=53 p=50 d=26469
+@\discretionary via @23 b=0 p=50 d=22600
+@\discretionary via @24 b=252 p=50 d=81144
+@\discretionary via @25 b=574 p=50 d=343556
+@\discretionary via @26 b=2237 p=50 d=5051509
+@\discretionary via @27 b=4859 p=50 d=23709661
+@\discretionary via @28 b=7468 p=50 d=55922984
+@@35: line 4.0- t=1387742 -> @25
+pu-
+@\discretionary via @23 b=1 p=50 d=22621
+@\discretionary via @24 b=154 p=50 d=39396
+@\discretionary via @25 b=394 p=50 d=165716
+@\discretionary via @26 b=1755 p=50 d=3117725
+@\discretionary via @27 b=4024 p=50 d=16275656
+@\discretionary via @28 b=6300 p=50 d=39818600
+@@36: line 4.0- t=1209902 -> @25
+ruṣo[] 
+@ via @24 b=64 p=0 d=5476
+@ via @25 b=209 p=0 d=47961
+@ via @26 b=1205 p=0 d=1476225
+@ via @27 b=3009 p=0 d=9114361
+@ via @28 b=4886 p=0 d=23970816
+@@37: line 4.0 t=1092147 -> @25
+[]D$[][]$
+@\math via @24 b=18 p=0 d=784
+@\math via @25 b=89 p=0 d=9801
+@\math via @26 b=733 p=0 d=552049
+@\math via @27 b=2035 p=0 d=4182025
+@\math via @28 b=3428 p=0 d=11819844
+@@38: line 4.0 t=770170 -> @26
+ []eka 
+@ via @24 b=1 p=0 d=10121
+@ via @25 b=23 p=0 d=1089
+@ via @26 b=376 p=0 d=148996
+@ via @27 b=1231 p=0 d=1540081
+@ via @28 b=2205 p=0 d=4906225
+@@39: line 4.0 t=367117 -> @26
+pumān[] 
+@ via @25 b=0 p=0 d=10100
+@ via @26 b=78 p=0 d=7744
+@ via @27 b=438 p=0 d=200704
+@ via @28 b=927 p=0 d=877969
+@ via @29 b=4913 p=0 d=24235929
+@ via @30 b=7030 p=0 d=49561600
+@@40: line 4.1 t=225865 -> @26
+[]U$[][]$
+@\math via @26 b=25 p=0 d=1225
+@\math via @27 b=230 p=0 d=57600
+@\math via @28 b=549 p=0 d=312481
+@\math via @29 b=3514 p=0 d=12418576
+@\math via @30 b=5133 p=0 d=26450449
+@@41: line 4.0 t=152364 -> @27
+  [][] []\TU/TeXGyreTermes(0)/bx/n/10 pu-
+@\discretionary via @26 b=0 p=50 d=12600
+@\discretionary via @27 b=41 p=50 d=5101
+@\discretionary via @28 b=151 p=50 d=28421
+@\discretionary via @29 b=1701 p=50 d=2930021
+@\discretionary via @30 b=2617 p=50 d=6903629
+@\discretionary via @31 b=5008 p=50 d=25182824
+@\discretionary via @32 b=6063 p=50 d=36893829
+@@42: line 4.0- t=73710 -> @28
+ruṣasya[] 
+@ via @27 b=1 p=0 d=10121
+@ via @28 b=19 p=0 d=841
+@ via @29 b=783 p=0 d=628849
+@ via @30 b=1325 p=0 d=1782225
+@ via @31 b=2846 p=0 d=8156736
+@ via @32 b=3568 p=0 d=12802084
+@ via @33 b=5771 p=0 d=33419961
+@@43: line 4.1 t=46130 -> @28
+[]\TU/TeXGyreTermes(0)/m/n/10 E[]L[]P[]N$[][]$[]N$[][]$[]D$[][]$[]U$[][]$] 
+@ via @29 b=21 p=0 d=961
+@ via @30 b=81 p=0 d=8281
+@ via @31 b=352 p=0 d=131044
+@ via @32 b=543 p=0 d=305809
+@ via @33 b=1168 p=0 d=1387684
+@ via @34 b=3803 p=0 d=14538969
+@ via @35 b=4954 p=0 d=24641296
+@ via @36 b=5908 p=0 d=35022724
+@@44: line 5.0 t=5674396 -> @32
+[]puṃsaḥ[] 
+@ via @29 b=3 p=0 d=10169
+@ via @30 b=2 p=0 d=10144
+@ via @31 b=50 p=0 d=3600
+@ via @32 b=106 p=0 d=13456
+@ via @33 b=336 p=0 d=119716
+@ via @34 b=1642 p=0 d=2729104
+@ via @35 b=2293 p=0 d=5303809
+@ via @36 b=2865 p=0 d=8265625
+@ via @37 b=4634 p=0 d=21566736
+@ via @38 b=6445 p=0 d=41667025
+@@45: line 5.0 t=5081903 -> @34
+[]U$[][]$
+@\math via @30 b=0 p=0 d=10100
+@\math via @31 b=12 p=0 d=10484
+@\math via @32 b=37 p=0 d=2209
+@\math via @33 b=164 p=0 d=30276
+@\math via @34 b=1038 p=0 d=1098304
+@\math via @35 b=1521 p=0 d=2343961
+@\math via @36 b=1946 p=0 d=3825936
+@\math via @37 b=3260 p=0 d=10692900
+@\math via @38 b=4634 p=0 d=21566736
+@\math via @39 b=6741 p=0 d=45576001
+@@46: line 5.0 t=3451103 -> @34
+  []\TU/TeXGyreTermes(0)/bx/n/10 7[] []°paryan-
+@\discretionary via @33 b=0 p=50 d=12600
+@\discretionary via @34 b=90 p=50 d=12500
+@\discretionary via @35 b=193 p=50 d=53709
+@\discretionary via @36 b=303 p=50 d=110469
+@\discretionary via @37 b=681 p=50 d=479981
+@\discretionary via @38 b=1117 p=50 d=1272629
+@\discretionary via @39 b=1867 p=50 d=3525629
+@\discretionary via @40 b=3895 p=50 d=15251525
+@\discretionary via @41 b=6284 p=50 d=39616936
+@@47: line 5.0- t=1320371 -> @36
+taṃ[] 
+@ via @34 b=34 p=0 d=1936
+@ via @35 b=93 p=0 d=10609
+@ via @36 b=162 p=0 d=29584
+@ via @37 b=422 p=0 d=186624
+@ via @38 b=740 p=0 d=562500
+@ via @39 b=1314 p=0 d=1752976
+@ via @40 b=2951 p=0 d=8767521
+@ via @41 b=4927 p=0 d=24373969
+@ via @42 b=6876 p=0 d=47416996
+@@48: line 5.0 t=1239486 -> @36
+[]\TU/TeXGyreTermes(0)/m/n/10 E[]P[]N$[][]$[]D$[][]$[]U$[][]$[]U$[][]$] 
+@ via @36 b=5 p=0 d=10225
+@ via @37 b=3 p=0 d=10169
+@ via @38 b=23 p=0 d=1089
+@ via @39 b=93 p=0 d=10609
+@ via @40 b=449 p=0 d=210681
+@ via @41 b=1019 p=0 d=1058841
+@ via @42 b=1648 p=0 d=2748964
+@ via @43 b=4096 p=0 d=16859236
+@@49: line 5.1 t=377726 -> @39
+[]°paryaṃta[] 
+@ via @39 b=0 p=0 d=10100
+@ via @40 b=32 p=0 d=1764
+@ via @41 b=157 p=0 d=27889
+@ via @42 b=336 p=0 d=119716
+@ via @43 b=1292 p=0 d=1695204
+@ via @44 b=6575 p=0 d=43362225
+@@50: line 5.0 t=180253 -> @41
+[]N$[][]$
+@\math via @40 b=6 p=0 d=256
+@\math via @41 b=60 p=0 d=4900
+@\math via @42 b=157 p=0 d=27889
+@\math via @43 b=772 p=0 d=611524
+@\math via @44 b=4686 p=0 d=22052416
+@@51: line 5.0 t=101599 -> @42
+ []\TU/TeXGyreTermes(0)/bx/n/10 omit-
+@\discretionary via @40 b=38 p=50 d=14804
+@\discretionary via @41 b=3 p=50 d=12669
+@\discretionary via @42 b=21 p=50 d=13461
+@\discretionary via @43 b=257 p=50 d=73789
+@\discretionary via @44 b=2538 p=50 d=6494804
+@\discretionary via @45 b=5475 p=50 d=30087725
+@@52: line 5.1- t=87171 -> @42
+ted 
+@ via @41 b=0 p=0 d=10100
+@ via @42 b=6 p=0 d=10256
+@ via @43 b=154 p=0 d=26896
+@ via @44 b=2005 p=0 d=4060225
+@ via @45 b=4543 p=0 d=20729809
+@ via @46 b=7273 p=0 d=53042089
+@@53: line 5.0 t=73026 -> @43
+in[] 
+@ via @41 b=31 p=0 d=11681
+@ via @42 b=0 p=0 d=10100
+@ via @43 b=72 p=0 d=6724
+@ via @44 b=1394 p=0 d=1971216
+@ via @45 b=3354 p=0 d=11316496
+@ via @46 b=5519 p=0 d=30569841
+@@54: line 5.1 t=52854 -> @43
+[]\TU/TeXGyreTermes(0)/m/n/10 L 
+@ via @42 b=0 p=0 d=10100
+@ via @43 b=33 p=0 d=1849
+@ via @44 b=1009 p=0 d=1038361
+@ via @45 b=2573 p=0 d=6671889
+@ via @46 b=4316 p=0 d=18714276
+@@55: line 5.1 t=47979 -> @43
+ [][] []\TU/TeXGyreTermes(0)/bx/n/10 pu-
+@\discretionary via @43 b=0 p=50 d=2600
+@\discretionary via @44 b=345 p=50 d=128525
+@\discretionary via @45 b=1127 p=50 d=1295269
+@\discretionary via @46 b=2080 p=50 d=4370600
+@\discretionary via @47 b=5203 p=50 d=27187869
+@\discretionary via @48 b=7777 p=50 d=60639869
+@@56: line 5.2- t=48730 -> @43
+ruṣo[] 
+@ via @43 b=67 p=0 d=15929
+@ via @44 b=172 p=0 d=33124
+@ via @45 b=710 p=0 d=518400
+@ via @46 b=1424 p=0 d=2056356
+@ via @47 b=3919 p=0 d=15437041
+@ via @48 b=6032 p=0 d=36505764
+@@57: line 5.3 t=62059 -> @43
+[]\TU/TeXGyreTermes(0)/m/n/10 L[]N$[][]$[]N$[][]$[]D$[][]$[]U$[][]$[]U$[][]$] 
+@ via @44 b=57 p=0 d=14489
+@ via @45 b=13 p=0 d=529
+@ via @46 b=87 p=0 d=9409
+@ via @47 b=649 p=0 d=434281
+@ via @48 b=1275 p=0 d=1651225
+@ via @49 b=5460 p=0 d=29920900
+@@58: line 6.0 t=1754652 -> @47
+[]sa 
+@ via @45 b=2 p=0 d=10144
+@ via @46 b=36 p=0 d=2116
+@ via @47 b=406 p=0 d=173056
+@ via @48 b=853 p=0 d=744769
+@ via @49 b=4132 p=0 d=17156164
+@@59: line 6.0 t=1493427 -> @47
+pu-
+@\discretionary via @45 b=0 p=50 d=12600
+@\discretionary via @46 b=6 p=50 d=12756
+@\discretionary via @47 b=189 p=50 d=52101
+@\discretionary via @48 b=463 p=50 d=226229
+@\discretionary via @49 b=2781 p=50 d=7792181
+@\discretionary via @50 b=6691 p=50 d=44905901
+@@60: line 6.0- t=1372472 -> @47
+ruṣo[] 
+@ via @46 b=0 p=0 d=10100
+@ via @47 b=86 p=0 d=9216
+@ via @48 b=259 p=0 d=72361
+@ via @49 b=2035 p=0 d=4182025
+@ via @50 b=5288 p=0 d=28068804
+@ via @51 b=7221 p=0 d=52287361
+@@61: line 6.0 t=1311847 -> @48
+[]E[]P[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+@\par via @46 b=46 p=-10000 d=13136
+@\par via @47 b=0 p=-10000 d=10100
+@\par via @48 b=0 p=-10000 d=10100
+@\par via @49 b=0 p=-10000 d=100
+@\par via @50 b=0 p=-10000 d=10100
+@\par via @51 b=0 p=-10000 d=10100
+@\par via @52 b=0 p=-10000 d=100
+@\par via @53 b=0 p=-10000 d=10100
+@\par via @54 b=0 p=-10000 d=100
+@\par via @55 b=0 p=-10000 d=100
+@\par via @56 b=0 p=-10000 d=100
+@\par via @57 b=0 p=-10000 d=100
+@\par via @58 b=0 p=-10000 d=10100
+@\par via @59 b=0 p=-10000 d=10100
+@\par via @60 b=0 p=-10000 d=10100
+@\par via @61 b=0 p=-10000 d=10100
+@@62: line 6.2- t=48079 -> @55
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1--1334
 []\TU/TeXGyreTermes(0)/m/n/10 kaṇṭhasthāne ṣoḍaśadalaṃ ka-malaṃ[]
  []E[]P[]L []viśud-dha-cakraṃ kaṃṭhastāne[] []U$[][]$  [][] []\TU/TeXGy
 reTermes(0)/bx/n/10 var-tate[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1334
+[]\TU/TeXGyreTermes(0)/m/n/10 E[]P[]L[]N$[][]$[]D$[][]$[]U$[][]$] []\TU/TeXGyre
+Termes(0)/bx/n/10 omit-ted in[] []\TU/TeXGyreTermes(0)/m/n/10 U$[][]$  []\TU/Te
+XGyreTermes(0)/bx/n/10 6[] []koṭi-can-drasamaprab-haḥ[] []\TU/TeXGyreTermes
+(0)/m/n/10 P[]N$[][]$[]U$[][]$[]U$[][]$] []°prabhā[] []L[]D$[][]$
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 1--1334
+[]\TU/TeXGyreTermes(0)/m/n/10 E[]L[]P[]N$[][]$[]N$[][]$[]D$[][]$[]U$[][]$] []pu
+ṃsaḥ[] []U$[][]$  []\TU/TeXGyreTermes(0)/bx/n/10 7[] []°paryan-taṃ[] []\
+TU/TeXGyreTermes(0)/m/n/10 E[]P[]N$[][]$[]D$[][]$[]U$[][]$[]U$[][]$] []°parya
+ṃta[] []N$[][]$ []\TU/TeXGyreTermes(0)/bx/n/10 omit-ted in[] []\TU/TeXGyreTer
+mes(0)/m/n/10 L
  []
 
 @firstpass
@@ -9446,12 +9825,51 @@ reTermes(0)/bx/n/10 var-tate[]
 @\discretionary via @8 b=3 p=50 d=12669
 @\discretionary via @9 b=3 p=50 d=12669
 @@13: line 5.2- t=8543 -> @7
-द्रा। पुष्ट। सिंहनी।[][] [][] 
-@\par via @10 b=0 p=-10000 d=5100
-@\par via @11 b=0 p=-10000 d=5100
-@\par via @12 b=0 p=-10000 d=100
-@\par via @13 b=0 p=-10000 d=5100
-@@14: line 6.2- t=6374 -> @12
+द्रा। पुष्ट। सिंहनी।[][] तन्मध
+्ये [][][]कोटिचन्द्रसमप्रभः[] [][][]
+एकः पुरुषो[] वर्तते। तस्य [][][]पु
+रुषस्य[] ध्या
+@\discretionary via @10 b=4 p=50 d=12696
+@\discretionary via @11 b=82 p=50 d=20964
+@@14: line 6.1- t=36415 -> @11
+@@15: line 6.2- t=33955 -> @10
+न
+@\discretionary via @10 b=0 p=50 d=12600
+@\discretionary via @11 b=16 p=50 d=13176
+@@16: line 6.1- t=28627 -> @11
+@@17: line 6.2- t=33859 -> @10
+क
+@\discretionary via @10 b=66 p=50 d=28276
+@\discretionary via @11 b=0 p=50 d=12600
+@@18: line 6.2- t=28051 -> @11
+र
+@\discretionary via @11 b=6 p=50 d=12756
+@@19: line 6.2- t=28207 -> @11
+णा
+@\discretionary via @12 b=42 p=50 d=5204
+@\discretionary via @13 b=159 p=50 d=51061
+@@20: line 6.1- t=11478 -> @12
+द
+@\discretionary via @12 b=4 p=50 d=2696
+@\discretionary via @13 b=44 p=50 d=15416
+@@21: line 6.2- t=8970 -> @12
+सा
+@\discretionary via @12 b=19 p=50 d=3341
+@\discretionary via @13 b=0 p=50 d=12600
+@@22: line 6.3- t=9615 -> @12
+ध्यरोगा नश्यन्ति। एकसहस्रवर
+्ष[][][]पर्यन्तं[] [][][]पुरुषो[] जीवत
+ि। [][] 
+@\par via @14 b=0 p=-10000 d=5100
+@\par via @15 b=0 p=-10000 d=5100
+@\par via @16 b=0 p=-10000 d=5100
+@\par via @17 b=0 p=-10000 d=5100
+@\par via @18 b=0 p=-10000 d=5100
+@\par via @19 b=0 p=-10000 d=5100
+@\par via @20 b=0 p=-10000 d=5100
+@\par via @21 b=0 p=-10000 d=5100
+@\par via @22 b=0 p=-10000 d=5100
+@@23: line 7.2- t=14070 -> @21
 
 @firstpass
 [][]\TU/TeXGyreTermes(0)/m/n/10 Im Kaśm. Śiv. °das ewige Wort, in welchem po-
@@ -9599,10 +10017,67 @@ girl?,
 @ via @22 b=24 p=0 d=11156
 @ via @23 b=24 p=0 d=1156
 @@27: line 11.3 t=30059 -> @23
-Maitrāyaṇī?, sun-ray?, abun-dance, li-oness?.[][] 
-@\par via @26 b=0 p=-10000 d=100
-@\par via @27 b=0 p=-10000 d=100
-@@28: line 12.2- t=30159 -> @27
+Maitrāyaṇī?, sun-ray?, abun-dance, li-oness?.[][] In its mid-dle ex-ists a 
+sin-gle 
+@ via @26 b=86 p=0 d=19216
+@@28: line 12.1 t=72648 -> @26
+per-
+@\discretionary via @26 b=3 p=50 d=2669
+@@29: line 12.2- t=56101 -> @26
+son 
+@ via @27 b=21 p=0 d=10961
+@@30: line 12.1 t=41020 -> @27
+which shines like a thou-sand moons. Be-cause of the ex-er-cise of med-
+@\discretionary via @28 b=124 p=50 d=20456
+@@31: line 13.0- t=93104 -> @28
+i-
+@\discretionary via @28 b=77 p=50 d=10069
+@@32: line 13.1- t=82717 -> @28
+ta-
+@\discretionary via @28 b=13 p=50 d=3029
+@\discretionary via @29 b=187 p=50 d=61309
+@@33: line 13.1- t=75677 -> @28
+tion 
+@ via @28 b=5 p=0 d=225
+@ via @29 b=15 p=0 d=625
+@@34: line 13.1 t=56726 -> @29
+on 
+@ via @29 b=3 p=0 d=169
+@ via @30 b=43 p=0 d=2809
+@@35: line 13.1 t=43829 -> @30
+this 
+@ via @30 b=5 p=0 d=225
+@@36: line 13.2 t=41245 -> @30
+per-son all dis-eases which are (oth-er-wise) not pos-si-ble to be con-
+@\discretionary via @31 b=25 p=50 d=13725
+@\discretionary via @32 b=51 p=50 d=16221
+@\discretionary via @33 b=193 p=50 d=53709
+@@37: line 14.1- t=98938 -> @32
+trolled 
+@ via @32 b=72 p=0 d=16724
+@ via @33 b=1 p=0 d=121
+@ via @34 b=110 p=0 d=14400
+@@38: line 14.0 t=71126 -> @34
+@@39: line 14.2 t=75798 -> @33
+van-
+@\discretionary via @34 b=7 p=50 d=2789
+@\discretionary via @35 b=15 p=50 d=3125
+@@40: line 14.1- t=46954 -> @35
+ish. 
+@ via @35 b=2 p=0 d=144
+@ via @36 b=108 p=0 d=23924
+@@41: line 14.2 t=43973 -> @35
+The 
+@ via @36 b=13 p=0 d=529
+@@42: line 14.3 t=41774 -> @36
+per-son lives up to 1001 years. 
+@\par via @37 b=0 p=-10000 d=5100
+@\par via @38 b=0 p=-10000 d=10100
+@\par via @39 b=0 p=-10000 d=100
+@\par via @40 b=0 p=-10000 d=5100
+@\par via @41 b=0 p=-10000 d=100
+@\par via @42 b=0 p=-10000 d=100
+@@43: line 15.2- t=41874 -> @42
 
 [18
 
@@ -9616,13 +10091,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11205 strings out of 478824
+ 11221 strings out of 478824
  125007,794899 words of node,token memory allocated
- 14211 words of node memory still in use:
-   3 hlist, 10 vlist, 1 rule, 61 glue, 3 kern, 1620 glyph, 584 attribute, 96 glu
-e_spec, 293 attribute_list, 1 write nodes
-   avail lists: 2:5080,3:2057,4:106,5:980,6:44,7:8656,8:2,9:732,10:29,11:813
- 30364 multiletter control sequences out of 65536+600000
+ 14630 words of node memory still in use:
+   3 hlist, 10 vlist, 1 rule, 61 glue, 3 kern, 1673 glyph, 600 attribute, 96 glu
+e_spec, 301 attribute_list, 1 write nodes
+   avail lists: 2:5056,3:2057,4:106,5:980,6:44,7:8603,8:2,9:732,10:29,11:813
+ 30380 multiletter control sequences out of 65536+600000
  83 fonts using 11338335 bytes
  98i,10n,141p,7570b,1573s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf></usr/local/texlive/20
@@ -9631,7 +10106,7 @@ local/texlive/2020/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-itali
 c.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/tex-gyre/texgyre
 termes-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/tex-gy
 re/texgyretermes-regular.otf>
-Output written on bindu.pdf (19 pages, 100482 bytes).
+Output written on bindu.pdf (19 pages, 101791 bytes).
 
 PDF statistics: 99 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
