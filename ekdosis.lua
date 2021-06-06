@@ -52,14 +52,17 @@ local app = lpeg.Cs("app")
 local lemrdg = lpeg.Cs(lpeg.Cs("lem") + lpeg.Cs("rdg"))
 local note = lpeg.Cs("note")
 local lnbrk = lpeg.Cs("\\\\")
-local poemline = lpeg.Cs(lnbrk * bsqbrackets^-1)
-local endpoem = lpeg.Cs(lnbrk * lpeg.S("*!") * bsqbrackets^-1)
+local poemline = lpeg.Cs(lnbrk * spcenc^-1 * lpeg.S("*!")^-1 * bsqbrackets^-1 * spcenc^-1)
+local poemlinebreak = lpeg.Cs(lnbrk * spcenc^-1 * lpeg.P("&gt;") * bsqbrackets^-1 * spcenc^-1)
+local linegroup = lpeg.Cs{ "<lg" * ((1 - lpeg.S"<>") + lpeg.V(1))^0 * ">" }
+local bclinegroup = lpeg.Cs(linegroup + lpeg.P("</lg>"))
+local endpoem = lpeg.Cs(lnbrk * lpeg.S("*!") * bsqbrackets^-1) -- not used
 local sections = lpeg.Cs(lpeg.P("book") + lpeg.P("part") + lpeg.P("chapter")
 			    + lpeg.P("section") + lpeg.P("subsection")
 			    + lpeg.P("subsubsection"))
 local par =  lpeg.P(lpeg.P("\\par") * spce^0)
-local parb = lpeg.P(lpeg.Cs("\\p@rb") * spce^0)
-local para = lpeg.P(lpeg.Cs("\\p@ra") * spce^0)
+local parb = lpeg.P(lpeg.P("\\p@rb") * spce^0)
+local para = lpeg.P(lpeg.P("\\p@ra") * spce^0)
 local labelrefcmds = lpeg.Cs(lpeg.P("label")
 			       + lpeg.P("linelabel")
 			       + lpeg.P("lineref")
@@ -401,8 +404,12 @@ local texpatttotags = {
    {a="\\addentries%s+%[(.-)%]{(.-)}", b=""},
    {a="\\addentries%s+{(.-)}", b=""},
    {a="\\setverselinenums%s+{(.-)}{(.-)}", b=""},
+   {a="\\resetvlinenumber%s+%[(.-)%]", b=""},
+   {a="\\resetvlinenumber%s+", b=""},
    {a="\\resetlinenumber%s+%[(.-)%]", b=""},
    {a="\\resetlinenumber%s+", b=""},
+   {a="\\indentpattern%s+{(.-)}", b=""},
+   {a="\\settowidth%s+{(.-)}{(.-)}", b=""},
    {a="\\poemlines%s+{(.-)}", b=""},
    {a="\\pagebreak%s+%[[1-4]%]", b=""},
    {a="\\pagebreak%s+", b=""},
@@ -415,20 +422,19 @@ local texpatttotags = {
    {a="\\%=%=%s?", b="–"},
    {a="\\%-%-%s?", b="–"},
    {a="\\%=%/%s?", b="‐"},
-   {a="\\%-%/%s?", b="‐"}
+   {a="\\%-%/%s?", b="‐"},
+   {a="\\vin%s+", b=""}
 }
 
 local envtotags = {
    {a="flushright", b="p", c=" rend=\"align(right)\""},
    {a="flushleft", b="p", c=" rend=\"align(left)\""},
    {a="quotation", b="quote", c=""},
-   {a="ekdverse", b="lg", c=""},
    {a="txarabtr", b="p", c=" xml:lang=\"ar-Latn\" type=\"transliterated\""},
    {a="quoting", b="quote", c=""},
    {a="ekdpar", b="p", c=""},
    {a="txarab", b="p", c=" xml:lang=\"arb\""},
    {a="center", b="p", c=" rend=\"align(center)\""},
-   {a="verse", b="lg", c=""},
    {a="arab", b="p",
     c=" xml:lang=\"ar-Latn\" type=\"transliterated\" subtype=\"arabtex\""}
 }
@@ -646,32 +652,69 @@ local function relocate_notes(str)
 end
 
 local function linestotei(str)
---   str = "\n<l>"..str
-   str = string.gsub(str, "^%s?(.-)\\\\[%!%*]?%s?$", "\n<l>%1</l>\n")
---   str = gsub(str, endpoem, "</l>\n")
-   str = gsub(str, poemline * spcenc^-1 * lpeg.P("&gt;"), "\n<lb/>")
-   str = gsub(str, poemline * spcenc^-1, "</l>\n<l>")
---   str = str.."</l>\n"
+   if not string.find(str, "^%s?<lg")
+   then
+      str = "\n<l>"..str
+   end
+   str = gsub(str, poemline * spcenc^0 * bclinegroup, "</l>\n%2")
+   str = gsub(str, linegroup * -(spcenc^0 * bclinegroup), "%1\n<l>")
+   str = gsub(str, lpeg.Cs("</lg>") * -(spcenc^0 * (bclinegroup + -1)), "%1\n<l>")
+   -- str = gsub(str, poemline * spcenc^-1 * -1, "</l>\n")
+   str = gsub(str, poemlinebreak, "<lb/> ")
+   -- str = gsub(str, poemline * spcenc^-1 * lpeg.Cs("<lg"), "</l>%2")
+   -- str = gsub(str, lpeg.Cs("</lg>") * spcenc^1 * -lpeg.P("<l"), "%1\n<l>")
+   str = gsub(str, poemline, "</l>\n<l>")
+   return str
+end
+
+local function stanzatotei(str)
+   str = string.gsub(str, "\\begin%s?%{ekdstanza%}(%b[])(.-)\\end%s?%{ekdstanza%}", function(opt, arg)
+			arg = string.gsub(arg, "\\par%s?", "")
+			opt = string.sub(opt, 2, -2)
+			teitype = get_attr_value(opt, "type")
+			if teitype ~= "" then teitype = " type=\""..teitype.."\"" else end
+			if opt == ""
+			then
+			   return string.format("<lg>%s</lg>", arg)
+			else
+			   return string.format("<lg%s>%s</lg>", teitype, arg)
+			end
+   end)
+   str = string.gsub(str, "\\begin%s?%{ekdstanza%}(.-)\\end%s?%{ekdstanza%}", function(arg)
+			arg = string.gsub(arg, "\\par%s?", "")
+			return string.format("<lg>%s</lg>", arg)
+   end)
    return str
 end
 
 -- better use lpeg: look into this later
 local function versetotei(str)
-   str = string.gsub(str, "(\\begin%s?%{ekdverse%})(%b[])(.-)(\\end%s?%{ekdverse%})", function(benv, opt, arg, eenv)
-			arg = linestotei(arg)
-			return string.format("%s%s%s%s", benv, opt, arg, eenv)
+   str = string.gsub(str, "\\begin%s?%{ekdverse%}(%b[])(.-)\\end%s?%{ekdverse%}", function(opt, arg)
+			arg = string.gsub(arg, "\\par%s?", "")
+			arg = string.gsub(arg, "\\begin%s?%{patverse%*?%}", "")
+			arg = string.gsub(arg, "\\end%s?%{patverse%*?%}", "")
+			arg = string.gsub(arg, "\\indentpattern%s?%b{}", "")
+			opt = string.sub(opt, 2, -2)
+			teitype = get_attr_value(opt, "type")
+			if teitype ~= "" then teitype = " type=\""..teitype.."\"" else end
+			if opt == ""
+			then
+			   return "\\p@rb "..linestotei(string.format("<lg>%s</lg>", arg)).."\\p@ra "
+			else
+			   return "\\p@rb "..linestotei(string.format("<lg%s>%s</lg>", teitype, arg)).."\\p@ra "
+			end
    end)
-   str = string.gsub(str, "(\\begin%s?%{ekdverse%})(.-)(\\end%s?%{ekdverse%})", function(benv, arg, eenv)
-			arg = linestotei(arg)
-			return string.format("%s%s%s", benv, arg, eenv)
+   str = string.gsub(str, "\\begin%s?%{ekdverse%}(.-)\\end%s?%{ekdverse%}", function(arg)
+			arg = string.gsub(arg, "\\par%s?", "")
+			return "\\p@rb "..linestotei(string.format("<lg>%s</lg>", arg)).."\\p@ra "
    end)
-   str = string.gsub(str, "(\\begin%s?%{verse%})(%b[])(.-)(\\end%s?%{verse%})", function(benv, opt, arg, eenv)
-			arg = linestotei(arg)
-			return string.format("%s%s%s%s", benv, opt, arg, eenv)
+   str = string.gsub(str, "\\begin%s?%{verse%}%b[](.-)\\end%s?%{verse%}", function(arg)
+			arg = string.gsub(arg, "\\par%s?", "")
+			return "\\p@rb "..linestotei(string.format("<lg>%s</lg>", arg)).."\\p@ra "
    end)
-   str = string.gsub(str, "(\\begin%s?%{verse%})(.-)(\\end%s?%{verse%})", function(benv, arg, eenv)
-			arg = linestotei(arg)
-			return string.format("%s%s%s", benv, arg, eenv)
+   str = string.gsub(str, "\\begin%s?%{verse%}(.-)\\end%s?%{verse%}", function(arg)
+			arg = string.gsub(arg, "\\par%s?", "")
+			return "\\p@rb "..linestotei(string.format("<lg>%s</lg>", arg)).."\\p@ra "
    end)
    return str
 end
@@ -1217,6 +1260,7 @@ local function textotei(str)
    str = rdgGrp_totei(str)
    str = lem_rdg_totei(str)
    str = relocate_notes(str)
+   str = stanzatotei(str)
    str = versetotei(str)
    str = envtotei(str)
    str = ekddivs_totei(str)
@@ -1866,7 +1910,7 @@ function ekdosis.appout()
       local output = {}
       if next(apparatuses) == nil then
 	 -- table.insert(output, "BEGIN")
-	 table.insert(output, "\\noindent\\csname ekd@default@rule\\endcsname\\NLS")
+	 table.insert(output, "\\csname ekd@default@rule\\endcsname\\NLS")
 	 table.insert(output, "\\csname ekd@begin@apparatus\\endcsname\\ignorespaces")
 --	 table.insert(output, "\\noindent ")
 	 for i in string.gmatch(t,
@@ -1881,6 +1925,7 @@ function ekdosis.appout()
 	 end
 	 -- table.insert(output, "END")
       else
+	 local appinserted = false
 	 local n = 1
 	 while apparatuses[n]
 	 do
@@ -1895,16 +1940,19 @@ function ekdosis.appout()
 	       table.insert(output, "\\bgroup{}")
 	       if apparatuses[n].direction == "LR"
 	       then
-		  table.insert(output, "\\pardir TLT\\textdir TLT{}")
+		  table.insert(output, "\\pardir TLT\\leavevmode\\textdir TLT{}")
 	       elseif apparatuses[n].direction == "RL"
 	       then
-		  table.insert(output, "\\pardir TRT\\textdir TRT{}")
+		  table.insert(output, "\\pardir TRT\\leavevmode\\textdir TRT{}")
 	       end
 	       if apparatuses[n].rule == "none"
 	       then
 		  if n > 1
 		  then
-		     table.insert(output, "\\NLS{}")
+		     if appinserted
+		     then
+			table.insert(output, "\\NLS{}")
+		     end
 		  else
 		     table.insert(output, "\\noindent ")
 		  end
@@ -1912,7 +1960,12 @@ function ekdosis.appout()
 	       then
 		  if n > 1
 		  then
-		     table.insert(output, "\\NLS{}" .. apparatuses[n].rule .. "\\NLS{}")
+		     if appinserted
+		     then
+			table.insert(output, "\\NLS{}" .. apparatuses[n].rule .. "\\NLS{}")
+		     else
+			table.insert(output, apparatuses[n].rule .. "\\NLS{}")
+		     end
 		  else
 --		     table.insert(output, "\\noindent ")
 		     table.insert(output, apparatuses[n].rule .. "\\NLS{}")
@@ -1920,7 +1973,12 @@ function ekdosis.appout()
 	       else
 		  if n > 1
 		  then
-		     table.insert(output, "\\NLS\\csname ekd@default@rule\\endcsname\\NLS{}")
+		     if appinserted
+		     then
+			table.insert(output, "\\NLS\\csname ekd@default@rule\\endcsname\\NLS{}")
+		     else
+			table.insert(output, "\\csname ekd@default@rule\\endcsname\\NLS{}")
+		     end
 		  else
 --		     table.insert(output, "\\noindent ")
 		     table.insert(output, "\\csname ekd@default@rule\\endcsname\\NLS{}")
@@ -1946,6 +2004,7 @@ function ekdosis.appout()
 					 ..curcol.."%-"..n..">")
 	       do
 		  table.insert(output, i)
+		  appinserted = true
 	       end
 	       if apparatuses[n].ehook ~= ""
 	       then
