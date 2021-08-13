@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.28)  14 JUL 2021 17:46
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.21)  5 AUG 2021 10:08
  restricted system commands enabled.
 **bindu.tex
 (./bindu.tex
@@ -7,8 +7,8 @@ Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
 Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended c
 ollection.
-luaotfload | conf : Root cache directory is "/home/enjotel/.texlive2020/texmf-va
-r/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/Users/enjotel/Library/texlive/2020
+/texmf-var/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-res
 olved path "/usr/local/texlive/2020/texmf-dist/tex/luatex/luaotfload/fontloader-
 2021-01-07.lua".
@@ -20,8 +20,8 @@ Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 3
-luaotfload | conf : Root cache directory is "/home/enjotel/.texlive2020/texmf-va
-r/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/Users/enjotel/Library/texlive/2020
+/texmf-var/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
 Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filt
@@ -47,8 +47,8 @@ Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /home/enjotel/.texlive2020/tex
-mf-var/luatex-cache/generic/names/luaotfload-names.luc)
+luaotfload | db : Font names database loaded from /Users/enjotel/Library/texlive
+/2020/texmf-var/luatex-cache/generic/names/luaotfload-names.luc)
 \c@part=\count173
 \c@section=\count174
 \c@subsection=\count175
@@ -88,10 +88,10 @@ Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 LaTeX Info: Redefining \_ on input line 43.
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/01/26 3.53 The Babel package
+Package: babel 2020/12/16 3.52 The Babel package
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2021/01/26 3.53 Babel common definitions
+File: babel.def 2020/12/16 3.52 Babel common definitions
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/luababel.def
 \bbl@readstream=\read2
@@ -255,21 +255,21 @@ Package: ekdosis 2021/04/02 v1.2 Typesetting TEI xml-compliant critical editions
 (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
-(/usr/local/texlive/2020/texmf-dist/tex/generic/expkv-opt/expkv-opt.sty
+(/usr/local/texlive/texmf-local/tex/latex/local/expkv-opt/expkv-opt.sty
 Package: expkv-opt 2020-10-10 v0.1b parse class and package options with expkv
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/expkv/expkv.sty
-(/usr/local/texlive/2020/texmf-dist/tex/generic/expkv/expkv.tex
-File: expkv.tex 2020-12-28 v1.6 an expandable key=val implementation
+(/usr/local/texlive/texmf-local/tex/latex/local/expkv/expkv.sty
+(/usr/local/texlive/texmf-local/tex/latex/local/expkv/expkv.tex
+File: expkv.tex 2020-10-10 v1.5 an expandable key=val implementation
 )
-Package: expkv 2020-12-28 v1.6 an expandable key=val implementation
+Package: expkv 2020-10-10 v1.5 an expandable key=val implementation
 ))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/expkv-def/expkv-def.sty
-(/usr/local/texlive/2020/texmf-dist/tex/generic/expkv-def/expkv-def.tex
-(/usr/local/texlive/2020/texmf-dist/tex/generic/expkv/expkv.tex)
-File: expkv-def.tex 2020-12-28 v0.7 a key-defining frontend for expkv
+(/usr/local/texlive/texmf-local/tex/latex/local/expkv-def/expkv-def.sty
+(/usr/local/texlive/texmf-local/tex/latex/local/expkv-def/expkv-def.tex
+(/usr/local/texlive/texmf-local/tex/latex/local/expkv/expkv.tex)
+File: expkv-def.tex 2020-10-12 v0.6 a key-defining frontend for expkv
 )
-Package: expkv-def 2020-12-28 v0.7 a key-defining frontend for expkv
+Package: expkv-def 2020-10-12 v0.6 a key-defining frontend for expkv
 )
 (/usr/local/texlive/2020/texmf-dist/tex/lualatex/luacode/luacode.sty
 Package: luacode 2012/01/23 v1.2a lua-in-tex helpers (mpg)
@@ -503,7 +503,7 @@ Package zref Info: New property: abspage on input line 66.
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count293
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/parnotes/parnotes.sty
+(/usr/local/texlive/texmf-local/tex/latex/local/parnotes/parnotes.sty
 Package: parnotes 2019/07/23 rev. 3b Notes after every paragraph, or elsewhere
 \c@parnotemark=\count294
 )
@@ -527,8 +527,8 @@ Package babel Info: The following font families will use the default
 (babel)             these families, consider redefining them with \babelfont.
 (babel)             Reported on input line 4.
 
-luaotfload | cache : Lookup cache loaded from /home/enjotel/.texlive2020/texmf-v
-ar/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | cache : Lookup cache loaded from /Users/enjotel/Library/texlive/202
+0/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 luaotfload | aux : font no 28 (nil) defines no feature for script latn with lang
 uage eng
 
@@ -620,27 +620,27 @@ LaTeX Warning: Label `s22.z4' multiply defined.
 )
 \openout1 = bindu.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 235.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 236.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 23
-5.
+6.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 235.
-LaTeX Font Info:    ... okay on input line 235.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 236.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -670,64 +670,64 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 235.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 235.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 235.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 235.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 235.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 235.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 235.
-LaTeX Font Info:    Redeclaring math accent \check on input line 235.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 235.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 235.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 235.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 235.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 235.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 236.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 236.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 236.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 236.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 236.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 236.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 236.
+LaTeX Font Info:    Redeclaring math accent \check on input line 236.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 236.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 236.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 236.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 236.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 235.
+(Font)              `operators' in the math version `normal' on input line 236.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 23
-5.
+6.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 235.
+(Font)              `operators' in the math version `bold' on input line 236.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 2
-35.
+36.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on i
-nput line 235.
+nput line 236.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 
-235.
+236.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 2
-35.
+36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 235.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 236.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 235.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 236.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on i
-nput line 235.
+nput line 236.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line
- 235.
+ 236.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 235.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 236.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 235.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 236.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -788,19 +788,19 @@ Trans-la-tion
 @@6: line 1.2- t=100 -> @0
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 236.
+(Font)              <14.4> on input line 237.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 236.
+(Font)              <7> on input line 237.
 @firstpass
 [][]
 @\par via @0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @0
 
 @firstpass
-[]\TU/TeXGyreTermes(0)/m/n/14.4 July 
+[]\TU/TeXGyreTermes(0)/m/n/14.4 Au-gust 
 @ via @0 b=0 p=0 d=100
 @@1: line 1.2 t=100 -> @0
-14, 
+5, 
 @ via @0 b=0 p=0 d=100
 @ via @1 b=0 p=0 d=100
 @@2: line 1.2 t=100 -> @0
@@ -817,7 +817,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/n' in size <17.28> not av
 ailable
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/n' tried instead on input 
-line 239.
+line 240.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/17.28 Con-ven-tions in the Crit-i-cal Ap-pa-ra-tus 
 @\par via @0 b=0 p=-10000 d=100
@@ -826,7 +826,7 @@ line 239.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/n' in size <14.4> not ava
 ilable
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/n' tried instead on input 
-line 240.
+line 241.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/14.4 Sigla in the Crit-i-cal Ap-pa-ra-tus 
 @\par via @0 b=0 p=-10000 d=100
@@ -853,11 +853,11 @@ line 240.
 @@1: line 1.2- t=100 -> @0
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 247.
+(Font)              <12> on input line 248.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 247.
+(Font)              <8> on input line 248.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 247.
+(Font)              <6> on input line 248.
 @firstpass
 []\TU/TeXGyreTermes(0)/m/n/12 N$[][]$: NGMPP B 38-31 
 @\par via @0 b=0 p=-10000 d=100
@@ -1100,7 +1100,7 @@ ap-pa-ra-tus.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/it' in size <17.28> not a
 vailable
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/it' tried instead on input
- line 274.
+ line 275.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/17.28 Crit-i-cal Edi-tion of the \TU/TeXGyreTermes(0
 )/b/it/17.28 Yo-gatattv-abindu 
@@ -1108,7 +1108,7 @@ vailable
 @@1: line 1.2- t=100 -> @0
 
 LaTeX Font Info:    Font shape `TU/AdishilaSan(0)/m/n' will be
-(Font)              scaled to size 13.99994pt on input line 340.
+(Font)              scaled to size 13.99994pt on input line 341.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/n' in size <10> not avail
 able
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/n' tried instead on input 
@@ -1884,7 +1884,7 @@ the va-ri-eties:
 @@18: line 18.2- t=0 -> @17
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
 
  []
 
@@ -2071,7 +2071,7 @@ n/12 s.[][][]
 @@17: line 17.2- t=0 -> @16
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--368
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
 
  []
 
@@ -2548,7 +2548,7 @@ TU/TeXGyreTermes(0)/m/n/10 : [][]L starts here.[][][]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/bx/n' in size <12> not avail
 able
 (Font)              Font shape `TU/TeXGyreTermes(0)/b/n' tried instead on input 
-line 450.
+line 451.
 @firstpass
 []\TU/TeXGyreTermes(0)/b/n/12 1. \TU/TeXGyreTermes(0)/m/n/12 This Yoga is lib-er
 -a-tion through [men-tal] ac-tion. It be-stows suc-cess(\TU/TeXGyreTermes(0)/m/
@@ -3499,7 +3499,7 @@ alone is called a yogī of many ac-tions (\TU/TeXGyreTermes(0)/m/it/12 bahukriy
 @@6: line 4.2- t=344 -> @5
 
 
-Overfull \hbox (3.63615pt too wide) in paragraph at lines 677--677
+Overfull \hbox (3.63615pt too wide) in paragraph at lines 678--678
 []\TU/TeXGyreTermes(0)/m/n/12 Fraud, il-lu-sion, prop-erty,vi-o-lence, crav-ing,
  envy, ego, anger, anx-i-ety, shame, greed,
  []
@@ -4238,7 +4238,7 @@ of
 @@159: line 21.2- t=1283591 -> @153
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 1--791
+Underfull \hbox (badness 1097) in paragraph at lines 1--792
 [] []\TU/TeXGyreTermes(0)/bx/n/10 1 [][]kathyante[] []\TU/TeXGyreTermes(0)/m/n/
 10 E[]P[]N$[][]$[]D$[][]$[]U$[][]$] []\TU/TeXGyreTermes(0)/m/it/10 omit-ted in 
 [] []\TU/TeXGyreTermes(0)/m/n/10 L  [][][]\TU/TeXGyreTermes(0)/bx/n/10 ke te[] 
@@ -4342,7 +4342,7 @@ galā
 @@11: line 5.2- t=14384 -> @10
 
 
-Overfull \hbox (8.0614pt too wide) in paragraph at lines 798--798
+Overfull \hbox (8.0614pt too wide) in paragraph at lines 799--799
 []\TU/TeXGyreTermes(0)/m/n/12 Now va-ri-eties of \TU/TeXGyreTermes(0)/m/it/12 r
 ā-jayoga \TU/TeXGyreTermes(0)/m/n/12 will be de-scribed. Which are these? One 
 is \TU/TeXGyreTermes(0)/m/it/12 sid-dhakuṇḍal-
@@ -6874,7 +6874,7 @@ in
 @@146: line 18.2- t=2283276 -> @144
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 1--1003
+Underfull \hbox (badness 1308) in paragraph at lines 1--1004
 []\TU/TeXGyreTermes(0)/m/n/10 P []sid-dhibud-dhiśak-timuṣako vāhanaṃ[] []
 L []sid-dhibud-dhiśak-tiḥ muṣako vāhanaṃ[] []U$[][]$  []\TU/TeXGyreTerm
 es(0)/bx/n/10 2 [][]ākuñ-
@@ -13264,7 +13264,7 @@ dance.[][][]
 @@359: line 19.2- t=8821 -> @339
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--1385
+Underfull \hbox (badness 10000) in paragraph at lines 1--1386
 []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]N$[][]$[]D$[][]$[]U$[][]$[]U$[][]$] []\TU/T
 eXGyreTermes(0)/m/it/10 omit-ted in [] []\TU/TeXGyreTermes(0)/m/n/10 L  []\TU/T
 eXGyreTermes(0)/bx/n/10 8--9 [][]pad-marā-garat-nasamā-navarṇāṅguṣṭha
@@ -13272,14 +13272,14 @@ pramāṇaikā[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--1385
+Underfull \hbox (badness 10000) in paragraph at lines 1--1386
 \TU/TeXGyreTermes(0)/m/it/10 scripsi\TU/TeXGyreTermes(0)/m/n/10 ] []\TU/TeXGyre
 Termes(0)/m/it/10 em. \TU/TeXGyreTermes(0)/m/n/10 pad-marā-gasamā-navarṇā
 ṃguṣṭhapramāṇaikā[] []E []pad-marā-garat-nasamā-navarṇāṃ//
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1--1385
+Underfull \hbox (badness 1259) in paragraph at lines 1--1386
 []\TU/TeXGyreTermes(0)/m/n/10 L  [][][]\TU/TeXGyreTermes(0)/bx/n/10 dhyā-nak
 āraṇāt[] []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]N$[][]$[]D$[][]$[]U$[][]$] []dh
 yā-naṃ karaṇāt[] []U$[][]$ []dhyānāt[] []L  []\TU/TeXGyreTermes(0)/bx/n
@@ -18533,14 +18533,14 @@ here.[][][]
 @@234: line 15.2- t=14683 -> @232
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--1480
+Underfull \hbox (badness 10000) in paragraph at lines 1--1481
 []\TU/TeXGyreTermes(0)/m/n/10 kaṇṭhasthāne ṣoḍaśadalaṃ ka-malaṃ[]
  []E[]P[]L []viśud-dha-cakraṃ kaṃṭhastāne[] []U$[][]$  [][][]\TU/TeXGyr
 eTermes(0)/bx/n/10 var-tate[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--1480
+Underfull \hbox (badness 10000) in paragraph at lines 1--1481
 []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]L[]N$[][]$[]D$[][]$[]U$[][]$] []\TU/TeXGyre
 Termes(0)/m/it/10 omit-ted in [] []\TU/TeXGyreTermes(0)/m/n/10 U$[][]$  []\TU/T
 eXGyreTermes(0)/bx/n/10 6 [][]koṭi-can-drasamaprab-haḥ[] []\TU/TeXGyreTerme
@@ -18548,7 +18548,7 @@ s(0)/m/n/10 P[]N$[][]$[]U$[][]$[]U$[][]$] []°prabhā[] []L[]D$[][]$
  []
 
 
-Underfull \hbox (badness 4001) in paragraph at lines 1--1480
+Underfull \hbox (badness 4001) in paragraph at lines 1--1481
 []\TU/TeXGyreTermes(0)/m/n/10 N$[][]$ []ājñā-cakraṃ[] []E[]P[]L []ājñā-c
 akraṃ rak-tavarṇaṃ[] []U$[][]$ []ajñānā-makaṃ[] []N$[][]$[]D$[][]$[]
 U$[][]$ []ajñānā-maka[] []N$[][]$
@@ -19971,14 +19971,14 @@ raṃ[]
 @@196: line 23.2- t=93041928 -> @191
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 1--1833
+Underfull \hbox (badness 7116) in paragraph at lines 1--1834
 [] []\TU/TeXGyreTermes(0)/bx/n/10 1 [][]cakraṃ catuḥṣaṣṭhi-dalaṃ t
 ālumad-hye[] []\TU/TeXGyreTermes(0)/m/n/10 N$[][]$[]D$[][]$[]U$[][]$] []cakra
 ṃ catuṣaṣṭhi-dalaṃ tālumad-
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 1--1833
+Underfull \hbox (badness 6445) in paragraph at lines 1--1834
 \TU/TeXGyreTermes(0)/m/n/10 hye[] []N$[][]$ []tālumad-hye catuḥṣaṣṭi-da
 laṃ[] []E[]P[]U$[][]$ []tāludeśe mad-hye catuḥṣaṣṭhi-dala[] []L[]B 
  [][][]\TU/TeXGyreTermes(0)/bx/n/10 ’mṛ-
@@ -32344,7 +32344,7 @@ here.[][]
 @@704: line 32.2- t=12235 -> @688
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--2440
+Underfull \hbox (badness 10000) in paragraph at lines 1--2441
 []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]B[]L[]N$[][]$[]D$[][]$[]U$[][]$[]U$[][]$] [
 ]bheda[] []N$[][]$  [][][]\TU/TeXGyreTermes(0)/bx/n/10 kathyante[] []\TU/TeXGyr
 eTermes(0)/m/n/10 E[]P[]N$[][]$[]D$[][]$[]U$[][]$] []kathy-ate[] []L[]B[]N$[][]
@@ -32352,7 +32352,7 @@ $[]U$[][]$  [][][]\TU/TeXGyreTermes(0)/bx/n/10 mahāśūnya°[]
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 1--2440
+Underfull \hbox (badness 1038) in paragraph at lines 1--2441
 []\TU/TeXGyreTermes(0)/m/n/10 etadṛśaṃ[] []E []ekā-daśaṃ[] []U$[][]$  
 [][][]\TU/TeXGyreTermes(0)/bx/n/10 nāma[] []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]
 L[]B[]N$[][]$[]N$[][]$[]D$[][]$[]U$[][]$] []nā-maḥ[] []U$[][]$  [][][]\TU/Te
@@ -32360,28 +32360,28 @@ XGyreTermes(0)/bx/n/10 mahāśūny-a-cakra-mad-hye[]
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 1--2440
+Underfull \hbox (badness 1354) in paragraph at lines 1--2441
 []\TU/TeXGyreTermes(0)/m/n/10 N$[][]$[]N$[][]$[]D$[][]$[]U$[][]$] []ūrd-hva-muk
 ham[] []E[]P[]L []ur-d-hva-mukham[] []U$[][]$ []ūrd-hva-mukhem[] []B  [][][] \
 TU/TeXGyreTermes(0)/bx/n/10 ati-rak-tavarṇaṃ[]
  []
 
 
-Underfull \hbox (badness 4168) in paragraph at lines 1--2440
+Underfull \hbox (badness 4168) in paragraph at lines 1--2441
 []\TU/TeXGyreTermes(0)/m/n/10 N$[][]$[]N$[][]$[]D$[][]$[]U$[][]$] []iti rak-tava
 rṇaṃ[] []E[]L[]B []iti rak-tavarṇa°[] []P []ati-varṇaṃ[] []U$[][]$  
 [][][]\TU/TeXGyreTermes(0)/bx/n/10 sakalaśob-hās-padaṃ[]
  []
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 1--2440
+Underfull \hbox (badness 7047) in paragraph at lines 1--2441
 []\TU/TeXGyreTermes(0)/m/n/10 P[]B[]L[]N$[][]$[]N$[][]$[]D$[][]$[]U$[][]$] []sak
 alaśob-hās-padam[] []E []sakalaśob-hanāsyadaṃ[] []U$[][]$  [][][]\TU/TeXG
 yreTermes(0)/bx/n/10 anekaka-lyāṇapūrṇaṃ[]
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 1--2440
+Underfull \hbox (badness 2409) in paragraph at lines 1--2441
 []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]L[]D$[][]$[]N$[][]$[]U$[][]$[]U$[][]$] []
 °pūrṇa°[] []B[]N$[][]$  [][][]\TU/TeXGyreTermes(0)/bx/n/10 ekaṃ[] []\TU/
 TeXGyreTermes(0)/m/n/10 E[]P[]L[]B[]N$[][]$[]N$[][]$[]U$[][]$] []eka°[] []D$[]
@@ -32390,7 +32390,7 @@ TeXGyreTermes(0)/m/n/10 E[]P[]L[]B[]N$[][]$[]N$[][]$[]U$[][]$] []eka°[] []D$[]
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 1--2440
+Underfull \hbox (badness 1412) in paragraph at lines 1--2441
 []\TU/TeXGyreTermes(0)/m/n/10 P  [][][]\TU/TeXGyreTermes(0)/bx/n/10 trikoṇar
 ū-paikā[] []\TU/TeXGyreTermes(0)/m/n/10 E] []trikoṇārūpā ekā[] []P[]L[]
 B[]D$[][]$[]U$[][]$[]U$[][]$ []trikoṇārūpā eka[] []N$[][]$[]N$[][]$  []\TU
@@ -36225,7 +36225,7 @@ yreTermes(0)/m/it/10 lakṣanayoga\TU/TeXGyreTermes(0)/m/n/10 .[][]
 @@91: line 15.2- t=1941034 -> @88
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 1--2773
+Underfull \hbox (badness 1057) in paragraph at lines 1--2774
 []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]N$[][]$[]D$[][]$[]U$[][]$] []lakṣayo-ga
 ḥ[] []B[]L []°lakṣayo-gaḥ[] []U$[][]$ []lakṣanayo-gaḥ[] []N$[][]$  [
 ][][]\TU/TeXGyreTermes(0)/bx/n/10 asya[] []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]B[
@@ -36281,12 +36281,12 @@ Underfull \hbox (badness 1057) in paragraph at lines 1--2773
 @@9: line 9.2- t=0 -> @8
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2773--2773
+Underfull \hbox (badness 10000) in paragraph at lines 2774--2774
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2773--2773
+Underfull \hbox (badness 10000) in paragraph at lines 2774--2774
 
  []
 
@@ -36339,17 +36339,17 @@ reTermes(0)/m/n/12 ).
 @@10: line 10.0- t=324 -> @9
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2782--2782
+Underfull \hbox (badness 10000) in paragraph at lines 2783--2783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2782--2782
+Underfull \hbox (badness 10000) in paragraph at lines 2783--2783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2782--2782
+Underfull \hbox (badness 10000) in paragraph at lines 2783--2783
 
  []
 
@@ -38299,7 +38299,7 @@ vatī[]
 @@256: line 27.2- t=10790989 -> @252
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 1--3212
+Underfull \hbox (badness 2521) in paragraph at lines 1--3213
 [] []\TU/TeXGyreTermes(0)/bx/n/10 1 [][]athād-ho-lakṣyaḥ[] \TU/TeXGyreTerm
 es(0)/m/it/10 scripsi\TU/TeXGyreTermes(0)/m/n/10 ] []\TU/TeXGyreTermes(0)/m/it/
 10 em. \TU/TeXGyreTermes(0)/m/n/10 atha ad-ho-lakṣyaḥ[] []N$[][]$ []athād-h
@@ -38307,7 +38307,7 @@ o-lakṣaḥ[] []P[]L []athād-ho-lakṣa[] []B
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 1--3212
+Underfull \hbox (badness 1168) in paragraph at lines 1--3213
 []\TU/TeXGyreTermes(0)/m/n/10 P []dṛḍhīkaraṇān[] []B  [][][]\TU/TeXGyre
 Termes(0)/bx/n/10 dṛṣṭiḥ[] []\TU/TeXGyreTermes(0)/m/n/10 E[]P[]B[]N$[][
 ]$[]D$[][]$[]U$[][]$] []dṛṣṭi°[] []L[]N$[][]$[]U$[][]$  [][][]\TU/TeXGyr
@@ -38657,12 +38657,12 @@ ing.
 @@53: line 10.0- t=6567 -> @52
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3223--3223
+Underfull \hbox (badness 10000) in paragraph at lines 3224--3224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3223--3223
+Underfull \hbox (badness 10000) in paragraph at lines 3224--3224
 
  []
 
@@ -38682,20 +38682,20 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11970 strings out of 478824
+ 11960 strings out of 478824
  156265,953878 words of node,token memory allocated
  26913 words of node memory still in use:
    3 hlist, 18 vlist, 1 rule, 79 glue, 3 kern, 3154 glyph, 1166 attribute, 100 g
 lue_spec, 584 attribute_list, 1 write nodes
    avail lists: 2:11249,3:3332,4:104,5:1163,6:41,7:9547,8:2,9:1101,10:29,11:854
- 31127 multiletter control sequences out of 65536+600000
+ 31117 multiletter control sequences out of 65536+600000
  89 fonts using 12704207 bytes
  98i,10n,141p,11080b,1810s stack positions out of 5000i,500n,10000p,200000b,200000s
-</home/enjotel/.local/share/fonts/AdishilaSan.ttf></home/enjotel/.local/share/fo
-nts/texgyretermes-bolditalic.otf></home/enjotel/.local/share/fonts/texgyretermes
--italic.otf></home/enjotel/.local/share/fonts/texgyretermes-bold.otf></home/enjo
-tel/.local/share/fonts/texgyretermes-regular.otf>
-Output written on bindu.pdf (33 pages, 193674 bytes).
+</Users/enjotel/Library/Fonts/AdishilaSan.ttf></Users/enjotel/Library/Fonts/texg
+yretermes-bolditalic.otf></Users/enjotel/Library/Fonts/texgyretermes-italic.otf>
+</Users/enjotel/Library/Fonts/texgyretermes-bold.otf></Users/enjotel/Library/Fon
+ts/texgyretermes-regular.otf>
+Output written on bindu.pdf (33 pages, 193676 bytes).
 
 PDF statistics: 146 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream
