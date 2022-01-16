@@ -1,12 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.28)  5 MAY 2021 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.28)  15 DEC 2021 09:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**\nonstopmode\nofiles\PassOptionsToPackage{active,tightpage,auctex}{preview}\A
-tBeginDocument{\ifx\ifPreview\undefined\RequirePackage[displaymath,floats,graph
-ics,textmath,sections,footnotes]{preview}[2004/11/05]\fi} \input _region_.tex
-(./_region_.tex  !name(bindu.tex)
+**\input _region_.tex
+ (./_region_.tex
+ !name(bindu.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
@@ -6168,10 +6167,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 )
-./_region_.tex:18: Undefined control sequence.
+./_region_.tex:61: Undefined control sequence.
 <recently read> \babelfont 
                            
-l.18 \babelfont
+l.61 \babelfont
                [iast]{rm}[Renderer=Harfbuzz, Scale=1.4]{AdishilaSan}%Adishil...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6179,8 +6178,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./_region_.tex:19: Undefined control sequence.
-l.19 \babelfont
+./_region_.tex:62: Undefined control sequence.
+l.62 \babelfont
                [english]{rm}{TeX Gyre Termes}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6199,7 +6198,7 @@ Gyre Ter-mes
 @@2: line 2.2- t=0 -> @@1
 
 
-Overfull \hbox (138.50146pt too wide) in paragraph at lines 123--20
+Overfull \hbox (138.50146pt too wide) in paragraph at lines 123--63
 []\OT1/cmr/m/n/12 iast[./]string = , iast[:]string = {, [iast]rm[Renderer=Harfb
 uzz, Scale=1.4]AdishilaSan[english]rmTeX
  []
@@ -6225,11 +6224,11 @@ l.46 \RequireLuaTeX
 
  
 Here is how much of TeX's memory you used:
- 1920 strings out of 479304
- 25123 string characters out of 5867266
- 327702 words of memory out of 5000000
- 19157 multiletter control sequences out of 15000+600000
+ 1918 strings out of 479304
+ 25099 string characters out of 5867266
+ 327694 words of memory out of 5000000
+ 19155 multiletter control sequences out of 15000+600000
  403728 words of font info for 28 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 53i,1n,62p,455b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,1n,62p,241b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 ./ekdosis.sty:46:  ==> Fatal error occurred, no output PDF file produced!
