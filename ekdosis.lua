@@ -51,9 +51,12 @@ local cmdargs = lpeg.Cs(spce^-1 * bsqbracketsii * bcbracesii * bsqbrackets^-1)
 local app = lpeg.Cs("app")
 local lemrdg = lpeg.Cs(lpeg.Cs("lem") + lpeg.Cs("rdg"))
 local note = lpeg.Cs("note")
+local inlem = lpeg.Cs{ "<lem" * ((1 - (lpeg.P"<lem" + lpeg.P"</lem>")) + lpeg.V(1))^0 * "</lem>" }
+local inanchor = lpeg.Cs{ "<anchor" * ((1 - (lpeg.P"<" + lpeg.P">")) + lpeg.V(1))^0 * ">" }
+local inopeningnote = lpeg.Cs{ "<note" * ((1 - (lpeg.P"<" + lpeg.P">")) + lpeg.V(1))^0 * ">" }
 local lnbrk = lpeg.Cs("\\\\")
 local poemline = lpeg.Cs(lnbrk * spcenc^-1 * lpeg.S("*!")^-1 * bsqbrackets^-1 * spcenc^-1)
-local poemlinebreak = lpeg.Cs(lnbrk * spcenc^-1 * lpeg.P("&gt;") * bsqbrackets^-1 * spcenc^-1)
+local poemlinebreak = lpeg.Cs(lnbrk * spcenc^-1 * (lpeg.P("&gt;") + lpeg.P("+")) * bsqbrackets^-1 * spcenc^-1)
 local linegroup = lpeg.Cs{ "<lg" * ((1 - lpeg.S"<>") + lpeg.V(1))^0 * ">" }
 local bclinegroup = lpeg.Cs(linegroup + lpeg.P("</lg>"))
 local endpoem = lpeg.Cs(lnbrk * lpeg.S("*!") * bsqbrackets^-1) -- not used
@@ -107,7 +110,7 @@ end
 
 local function checkxmlid(str)
    if string.find(str, "^[0-9]")
-      or string.find(str, "[:; ]")
+      or string.find(str, "[%{%}%[%]%(%):; ]")
    then
       return false
    else
@@ -174,7 +177,8 @@ function ekdosis.newwitness(id,
 			    Collection,
 			    Idno,
 			    MsName,
-			    OrigDate)
+			    OrigDate,
+			    Locus)
    if xmlidfound(id)
    then
       tex.print("\\unexpanded{\\PackageWarning{ekdosis}{\""
@@ -209,6 +213,10 @@ function ekdosis.newwitness(id,
       if OrigDate ~= "" then
 	 listWit[indexwit].history = {}
 	 listWit[indexwit].history.origin = {origDate = OrigDate}
+      end
+      if Locus ~= "" then
+	 listWit[indexwit].msContents = {}
+	 listWit[indexwit].msContents.msItemStruct = {locus = Locus}
       end
    end
    return true
@@ -348,25 +356,44 @@ function ekdosis.newsource(id, siglum)
    return true
 end
 
+local familysep = nil
+
+function ekdosis.setfamilysep(str)
+   if str == "reset"
+   then
+      familysep = nil
+   else
+      familysep = str
+   end
+   return true
+end
+
 function ekdosis.getsiglum(str, opt)
    str = str..","
    str = string.gsub(str, "%s-(%,)", "%1")
    ctrl = str
    if opt == "tei" then
       for i = 1,#shorthands do
-	 str = string.gsub(str, shorthands[i].a, shorthands[i].c)
+	 local tempa = string.gsub(shorthands[i].a, "([%-%.%_])", "%%%1")
+	 str = string.gsub(str, tempa, shorthands[i].c)
       end
       for i = 1,#idsRend do
-	 str  = string.gsub(str, "(%f[%w])"..idsRend[i].xmlid.."(%,)",
+	 local tempb = string.gsub(idsRend[i].xmlid, "([%-%.%_])", "%%%1")
+	 str  = string.gsub(str, "(%f[%w%-%.%_])"..tempb.."(%,)",
 			    "%1#"..idsRend[i].xmlid.."%2")
-	 ctrl = string.gsub(ctrl, idsRend[i].xmlid.."%,", "")
+	 ctrl = string.gsub(ctrl, tempb.."%,", "")
       end
       str = string.gsub(str, "%,(%s-)([%#])", " %2")
       str = string.gsub(str, "%,$", "")
    else
       for i = 1,#idsRend do
-	 str  = string.gsub(str, idsRend[i].xmlid.."%,", idsRend[i].abbr)
-	 ctrl = string.gsub(ctrl, idsRend[i].xmlid.."%,", "")
+	 local tempc = string.gsub(idsRend[i].xmlid, "([%-%.%_])", "%%%1")
+	 str  = string.gsub(str, tempc.."%,", idsRend[i].abbr)
+	 ctrl = string.gsub(ctrl, tempc.."%,", "")
+      end
+      if familysep ~= nil
+      then
+	 str = string.gsub(str, "%s+", familysep)
       end
    end
    -- if string.find(ctrl, "[A-Za-z0-9]")
@@ -389,41 +416,58 @@ local cmdtotags = {
    {a="marginpar", b="note", c=" place=\"margin\""},
    {a="footnote", b="note", c=" place=\"bottom\""},
    {a="enquote", b="quote", c=""},
+   {a="prname *", b="span",
+    c=" xml:lang=\"ar-Latn\" type=\"transliterated\""},
+   {a="prname", b="span",
+    c=" xml:lang=\"ar-Latn\" type=\"transliterated\" subtype=\"arabtex\""},
    {a="txtrans", b="s", c=" xml:lang=\"ar-Latn\" type=\"transliterated\""},
    {a="textbf", b="hi", c=" rend=\"bold\""},
    {a="textit", b="hi", c=" rend=\"italic\""},
    {a="textsc", b="hi", c=" rend=\"smallcaps\""},
    {a="textsf", b="hi", c=" rend=\"sf\""},
    {a="arbup", b="hi", c=" rend=\"sup\""},
-   {a="txarb", b="s", c=" xml:lang=\"arb\""},
-   {a="arb", b="foreign",
+   {a="txarb", b="foreign", c=" xml:lang=\"arb\""},
+   {a="arb", b="span",
     c=" xml:lang=\"ar-Latn\" type=\"transliterated\" subtype=\"arabtex\""}
 }
 
 local texpatttotags = {
    {a="\\addentries%s+%[(.-)%]{(.-)}", b=""},
    {a="\\addentries%s+{(.-)}", b=""},
+   {a="\\vmodulolinenumbers%s+%[(.-)%]", b=""},
+   {a="\\vmodulolinenumbers%s+", b=""},
+   {a="\\modulolinenumbers%s+%[(.-)%]", b=""},
+   {a="\\modulolinenumbers%s+", b=""},
    {a="\\setverselinenums%s+{(.-)}{(.-)}", b=""},
    {a="\\resetvlinenumber%s+%[(.-)%]", b=""},
    {a="\\resetvlinenumber%s+", b=""},
    {a="\\resetlinenumber%s+%[(.-)%]", b=""},
    {a="\\resetlinenumber%s+", b=""},
+   {a="\\ekdresethfmarks%s+", b=""},
    {a="\\indentpattern%s+{(.-)}", b=""},
+   {a="\\ekdnohfmark%s+", b=""},
    {a="\\settowidth%s+{(.-)}{(.-)}", b=""},
    {a="\\poemlines%s+{(.-)}", b=""},
    {a="\\pagebreak%s+%[[1-4]%]", b=""},
    {a="\\pagebreak%s+", b=""},
+   {a="\\teidirect%s+(%b[]){(.-)}(%b{})", b="<%2 ekd@os%1ekd@cs>ekd@ob%3ekd@cb</%2>"},
+   {a="\\teidirect%s+{(.-)}(%b{})", b="<%1>ekd@ob%2ekd@cb</%1>"},
    {a="\\altrfont%s+", b=""},
-   {a="\\mbox%s+{(.-)}", b="%1"},
-   {a="\\LR%s+{(.-)}", b="%1"},
-   {a="\\RL%s+{(.-)}", b="%1"},
+   {a="\\endmark%s+", b=""},
+   {a="\\ekdpb%s+%*?%[(.-)%]{(.-)}", b=""},
+   {a="\\ekdpb%s+%*?{(.-)}", b=""},
+   {a="\\ekdpb%s+%*\\?", b=""},
+   {a="\\mbox%s+(%b{})", b="ekd@ob%1ekd@cb"},
+   {a="\\LR%s+(%b{})", b="ekd@ob%1ekd@cb"},
+   {a="\\RL%s+(%b{})", b="ekd@ob%1ekd@cb"},
    {a="\\%=%=%=%s?", b="—"},
    {a="\\%-%-%-%s?", b="—"},
    {a="\\%=%=%s?", b="–"},
    {a="\\%-%-%s?", b="–"},
    {a="\\%=%/%s?", b="‐"},
    {a="\\%-%/%s?", b="‐"},
-   {a="\\vin%s+", b=""}
+   {a="\\vin%s+", b=""},
+   {a="\\uc%s+(%b{})", b="ekd@ob%1ekd@cb"}
 }
 
 local envtotags = {
@@ -467,8 +511,12 @@ end
 
 function ekdosis.newpatttotag(pat, repl)
    pat = string.gsub(pat, "([%[%]])", "%%%1")
+   pat = string.gsub(pat, "%@b[1-9]", "(%%b{})")
+   pat = string.gsub(pat, "%@s[1-9]", "(%%b[])")
    pat = string.gsub(pat, "%#[1-9]", "(.-)")
    repl = string.gsub(repl, "%#([1-9])", "%%%1")
+   repl = string.gsub(repl, "%@b([1-9])", "ekd@ob%%%1ekd@cb")
+   repl = string.gsub(repl, "%@s([1-9])", "ekd@os%%%1ekd@cs")
    if isintable(texpatttotags, pat)
    then
       local index = get_a_index(pat, texpatttotags)
@@ -561,6 +609,22 @@ local function note_totei(str)
    return str
 end
 
+local function remove_extra_anchors(str)
+   str = gsub(str, lpeg.Cs("</note>") * inanchor * inopeningnote, function(enote, anchor, bnote)
+   			local id_one = string.gsub(anchor, "(%<anchor )(.-)(/%>)", "%2")
+   			id_one = string.sub(get_attr_value(id_one, "xml:id"), 2, -2)
+   			local id_two = string.match(bnote, "target%=.-right%((.-)%)")
+   			id_two = string.gsub(id_two, ".-right%((.-)%)", "%1")
+   			if id_one == id_two
+   			then
+   			   return string.format("%s%s", enote, bnote)
+   			else
+   			   return string.format("%s%s%s", enote, anchor, bnote)
+   			end
+   end)
+   return str
+end
+
 local function app_totei(str)
    str = gsub(str,
 	      dblbkslash *
@@ -647,7 +711,16 @@ local function lem_rdg_totei(str)
 end
 
 local function relocate_notes(str)
-   str = string.gsub(str, "(%<lem.-%>.-)(%<note.->.-%<%/note%>)(.-%<%/lem%>)", "%1%3%2")
+   str = gsub(str, inlem, function(arg)
+		 local notes = {}
+		 for i in string.gmatch(arg, "%<note.-%>.-%<%/note%>")
+		 do
+		    table.insert(notes, i)
+		 end
+		 allnotes = table.concat(notes)
+		 arg = string.gsub(arg, "%<note.->.-%<%/note%>", "")
+		 return string.format("%s%s", arg, allnotes)
+   end)
    return str
 end
 
@@ -706,6 +779,9 @@ local function versetotei(str)
    end)
    str = string.gsub(str, "\\begin%s?%{ekdverse%}(.-)\\end%s?%{ekdverse%}", function(arg)
 			arg = string.gsub(arg, "\\par%s?", "")
+			arg = string.gsub(arg, "\\begin%s?%{patverse%*?%}", "")
+			arg = string.gsub(arg, "\\end%s?%{patverse%*?%}", "")
+			arg = string.gsub(arg, "\\indentpattern%s?%b{}", "")
 			return "\\p@rb "..linestotei(string.format("<lg>%s</lg>", arg)).."\\p@ra "
    end)
    str = string.gsub(str, "\\begin%s?%{verse%}%b[](.-)\\end%s?%{verse%}", function(arg)
@@ -766,6 +842,10 @@ end
 local function texpatttotei(str)
    for i = 1,#texpatttotags do
       str = string.gsub(str, texpatttotags[i].a, texpatttotags[i].b)
+      str = string.gsub(str, "ekd@ob%{", "")
+      str = string.gsub(str, "%}ekd@cb", "")
+      str = string.gsub(str, "ekd@os%[", "")
+      str = string.gsub(str, "%]ekd@cs", "")
    end
    return str
 end
@@ -791,7 +871,8 @@ local function icitetotei(str)
 				 "Please pick another id.}}")
 		 else
 		 end
-		 return string.format("%s <ref target=\"#%s\">%s</ref>", pre, body, post)
+		 return string.format("%s <bibl corresp=\"#%s\"><biblScope>%s</biblScope></bibl>",
+				      pre, body, post)
    end)
    str = gsub(str, lpeg.P("\\")
 		 * citecmds
@@ -811,7 +892,7 @@ local function icitetotei(str)
 				 "Please pick another id.}}")
 		 else
 		 end
-		 return string.format("<ref target=\"#%s\">%s</ref>", body, post)
+		 return string.format("<bibl corresp=\"#%s\"><biblScope>%s</biblScope></bibl>", body, post)
    end)
    str = gsub(str, lpeg.P("\\")
 		 * citecmds
@@ -967,6 +1048,86 @@ local function self_close_tags(str)
    return str
 end
 
+--headers and footers
+local hfmarks = {}
+
+function ekdosis.storehfmark(page, mk, opt)
+   if opt == "endmk"
+   then
+      local emark = hfmarks[#hfmarks].mark
+      table.insert(hfmarks, {a = page, mark = emark})
+   else
+      table.insert(hfmarks, {a = page, mark = mk})
+   end
+   return true
+end
+
+local printhfmarks = {
+   HEL = true,
+   HEC = true,
+   HER = true,
+   HOL = true,
+   HOC = true,
+   HOR = true,
+   FOL = true,
+   FOC = true,
+   FOR = true,
+   FEL = true,
+   FEC = true,
+   FER = true,
+}
+
+function ekdosis.nohfmark()
+   printhfmarks.HEL = false
+   printhfmarks.HEC = false
+   printhfmarks.HER = false
+   printhfmarks.HOL = false
+   printhfmarks.HOC = false
+   printhfmarks.HOR = false
+   printhfmarks.FOL = false
+   printhfmarks.FOC = false
+   printhfmarks.FOR = false
+   printhfmarks.FEL = false
+   printhfmarks.FEC = false
+   printhfmarks.FER = false
+end
+
+function ekdosis.resethfmark()
+   printhfmarks.HEL = true
+   printhfmarks.HEC = true
+   printhfmarks.HER = true
+   printhfmarks.HOL = true
+   printhfmarks.HOC = true
+   printhfmarks.HOR = true
+   printhfmarks.FOL = true
+   printhfmarks.FOC = true
+   printhfmarks.FOR = true
+   printhfmarks.FEL = true
+   printhfmarks.FEC = true
+   printhfmarks.FER = true
+end
+
+function ekdosis.printmark(str, mk)
+   if printhfmarks[mk]
+   then
+      return str
+   else
+      printhfmarks[mk] = true
+      return ""
+   end
+end
+
+function ekdosis.gethfmark(page)
+   local indexpage = get_a_index(page, hfmarks)
+   if hfmarks[indexpage] ~= nil
+   then
+      return hfmarks[indexpage].mark
+   else
+      return hfmarks[#hfmarks-1].mark or ""
+   end
+end
+
+-- divisions of the body text
 local divdepth = {
    book = 1,
    part = 2,
@@ -1175,7 +1336,7 @@ end
 
 local function close_ekddivs_in_between(str)
    local maxdepth = 1
-   for i in string.gmatch(str, "<div.-depth=\"(%d)\".->", "%1")
+   for i in string.gmatch(str, "<div.-[Dd]epth=\"(%d)\".->", "%1")
    do
       if tonumber(i) > tonumber(maxdepth)
       then
@@ -1200,9 +1361,9 @@ local function close_ekddivs_in_between(str)
 			      do
 				 closedivs = closedivs.."</div>"
 				 firstdivindex = firstdivindex - 1
+				 bdivii = string.gsub(bdivii, "depth", "Depth")
 			      end
 			   end
-			   bdivii = string.gsub(bdivii, "depth", "Depth")
 			   return string.format("%s%s%s%s%s%s%s%s",
 						bdivi, ndivi, edivi, between,
 						closedivs, bdivii, ndivii, edivii)
@@ -1235,9 +1396,9 @@ local function close_ndivs_in_between(str)
 			      do
 			   	 closedivs = closedivs.."</div"..used_ndivs[firstdivindex].a..">"
 			   	 firstdivindex = firstdivindex - 1
+				 bdivii = string.gsub(bdivii, "div", "Div")
 			      end
 			   end
-			   bdivii = string.gsub(bdivii, "div", "Div")
 			   return string.format("%s%s%s%s%s%s%s%s",
 						bdivi, ndivi, edivi, between,
 						closedivs, bdivii, ndivii, edivii)
@@ -1256,6 +1417,7 @@ local function textotei(str)
    str = xml_entities(str)
    str = texpatttotei(str)
    str = note_totei(str)
+   str = remove_extra_anchors(str)
    str = app_totei(str)
    str = rdgGrp_totei(str)
    str = lem_rdg_totei(str)
@@ -1364,7 +1526,14 @@ function ekdosis.openteistream()
 	       end
 	       f:write("</handDesc>", "\n")
 	       f:write("</physDesc>", "\n")
-      else end
+	    else end
+	    if listWit[i].msContents ~= nil then
+	       f:write("<msContents>", "\n")
+	       f:write("<msItemStruct>", "\n")
+	       f:write("<locus>", textotei(listWit[i].msContents.msItemStruct.locus), "</locus>", "\n")
+	       f:write("</msItemStruct>", "\n")
+	       f:write("</msContents>", "\n")
+	    end
 	    if listWit[i].history ~= nil then
 	       f:write("<history>", "\n")
 	       f:write("<origin>", "\n")
@@ -1505,7 +1674,15 @@ function ekdosis.basic_cs(msid)
    else
       date = ""
    end
-   return siglum.."&"..name.."&"..date
+   if listWit[indexwit].msContents ~= nil
+      and
+      listWit[indexwit].msContents.msItemStruct ~= nil
+   then
+      locus = listWit[indexwit].msContents.msItemStruct.locus
+   else
+      locus = ""
+   end
+   return siglum.."&"..name.." "..locus.."&"..date
 end
 -- end basic TeX Conspectus siglorum
 
@@ -1521,6 +1698,7 @@ function ekdosis.closestream()
 end
 
 local cur_abs_pg = 0
+local ekd_abs_pg = 0
 local pg_i = nil
 local pg_ii = nil
 local prevcol = nil
@@ -1534,14 +1712,23 @@ function ekdosis.update_abspg(n) -- not used
 end
 
 function ekdosis.storeabspg(n, pg)
+   if tonumber(n) > tonumber(cur_abs_pg)
+   then
+      ekd_abs_pg = ekd_abs_pg + 1
+   end
+   cur_abs_pg = n
+   n = ekd_abs_pg
    if pg == "pg_i" then
       pg_i = n
    elseif pg == "pg_ii" then
       pg_ii = n
       table.insert(check_resetlineno, curcol.."-"..pg_ii)
    end
-   cur_abs_pg = n
    return true
+end
+
+function ekdosis.getekdabspg()
+   return ekd_abs_pg
 end
 
 function ekdosis.checkresetlineno()
@@ -1781,10 +1968,12 @@ function ekdosis.newapparatus(teitype,
 			      apprule,
 			      appdelim,
 			      appsep,
+			      appsubsep,
 			      appbhook,
 			      appehook,
 			      applimit,
-			      applang)
+			      applang,
+			      appnotelang)
    if isintable(apparatuses, teitype)
    then
       tex.print("\\unexpanded{\\PackageWarning{ekdosis}{\""
@@ -1796,10 +1985,12 @@ function ekdosis.newapparatus(teitype,
 				 rule = apprule,
 				 delim = appdelim,
 				 sep = appsep,
+				 subsep = appsubsep,
 				 bhook = appbhook,
 				 ehook = appehook,
 				 limit = applimit,
-				 lang = applang})
+				 lang = applang,
+				 notelang = appnotelang})
    end
    bagunits[teitype] = 1
    return true
@@ -1810,6 +2001,16 @@ function ekdosis.getapplang(teitype)
    if apparatuses[i].lang ~= ""
    then
       return apparatuses[i].lang
+   else
+      return "\\languagename"
+   end
+end
+
+function ekdosis.getappnotelang(teitype)
+   i = get_a_index(teitype, apparatuses)
+   if apparatuses[i].notelang ~= ""
+   then
+      return apparatuses[i].notelang
    else
       return "\\languagename"
    end
@@ -1853,7 +2054,7 @@ end
 
 function ekdosis.limit_bagunits(teitype)
    local limit = tonumber(getapplimit(teitype))
-   if limit >= 10 and bagunits[teitype] > limit
+   if limit >= 10 and bagunits[teitype] >= limit
    then
       bagunits[teitype] = 2
       return "\\pagebreak"
@@ -1885,8 +2086,8 @@ function ekdosis.appin(str, teitype)
    local f = io.open(tex.jobname.."_tmp.ekd", "a+")
    if next(apparatuses) == nil
    then
-      f:write("<", cur_abs_pg, cur_alignment, curcol, "-0>", str, "</",
-	      cur_abs_pg, cur_alignment, curcol, "-0>\n")
+      f:write("<", ekd_abs_pg, cur_alignment, curcol, "-0>", str, "</",
+	      ekd_abs_pg, cur_alignment, curcol, "-0>\n")
    else
       for i = 1,#apparatuses
       do
@@ -1895,8 +2096,8 @@ function ekdosis.appin(str, teitype)
 	    break
 	 end
       end
-      f:write("<", cur_abs_pg, cur_alignment, curcol, "-",
-	      appno, ">", str, "</", cur_abs_pg, cur_alignment, curcol, "-", appno, ">\n")
+      f:write("<", ekd_abs_pg, cur_alignment, curcol, "-",
+	      appno, ">", str, "</", ekd_abs_pg, cur_alignment, curcol, "-", appno, ">\n")
    end
    f:close()
    return true
@@ -1914,10 +2115,10 @@ function ekdosis.appout()
 	 table.insert(output, "\\csname ekd@begin@apparatus\\endcsname\\ignorespaces")
 --	 table.insert(output, "\\noindent ")
 	 for i in string.gmatch(t,
-				"<"..cur_abs_pg
+				"<"..ekd_abs_pg
 				   ..cur_alignment_patt
 				   ..curcol.."%-0>.-</"
-				   ..cur_abs_pg
+				   ..ekd_abs_pg
 				   ..cur_alignment_patt
 				   ..curcol.."%-0>")
 	 do
@@ -1929,10 +2130,10 @@ function ekdosis.appout()
 	 local n = 1
 	 while apparatuses[n]
 	 do
-	    if string.match(t, "<"..cur_abs_pg
+	    if string.match(t, "<"..ekd_abs_pg
 			       ..cur_alignment_patt
 			       ..curcol.."%-"..n..">.-</"
-			       ..cur_abs_pg
+			       ..ekd_abs_pg
 			       ..cur_alignment_patt
 			       ..curcol.."%-"..n..">")
 	    then
@@ -1989,6 +2190,10 @@ function ekdosis.appout()
 		  table.insert(output, "\\edef\\ekdsep{" .. apparatuses[n].sep .. "}")
 	       else
 	       end
+	       if apparatuses[n].subsep ~= ""
+	       then
+		  table.insert(output, "\\edef\\ekdsubsep{" .. apparatuses[n].subsep .. "}")
+	       end
 	       if apparatuses[n].bhook ~= ""
 	       then
 		  table.insert(output, apparatuses[n].bhook)
@@ -1996,10 +2201,10 @@ function ekdosis.appout()
 		  table.insert(output, "\\relax")
 	       end
 	       for i in string.gmatch(t,
-				      "<"..cur_abs_pg
+				      "<"..ekd_abs_pg
 					 ..cur_alignment_patt
 					 ..curcol.."%-"..n..">.-</"
-					 ..cur_abs_pg
+					 ..ekd_abs_pg
 					 ..cur_alignment_patt
 					 ..curcol.."%-"..n..">")
 	       do
@@ -2019,8 +2224,8 @@ function ekdosis.appout()
       end
       f:close()
       str = table.concat(output)
-      str = string.gsub(str, "</"..cur_abs_pg..cur_alignment_patt..curcol.."%-[0-9]>", "")
-      str = string.gsub(str, "<"..cur_abs_pg..cur_alignment_patt..curcol.."%-[0-9]>", " ")
+      str = string.gsub(str, "</"..ekd_abs_pg..cur_alignment_patt..curcol.."%-[0-9]>", "")
+      str = string.gsub(str, "<"..ekd_abs_pg..cur_alignment_patt..curcol.."%-[0-9]>", " ")
       return str
    else
    end
@@ -2040,7 +2245,7 @@ end
 local curcol_curabspg = {}
 
 function ekdosis.testapparatus()
-   if isfound(curcol_curabspg, curcol.."-"..cur_abs_pg)
+   if isfound(curcol_curabspg, curcol.."-"..ekd_abs_pg)
    then
       if newalignment
       then
@@ -2053,7 +2258,7 @@ function ekdosis.testapparatus()
 	 return "\\boolfalse{do@app}"
       end
    else
-      table.insert(curcol_curabspg, curcol.."-"..cur_abs_pg)
+      table.insert(curcol_curabspg, curcol.."-"..ekd_abs_pg)
       if next(apparatuses) ~= nil then
 	 reset_bagunits()
       end
@@ -2109,6 +2314,8 @@ local lnlabs = {}
 local lnlab_salt = 0
 local current_lnlab = nil
 local prev_lnlab = nil
+local prev_prev_lnlab = nil
+local notelabs = {}
 local current_notelab = nil
 local prev_notelab = nil
 local current_lemma = nil
@@ -2122,6 +2329,7 @@ local function mdvisintable(table, value)
 end
 
 function ekdosis.dolnlab(str)
+   if prev_lnlab ~= nil then prev_prev_lnlab = prev_lnlab end
    prev_lnlab = current_lnlab
    current_lemma = str
    i = md5.sumhexa(str)
@@ -2144,9 +2352,19 @@ function ekdosis.getprevlnlab()
    return prev_lnlab
 end
 
+function ekdosis.getprevprevlnlab()
+   return prev_prev_lnlab
+end
+
 function ekdosis.setnotelab(str)
    current_notelab = str
-   return "\\linelabel{" .. current_notelab .. "}"
+   if isfound(notelabs, current_notelab)
+   then
+      return ""
+   else
+      table.insert(notelabs, current_notelab)
+      return "\\linelabel{" .. current_notelab .. "}"
+   end
 end
 
 function ekdosis.getnotelab()
@@ -2162,8 +2380,12 @@ function ekdosis.getprevnotelab()
    return prev_notelab
 end
 
-local function remove_note(str)
-   str = gsub(str, dblbkslash * lpeg.P("note") * cmdargs, "")
+local cmdstorm = lpeg.P(lpeg.P("note")
+			   + lpeg.P("linelabel")
+			   + lpeg.P("index"))
+
+local function remove_from_app(str)
+   str = gsub(str, dblbkslash * cmdstorm * cmdargs, "")
    return str
 end
 
@@ -2177,7 +2399,7 @@ function ekdosis.mdvappend(str, teitype)
       "\\linelabel{" .. current_lnlab .. "-e}"
       ..
       "\\csname append@app\\endcsname{"
-      .. remove_note(str) .. "}"
+      .. remove_from_app(str) .. "}"
    else
    return "\\linelabel{" .. current_lnlab .. "-b}\\wordboundary{}"
       ..
@@ -2186,7 +2408,7 @@ function ekdosis.mdvappend(str, teitype)
       "\\linelabel{" .. current_lnlab .. "-e}"
       ..
       "\\csname append@app\\endcsname" .. "[" .. teitype ..  "]{"
-      .. remove_note(str) .. "}"
+      .. remove_from_app(str) .. "}"
    end
 end
 

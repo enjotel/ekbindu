@@ -29,8 +29,8 @@
 %--B: i and ī are not differenciated
 %--P: no punctuation no daṇdas nothing
 %--U1: dot . serves as daṇḍa 
-%-- \L and \U2 very similar
-%-- figure out for U2: // ajapājapaḥ sahasra // 6000 //gha 0 16 pa 0 40// \U2?!?!?!?!?!?
+%--\L and \U2 very similar
+%--figure out for U2: // ajapājapaḥ sahasra // 6000 //gha 0 16 pa 0 40// \U2?!?!?!?!?!?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %
@@ -44,7 +44,9 @@
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt]{article}%{scrartcl}
+\documentclass[11pt]{scrartcl}
+
+
 
 %%% more functions
 \usepackage{xcolor}
@@ -62,7 +64,7 @@
 \babelfont[english]{rm}{TeX Gyre Termes}
 
 %%% ekdosis
-\usepackage[teiexport=tidy,parnotes=true]{ekdosis}% =tidy cleans up HTML and XML documents by fixing markup errors and upgrading legacy code to modern standards. parnotes=footnotes below or above critical apparatus
+\usepackage[teiexport=tidy,parnotes=true,layout=fitapp]{ekdosis}% =tidy cleans up HTML and XML documents by fixing markup errors and upgrading legacy code to modern standards. parnotes=footnotes below or above critical apparatus
 
 \SetLineation{lineation=page,modulo} %lineation=pagesets thenumbering to start afresh at the top of each page.
 
@@ -84,18 +86,21 @@
 % the apparatus criticus block. Also set the language.  
 \newif\ifinapparatus
   \DeclareApparatus{default}[
-  bhook=\inapparatustrue, 
+  %bhook=\inapparatustrue, 
   lang=english,
-  bhook=\selectlanguage{english},
+ %bhook=\selectlanguage{english},
   sep = {] },
   delim=\hskip 0.75em,
   rule=\rule{0.7in}{0.4pt},
 ]
 
+\newif\ifinapparatus
 \DeclareApparatus{philcomm}[
+%bhook=\inapparatustrue,
 lang=english,
+notelang=english,
+%bhook=\selectlanguage{english},
 sep={: },
-bhook=\selectlanguage{english},
 ]
 
 % Macros and Definitions for the Print of Sigla
@@ -109,7 +114,7 @@ bhook=\selectlanguage{english},
 \def\Utwo{{\sigl{U}{2}}} \def\Utwoac{\acpc{U}{2}{ac}\,} \def\Utwopc{\acpc{U}{2}{pc}\,}
 
 %%%%%%%%%%%%%% Tattvabinduyoga - List of Witnesses   %%%%%%%%%%%%%%%%%%%
-\DeclareWitness{ceteri}{\selectlanguage{english}ceteri}{ceteri}[]   
+\DeclareWitness{ceteri}{\selectlanguage{english}cet.}{ceteri}[]   
 \DeclareWitness{E}{\selectlanguage{english}E}{Printed Edition}[]    
 \DeclareWitness{P}{\selectlanguage{english}P}{Pune BORI 664}[]  
 \DeclareWitness{B}{\selectlanguage{english}B}{Bodleian 485}[]       
@@ -123,7 +128,7 @@ bhook=\selectlanguage{english},
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Macro for Editing Abbrevs.
-\def\om{\textrm{\footnotesize \textit{omitted in}\ }} %prints om. for omitted in apparatus
+\def\om{\textrm{\footnotesize \textit{om.}\ }} %prints om. for omitted in apparatus
 \def\korr{\textrm{\footnotesize \textit{em.}\ }} %prints em. for emended in apparatus
 \def\conj{\textrm{\footnotesize \textit{conj.}\ }} %prints conj. for conjectured in apparatus
 
@@ -255,7 +260,7 @@ surname=Liersch]
 %\TeXtoTEI{//}{||}
 \TeXtoTEIPat{\korr}{em. }
 \TeXtoTEIPat{\conj}{conj.}
-\TeXtoTEIPat{\om}{omitted in }
+\TeXtoTEIPat{\om}{om.}
 \TeXtoTEIPat{english}{}
 \TeXtoTEIPat{-}{ }
 \TeXtoTEIPat{\textcolor {#1}{#2}}{<hi rend="#1">#2</hi>} 
@@ -350,7 +355,7 @@ Lists are very frequent in the Yogatattvabindu. In fact, the text initially give
         \rdg[wit={L}]{atha tattvabiṃduyogaprāraṃbhaḥ}
         \rdg[wit={P}]{atha rājayoga liṣyate}
         \rdg[wit={U2}]{atha rājayoga likhyate}}//
-%--------------------------
+%-------------------------- 
 % \om                        \E
 % \om                        \L
 % \om                        \B
@@ -399,8 +404,7 @@ eva/ anekapārthivavinoda
     \bigskip
     \begin{tlate}Homage to Śrī Gaṇeśa. Now the methods of rājayoga are laid down. This is the result of \textit{rājayoga}\footnote{This statement seems unconnected to the definition of rājayoga that follows.}: \textit{Rājayoga} is that by which longterm durability of the body arises even amongst manifold royal pleasures even amongst the manifold royal entertainments and spectacle. This truly is \textit{rājayoga}. Of this [\textit{rājayoga}] these are the varieties: \end{tlate}
       \bigskip
-       \end{translation}
-        
+       \end{translation}       
     \begin{edition}
       \ekddiv{type=ed}
 %-------------------------
@@ -433,13 +437,13 @@ eva/ anekapārthivavinoda
           \rdg[wit={U1}]{lakṣayogaḥ}} 9//\\ vāsanāyogaḥ 10//\\ śivayogaḥ 11//\\ brahmayogaḥ 12//\\ advaitayogaḥ 13//\\
         \app{\lem[wit={P,U2}]{siddhayogaḥ 14//\\ rājayogaḥ// 15}
           \rdg[wit={N1,N2,D1,U1}]{rājayogaḥ / siddhayogaḥ}}/\linelabel{s1.z6e}\\ \\
- \note[type=philcomm, labelb=s4.z5a, lem={rājayoga}]{The initial codification of 15 \textit{yoga}s appears in \getsiglum{N1},\getsiglum{N2},\getsiglum{P},\getsiglum{D1},\getsiglum{U1} and \getsiglum{U2}. It is ommitted in E and L. B can't be determined due to missing folios. P is the only witness which numbers the \textit{yoga}s with \textit{devanāgarī}-digits. I decided to include the numberation to improve the readability of the list. The other witnesses separate the list with single or double \textit{daṇḍa}s.}\app{\lem[wit={P,N1,D1,U1}]{ete pañcadaśayogāḥ}\rdg[wit={U2}]{evaṃ paṃcadaśāyogā bhavaṃti}}//\\\end{prose}
+ \note[type=philcomm, labelb=s4.z5a, lem={rājayoga}]{The initial codification of 15 \textit{yoga}s appears in \getsiglum{N1},\getsiglum{N2},\getsiglum{P},\getsiglum{D1},\getsiglum{U1} and \getsiglum{U2}. It is ommitted in E and L. B can't be determined due to missing folios. P is the only witness which numbers the \textit{yoga}s with \textit{devanāgarī}-digits. I decided to include the numberation to improve the readability of the list.}\app{\lem[wit={P,N1,D1,U1}]{ete pañcadaśayogāḥ}\rdg[wit={U2}]{evaṃ paṃcadaśāyogā bhavaṃti}}//\\\end{prose}
     \end{edition}
     \begin{translation}
    \ekddiv{type=trans}
 \begin{tlate}1. Yoga of [mental] action (\textit{kriyāyoga}), \\ 2. Yoga of knowledge (\textit{jñānayoga}),\\ 3. Yoga of following strictly the applications (\textit{caryāyoga}),\\ 4. Yoga of force (\textit{haṭhayoga}),\\ 5. Yoga of deeds (\textit{karmayoga}),\\ 6. Yoga of absorption (\textit{layayoga}),\\ 7. Yoga of meditation (\textit{dhyānayoga}),\\ 8. Yoga of mantras (\textit{mantrayoga}),\\ 9. Yoga of fixation objects (\textit{lakṣyayoga}),\\ 10. Yoga of mental residues (\textit{vāsanāyoga}),\\ 11. Yoga of Śiva (\textit{śivayoga}),\\ 12. Yoga of Brahman (\textit{brahmayoga}),\\ 13. Yoga of non-duality (\textit{advaitayoga}),\\ 14. Yoga of completion (\textit{siddhayoga}),\\ 15. Yoga of kings (\textit{rājayoga}).\\ \\ These are the fifteen \textit{yoga}s.\footnote{At the current stage of research it is not clear if this list is a later addition by another scribe or, if indeed it originally stems from Rāmacandra. The list suggests a text following the order of yogas according to this list. However, the order of the yogas given in the list is not followed closely in the text.}\bigskip \end{tlate}
     \end{translation}
-    \end{alignment}
+  \end{alignment}
 \begin{alignment}[
     texts=edition[class="edition"];
     translation[class="translation"],
@@ -745,7 +749,8 @@ yogaḥ svapiṇḍe
     \begin{translation}
    \ekddiv{type=trans}
     \begin{tlate} Patience, discrimination, equanimity, peace, contentment etc. are generated in his mind. He alone is called a \textit{yogī} of many actions (\textit{bahukriyāyogī})\footnote{The term \textit{bahukriyāyogī} seems to be unique.}. \bigskip\end{tlate}
-    \end{translation}  
+  \end{translation}
+  \clearpage 
     \begin{edition}
     \ekddiv{type=ed}
     \begin{prose}
@@ -3876,9 +3881,13 @@ atha ca
     \begin{tlate} Now it is said that this is the characteristic of the embodied person who is endowed with the royal yoga: Abundance arises at all times. No distance exists on earth. He dwells on earth having pervaded [it]. Birth and death both don't exist. Happiness does'nt exist. Suffering does'nt exist. Impediment does'nt exist. Habit doesn't exist. Place does'nt exist. The manifestation of permanent perception of the connection with god arises in the middle of the mind of this accomplished one. And he is shining - not cold, and not hot, not white [and] not yellow. Neither is there birth of him, nor does he have any attributes. And he is without parts, immacule and uncharacterized. His desire etc. doesn't arise in [situations of] lust [and] is not located within the duality of the result. In such a way he approaches enjoyment. However, his mind does not suffer attachment in this very state.     
     \end{tlate}
   \end{translation}
- \end{alignment}
-\end{document}
-
+  \clearpage
+  \begin{edition}
+ \ekddiv{type=ed}
+   \bigskip
+    \centerline{\textrm{\small{[Other Attributes]}}}
+    \bigskip
+ \begin{prose}
 %------------------------------
 %anyad  rājayogasya cihnaṃ kathyate   \E
 % \om                                 \P
@@ -3886,23 +3895,59 @@ atha ca
 %anyata rājayogasya cinhaṃ kathyate// \B
 %anyat  rājayogasya cinhaṃ kathyate// \N1 yasyecchā bhavati??? taṃ taṃ bhogaṃ prāpnoti/ atha vāsya mana eva sthāne 'nu rāgaṃ na prāpnoti/ anyat rājayogasya cinhaṃ kathate//
 %anyat  rājayogasya cihuṃ  kathyate// \D1
-%anyad  rājayogasya ciṃhuṃ kathyate// \U2
+%anyad  rājayogasya ciṃhuṃ kathyate// \N2
 %anyat  rājayogacinhaṃ     kathyate/  \U1
 %anyat  rājayogasya cinhaṃ kathyate// \U2
 %------------------------------
 %[Now] another attribute of Rājayoga is described. 
 %------------------------------
-%yasya rājyādilābhe 'pi   phalalābho na bhavati/ \E
+\app{\lem[wit={E,N2},alt={anyad}]{anyad\skm{-rā}}
+  \rdg[wit={N1,D1,U1,U2}]{anyat}
+  \rdg[wit={L,B}]{anyate}
+  \rdg[wit={P}]{\om}
+}\app{\lem[wit={ceteri},alt={rājayogasya}]{\skp{-rā}jayogasya}
+  \rdg[wit={U1}]{rājayoga°}
+  \rdg[wit={P}]{\om}}
+\app{\lem[wit={E}]{cihnaṃ}
+  \rdg[wit={L,B,N1,U2}]{cinhaṃ} %????
+  \rdg[wit={N2}]{ciṃhuṃ}
+  \rdg[wit={D1}]{cihuṃ}
+  \rdg[wit={P}]{\om}}
+\app{\lem[wit={ceteri}]{kathyate}
+  \rdg[wit={P}]{\om}}/
+%------------------------------
+%yasya rājyādilābhe 'pi    phalalābho na bhavati/ \E
 % \om                                            \P
-%yasya rājādilābhetya       phalalābho       na bhavatī \L
-%yasya rājādilābhetya       phalalābho       na bhavatī \B
+%yasya rājādilābhe   ty     aphalalābho       na bhavatī \L
+%yasya rājādilābhe   ty     aphalalābho       na bhavatī \B
 %yasya rājyādilābhe  pi     phalalābho       ba bhavati/ \N1
 %yasya rājyādilābhe  pi     phalalābho       na bhavati// \D1
 %yasya rājyādilobhe  pi ca  phalalābho       na bhavati// \N2
 %yasya rājyādilābe  'pi ca  palalābho        na bhavati/ \U1
 %yasya rājyādilābho                          na bhavati/ \U2
 %------------------------------
-%The attainment of the result does not arise even
+%Even ``of one who is in gain of a kingdom etc.'' [it is said that] perception of success does'nt arise.
+%------------------------------
+\app{\lem[wit={ceteri}]{yasya}
+  \rdg[wit={P}]{\om}} 
+\app{\lem[wit={E,N1,D1}]{rājyādilābhe}
+  \rdg[wit={L,B}]{rājā°}
+  \rdg[wit={N2}]{°lobhe}
+  \rdg[wit={U1}]{°lābe}
+  \rdg[wit={U2}]{°lābho}
+  \rdg[wit={P}]{\om}}
+\app{\lem[wit={E,N1,D1}]{'pi}
+  \rdg[wit={N2,U1}]{'pi ca}
+  \rdg[wit={L,B}]{ty}
+  \rdg[wit={P,U2}]{\om}}
+\app{\lem[wit={E,N1,D1,N2}]{phalalābho}
+  \rdg[wit={U1}]{pala°}
+  \rdg[wit={L,B}]{aphala°}
+  \rdg[wit={P,U2}]{\om}}
+\app{\lem[wit={E,D1,N2,U1,U2}]{na bhavati}
+  \rdg[wit={L,B}]{na bhavatī}
+  \rdg[wit={N1}]{ba bhavati}
+  \rdg[wit={P}]{\om}}/
 %------------------------------
 %hānāv api manomadhye duḥkhaṃ na bhavati/ \E
 % \om                                      \P
@@ -3914,7 +3959,18 @@ atha ca
 %hānāv api manomadhye duḥkhaṃ na bhavati/  \U1
 %hānād api manomadhye duḥkhaṃ na bhavati// \U2
 %------------------------------
-%While cessation in the middle of the mind suffering does not arise. 
+%Even due to loss suffering does'nt arise in the mind.  
+%------------------------------
+\app{\lem[wit={ceteri},alt={hānāv}]{hānā\skp{v-}}
+  \rdg[wit={U2}]{hānād}
+  \rdg[wit={P,L}]{nahanād}
+  \rdg[wit={P}]{\om}
+}\app{\lem[wit={ceteri},alt={api}]{\skm{v-}api}
+  \rdg[wit={L,B,N2}]{pi}
+  \rdg[wit={P}]{\om}}
+manomadhye duḥkhaṃ na
+\app{\lem[wit={ceteri}]{bhavati}
+  \rdg[wit={L,B}]{bhavatī}}/
 %------------------------------
 %atha ca tṛṣṇā na bhavati/ \E
 % \om                      \P
@@ -3926,55 +3982,148 @@ atha ca
 %atha ca tṛṣṇā na bhavati/ \U1
 %atha ca tṛṣṇā na bhavati/ \U2
 %------------------------------
-%And then also desire does not arise. 
+%And then desire doesn't arise. 
 %------------------------------
-%atha ca kasmin     padārthasyoparyanicchā na bhavati/ \E
-% \om                                                                             \P
-%atha ca kasminna   padārtho prāpte kasyāpi padārthasyopari ānīcha na bhavati//   \L
-%atha ca kasminna   padārthau prāpte kasyāpi padārthāsyopari ānīchā ni bhavati//   \B
-%atha ca kasminnpi  padārthe prāptakasyāpi padārthasya upari anusthāna bhavaṃti// \N1 %emend to anuṣṭhāna?! n. performance, religious practice
-%atha ca kasminnapi padārthe prāpte kasyāpi padārthasya upari anichā    bhavaṃti  \D1
-%atha ca kasminnpi  padārthe prāpte kasyāpi padārthasya upari anisthāna bhavati// \N2
-%atha ca kasminn api  padārthe prātpe kasyāpi padārthasya upari aniṣṭāna bhavati  \U1
-%atha ca kasmin adhipadārtha prāpte kābhyādi padārtho pari anicha na bhavati//    \U2 %%%407.jpg
+\app{\lem[wit={ceteri}]{atha ca}
+  \rdg[wit={P}]{\om}}
+\app{\lem[wit={ceteri}]{tṛṣṇā}
+  \rdg[wit={P}]{\om}}
+\app{\lem[wit={ceteri}]{na}
+  \rdg[wit={P}]{\om}}
+\app{\lem[wit={ceteri}]{bhavati}
+  \rdg[wit={B}]{bhavatī}
+  \rdg[wit={P}]{\om}}/
 %------------------------------
-%And then some regarding the object/in the object which has been attained by him of the object power arises upon him???!?! -> weird translation recheck    
+%atha ca kasmin                                  padārthasyopary   anicchā na bhavati/ \E
+% \om                                                                                       \P
+%atha ca kasmin na    padārtho   prāpte kasyāpi  padārthasyopari   ānīcha  na  bhavati//    \L
+%atha ca kasmin na    padārthau  prāpte kasyāpi  padārthāsyopari   ānīchā  ni  bhavati//    \B
+%atha ca kasminn pi   padārthe   prāpta kasyāpi  padārthasya upari anusthā na  bhavaṃti//   \N1 
+%atha ca kasminn api  padārthe   prāpte kasyāpi  padārthasya upari anichā      bhavaṃti     \D1
+%atha ca kasminn pi   padārthe   prāpte kasyāpi  padārthasya upari anisthā na  bhavati//    \N2
+%atha ca kasminn api  padārthe   prātpe kasyāpi  padārthasya upari aniṣṭā  na  bhavati      \U1
+%atha ca kasmin   adhipadārtha   prāpte kābhyādi padārthopari      anicha  na  bhavati//    \U2 %%%407.jpg
 %------------------------------
-%kasmin    padārthe manasonurāgo na bhavati/    \E
-%asminnapi padārthe manasonurāgo na bhavati... ayam api padārthe manasonurāgo na bhavati... \P
-%asminn    padārthe manasonurāgo na bhavatī/    \L
-%asminn    padārthe manasonurāgo na bhavatī/    \B
-%asminnapi padārthe manasaḥ anurāgo bhavati/    \N1
-%asminnapi padārthe manasaḥ anurāgo bhavati//   \D1
-%asminnapi padārthe manasaḥ anurāgo bhavati/    \N2
-%asminnapi padārthe manasa  anurāgo bhavati     \U1 
-%kasminnpi padārthe anurāgo      na bhavati// ayam api padārthe anurāgo na bhavati//  \U2
+%And then with regards to some object that has been obtained for whatever reason towards ones object aversion does'nt arise.   
 %------------------------------
-%He in whom the Object is affection does not arise. 
+\app{\lem[wit={ceteri}]{atha ca}
+  \rdg[wit={P}]{\om}}
+kasminn\skm{-a}\app{\lem[wit={D1,U1},alt={api}]{\skp{-a}pi}
+  \rdg[wit={L,B}]{na}
+  \rdg[wit={N1,N2}]{pi}
+  \rdg[wit={U2}]{adhi}
+  \rdg[wit={E,P}]{\om}}
+\app{\lem[wit={ceteri}]{padārthe}
+  \rdg[wit={L}]{padārtho}
+  \rdg[wit={B}]{padārthau}
+  \rdg[wit={U2}]{padārtha°}
+  \rdg[wit={E,P}]{\om}}
+\app{\lem[wit={ceteri}]{prāpte}
+  \rdg[wit={N1}]{prāpta}
+  \rdg[wit={E,P}]{\om}}
+\app{\lem[wit={ceteri}]{kasyāpi}
+  \rdg[wit={U2}]{kābhyādi}
+  \rdg[wit={E,P}]{\om}}
+\app{\lem[wit={E},alt={padārthasyopary}]{padārthasyopa\skp{ry-}}
+  \rdg[wit={L,B}]{padārthasyopari}
+  \rdg[wit={U2}]{padārthopari}
+  \rdg[wit={ceteri}]{padārthasya upari}
+  \rdg[wit={P}]{\om}}\app{\lem[wit={E},alt={anicchā}]{\skm{rya-}\skp{a}nicchā}
+  \rdg[wit={L}]{ānīcha}
+  \rdg[wit={B}]{ānīchā}
+  \rdg[wit={N1}]{anusthā}
+  \rdg[wit={D1}]{anichā}
+  \rdg[wit={N2}]{anisthā}
+  \rdg[wit={U1}]{aniṣṭā}
+  \rdg[wit={U2}]{anicha}}
+\app{\lem[wit={ceteri}]{na}
+  \rdg[wit={B}]{ni}
+  \rdg[wit={P,D1}]{\om}}
+\app{\lem[wit={ceteri}]{bhavati}
+  \rdg[wit={N1,D1}]{bhavaṃti}
+  \rdg[wit={P}]{\om}}/
 %------------------------------
-%ayam api rājayogaḥ kathyate/ \E
-%athamapi rājayogaḥ kathyate... \P
-%atha samarājayogaḥ kathyate/ \L
-%ayam api rājayogaḥ kathyate/ \B
-%ayam api rājayogaḥ kathyate/ \N1
-%ayam api rājayogaḥ kathyate// \D1
-%ayam api rājayoga kathyate// \N2
-%ayam api rājayogaḥ kathyate/ \U1
-%ayam api rājayoga kathyate// \U2
+%kasmin    padārthe manaso   nurāgo na bhavati/    \E
+%asminnapi padārthe manaso   nurāgo na bhavati... ayam api padārthe manasonurāgo na bhavati... \P
+%asminn    padārthe manaso   nurāgo na bhavatī/    \L
+%asminn    padārthe manaso   nurāgo na bhavatī/    \B
+%asminnapi padārthe manasaḥ anurāgo    bhavati/    \N1
+%asminnapi padārthe manasaḥ anurāgo    bhavati//   \D1
+%asminnapi padārthe manasaḥ anurāgo    bhavati/    \N2
+%asminnapi padārthe manasa  anurāgo    bhavati     \U1 
+%kasminnpi padārthe         anurāgo na bhavati// ayam api padārthe anurāgo na bhavati//  \U2
 %------------------------------
-%Now a similar Rājayoga is explained. 
+%With regard to this object also affection of the mind does'nt arise. 
 %------------------------------
-%athacaḥ yasya manaḥ munividvatpuruṣeṣu maitre ca samaṃ bhavati/ \E
-%atha ca yasya manaḥ śunividvat puruṣe maitre śatrau ca samaṃ bhavati \P
-%atha ca yasya manaḥ bhunividvat puruṣe maitreśatrau ca samaṃ bhavati/ \L
-%atha ca yasya manaḥ śrunividvat puruṣe maitreśatro ca samaṃ bhavatī/ \B
-%atha ca yasya manaḥ/ śrutividyutpuruṣe mitre śatrau ca samaṃ bhavati/ \N1
-%atha ca yamanaḥ śrutividyutpuruṣe mitre śatrau ca samaṃ bhavati// \D1
-%atha ca yasya manaḥ śrutividyutpuruṣe  mitre śatrau ca samaṃ bhavati/ \N2
-%atha ca yasya mana  śrunividvat puruṣe  mitre śatrau ca samaṃ bhavati \U1
-%atha ca yasya manaḥ śuciviśuddhapuruṣe mitre śatrau ca samaṃ bhavati// \U2
+\app{\lem[wit={ceteri},alt={asminn}]{asmi\skp{nn-}}
+  \rdg[wit={E,U2}]{kasmin}
+}\app{\lem[wit={ceteri},alt={api}]{\skm{nn-}api}
+  \rdg[wit={E,L,B}]{\om}} 
+padārthe
+\app{\lem[wit={E,P,L,B}]{manaso}
+  \rdg[wit={N1,D1,N2,U1}]{manasaḥ}
+  \rdg[wit={U1}]{manasa}
+  \rdg[wit={U2}]{\om}}
+\app{\lem[wit={E,P,L,B}]{'nurāgo}
+  \rdg[wit={ceteri}]{anurāgo}}
+\app{\lem[wit={E,P,U2}]{na bhavati}
+  \rdg[wit={L,B}]{na bhavatī}
+  \rdg[wit={ceteri}]{bhavati}}/\note[type=philcomm, labelb=s33.z2, lem={na bhavati}]{\getsiglum{P} and \getsiglum{U2} add ``ayam api padārthe anurāgo na bhavati||'' after this sentence, which is clearly a corruption.}
 %------------------------------
-%And then his mind in the person of perfect purity is equal towards friend and enemy. %something like this \U2 
+%ayam  api rājayogaḥ kathyate/  \E
+%atham api rājayogaḥ kathyate   \P
+%atha  samarājayogaḥ kathyate/  \L
+%ayam  api rājayogaḥ kathyate/  \B
+%ayam  api rājayogaḥ kathyate/  \N1
+%ayam  api rājayogaḥ kathyate// \D1
+%ayam  api rājayoga  kathyate// \N2
+%ayam  api rājayogaḥ kathyate/  \U1
+%ayam  api rājayoga  kathyate// \U2
+%------------------------------
+%Just this is said to be Rājayoga. 
+%------------------------------
+\app{\lem[wit={ceteri},alt={ayam}]{aya\skp{m-}}
+  \rdg[wit={P}]{atham}
+  \rdg[wit={L}]{atha}
+}\app{\lem[wit={ceteri},alt={api}]{\skm{-m}api}
+  \rdg[wit={L}]{sama}}
+\app{\lem[wit={ceteri}]{rājayogaḥ}
+  \rdg[wit={N2,U2}]{rājayoga}}
+kathyate/
+%------------------------------ %%%%split in stemma?! maitre mitre!!!
+%atha caḥ yasya manaḥ   munividvat  puruṣeṣu maitre        ca samaṃ bhavati/ \E
+%atha ca  yasya manaḥ   śunividvat  puruṣe   maitre śatrau ca samaṃ bhavati \P
+%atha ca  yasya manaḥ   bhunividvat puruṣe   maitre śatrau ca samaṃ bhavati/ \L
+%atha ca  yasya manaḥ   śrunividvat puruṣe   maitre śatro  ca samaṃ bhavatī/ \B
+%atha ca  yasya manaḥ/  śrutividyut puruṣe   mitre  śatrau ca samaṃ bhavati/ \N1
+%atha ca  yamanaḥ       śrutividyut puruṣe   mitre  śatrau ca samaṃ bhavati// \D1
+%atha ca  yasya manaḥ   śrutividyut puruṣe   mitre  śatrau ca samaṃ bhavati/ \N2
+%atha ca  yasya mana    śrunividvat puruṣe   mitre  śatrau ca samaṃ bhavati \U1
+%atha ca  yasya manaḥ   śuciviśuddhapuruṣe   mitre  śatrau ca samaṃ bhavati// \U2
+%------------------------------
+%And then his mind which knows the sacred speech is equal towards a person, friend and enemy.  
+%------------------------------
+atha
+\app{\lem[wit={ceteri}]{ca}
+  \rdg[wit={E}]{caḥ}}
+\app{\lem[wit={ceteri}]{yasya}
+  \rdg[wit={D1}]{ya}}
+manaḥ
+\app{\lem[resp=egoscr, type=emendation]{śrutividvat\skp{-}}
+  \rdg[wit={E}]{munividvat}
+  \rdg[wit={P}]{śunividvat}
+  \rdg[wit={L}]{bhunividvat}
+  \rdg[wit={B,U1}]{śrunividvat}
+  \rdg[wit={N1,N2,D1}]{śrutividyut}
+  \rdg[wit={U2}]{śuciviśuddha°}
+}\app{\lem[wit={ceteri}]{puruṣe}
+  \rdg[wit={E}]{puruṣeṣu}}
+\app{\lem[wit={ceteri}]{mitre}
+  \rdg[wit={E,P,L,B}]{maitre}}
+ \app{\lem[wit={ceteri}]{śatrau}
+   \rdg[wit={B}]{śatro}
+   \rdg[wit={E}]{\om}}
+ ca samaṃ bhavati/
 %------------------------------
 %dṛṣṭiś ca samā bhavati/   \E
 %dṛṣṭiś ca namnā bhavati   \P
@@ -3986,44 +4135,104 @@ atha ca
 %dṛṣṭiś ca samā bhavati/   \U1
 %dṛṣṭiś ca samā bhavati/   \U2
 %------------------------------
-%And a similar gaze arises. 
+%And a neutral view arises. 
+%------------------------------
+\app{\lem[wit={ceteri},alt={dṛṣṭiś}]{dṛṣṭi\skm{ś-ca}}
+  \rdg[wit={L,B}]{\om}
+}\app{\lem[wit={ceteri}]{\skp{ś-}ca}
+  \rdg[wit={L,B}]{\om}}
+\app{\lem[wit={ceteri}]{samā}
+  \rdg[wit={P}]{namnā}
+  \rdg[wit={L,B}]{\om}}
+\app{\lem[wit={ceteri}]{bhavati}
+  \rdg[wit={L,B}]{\om}}/
 %------------------------------
 %sakalapṛthvīmadhye gamanavataḥ       sukhabhogavataḥ      yasya manasi karttṛtvābhimāno   nāsti/ \E
 %sakalapṛthvīmadhye gamanāgamanavataḥ sukhabhogavataḥ      yasya manasi kartṛtvābhimāno    nāsti/ \P
 %sakalapṛtvīmadhye  gamanāgamanataḥ   sukhabogho bhavataḥ  yasya manasi kartu tvābhimano   nāsti/ \L
-%sakalapṛthvīmadhye  gamanāgamanataḥ  sukhabogho bhavataḥ  yasya manasi kartutvābhimano    nāsti// \B
+%sakalapṛthvīmadhye gamanāgamanataḥ   sukhabogho bhavataḥ  yasya manasi kartutvābhimano    nāsti// \B
 %sakalapṛthvīmadhye gamanavataḥ//     sukhabhogavataḥ/     yasya manasi kartṛtvādyabhimāno nāsti/  \N1
 %sakalapṛthvīmadhye gamanaṃvataḥ//    sukhabhogavataḥ      yasya manasi kartṛtvādyabhimāno nāsti// \D1
 %sakalapṛthvīmadhye gamavataḥ         sukhabhogavataḥ      yasya manasi kartṛtvādyabhimāno nāsti// \N2
 %sakalapṛthvīmadhye gamanavataḥ       sukho bhogavataḥ     yasya manasi kartṛtvābhimāno    nāsti   \U1
 %sakalapṛthvīmadhye gamanāgamanavat// sukhabhogavat        yasya manasi kartṛtvābhimāno    nāsti// \U2
 %------------------------------
-%Being situated anywhere on earth he is furnished with motion. In the mind of him who is possesing enjoyment and happiness there does not arise the desire for Täterschaft.
+%In the mind of one who is situated in the centre of the entire earth, the pride of authorship does't arise, because of death and rebirth, and because of happiness and enjoyment.  %%%check translation think about the Sanskrit 
 %------------------------------
-%atha ca lokamadhye gamanavataḥ sukhabhogavataḥ yasya manasi karttṛtvābhimāno nāsti/atha ca lokamadhye kartṛtvaṃ na jñāpayati/ \E
-%anucalokamadhye kartṛtvaṃ na jñāpayati/ \P
-%anucaralokamadhya kartṛtvābhi mano nāsti \L
-%anucaralokamadhyakartṛtvābhimano nāsti// \B
-%anucalokamadhye kartṛtvaṃ jñā   payati// \N1
-%anucalokamadhye kartṛtvaṃ na jñātvā payati/ \D1
-%anucalokamadhye kartṛtvaṃ na jñāpayati/ \N2
-%anucalokamadhye kartṛtvaṃ jñātvapayati \U1
-%anucalokamadhye kartṛtvaṃ na jñāpayati \U2
-%
+\app{\lem[wit={ceteri}]{sakalapṛthvīmadhye}
+  \rdg[wit={L}]{°pṛtvī°}}
+\app{\lem[wit={P}]{gamanāgamanavataḥ}
+  \rdg[wit={U2}]{gamanāgamanavat}
+  \rdg[wit={L,B}]{gamanāgamanataḥ}
+  \rdg[wit={E,N1,U1}]{gamanavataḥ}
+  \rdg[wit={D1}]{gamanaṃvataḥ}
+  \rdg[wit={U1}]{gamavataḥ}}
+\app{\lem[wit={ceteri}]{sukhabhogavataḥ}
+  \rdg[wit={L,B}]{sukhabogho bhavataḥ}
+  \rdg[wit={U1}]{sukho bhogavataḥ}
+  \rdg[wit={U2}]{sukhabhogavat}}
+yasya manasi
+\app{\lem[wit={E,P,U1,U2}]{kartṛtvābhimāno}
+  \rdg[wit={B}]{kartutvābhimano}
+  \rdg[wit={L}]{kartu tvābhimano}
+  \rdg[wit={N1,N2,D1}]{kartṛtvādyabhimāno}}
+nāsti/
 %------------------------------
-%
+%atha ca lokamadhye gamanavataḥ sukhabhogavataḥ yasya manasi karttṛtvābhimāno nāsti/....
+%atha ca lokamadhye kartṛtvaṃ na jñāpayati/ \E
+%anucalokamadhye    kartṛtvaṃ na jñāpayati/ \P
+%anucaralokamadhya  kartṛtvābhimano nāsti \L
+%anucaralokamadhya--kartṛtvābhimano nāsti// \B
+%anucalokamadhye    kartṛtvaṃ    jñāpayati// \N1
+%anucalokamadhye    kartṛtvaṃ na jñātvā payati/ \D1
+%anucalokamadhye    kartṛtvaṃ na jñāpayati/ \N2
+%anucalokamadhye    kartṛtvaṃ    jñātva payati \U1
+%anucalokamadhye    kartṛtvaṃ na jñāpayati \U2
 %------------------------------
-%so pi rājayogaḥ kathyate// \E
-%so pi rājayogaḥ kathyate   \P
-%so pi rājayoga kathyate/   \L
-%so pi rājayoga kathyate/   \B
-%so pi rājayogaḥ kathyate//  \N1
-%so pi rājayoga kathyate//  \D1
-%so 'pi rājayoga kathyate// \N2
-%so pi rājayoga kathyate/   \U1
-%so pi rājayoga kathyate    \U2
+%while wandering the world he doesn't whish to know authorship. 
+%------------------------------
+\app{\lem[wit={L,B}]{anucara}
+  \rdg[wit={N1,N2,D1,U1,U2,P}]{anuca°}
+  \rdg[wit={L,B}]{anucara°}
+  \rdg[wit={E}]{atha ca}
+}\app{\lem[wit={ceteri}]{lokamadhye}
+  \rdg[wit={L,B}]{°madhya}}
+\app{\lem[wit={E,P,D1,N2,U2}]{kartṛtvaṃ na}
+  \rdg[wit={L,B}]{kartṛtvābhimano}
+  \rdg[wit={N1,U1}]{kartṛtvaṃ}}
+\app{\lem[wit={E,P,N1,N2,U2}]{jñāpayati}
+  \rdg[wit={D1,U1}]{jñātva payati}
+  \rdg[wit={L,B}]{nāsti}}/
+%------------------------------
+%so  pi  rājayogaḥ kathyate// \E
+%so  pi  rājayogaḥ kathyate   \P
+%so  pi  rājayoga  kathyate/   \L
+%so  pi  rājayoga  kathyate/   \B
+%so  pi  rājayogaḥ kathyate//  \N1
+%so  pi  rājayoga  kathyate//  \D1
+%so 'pi  rājayoga  kathyate// \N2
+%so  pi  rājayoga  kathyate/   \U1
+%so  pi  rājayoga  kathyate    \U2
 %------------------------------
 %This is also said to be Rājayoga. 
+%------------------------------
+so 'pi
+\app{\lem[wit={E,P,N1}]{rājayogaḥ}
+  \rdg[wit={ceteri}]{rājayoga}}
+kathyate/
+\end{prose}
+\end{edition}
+\begin{translation}
+  \ekddiv{type=trans}
+   \bigskip
+    \centerline{\textrm{\small{[Other Attributes]}}}
+    \bigskip
+  \begin{tlate}
+Another attribute of Rājayoga is described. Even ``of one who is in gain of a kingdom etc.'' [it is said that] perception of success does'nt arise. Even due to loss suffering does'nt arise in the mind. And then desire doesn't arise. And then with regards to an object that has been obtained for whatever reason towards ones object aversion does'nt arise. With regard to this object affection of the mind does'nt arise. Just this is said to be Rājayoga. And then his mind which knows the sacred speech is equal towards a person, friend and enemy. And a neutral view arises. In the mind of one who is entirely situated in the middle of the earth, the pride of authorship does't arise, because of death and rebirth, and because of happiness and enjoyment. Wile wandering the world he doesn't whish to know authorship. This is also said to be Rājayoga.        
+  \end{tlate}
+   \end{translation} 
+ \end{alignment}
+\end{document}
 %------------------------------
 %navīnāni paṭṭasūtramayadhṛtāni vastrāṇi           \E
 %navīnāni paṭasūtramayānidhṛtāni vastrāṇi          \P
@@ -4035,7 +4244,7 @@ atha ca
 %navīnāni padasūtramayāni tāni vastrāṇi            \U1
 %navīnāni paṭ(h)asūtramayāni dhṛtāni .... (rest \om) \U2
 %------------------------------
-%Neue, aus Seidenfaden gemachte, getragene Kleider.?! 
+%Neue, aus Fäden bestehede gemachte Binde, feste Kleidung .?! 
 %------------------------------
 %atha vā jīrṇāni chidrāṇi dhṛtāni kastūrīcandanalepairvā kardamalepena yasya manasi harṣaśokau na staḥ/ \E
 %atha vā jīrṇāni sachadrāṇi  dhūtāni kastūrīcaṃdanalepo vā karddamalepo vā yasya manasi harṣaśokau na staḥ/ \P
@@ -4058,6 +4267,8 @@ atha ca
 %sa eva rājayogaḥ//          \N2
 %sa eva rājayogaḥ            \U1
 %sa eva rājayoga             \U2
+%------------------------------
+%
 %------------------------------ 
 %yasya janmamaraṇe na staḥ sukhaṃ na bhavati/ kulaṃ na bhavati śīlaṃ na bhavati/ sthānaṃ na bhavati/ \E
 %\om \P

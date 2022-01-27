@@ -41,13 +41,15 @@
 %% Running "make inst" installs the files in the user's TeX tree.
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
 \ProvidesPackage{ekdosis}
-    [2021/04/02 v1.2 Typesetting TEI xml-compliant critical editions]
+    [2021/11/21 v1.4 Typesetting TEI xml-compliant critical editions]
 \RequirePackage{iftex}
 \RequireLuaTeX
 \RequirePackage{expkv-opt}
 \RequirePackage{expkv-def}
 \newif\if@pkg@float
 \newif\if@pkg@footins
+\newif\if@pkg@keyfloat
+\newif\if@pkg@fitapp
 \newif\if@pkg@ekddivs
 \newif\if@parnotesroman
 \newif\if@pkg@parnotes
@@ -55,7 +57,9 @@
 \newif\if@pkg@poetry@verse
 \ekvdefinekeys{ekdosis}{
   choice layout = {float = {\@pkg@floattrue},
-    footins = {\@pkg@floatfalse\@pkg@footinstrue}},
+    footins = {\@pkg@floatfalse\@pkg@footinstrue},
+    keyfloat = {\@pkg@floatfalse\@pkg@keyfloattrue},
+    fitapp = {\@pkg@floatfalse\@pkg@fitapptrue}},
   initial layout = float,
   unknown-choice layout = \PackageError{ekdosis}{unknown
     layout=#1}{`layout' must be either `float' or `footins'.},
@@ -93,16 +97,28 @@
   \ekd@memoir@loadedtrue\@pkg@poetry@versetrue}{}
 \RequirePackage{luacode}
 \RequirePackage{paracol}
-\RequirePackage{xparse}
 \RequirePackage{etoolbox}
 \RequirePackage{lineno}
-\RequirePackage{keyfloat}
+\if@pkg@float
+  \RequirePackage{trivfloat}
+  \trivfloat{ekdapparatus}
+\fi
+\if@pkg@keyfloat
+  \RequirePackage{keyfloat}
+  \def\ekd@keyparopts#1{%
+    \def\ekd@insert@keyparapp{%
+      \keyparbox[!b]{#1}{\ekd@insert@apparatus}}}
+  \ekd@keyparopts{}
+\fi
+\if@pkg@fitapp
+  \RequirePackage{tcolorbox}
+  \tcbuselibrary{fitting,skins}
+\fi
 \RequirePackage{refcount}
 \RequirePackage{zref-user}
 \RequirePackage{zref-abspage}
 \RequirePackage{ltxcmds}
 \RequirePackage{pdftexcmds}
-\RequirePackage{atbegshi}
 \RequirePackage{ifoddpage}
 \if@pkg@poetry@verse
   \RequirePackage{verse}
@@ -114,12 +130,33 @@
 \AtEndDocument{
   \luadirect{ekdosis.closestream()}
 }
+\ekvdefinekeys{ekd@setup}{
+  bool showpagebreaks = \ifekd@showpb,
+  store spbmk = \ekd@spbmk,
+  initial spbmk = spb,
+  store hpbmk = \ekd@hpbmk,
+  initial hpbmk = hpb,
+}
+\NewDocumentCommand{\ekdsetup}{m}{\ekvset{ekd@setup}{#1}}
+\@onlypreamble\ekdsetup
 \ekvdefinekeys{ekd@hooks}{
   store appfontsize = \ekd@appfontsize,
   store refnumstyle = \ekd@refnumstyle,
   store postrefnum = \ekd@postrefnum,
+  code familysep = \luadirect{ekdosis.setfamilysep(\luastringN{#1})},
   store lemmastyle = \ekd@lemmastyle,
   store readingstyle = \ekd@readingstyle,
+  code keyparopts = \if@pkg@keyfloat\ekd@keyparopts{#1}\fi,
+  dimen appheight = \ekd@app@height,
+  initial appheight = .5\textheight,
+  choice fitalgorithm = {fontsize = \def\ekd@fit@algorithm{fontsize},
+    hybrid = \def\ekd@fit@algorithm{hybrid},
+    areasize = \def\ekd@fit@algorithm{areasize},
+    squeeze = \def\ekd@fit@algorithm{squeeze}},
+  initial fitalgorithm = fontsize,
+  unknown-choice fitalgorithm = \PackageError{ekdosis}{unknown
+    fitalgorithm=#1}{`fitalgorithm' must be either `fontsize',
+    `hybrid', `areasize' or `squeeze'.},
   code initialrule = \def\ekd@initial@rule{#1\NLS},
   default initialrule = \rule{0.4\columnwidth}{0.4pt},
   noval noinitialrule = \undef\ekd@initial@rule,
@@ -137,7 +174,8 @@
   store collection = \collection@value,
   store idno = \idno@value,
   store msName = \msName@value,
-  store origDate = \origDate@value
+  store origDate = \origDate@value,
+  store locus = \locus@value
 }
 \NewDocumentCommand{\DeclareWitness}{m m m O{}}{%
   \bgroup
@@ -152,7 +190,8 @@
       \luastringO{\collection@value},
       \luastringO{\idno@value},
       \luastringO{\msName@value},
-      \luastringO{\origDate@value})}
+      \luastringO{\origDate@value},
+      \luastringO{\locus@value})}
     \egroup
   }
 \@onlypreamble\DeclareWitness
@@ -216,6 +255,7 @@
     \luastringN{#2},
     \luastringN{#3})}
 }
+\NewDocumentCommand{\teidirect}{O{}mm}{\ignorespaces}
 \NewDocumentCommand{\EnvtoTEI}{s m m O{}}{%
   \IfBooleanTF{#1}{%
   \luadirect{ekdosis.newenvtotag(\luastringN{#2},
@@ -254,10 +294,12 @@
   nmeta norule = {rule=none},
   code delim = \def\delim@val{\unexpanded{#1}},
   store sep = \sep@val,
+  store subsep = \subsep@val,
   store bhook = \bhook@val,
   store ehook = \ehook@val,
   store maxentries = \limit@val,
   store lang = \lang@val,
+  store notelang = \notelang@val,
   initial direction = LR,
   initial delim = {},
   initial ehook = {\csname ekd@end@apparatus\endcsname}
@@ -274,10 +316,12 @@
     \luastringO{\rule@val},
     \luastringO{\delim@val},
     \luastringO{\sep@val},
+    \luastringO{\subsep@val},
     \luastringO{\bhook@val},
     \luastringO{\ehook@val},
     \luastringO{\limit@val},
-    \luastringO{\lang@val}
+    \luastringO{\lang@val},
+    \luastringO{\notelang@val}
     )}
   \egroup
 }
@@ -286,33 +330,47 @@
   \luadirect{ekdosis.addto_bagunits(\luastringO{#1}, \luastringN{#2})}%
   \ignorespaces
 }
-\NewDocumentCommand{\ekdpb}{o m}{%
-  \def\@tmpoarg{#1}%
-  \def\@tmpmarg{#2}%
-  \luadirect{ekdosis.dolnlab(\luastringN{#2})}%
-  \linelabel{\luadirect{tex.sprint(ekdosis.getlnlab())}}%
-  \def\tmp@ln{%
-    \getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}}}%
-  \def\tmp@pg{%
-    \getpagerefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}}}%
-  \IfNoValueTF{#1}
-  {\ifnum
-    \pdf@strcmp{\@tmpmarg}{\tmp@ln} = 0
-    \pagebreak
-    \fi}
-  {\ifnum
-    \pdf@strcmp{\@tmpoarg}{\tmp@pg} = 0
-    \ifnum
-    \pdf@strcmp{\@tmpmarg}{\tmp@ln} = 0
-    \pagebreak
-    \fi
-    \fi
+\newcounter{ekd@pb}
+\globalcounter{ekd@pb}
+\NewDocumentCommand{\ekdpb}{s o m}{%
+  \IfBooleanTF{#1}
+  {\ifekd@showpb\marginpar{\ekd@hpbmk}\fi
+    \pagebreak}
+  {%
+    \def\@tmpoarg{#2}%
+    \def\@tmpmarg{#3}%
+    \stepcounter{ekd@pb}%
+    \linelabel{ekdpb:\theekd@pb}%
+    \def\tmp@ln{%
+      \getrefnumber{ekdpb:\theekd@pb}}%
+    \def\tmp@pg{%
+      \getpagerefnumber{ekdpb:\theekd@pb}}%
+    \IfNoValueTF{#2}
+    {\ifnum
+      \pdf@strcmp{\@tmpmarg}{\tmp@ln} = 0
+      \ifekd@showpb\marginpar{\ekd@spbmk}\fi
+      \pagebreak
+      \else
+      \ifekd@showpb\marginpar{[\ekd@spbmk]}\fi
+      \fi}
+    {\ifnum
+      \pdf@strcmp{\@tmpoarg}{\tmp@pg} = 0
+      \ifnum
+      \pdf@strcmp{\@tmpmarg}{\tmp@ln} = 0
+      \ifekd@showpb\marginpar{\ekd@spbmk}\fi
+      \pagebreak
+      \else
+      \ifekd@showpb\marginpar{[\ekd@spbmk]}\fi
+      \fi
+      \fi
+    }%
   }\ignorespaces
 }
 \newbool{do@app}
 \newif\ifekd@state
 \newif\ifekd@isinapp
 \newif\ifekd@isinlem
+\newif\ifekd@appinapp
 \providebool{al@rlmode}
 \@ifpackageloaded{arabluatex}{}{%
   \def\setRL{\booltrue{al@rlmode}\pardir TRT\textdir TRT}
@@ -347,12 +405,14 @@
     \hb@xt@0em{\hss\@makefnmark}#1}
 \newif\ifrtl@app
 \edef\ekdsep{] }
+\edef\ekdsubsep{}
 \ekvdefinekeys{default@app}{
   choice direction = {LR = \rtl@appfalse,
     RL = \rtl@apptrue},
   unknown-choice direction = \PackageError{ekdosis}{unknown
     direction=#1}{`direction' must be either `LR' or `RL'.},
   code sep = \edef\ekdsep{#1},
+  code subsep = \edef\ekdsubsep{#1},
   store bhook = \ekd@begin@apparatus,
   initial bhook = {},
   store ehook = \ekd@end@apparatus,
@@ -363,8 +423,11 @@
   initial rule = \rule{0.4\columnwidth}{0.4pt},
   noval norule = \def\ekd@default@rule{\mbox{}},
   store lang = \ekd@singleapp@lang,
-  initial lang = \ltx@ifpackageloaded{babel}{\languagename}{}%
-                 \ltx@ifpackageloaded{polyglossia}{\languagename}{}
+  initial lang = \ltx@ifpackageloaded{babel}{\languagename}{%
+    \ltx@ifpackageloaded{polyglossia}{\languagename}{}},
+  store notelang = \ekd@singleapp@note@lang,
+  initial notelang = \ltx@ifpackageloaded{babel}{\languagename}{%
+  \ltx@ifpackageloaded{polyglossia}{\languagename}{}}
 }
 \NewDocumentCommand{\SetApparatus}{m}{
   \ekvset{default@app}{#1}
@@ -372,11 +435,14 @@
 \NewDocumentCommand{\SetRTLapp}{}{\rtl@apptrue}
 \NewDocumentCommand{\SetLTRapp}{}{\rtl@appfalse}
 \NewDocumentCommand{\SetSeparator}{m}{\edef\ekdsep{#1}}
+\NewDocumentCommand{\SetSubseparator}{m}{\edef\ekdsubsep{#1}}
 \NewDocumentCommand{\SetBeginApparatus}{m}{\edef\ekd@begin@apparatus{#1}}
 \NewDocumentCommand{\SetEndApparatus}{m}{\edef\ekd@end@apparatus{#1}}
 \NewDocumentCommand{\SetUnitDelimiter}{m}{\def\ekd@unit@delim{#1}}
 \NewDocumentCommand{\SetApparatusLanguage}{m}{%
   \def\ekd@singleapp@lang{#1}}
+\NewDocumentCommand{\SetApparatusNoteLanguage}{m}{%
+  \def\ekd@singleapp@note@lang{#1}}
 \newif\iffootnoterule
 \footnoteruletrue
 \let\dflt@footnoterule\footnoterule
@@ -409,6 +475,36 @@
 \newif\ifsubsq@unit
 \subsq@unittrue
 \newif\ifekd@inside@app
+\newif\ifekd@keepinapp
+\if@pkg@fitapp
+  \newtcboxfit{\ekd@fitapp}{%
+    blankest,
+    fit basedim = \f@size pt,
+    fit fontsize macros,
+    fit height from=0pt to \ekd@app@height,
+    fit algorithm = \ekd@fit@algorithm,
+    float=!b}
+\fi
+\long\def\ekd@insert@apparatus{%
+  \unless\ifekd@mapps
+  \ifrtl@app\pardir TRT\leavevmode\textdir TRT\else
+    \pardir TLT\leavevmode\textdir TLT\fi
+  \fi
+  \if@pkg@parnotes
+   \if@parnotesroman
+    \renewcommand*{\theparnotemark}{\roman{parnotemark}}\fi
+   \parnoteclear\fi
+  \ekd@inside@apptrue
+  \ekd@appfontsize
+  \ifekd@mapps
+    \ifdefined\ekd@initial@rule
+      \ekd@initial@rule
+    \fi
+  \fi
+  \apparatus\unless\ifekd@mapps\ekd@end@apparatus\fi
+  \ekd@inside@appfalse
+  \if@pkg@parnotes\parnotes\parnotereset\fi
+}%
 \def\add@@apparatus{%
   \if@pkg@parnotes\parnotes\else\fi
   \if@pkg@footins
@@ -436,26 +532,15 @@
   \egroup
   \fi
   \if@pkg@float
-  \keyparbox[!b]{}{%
-    \unless\ifekd@mapps
-      \ifrtl@app\pardir TRT\leavevmode\textdir TRT\else
-        \pardir TLT\leavevmode\textdir TLT\fi
-    \fi
-    \if@pkg@parnotes
-    \if@parnotesroman
-    \renewcommand*{\theparnotemark}{\roman{parnotemark}}\else\fi
-    \parnoteclear\else\fi
-    \ekd@inside@apptrue
-    \ekd@appfontsize
-    \ifekd@mapps
-      \ifdefined\ekd@initial@rule
-        \ekd@initial@rule
-      \fi
-    \fi
-    \apparatus\unless\ifekd@mapps\ekd@end@apparatus\fi
-    \ekd@inside@appfalse
-    \if@pkg@parnotes\parnotes\parnotereset\else\fi
-  }%
+  \begin{ekdapparatus}[!b]%
+    \ekd@insert@apparatus
+  \end{ekdapparatus}%
+  \fi
+  \if@pkg@keyfloat
+    \ekd@insert@keyparapp
+  \fi
+  \if@pkg@fitapp
+    \ekd@fitapp{\ekd@insert@apparatus}%
   \fi
 }
 \def\add@apparatus{%
@@ -502,11 +587,13 @@
 \NewDocumentCommand{\ekdatbegshihook}{}{%
   \ifekd@pagelineation\resetlinenumber\fi
 }
-\AtBeginShipout{\ekdatbegshihook}
+\AddToHook{shipout/before}{\ekdatbegshihook}
 \newif\ifekd@elidednumbers
 \ekvdefinekeys{ekd@lineation}{
   choice lineation = {page = \ekd@pagelineationtrue,
-    document = \ekd@pagelineationfalse},
+    document = \ekd@pagelineationfalse,
+    none = \ekd@pagelineationtrue
+           \renewcommand\thelinenumber{}},
   unknown-choice lineation = \PackageError{ekdosis}{unknown
     lineation=#1}{`lineation' must be either `page' or `document'.},
   choice vlineation = {page = \ekd@pagevlineationtrue,
@@ -519,6 +606,7 @@
                  \else\if@pkg@poetry@verse\poemlines{#1}\fi\fi,
   initial vmodulo = 1,
   default vmodulo = 5,
+  bool vnumbrokenlines = \ifnum@brokenline,
   bool continuousvnum = \if@continuous@vnum,
   choice numbers = {elided = \ekd@elidednumberstrue,
     full = \ekd@elidednumbersfalse},
@@ -541,6 +629,16 @@
 \NewDocumentCommand{\SetLineation}{m}{
   \ekvset{ekd@lineation}{#1}
 }
+\NewDocumentCommand{\vmodulolinenumbers}{O{5}}{%
+  \ifekd@memoir@loaded
+    \linenumberfrequency{#1}%
+  \else
+    \if@pkg@poetry@verse
+      \poemlines{#1}%
+    \fi
+  \fi
+  \ignorespaces
+}
 \renewcommand\linenumberfont{\normalfont\footnotesize}
 \ekvdefinekeys{appnote}{
    store type = \ekdan@type,
@@ -552,15 +650,20 @@
   \leavevmode
   \begingroup
   \ekvset{appnote}{#1}%
-  \ekd@isinapptrue%
+  \ifekd@isinapp\ekd@appinapptrue\fi
+  \ekd@isinapptrue
   \stepcounter{ekd@lab}%
   \zlabel{ekd:\theekd@lab}%
   \luadirect{ekdosis.storeabspg(
     \luastring{\zref@extract{ekd:\theekd@lab}{abspage}})}%
-  \ifekd@state\add@apparatus\fi%
+  \ifekd@state\add@apparatus\fi
   \luadirect{tex.sprint(ekdosis.removesp(\luastringN{#2}))}%
-  \ekd@isinappfalse%
+  \ekd@isinappfalse
+  \ekd@appinappfalse
   \endgroup}
+\NewDocumentCommand{\ekdpage}{}{%
+  \luadirect{tex.sprint(ekdosis.getekdabspg())}%
+}
 \def\current@ref@arg#1#2{{%\textdir TLT%
     \unexpanded\expandafter{\ekd@refnumstyle}%
     \ifnum%
@@ -612,10 +715,16 @@
     \fi
     \fi%
     \else
-    \LRnum{\getrefnumber{#1}}--%
-    \LRnum{\getpagerefnumber{#2}}.%
-    \LRnum{\getrefnumber{#2}}\unexpanded\expandafter{\ekd@postrefnum}% issue pg and ln nos
+    \ifboolexpr{bool {ekd@pagelineation} or bool {ekd@pagevlineation}}
+      {\LRnum{\getrefnumber{#1}}--%
+      \LRnum{\getpagerefnumber{#2}}.%
+      \LRnum{\getrefnumber{#2}}\unexpanded\expandafter{\ekd@postrefnum}}% issue pg and ln nos
+      {\LRnum{\getrefnumber{#1}}--%
+      \LRnum{\getrefnumber{#2}}\unexpanded\expandafter{\ekd@postrefnum}}% issue the nos
     \fi%
+    \ifekdn@forcenum
+      \LRnum{\getrefnumber{#1}}\unexpanded\expandafter{\ekd@postrefnum}% force the no
+    \fi
   }%
 }
 \def\current@ref{{%\textdir TLT%
@@ -640,6 +749,28 @@
       {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-b}}
       =
       0
+    %%%begin
+    \ifnum%
+    \pdf@strcmp{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}%
+    {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-e}}
+    =
+    0
+    \ifekd@appinapp
+    \ifnum%
+    \pdf@strcmp{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+    {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevprevlnlab())}-b}}
+    =
+    0
+    \else
+    \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+      \unexpanded\expandafter{\ekd@postrefnum}% issue the no
+    \fi
+    \fi
+    \else
+    \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+      \unexpanded\expandafter{\ekd@postrefnum}% issue the no
+    \fi
+    %%% end
       \else
       \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
         \unexpanded\expandafter{\ekd@postrefnum}% issue the no
@@ -654,6 +785,28 @@
     {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-b}}
     =
     0
+    %%%begin
+    \ifnum%
+    \pdf@strcmp{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}%
+    {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevlnlab())}-e}}
+    =
+    0
+    \ifekd@appinapp
+    \ifnum%
+    \pdf@strcmp{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+    {\getrefnumber{\luadirect{tex.sprint(ekdosis.getprevprevlnlab())}-b}}
+    =
+    0
+    \else
+    \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+      \unexpanded\expandafter{\ekd@postrefnum}% issue the no
+    \fi
+    \fi
+    \else
+    \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+      \unexpanded\expandafter{\ekd@postrefnum}% issue the no
+    \fi
+    %%% end
     \else
     \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
       \unexpanded\expandafter{\ekd@postrefnum}% issue the no
@@ -678,13 +831,23 @@
     \fi
     \fi%
     \else
-    \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}--%
-    \LRnum{\getpagerefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}.%
-    \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}%
-      \unexpanded\expandafter{\ekd@postrefnum}% issue pg and ln nos
+    \ifboolexpr{bool {ekd@pagelineation} or bool {ekd@pagevlineation}}
+      {\LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}--%
+      \LRnum{\getpagerefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}.%
+      \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}%
+        \unexpanded\expandafter{\ekd@postrefnum}}% issue pg and ln nos
+      {\LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}--%
+      \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-e}}%
+        \unexpanded\expandafter{\ekd@postrefnum}}% issue the nos
     \fi%
+    \ifekdl@forcenum
+    \LRnum{\getrefnumber{\luadirect{tex.sprint(ekdosis.getlnlab())}-b}}%
+      \unexpanded\expandafter{\ekd@postrefnum}% force the no
+    \fi
   }%
 }
+\newif\ifekdl@forcenum
+\newif\ifekdl@nonum
 \ekvdefinekeys{lem}{
   code wit = \def\ekdlr@wit{#1},
   code source = \def\ekdlr@source{#1},
@@ -696,6 +859,8 @@
   code postwit = \def\ekdlr@postwit{#1},
   store type = \ekdlr@type,
   store sep = \ekdl@sep,
+  noval nonum = \ekdl@nonumtrue,
+  noval num = \ekdl@forcenumtrue,
   bool nolem = \ifekdl@nolem,
   bool nosep = \ifekdl@nosep,
   initial sep = \ekdsep
@@ -709,6 +874,9 @@
   code post = \def\ekdlr@post{#1},
   code prewit = \def\ekdlr@prewit{#1},
   code postwit = \def\ekdlr@postwit{#1},
+  store subsep = \ekdr@subsep,
+  initial subsep = \ekdsubsep,
+  bool nosubsep = \ifekdr@nosubsep,
   store type = \ekdlr@type,
   bool nordg = \ifekdr@nordg
 }
@@ -722,11 +890,20 @@
   \ekd@singleapp@lang
   \fi
 }
+\def\app@note@lang{%
+  \ifekd@mapps
+  \luadirect{tex.sprint(ekdosis.getappnotelang(\luastring{\ekdan@type}))}%
+  \else
+  \ekd@singleapp@note@lang
+  \fi
+}
 \NewDocumentCommand{\lem}{O{} m}{%
   \ekd@isinlemtrue%
   \luadirect{ekdosis.dolnlab(\luastringN{#2})}%
   \null
   \bgroup%
+  \ekdl@forcenumfalse
+  \ekdl@nonumfalse
   \ekvset{lem}{#1}%
   \ekd@test@lang
   \ifekd@mapps%
@@ -748,7 +925,7 @@
     \else%
     \ifsubsq@unit\unexpanded\expandafter{\ekd@unit@delim}\fi%
     \fi%
-    \current@ref}%\hskip .25em}%
+    \unless\ifekdl@nonum\current@ref\fi}%\hskip .25em}%
   \else%
   \ifbool{al@rlmode}{%
     \edef\lem@app{%
@@ -759,7 +936,7 @@
       \else%
       \ifsubsq@unit\unexpanded\expandafter{\ekd@unit@delim}\fi%
       \fi%
-      \current@ref%\hskip .25em
+      \unless\ifekdl@nonum\current@ref\fi%\hskip .25em
       \ifdefined\ekdlr@alt%
         \ifdefined\ekdlr@post%
           \space\unexpanded\expandafter{\ekdlr@post}\space\else\fi
@@ -794,7 +971,7 @@
       \else%
       \ifsubsq@unit\unexpanded\expandafter{\ekd@unit@delim}\fi%
       \fi%
-      \current@ref%\hskip .25em
+      \unless\ifekdl@nonum\current@ref\fi%\hskip .25em
       \ifdefined\ekdlr@alt%
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
@@ -837,6 +1014,7 @@
   \ekd@isinlemfalse%
   \subsq@unittrue%
 }
+\newif\ifekd@subsq@rdg
 \NewDocumentCommand{\rdg}{O{} m}{%
   \bgroup%
   \ekvset{rdg}{#1}%
@@ -853,6 +1031,9 @@
   \else%
   \ifbool{al@rlmode}{%
     \edef\rdg@app{%
+      \ifekd@subsq@rdg
+        \unless\ifekdr@nosubsep\unexpanded\expandafter{\ekdr@subsep}\fi
+      \fi
       \ifdefined\ekdlr@alt%
         \ifdefined\ekdlr@post%
           \space\unexpanded\expandafter{\ekdlr@post}\space\else\fi
@@ -879,6 +1060,9 @@
   }%
   {%
     \edef\rdg@app{%
+      \ifekd@subsq@rdg
+        \unless\ifekdr@nosubsep\unexpanded\expandafter{\ekdr@subsep}\fi
+      \fi
       \ifdefined\ekdlr@alt%
         \ifdefined\ekdlr@pre%
           \space\unexpanded\expandafter{\ekdlr@pre}\space\else\fi
@@ -909,14 +1093,16 @@
         \space\unexpanded\expandafter{\ekdlr@postwit}\else\fi
     }%
   }%
-  \ifekd@mapps%
+  \ifekd@mapps
       \append@app[\ekdan@type]{\rdg@app}%
-  \else%
+  \else
   \append@app{\rdg@app}%
-  \fi%
-  \fi%
-  \egroup%
+  \fi
+  \fi
+  \egroup
+  \ekd@subsq@rdgtrue
 }
+\newif\ifekdn@forcenum
 \ekvdefinekeys{note}{
   store type = \ekdan@type,
   store lem = \ekdn@lem,
@@ -925,7 +1111,9 @@
   store sep = \ekdn@sep,
   bool nosep = \ifekdn@nosep,
   initial type = default,
-  initial sep = \ekdsep
+  initial sep = \ekdsep,
+  bool nonum = \ifekdn@nonum,
+  noval num = \ekdn@forcenumtrue
 }
 \NewDocumentCommand{\note@noapp}{O{} +m}{%
   \leavevmode
@@ -962,7 +1150,7 @@
       \else%
         \ifsubsq@unit\unexpanded\expandafter{\ekd@unit@delim}\fi%
       \fi%
-      \current@ref@arg{\ekdn@labelb}{\ekdn@labele}%\hskip .25em
+      \unless\ifekdn@nonum\current@ref@arg{\ekdn@labelb}{\ekdn@labele}\fi%\hskip .25em
       \ifdefined\ekdn@lem%
       {\textdir TRT\unexpanded\expandafter{\ekd@lemmastyle}%
         \unexpanded\expandafter{\ekdn@lem}}%
@@ -978,7 +1166,7 @@
       \else%
         \ifsubsq@unit\unexpanded\expandafter{\ekd@unit@delim}\fi%
       \fi%
-      \current@ref@arg{\ekdn@labelb}{\ekdn@labele}%\hskip .25em
+      \unless\ifekdn@nonum\current@ref@arg{\ekdn@labelb}{\ekdn@labele}\fi%\hskip .25em
       \ifdefined\ekdn@lem
         \ifbool{ekd@lang@pkg}%
         {{\unexpanded\expandafter{\ekd@lemmastyle}%
@@ -990,7 +1178,7 @@
           \unexpanded\expandafter{\ekdn@sep}\fi
           \else\fi%
           \ifbool{ekd@lang@pkg}%
-          {{\noexpand\selectlanguage{\app@lang}\unexpanded{#2}}}{%
+          {{\noexpand\selectlanguage{\app@note@lang}\unexpanded{#2}}}{%
             {\unexpanded{#2}}}}}%
   \ifekd@mapps%
   \unconditional@appin[\ekdan@type]{\note@contents}%
@@ -1004,7 +1192,9 @@
 }
 \ekvdefinekeys{ekd@note}{
   store pre = \pre@value,
-  store post = \post@value
+  store post = \post@value,
+  nmeta sep = {post=\ekdsep},
+  nmeta subsep = {pre=\ekdsubsep}
 }
 \NewDocumentCommand{\ekd@note}{O{} m}{%
   \bgroup%
@@ -1024,25 +1214,25 @@
   \egroup%
 }
 \NewDocumentCommand{\ekd@note@star}{O{} m}{%
-  \if@pkg@parnotes
-    \bgroup%
-      \ekvset{ekd@note}{#1}%
-      \edef\note@contents{%
-        \ekvifdefinedNoVal{ekd@note}{pre}{}{%
-          \unexpanded\expandafter{\pre@value}}%
-        \unskip\noexpand\parnote{\unexpanded{#2}}%
-        \ekvifdefinedNoVal{ekd@note}{post}{}{%
-          \unexpanded\expandafter{\post@value}}%
-      }%
-      \append@app{\note@contents}%
-    \egroup%
-  \else
-    \ifekd@mapps%
+  \bgroup
+  \ekvset{ekd@note}{#1}%
+  \edef\note@contents{%
+    \ekvifdefinedNoVal{ekd@note}{pre}{}{%
+      \unexpanded\expandafter{\pre@value}}%
+    \if@pkg@parnotes
+      \unskip\noexpand\parnote{\unexpanded{#2}}%
+    \else
+      \unskip\noexpand\footnote{\unexpanded{#2}}%
+    \fi
+    \ekvifdefinedNoVal{ekd@note}{post}{}{%
+      \unexpanded\expandafter{\post@value}}%
+  }%
+  \ifekd@mapps
     \append@app[\ekdan@type]{\note@contents}%
-    \else%
+  \else
     \append@app{\note@contents}%
-    \fi%
-  \fi%
+  \fi
+  \egroup
 }
 \NewDocumentCommand{\note@app}{s O{} +m}{%
   \ifbool{al@rlmode}{%
@@ -1081,29 +1271,44 @@
   initial delend = \ifbool{al@rlmode}{\{}{\}},
   initial sicbegin = \dag,
   initial sicend = \dag,
-  initial gapmark = ***
+  initial gapmark = ***,
+  bool keepinapp = \ifekd@keepinapp
 }
 \NewDocumentCommand{\supplied}{m}{%
   \ifekd@inside@app
-  #1%
+    \ifekd@keepinapp
+      \suppb@value #1\suppe@value
+    \else
+      #1%
+    \fi
   \else
-  \suppb@value #1\suppe@value
+    \suppb@value #1\suppe@value
   \fi
 }
 \NewDocumentCommand{\surplus}{m}{%
   \ifekd@inside@app
-  #1%
+    \ifekd@keepinapp
+      \delb@value #1\dele@value
+    \else
+      #1%
+    \fi
   \else
-  \delb@value #1\dele@value
+    \delb@value #1\dele@value
   \fi
 }
 \NewDocumentCommand{\sic}{s m}{%
   \ifekd@inside@app
-  #2%
+    \ifekd@keepinapp
+      \IfBooleanTF{#1}
+        {\sicb@value #2}
+        {\sicb@value #2\sice@value}%
+    \else
+      #2%
+    \fi
   \else
-  \IfBooleanTF{#1}
-    {\sicb@value #2}
-    {\sicb@value #2\sice@value}%
+    \IfBooleanTF{#1}
+      {\sicb@value #2}
+      {\sicb@value #2\sice@value}%
   \fi
 }
 \NewDocumentCommand{\gap}{m}{%
@@ -1218,6 +1423,54 @@
   \luadirect{ekdosis.flushenvdata()}
   \luadirect{ekdosis.flushcolnums()}
   }
+\NewDocumentCommand{\ekd@storemark}{m}{%
+  \stepcounter{ekd@lab}%
+  \label{ekd:\theekd@lab}%
+  \luadirect{ekdosis.storehfmark(
+    \luastring{\getpagerefnumber{ekd:\theekd@lab}},
+    \luastringN{#1})}%
+}
+\NewDocumentCommand{\endmark}{}{%
+  \stepcounter{ekd@lab}%
+  \label{ekd:\theekd@lab}%
+  \luadirect{ekdosis.storehfmark(
+    \luastring{\getpagerefnumber{ekd:\theekd@lab}},
+    "", "endmk")}%
+  \ifdefined\xspace\xspace\fi
+}
+\NewDocumentCommand{\ekdmark}{}{%
+  \luadirect{tex.sprint(ekdosis.gethfmark(\luastring{\thepage}))}%
+}
+\ekvdefinekeys{ekd@marks}{
+  choice mark = {HEL = \def\ekd@mk{HEL},
+    HEC = \def\ekd@mk{HEC},
+    HER = \def\ekd@mk{HER},
+    HOL = \def\ekd@mk{HOL},
+    HOC = \def\ekd@mk{HOC},
+    HOR = \def\ekd@mk{HOR},
+    FEL = \def\ekd@mk{FEL},
+    FEC = \def\ekd@mk{FEC},
+    FEL = \def\ekd@mk{FER},
+    FOL = \def\ekd@mk{FOL},
+    FOC = \def\ekd@mk{FOC},
+    FOL = \def\ekd@mk{FOR}},
+  unknown-choice mark = \PackageError{ekdosis}{unknown mark=#1}{`mark'
+    must be either `HEL', `HEC', `HER', `HOL', `HOC', `HOR', `FEL',
+    \MessageBreak `FEC', `FER', `FOL', `FOC' or `FOR'.}
+}
+\NewDocumentCommand{\ekdprintmark}{m m}{%
+  \bgroup
+  \ekvset{ekd@marks}{mark = #1}%
+  \luadirect{tex.sprint(ekdosis.printmark(\luastringN{#2},
+    \luastringO{\ekd@mk}))}%
+  \egroup
+}
+\NewDocumentCommand{\ekdnohfmark}{}{%
+  \luadirect{ekdosis.nohfmark()}%
+}
+\NewDocumentCommand{\ekdresethfmarks}{}{%
+  \luadirect{ekdosis.resethfmark()}%
+}
 \NewDocumentCommand{\MkBodyDivs}{mmmmmm}{
   \luadirect{ekdosis.mkdivdepths(
     \luastringN{#1},
@@ -1235,6 +1488,7 @@
   code head = \def\head@value{#1},
   code barehead = \def\barehead@value{#1},
   store depth = \depth@value,
+  code mark = \ekd@storemark{#1},
   choice toc = {book = \def\toc@value{book},
                 part = \def\toc@value{part},
                 chapter = \def\toc@value{chapter},
@@ -1297,6 +1551,25 @@
   \global\ekd@test@vpnumtrue
   \fi
 }
+\ifboolexpr{bool {@pkg@poetry@verse} or bool {ekd@memoir@loaded}}
+ {\newcommand{\@vsifplus}[1]{\@ifnextchar +{\@firstoftwo{#1}}}
+   \renewcommand{\@vscentercr}{%
+     \ifhmode \unskip\else \@nolnerr\fi
+     \@vsifgt{\ifnum@brokenline\@vstypelinenum\fi\verselinebreak}{%
+       \@vsifplus{\ifnum@brokenline\@vstypelinenum\fi\stepcounter{vslineno}%
+         \par\@ifstar{\nobreak\@vsxcentercr}{%
+           \@vsifbang{\@ifnextchar[ {\@vsicentercr}{}}{\@vsxcentercr}%
+         }%
+       }{%
+         \@vstypelinenum
+         \incr@vsline%
+         \par\@ifstar{\nobreak\@vsxcentercr}{%
+           \@vsifbang{\@ifnextchar[ {\@vsicentercr}{}}{\@vsxcentercr}%
+         }%
+       }%
+     }%
+   }
+ }{}
 \if@pkg@poetry@verse
 \patchcmd{\start@vsline}{%
   \ifaltindent}{%
@@ -1308,7 +1581,8 @@
   code type = \def\type@value{#1},
 }
 \ifekd@memoir@loaded
-  \linenumberfont{\normalfont\footnotesize}
+  \def\vlvnumfont{\normalfont\footnotesize}
+  \def\verselinenumfont#1{\def\vlvnumfont{#1}}
 \else
   \verselinenumfont{\normalfont\footnotesize}
 \fi
