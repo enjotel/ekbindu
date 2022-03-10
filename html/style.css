@@ -69,6 +69,7 @@ extra {color: #68228B;}
 .noindent {padding: 0px;}
 
 .comm {padding-left: 1em; padding-right: 1em;}
+.testium {padding-left: 1em; padding-right: 1em; text-align: bottom}
 .app {width: 80%; text-align: left; font-size: 14px; padding-left: 1em;}
 .lem {display:inline-block; font-weight: bold}
 .ref {font-size: 30px; padding: inherit;}
