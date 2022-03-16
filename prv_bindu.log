@@ -1,12 +1,19 @@
 This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.28)  14 MAR 2022 09:01
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**\nonstopmode\nofiles\PassOptionsToPackage{active,tightpage,auctex}{preview}\A
-tBeginDocument{\ifx\ifPreview\undefined\RequirePackage[displaymath,floats,graph
-ics,textmath,sections,footnotes]{preview}[2004/11/05]\fi} \input _region_.tex
-(./_region_.tex  !name(bindu.tex)
+**&pdflatex prv_bindu.ini \nonstopmode\nofiles\PassOptionsToPackage{active,tigh
+tpage,auctex}{preview}\AtBeginDocument{\ifx\ifPreview\undefined\RequirePackage[
+displaymath,floats,graphics,textmath,sections,footnotes]{preview}[2004/11/05]\f
+i} \input bindu.tex
+(./prv_bindu.ini
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/mylatex/mylatex.ltx))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/.tex File ignored)
+No auxiliary output files.
+
+(./bindu.tex
 (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2020/09/21 v3.32 KOMA-Script document class (article)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -260,7 +267,7 @@ Package babel Info: Importing data for iast
 Package babel Info: \l@iast = using hyphenrules for sanskrit
 (babel)             (\language73) on input line 1.
 
-./babel-iast/babel-iast.sty:4: Undefined control sequence.
+! Undefined control sequence.
 l.4 \babelprehyphenation
                         {iast}{([AIUṚṜḶḸEOṂḤKGṄCJÑṬḌṆTD...
 The control sequence at the end of the top line
@@ -270,7 +277,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:4: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -283,8 +290,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ṛ (U
-+1E5A)
+! Package inputenc Error: Unicode character Ṛ (U+1E5A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -298,8 +304,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ṝ (U
-+1E5C)
+! Package inputenc Error: Unicode character Ṝ (U+1E5C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -313,8 +318,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ḷ (U
-+1E36)
+! Package inputenc Error: Unicode character Ḷ (U+1E36)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -328,8 +332,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ḹ (U
-+1E38)
+! Package inputenc Error: Unicode character Ḹ (U+1E38)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -343,8 +346,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ṃ (U
-+1E42)
+! Package inputenc Error: Unicode character Ṃ (U+1E42)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -358,8 +360,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ḥ (U
-+1E24)
+! Package inputenc Error: Unicode character Ḥ (U+1E24)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -373,8 +374,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ṅ (U
-+1E44)
+! Package inputenc Error: Unicode character Ṅ (U+1E44)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -388,8 +388,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ṭ (U
-+1E6C)
+! Package inputenc Error: Unicode character Ṭ (U+1E6C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -402,8 +401,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ḍ (U
-+1E0C)
+! Package inputenc Error: Unicode character Ḍ (U+1E0C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -416,8 +414,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ṇ (U
-+1E46)
+! Package inputenc Error: Unicode character Ṇ (U+1E46)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -430,8 +427,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:4: Package inputenc Error: Unicode character Ṣ (U
-+1E62)
+! Package inputenc Error: Unicode character Ṣ (U+1E62)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -444,8 +440,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ṛ (U
-+1E5A)
+! Package inputenc Error: Unicode character Ṛ (U+1E5A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -459,8 +454,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ṝ (U
-+1E5C)
+! Package inputenc Error: Unicode character Ṝ (U+1E5C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -474,8 +468,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ḷ (U
-+1E36)
+! Package inputenc Error: Unicode character Ḷ (U+1E36)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -489,8 +482,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ḹ (U
-+1E38)
+! Package inputenc Error: Unicode character Ḹ (U+1E38)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -504,8 +496,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ṃ (U
-+1E42)
+! Package inputenc Error: Unicode character Ṃ (U+1E42)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -519,8 +510,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ḥ (U
-+1E24)
+! Package inputenc Error: Unicode character Ḥ (U+1E24)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -534,8 +524,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ṅ (U
-+1E44)
+! Package inputenc Error: Unicode character Ṅ (U+1E44)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -549,8 +538,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ṭ (U
-+1E6C)
+! Package inputenc Error: Unicode character Ṭ (U+1E6C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -564,8 +552,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ḍ (U
-+1E0C)
+! Package inputenc Error: Unicode character Ḍ (U+1E0C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -579,8 +566,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ṇ (U
-+1E46)
+! Package inputenc Error: Unicode character Ṇ (U+1E46)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -594,8 +580,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character Ṣ (U
-+1E62)
+! Package inputenc Error: Unicode character Ṣ (U+1E62)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -609,8 +594,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ṛ (U
-+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -624,8 +608,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ṝ (U
-+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -639,8 +622,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ḷ (U
-+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -654,8 +636,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ḹ (U
-+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -669,8 +650,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ṃ (U
-+1E43)
+! Package inputenc Error: Unicode character ṃ (U+1E43)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -684,8 +664,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ḥ (U
-+1E25)
+! Package inputenc Error: Unicode character ḥ (U+1E25)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -699,8 +678,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ṅ (U
-+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -714,8 +692,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ṭ (U
-+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -728,8 +705,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ḍ (U
-+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -742,8 +718,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ṇ (U
-+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -756,8 +731,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:5: Package inputenc Error: Unicode character ṣ (U
-+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -790,7 +764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
-./babel-iast/babel-iast.sty:14: Undefined control sequence.
+! Undefined control sequence.
 l.14 \babelprehyphenation
                          {iast}{-}{remove,}
 The control sequence at the end of the top line
@@ -800,7 +774,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:14: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -816,7 +790,7 @@ If that doesn't work, type  X <return>  to quit.
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:17: Undefined control sequence.
+! Undefined control sequence.
 l.17 \babelprehyphenation
                          {iast}{oṃ}{string = ॐ,}
 The control sequence at the end of the top line
@@ -826,7 +800,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:17: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -838,8 +812,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:17: Package inputenc Error: Unicode character ṃ (
-U+1E43)
+! Package inputenc Error: Unicode character ṃ (U+1E43)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -852,8 +825,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:17: Package inputenc Error: Unicode character ॐ (
-U+0950)
+! Package inputenc Error: Unicode character ॐ (U+0950)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -870,7 +842,7 @@ You may provide a definition with
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:20: Undefined control sequence.
+! Undefined control sequence.
 l.20 \babelprehyphenation
                          {iast}{([kgcjṭḍtdpb])[h][a]([iu])}{
 The control sequence at the end of the top line
@@ -880,7 +852,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:20: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -892,8 +864,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:20: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -906,8 +877,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:20: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -920,8 +890,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -934,8 +903,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -948,8 +916,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character ख (
-U+0916)
+! Package inputenc Error: Unicode character ख (U+0916)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -962,8 +929,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character घ (
-U+0918)
+! Package inputenc Error: Unicode character घ (U+0918)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -976,8 +942,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character छ (
-U+091B)
+! Package inputenc Error: Unicode character छ (U+091B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -990,8 +955,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character झ (
-U+091D)
+! Package inputenc Error: Unicode character झ (U+091D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1004,8 +968,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character ठ (
-U+0920)
+! Package inputenc Error: Unicode character ठ (U+0920)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1018,8 +981,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character ढ (
-U+0922)
+! Package inputenc Error: Unicode character ढ (U+0922)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1032,8 +994,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character थ (
-U+0925)
+! Package inputenc Error: Unicode character थ (U+0925)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1046,8 +1007,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character ध (
-U+0927)
+! Package inputenc Error: Unicode character ध (U+0927)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1060,8 +1020,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character फ (
-U+092B)
+! Package inputenc Error: Unicode character फ (U+092B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1074,8 +1033,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:21: Package inputenc Error: Unicode character भ (
-U+092D)
+! Package inputenc Error: Unicode character भ (U+092D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1088,8 +1046,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:24: Package inputenc Error: Unicode character ै (
-U+0948)
+! Package inputenc Error: Unicode character ै (U+0948)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1102,8 +1059,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:24: Package inputenc Error: Unicode character ौ (
-U+094C)
+! Package inputenc Error: Unicode character ौ (U+094C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1136,7 +1092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--26
 
  []
 
-./babel-iast/babel-iast.sty:27: Undefined control sequence.
+! Undefined control sequence.
 l.27 \babelprehyphenation
                          {iast}{([kgcjṭḍtdpb])[h][a]}{
 The control sequence at the end of the top line
@@ -1146,7 +1102,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:27: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1158,8 +1114,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:27: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1172,8 +1127,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:27: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1186,8 +1140,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1200,8 +1153,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1214,8 +1166,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character ख (
-U+0916)
+! Package inputenc Error: Unicode character ख (U+0916)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1228,8 +1179,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character घ (
-U+0918)
+! Package inputenc Error: Unicode character घ (U+0918)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1242,8 +1192,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character छ (
-U+091B)
+! Package inputenc Error: Unicode character छ (U+091B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1256,8 +1205,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character झ (
-U+091D)
+! Package inputenc Error: Unicode character झ (U+091D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1270,8 +1218,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character ठ (
-U+0920)
+! Package inputenc Error: Unicode character ठ (U+0920)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1284,8 +1231,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character ढ (
-U+0922)
+! Package inputenc Error: Unicode character ढ (U+0922)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1298,8 +1244,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character थ (
-U+0925)
+! Package inputenc Error: Unicode character थ (U+0925)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1312,8 +1257,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character ध (
-U+0927)
+! Package inputenc Error: Unicode character ध (U+0927)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1326,8 +1270,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character फ (
-U+092B)
+! Package inputenc Error: Unicode character फ (U+092B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1340,8 +1283,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:28: Package inputenc Error: Unicode character भ (
-U+092D)
+! Package inputenc Error: Unicode character भ (U+092D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1359,7 +1301,7 @@ e,
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:33: Undefined control sequence.
+! Undefined control sequence.
 l.33 \babelprehyphenation
                          {iast}{([kgcjṭḍtdpb])[h]([āiīuūṛṝḷḹe...
 The control sequence at the end of the top line
@@ -1369,7 +1311,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:33: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1382,8 +1324,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:33: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1397,8 +1338,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:33: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1412,8 +1352,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:33: Package inputenc Error: Unicode character ṛ (
-U+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1426,8 +1365,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:33: Package inputenc Error: Unicode character ṝ (
-U+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1440,8 +1378,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:33: Package inputenc Error: Unicode character ḷ (
-U+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1454,8 +1391,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:33: Package inputenc Error: Unicode character ḹ (
-U+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1468,8 +1404,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1482,8 +1417,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1496,8 +1430,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character ख (
-U+0916)
+! Package inputenc Error: Unicode character ख (U+0916)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1510,8 +1443,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character घ (
-U+0918)
+! Package inputenc Error: Unicode character घ (U+0918)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1524,8 +1456,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character छ (
-U+091B)
+! Package inputenc Error: Unicode character छ (U+091B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1538,8 +1469,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character झ (
-U+091D)
+! Package inputenc Error: Unicode character झ (U+091D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1552,8 +1482,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character ठ (
-U+0920)
+! Package inputenc Error: Unicode character ठ (U+0920)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1566,8 +1495,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character ढ (
-U+0922)
+! Package inputenc Error: Unicode character ढ (U+0922)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1580,8 +1508,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character थ (
-U+0925)
+! Package inputenc Error: Unicode character थ (U+0925)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1594,8 +1521,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character ध (
-U+0927)
+! Package inputenc Error: Unicode character ध (U+0927)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1608,8 +1534,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character फ (
-U+092B)
+! Package inputenc Error: Unicode character फ (U+092B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1622,8 +1547,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:34: Package inputenc Error: Unicode character भ (
-U+092D)
+! Package inputenc Error: Unicode character भ (U+092D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1636,8 +1560,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ṛ (
-U+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1650,8 +1573,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ṝ (
-U+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1664,8 +1586,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ḷ (
-U+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1678,8 +1599,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ḹ (
-U+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1692,8 +1612,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ा (
-U+093E)
+! Package inputenc Error: Unicode character ा (U+093E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1706,8 +1625,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ि (
-U+093F)
+! Package inputenc Error: Unicode character ि (U+093F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1720,8 +1638,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ी (
-U+0940)
+! Package inputenc Error: Unicode character ी (U+0940)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1734,8 +1651,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ु (
-U+0941)
+! Package inputenc Error: Unicode character ु (U+0941)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1748,8 +1664,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ू (
-U+0942)
+! Package inputenc Error: Unicode character ू (U+0942)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1762,8 +1677,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ृ (
-U+0943)
+! Package inputenc Error: Unicode character ृ (U+0943)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1776,8 +1690,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ॄ (
-U+0944)
+! Package inputenc Error: Unicode character ॄ (U+0944)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1790,8 +1703,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ॢ (
-U+0962)
+! Package inputenc Error: Unicode character ॢ (U+0962)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1804,8 +1716,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ॣ (
-U+0963)
+! Package inputenc Error: Unicode character ॣ (U+0963)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1818,8 +1729,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character े (
-U+0947)
+! Package inputenc Error: Unicode character े (U+0947)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1832,8 +1742,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:36: Package inputenc Error: Unicode character ो (
-U+094B)
+! Package inputenc Error: Unicode character ो (U+094B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1864,7 +1773,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--38
 
  []
 
-./babel-iast/babel-iast.sty:40: Undefined control sequence.
+! Undefined control sequence.
 l.40 \babelprehyphenation
                          {iast}{([kgcjṭḍtdpb])[h][+]}{
 The control sequence at the end of the top line
@@ -1874,7 +1783,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:40: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1886,8 +1795,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:40: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1900,8 +1808,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:40: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1914,8 +1821,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1928,8 +1834,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1942,8 +1847,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character ख (
-U+0916)
+! Package inputenc Error: Unicode character ख (U+0916)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1956,8 +1860,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character घ (
-U+0918)
+! Package inputenc Error: Unicode character घ (U+0918)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1970,8 +1873,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character छ (
-U+091B)
+! Package inputenc Error: Unicode character छ (U+091B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1984,8 +1886,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character झ (
-U+091D)
+! Package inputenc Error: Unicode character झ (U+091D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -1998,8 +1899,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character ठ (
-U+0920)
+! Package inputenc Error: Unicode character ठ (U+0920)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2012,8 +1912,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character ढ (
-U+0922)
+! Package inputenc Error: Unicode character ढ (U+0922)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2026,8 +1925,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character थ (
-U+0925)
+! Package inputenc Error: Unicode character थ (U+0925)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2040,8 +1938,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character ध (
-U+0927)
+! Package inputenc Error: Unicode character ध (U+0927)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2054,8 +1951,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character फ (
-U+092B)
+! Package inputenc Error: Unicode character फ (U+092B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2068,8 +1964,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:41: Package inputenc Error: Unicode character भ (
-U+092D)
+! Package inputenc Error: Unicode character भ (U+092D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2087,7 +1982,7 @@ e,
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:47: Undefined control sequence.
+! Undefined control sequence.
 l.47 \babelprehyphenation
                          {iast}{([kgcjṭḍtdpb])[h]}{
 The control sequence at the end of the top line
@@ -2097,7 +1992,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:47: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2109,8 +2004,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:47: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2123,8 +2017,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:47: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2137,8 +2030,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2151,8 +2043,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2165,8 +2056,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character ख (
-U+0916)
+! Package inputenc Error: Unicode character ख (U+0916)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2179,8 +2069,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character घ (
-U+0918)
+! Package inputenc Error: Unicode character घ (U+0918)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2193,8 +2082,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character छ (
-U+091B)
+! Package inputenc Error: Unicode character छ (U+091B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2207,8 +2095,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character झ (
-U+091D)
+! Package inputenc Error: Unicode character झ (U+091D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2221,8 +2108,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character ठ (
-U+0920)
+! Package inputenc Error: Unicode character ठ (U+0920)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2235,8 +2121,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character ढ (
-U+0922)
+! Package inputenc Error: Unicode character ढ (U+0922)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2249,8 +2134,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character थ (
-U+0925)
+! Package inputenc Error: Unicode character थ (U+0925)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2263,8 +2147,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character ध (
-U+0927)
+! Package inputenc Error: Unicode character ध (U+0927)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2277,8 +2160,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character फ (
-U+092B)
+! Package inputenc Error: Unicode character फ (U+092B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2291,8 +2173,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character भ (
-U+092D)
+! Package inputenc Error: Unicode character भ (U+092D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2305,8 +2186,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:48: Package inputenc Error: Unicode character ् (
-U+094D)
+! Package inputenc Error: Unicode character ् (U+094D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2323,7 +2203,7 @@ You may provide a definition with
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:53: Undefined control sequence.
+! Undefined control sequence.
 l.53 \babelprehyphenation
                          {iast}{([kgṅcjñṭḍṇtdnpbmyrlvśṣsh])[a]([...
 The control sequence at the end of the top line
@@ -2333,7 +2213,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:53: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2346,8 +2226,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:53: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2361,8 +2240,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:53: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2376,8 +2254,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:53: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2391,8 +2268,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:53: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2406,8 +2282,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:53: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2420,8 +2295,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2435,8 +2309,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2450,8 +2323,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2465,8 +2337,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2480,8 +2351,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2495,8 +2365,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character क (
-U+0915)
+! Package inputenc Error: Unicode character क (U+0915)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2510,8 +2379,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ग (
-U+0917)
+! Package inputenc Error: Unicode character ग (U+0917)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2525,8 +2393,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ङ (
-U+0919)
+! Package inputenc Error: Unicode character ङ (U+0919)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2540,8 +2407,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character च (
-U+091A)
+! Package inputenc Error: Unicode character च (U+091A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2555,8 +2421,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ज (
-U+091C)
+! Package inputenc Error: Unicode character ज (U+091C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2570,8 +2435,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ञ (
-U+091E)
+! Package inputenc Error: Unicode character ञ (U+091E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2585,8 +2449,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ट (
-U+091F)
+! Package inputenc Error: Unicode character ट (U+091F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2600,8 +2463,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ड (
-U+0921)
+! Package inputenc Error: Unicode character ड (U+0921)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2615,8 +2477,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ण (
-U+0923)
+! Package inputenc Error: Unicode character ण (U+0923)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2630,8 +2491,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character त (
-U+0924)
+! Package inputenc Error: Unicode character त (U+0924)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2645,8 +2505,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character द (
-U+0926)
+! Package inputenc Error: Unicode character द (U+0926)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2660,8 +2519,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character न (
-U+0928)
+! Package inputenc Error: Unicode character न (U+0928)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2675,8 +2533,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character प (
-U+092A)
+! Package inputenc Error: Unicode character प (U+092A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2690,8 +2547,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ब (
-U+092C)
+! Package inputenc Error: Unicode character ब (U+092C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2705,8 +2561,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character म (
-U+092E)
+! Package inputenc Error: Unicode character म (U+092E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2719,8 +2574,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character य (
-U+092F)
+! Package inputenc Error: Unicode character य (U+092F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2733,8 +2587,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character र (
-U+0930)
+! Package inputenc Error: Unicode character र (U+0930)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2747,8 +2600,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ल (
-U+0932)
+! Package inputenc Error: Unicode character ल (U+0932)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2761,8 +2613,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character व (
-U+0935)
+! Package inputenc Error: Unicode character व (U+0935)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2775,8 +2626,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character श (
-U+0936)
+! Package inputenc Error: Unicode character श (U+0936)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2789,8 +2639,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ष (
-U+0937)
+! Package inputenc Error: Unicode character ष (U+0937)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2803,8 +2652,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character स (
-U+0938)
+! Package inputenc Error: Unicode character स (U+0938)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2817,8 +2665,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:54: Package inputenc Error: Unicode character ह (
-U+0939)
+! Package inputenc Error: Unicode character ह (U+0939)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2831,8 +2678,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:56: Package inputenc Error: Unicode character ै (
-U+0948)
+! Package inputenc Error: Unicode character ै (U+0948)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2845,8 +2691,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:56: Package inputenc Error: Unicode character ौ (
-U+094C)
+! Package inputenc Error: Unicode character ौ (U+094C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2874,7 +2719,7 @@ Overfull \hbox (5.22221pt too wide) in paragraph at lines 53--58
 dnpbmyrlv^^Sssh|, re-move, string
  []
 
-./babel-iast/babel-iast.sty:59: Undefined control sequence.
+! Undefined control sequence.
 l.59 \babelprehyphenation
                          {iast}{([kgṅcjñṭḍṇtdnpbmyrlvśṣsh])[a]}{
 The control sequence at the end of the top line
@@ -2884,7 +2729,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:59: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2896,8 +2741,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:59: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2910,8 +2754,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:59: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2924,8 +2767,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:59: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2938,8 +2780,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:59: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2952,8 +2793,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:59: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2966,8 +2806,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2981,8 +2820,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -2996,8 +2834,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3011,8 +2848,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3026,8 +2862,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3041,8 +2876,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character क (
-U+0915)
+! Package inputenc Error: Unicode character क (U+0915)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3056,8 +2890,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ग (
-U+0917)
+! Package inputenc Error: Unicode character ग (U+0917)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3071,8 +2904,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ङ (
-U+0919)
+! Package inputenc Error: Unicode character ङ (U+0919)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3086,8 +2918,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character च (
-U+091A)
+! Package inputenc Error: Unicode character च (U+091A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3101,8 +2932,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ज (
-U+091C)
+! Package inputenc Error: Unicode character ज (U+091C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3116,8 +2946,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ञ (
-U+091E)
+! Package inputenc Error: Unicode character ञ (U+091E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3131,8 +2960,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ट (
-U+091F)
+! Package inputenc Error: Unicode character ट (U+091F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3146,8 +2974,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ड (
-U+0921)
+! Package inputenc Error: Unicode character ड (U+0921)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3161,8 +2988,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ण (
-U+0923)
+! Package inputenc Error: Unicode character ण (U+0923)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3176,8 +3002,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character त (
-U+0924)
+! Package inputenc Error: Unicode character त (U+0924)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3191,8 +3016,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character द (
-U+0926)
+! Package inputenc Error: Unicode character द (U+0926)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3206,8 +3030,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character न (
-U+0928)
+! Package inputenc Error: Unicode character न (U+0928)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3221,8 +3044,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character प (
-U+092A)
+! Package inputenc Error: Unicode character प (U+092A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3236,8 +3058,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ब (
-U+092C)
+! Package inputenc Error: Unicode character ब (U+092C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3251,8 +3072,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character म (
-U+092E)
+! Package inputenc Error: Unicode character म (U+092E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3265,8 +3085,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character य (
-U+092F)
+! Package inputenc Error: Unicode character य (U+092F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3279,8 +3098,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character र (
-U+0930)
+! Package inputenc Error: Unicode character र (U+0930)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3293,8 +3111,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ल (
-U+0932)
+! Package inputenc Error: Unicode character ल (U+0932)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3307,8 +3124,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character व (
-U+0935)
+! Package inputenc Error: Unicode character व (U+0935)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3321,8 +3137,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character श (
-U+0936)
+! Package inputenc Error: Unicode character श (U+0936)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3335,8 +3150,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ष (
-U+0937)
+! Package inputenc Error: Unicode character ष (U+0937)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3349,8 +3163,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character स (
-U+0938)
+! Package inputenc Error: Unicode character स (U+0938)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3363,8 +3176,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:60: Package inputenc Error: Unicode character ह (
-U+0939)
+! Package inputenc Error: Unicode character ह (U+0939)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3382,7 +3194,7 @@ rlv^^Sssh|, remove,
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:64: Undefined control sequence.
+! Undefined control sequence.
 l.64 \babelprehyphenation
                          {iast}{([kgṅcjñṭḍṇtdnpbmyrlvśṣsh])([āi...
 The control sequence at the end of the top line
@@ -3392,7 +3204,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:64: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -3405,8 +3217,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3420,8 +3231,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3435,8 +3245,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3450,8 +3259,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3465,8 +3273,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3480,8 +3287,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ṛ (
-U+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3494,8 +3300,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ṝ (
-U+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3508,8 +3313,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ḷ (
-U+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3522,8 +3326,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:64: Package inputenc Error: Unicode character ḹ (
-U+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3536,8 +3339,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3551,8 +3353,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3566,8 +3367,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3581,8 +3381,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3596,8 +3395,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3611,8 +3409,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character क (
-U+0915)
+! Package inputenc Error: Unicode character क (U+0915)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3626,8 +3423,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ग (
-U+0917)
+! Package inputenc Error: Unicode character ग (U+0917)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3641,8 +3437,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ङ (
-U+0919)
+! Package inputenc Error: Unicode character ङ (U+0919)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3656,8 +3451,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character च (
-U+091A)
+! Package inputenc Error: Unicode character च (U+091A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3671,8 +3465,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ज (
-U+091C)
+! Package inputenc Error: Unicode character ज (U+091C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3686,8 +3479,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ञ (
-U+091E)
+! Package inputenc Error: Unicode character ञ (U+091E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3701,8 +3493,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ट (
-U+091F)
+! Package inputenc Error: Unicode character ट (U+091F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3716,8 +3507,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ड (
-U+0921)
+! Package inputenc Error: Unicode character ड (U+0921)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3731,8 +3521,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ण (
-U+0923)
+! Package inputenc Error: Unicode character ण (U+0923)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3746,8 +3535,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character त (
-U+0924)
+! Package inputenc Error: Unicode character त (U+0924)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3761,8 +3549,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character द (
-U+0926)
+! Package inputenc Error: Unicode character द (U+0926)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3776,8 +3563,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character न (
-U+0928)
+! Package inputenc Error: Unicode character न (U+0928)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3791,8 +3577,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character प (
-U+092A)
+! Package inputenc Error: Unicode character प (U+092A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3806,8 +3591,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ब (
-U+092C)
+! Package inputenc Error: Unicode character ब (U+092C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3821,8 +3605,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character म (
-U+092E)
+! Package inputenc Error: Unicode character म (U+092E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3835,8 +3618,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character य (
-U+092F)
+! Package inputenc Error: Unicode character य (U+092F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3849,8 +3631,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character र (
-U+0930)
+! Package inputenc Error: Unicode character र (U+0930)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3863,8 +3644,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ल (
-U+0932)
+! Package inputenc Error: Unicode character ल (U+0932)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3877,8 +3657,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character व (
-U+0935)
+! Package inputenc Error: Unicode character व (U+0935)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3891,8 +3670,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character श (
-U+0936)
+! Package inputenc Error: Unicode character श (U+0936)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3905,8 +3683,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ष (
-U+0937)
+! Package inputenc Error: Unicode character ष (U+0937)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3919,8 +3696,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character स (
-U+0938)
+! Package inputenc Error: Unicode character स (U+0938)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3933,8 +3709,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:65: Package inputenc Error: Unicode character ह (
-U+0939)
+! Package inputenc Error: Unicode character ह (U+0939)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3947,8 +3722,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ṛ (
-U+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3961,8 +3735,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ṝ (
-U+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3975,8 +3748,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ḷ (
-U+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -3989,8 +3761,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ḹ (
-U+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4003,8 +3774,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ा (
-U+093E)
+! Package inputenc Error: Unicode character ा (U+093E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4017,8 +3787,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ि (
-U+093F)
+! Package inputenc Error: Unicode character ि (U+093F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4031,8 +3800,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ी (
-U+0940)
+! Package inputenc Error: Unicode character ी (U+0940)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4045,8 +3813,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ु (
-U+0941)
+! Package inputenc Error: Unicode character ु (U+0941)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4059,8 +3826,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ू (
-U+0942)
+! Package inputenc Error: Unicode character ू (U+0942)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4073,8 +3839,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ृ (
-U+0943)
+! Package inputenc Error: Unicode character ृ (U+0943)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4087,8 +3852,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ॄ (
-U+0944)
+! Package inputenc Error: Unicode character ॄ (U+0944)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4101,8 +3865,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ॢ (
-U+0962)
+! Package inputenc Error: Unicode character ॢ (U+0962)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4115,8 +3878,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ॣ (
-U+0963)
+! Package inputenc Error: Unicode character ॣ (U+0963)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4129,8 +3891,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character े (
-U+0947)
+! Package inputenc Error: Unicode character े (U+0947)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4143,8 +3904,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:66: Package inputenc Error: Unicode character ो (
-U+094B)
+! Package inputenc Error: Unicode character ो (U+094B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4165,7 +3925,7 @@ g = 1|kgcj~ntdnpbmyrlv^^Sssh|, string =
 @\par via @@1 b=0 p=-10000 d=100
 @@2: line 2.2- t=424 -> @@1
 
-./babel-iast/babel-iast.sty:70: Undefined control sequence.
+! Undefined control sequence.
 l.70 \babelprehyphenation
                          {iast}{([kgṅcjñṭḍṇtdnpbmyrlvśṣsh])[+]}{
 The control sequence at the end of the top line
@@ -4175,7 +3935,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:70: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -4187,8 +3947,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:70: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4201,8 +3960,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:70: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4215,8 +3973,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:70: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4229,8 +3986,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:70: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4243,8 +3999,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:70: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4257,8 +4012,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4272,8 +4026,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4287,8 +4040,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4302,8 +4054,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4317,8 +4068,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4332,8 +4082,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character क (
-U+0915)
+! Package inputenc Error: Unicode character क (U+0915)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4347,8 +4096,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ग (
-U+0917)
+! Package inputenc Error: Unicode character ग (U+0917)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4362,8 +4110,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ङ (
-U+0919)
+! Package inputenc Error: Unicode character ङ (U+0919)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4377,8 +4124,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character च (
-U+091A)
+! Package inputenc Error: Unicode character च (U+091A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4392,8 +4138,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ज (
-U+091C)
+! Package inputenc Error: Unicode character ज (U+091C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4407,8 +4152,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ञ (
-U+091E)
+! Package inputenc Error: Unicode character ञ (U+091E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4422,8 +4166,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ट (
-U+091F)
+! Package inputenc Error: Unicode character ट (U+091F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4437,8 +4180,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ड (
-U+0921)
+! Package inputenc Error: Unicode character ड (U+0921)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4452,8 +4194,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ण (
-U+0923)
+! Package inputenc Error: Unicode character ण (U+0923)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4467,8 +4208,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character त (
-U+0924)
+! Package inputenc Error: Unicode character त (U+0924)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4482,8 +4222,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character द (
-U+0926)
+! Package inputenc Error: Unicode character द (U+0926)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4497,8 +4236,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character न (
-U+0928)
+! Package inputenc Error: Unicode character न (U+0928)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4512,8 +4250,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character प (
-U+092A)
+! Package inputenc Error: Unicode character प (U+092A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4527,8 +4264,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ब (
-U+092C)
+! Package inputenc Error: Unicode character ब (U+092C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4542,8 +4278,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character म (
-U+092E)
+! Package inputenc Error: Unicode character म (U+092E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4556,8 +4291,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character य (
-U+092F)
+! Package inputenc Error: Unicode character य (U+092F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4570,8 +4304,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character र (
-U+0930)
+! Package inputenc Error: Unicode character र (U+0930)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4584,8 +4317,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ल (
-U+0932)
+! Package inputenc Error: Unicode character ल (U+0932)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4598,8 +4330,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character व (
-U+0935)
+! Package inputenc Error: Unicode character व (U+0935)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4612,8 +4343,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character श (
-U+0936)
+! Package inputenc Error: Unicode character श (U+0936)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4626,8 +4356,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ष (
-U+0937)
+! Package inputenc Error: Unicode character ष (U+0937)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4640,8 +4369,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character स (
-U+0938)
+! Package inputenc Error: Unicode character स (U+0938)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4654,8 +4382,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:71: Package inputenc Error: Unicode character ह (
-U+0939)
+! Package inputenc Error: Unicode character ह (U+0939)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4673,7 +4400,7 @@ rlv^^Sssh|, remove,
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:76: Undefined control sequence.
+! Undefined control sequence.
 l.76 \babelprehyphenation
                          {iast}{([kgṅcjñṭḍṇtdnpbmyrlvśṣsh])}{
 The control sequence at the end of the top line
@@ -4683,7 +4410,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:76: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -4695,8 +4422,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:76: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4709,8 +4435,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:76: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4723,8 +4448,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:76: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4737,8 +4461,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:76: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4751,8 +4474,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:76: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4765,8 +4487,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ṅ (
-U+1E45)
+! Package inputenc Error: Unicode character ṅ (U+1E45)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4780,8 +4501,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ṭ (
-U+1E6D)
+! Package inputenc Error: Unicode character ṭ (U+1E6D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4795,8 +4515,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ḍ (
-U+1E0D)
+! Package inputenc Error: Unicode character ḍ (U+1E0D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4810,8 +4529,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ṇ (
-U+1E47)
+! Package inputenc Error: Unicode character ṇ (U+1E47)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4825,8 +4543,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ṣ (
-U+1E63)
+! Package inputenc Error: Unicode character ṣ (U+1E63)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4840,8 +4557,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character क (
-U+0915)
+! Package inputenc Error: Unicode character क (U+0915)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4855,8 +4571,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ग (
-U+0917)
+! Package inputenc Error: Unicode character ग (U+0917)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4870,8 +4585,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ङ (
-U+0919)
+! Package inputenc Error: Unicode character ङ (U+0919)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4885,8 +4599,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character च (
-U+091A)
+! Package inputenc Error: Unicode character च (U+091A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4900,8 +4613,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ज (
-U+091C)
+! Package inputenc Error: Unicode character ज (U+091C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4915,8 +4627,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ञ (
-U+091E)
+! Package inputenc Error: Unicode character ञ (U+091E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4930,8 +4641,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ट (
-U+091F)
+! Package inputenc Error: Unicode character ट (U+091F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4945,8 +4655,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ड (
-U+0921)
+! Package inputenc Error: Unicode character ड (U+0921)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4960,8 +4669,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ण (
-U+0923)
+! Package inputenc Error: Unicode character ण (U+0923)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4975,8 +4683,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character त (
-U+0924)
+! Package inputenc Error: Unicode character त (U+0924)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -4990,8 +4697,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character द (
-U+0926)
+! Package inputenc Error: Unicode character द (U+0926)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5005,8 +4711,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character न (
-U+0928)
+! Package inputenc Error: Unicode character न (U+0928)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5020,8 +4725,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character प (
-U+092A)
+! Package inputenc Error: Unicode character प (U+092A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5035,8 +4739,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ब (
-U+092C)
+! Package inputenc Error: Unicode character ब (U+092C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5050,8 +4753,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character म (
-U+092E)
+! Package inputenc Error: Unicode character म (U+092E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5065,8 +4767,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character य (
-U+092F)
+! Package inputenc Error: Unicode character य (U+092F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5079,8 +4780,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character र (
-U+0930)
+! Package inputenc Error: Unicode character र (U+0930)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5093,8 +4793,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ल (
-U+0932)
+! Package inputenc Error: Unicode character ल (U+0932)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5107,8 +4806,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character व (
-U+0935)
+! Package inputenc Error: Unicode character व (U+0935)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5121,8 +4819,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character श (
-U+0936)
+! Package inputenc Error: Unicode character श (U+0936)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5135,8 +4832,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ष (
-U+0937)
+! Package inputenc Error: Unicode character ष (U+0937)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5149,8 +4845,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character स (
-U+0938)
+! Package inputenc Error: Unicode character स (U+0938)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5163,8 +4858,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ह (
-U+0939)
+! Package inputenc Error: Unicode character ह (U+0939)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5177,8 +4871,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:77: Package inputenc Error: Unicode character ् (
-U+094D)
+! Package inputenc Error: Unicode character ् (U+094D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5196,7 +4889,7 @@ You may provide a definition with
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:82: Undefined control sequence.
+! Undefined control sequence.
 l.82 \babelprehyphenation
                          {iast}{[+][a]([iu])}{
 The control sequence at the end of the top line
@@ -5206,7 +4899,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:82: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -5218,8 +4911,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:85: Package inputenc Error: Unicode character ै (
-U+0948)
+! Package inputenc Error: Unicode character ै (U+0948)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5232,8 +4924,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:85: Package inputenc Error: Unicode character ौ (
-U+094C)
+! Package inputenc Error: Unicode character ौ (U+094C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5250,7 +4941,7 @@ You may provide a definition with
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:88: Undefined control sequence.
+! Undefined control sequence.
 l.88 \babelprehyphenation
                          {iast}{[+][a]}{
 The control sequence at the end of the top line
@@ -5260,7 +4951,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:88: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -5276,7 +4967,7 @@ If that doesn't work, type  X <return>  to quit.
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:93: Undefined control sequence.
+! Undefined control sequence.
 l.93 \babelprehyphenation
                          {iast}{[+]([āiīuūṛṝḷḹeo])}{
 The control sequence at the end of the top line
@@ -5286,7 +4977,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:93: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -5298,8 +4989,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:93: Package inputenc Error: Unicode character ṛ (
-U+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5312,8 +5002,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:93: Package inputenc Error: Unicode character ṝ (
-U+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5326,8 +5015,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:93: Package inputenc Error: Unicode character ḷ (
-U+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5340,8 +5028,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:93: Package inputenc Error: Unicode character ḹ (
-U+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5354,8 +5041,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ṛ (
-U+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5368,8 +5054,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ṝ (
-U+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5382,8 +5067,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ḷ (
-U+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5396,8 +5080,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ḹ (
-U+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5410,8 +5093,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ा (
-U+093E)
+! Package inputenc Error: Unicode character ा (U+093E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5424,8 +5106,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ि (
-U+093F)
+! Package inputenc Error: Unicode character ि (U+093F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5438,8 +5119,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ी (
-U+0940)
+! Package inputenc Error: Unicode character ी (U+0940)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5452,8 +5132,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ु (
-U+0941)
+! Package inputenc Error: Unicode character ु (U+0941)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5466,8 +5145,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ू (
-U+0942)
+! Package inputenc Error: Unicode character ू (U+0942)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5480,8 +5158,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ृ (
-U+0943)
+! Package inputenc Error: Unicode character ृ (U+0943)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5494,8 +5171,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ॄ (
-U+0944)
+! Package inputenc Error: Unicode character ॄ (U+0944)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5508,8 +5184,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ॢ (
-U+0962)
+! Package inputenc Error: Unicode character ॢ (U+0962)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5522,8 +5197,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ॣ (
-U+0963)
+! Package inputenc Error: Unicode character ॣ (U+0963)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5536,8 +5210,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character े (
-U+0947)
+! Package inputenc Error: Unicode character े (U+0947)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5550,8 +5223,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:95: Package inputenc Error: Unicode character ो (
-U+094B)
+! Package inputenc Error: Unicode character ो (U+094B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5569,7 +5241,7 @@ You may provide a definition with
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:99: Undefined control sequence.
+! Undefined control sequence.
 l.99 \babelprehyphenation
                          {iast}{ai}{string = ऐ,}
 The control sequence at the end of the top line
@@ -5579,7 +5251,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:99: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -5591,8 +5263,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:99: Package inputenc Error: Unicode character ऐ (
-U+0910)
+! Package inputenc Error: Unicode character ऐ (U+0910)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5604,7 +5275,7 @@ l.99 \babelprehyphenation{iast}{ai}{string = ऐ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:100: Undefined control sequence.
+! Undefined control sequence.
 l.100 \babelprehyphenation
                           {iast}{au}{string = औ,}
 The control sequence at the end of the top line
@@ -5614,8 +5285,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:100: Package inputenc Error: Unicode character औ 
-(U+0914)
+! Package inputenc Error: Unicode character औ (U+0914)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5627,7 +5297,7 @@ l.100 \babelprehyphenation{iast}{au}{string = औ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:101: Undefined control sequence.
+! Undefined control sequence.
 l.101 \babelprehyphenation
                           {iast}{a}{string = अ,}
 The control sequence at the end of the top line
@@ -5637,8 +5307,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:101: Package inputenc Error: Unicode character अ 
-(U+0905)
+! Package inputenc Error: Unicode character अ (U+0905)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5650,7 +5319,7 @@ l.101 \babelprehyphenation{iast}{a}{string = अ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:102: Undefined control sequence.
+! Undefined control sequence.
 l.102 \babelprehyphenation
                           {iast}{ā}{string = आ,}
 The control sequence at the end of the top line
@@ -5660,8 +5329,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:102: Package inputenc Error: Unicode character आ 
-(U+0906)
+! Package inputenc Error: Unicode character आ (U+0906)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5673,7 +5341,7 @@ l.102 \babelprehyphenation{iast}{ā}{string = आ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:103: Undefined control sequence.
+! Undefined control sequence.
 l.103 \babelprehyphenation
                           {iast}{i}{string = इ,}
 The control sequence at the end of the top line
@@ -5683,8 +5351,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:103: Package inputenc Error: Unicode character इ 
-(U+0907)
+! Package inputenc Error: Unicode character इ (U+0907)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5696,7 +5363,7 @@ l.103 \babelprehyphenation{iast}{i}{string = इ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:104: Undefined control sequence.
+! Undefined control sequence.
 l.104 \babelprehyphenation
                           {iast}{ī}{string = ई,}
 The control sequence at the end of the top line
@@ -5706,8 +5373,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:104: Package inputenc Error: Unicode character ई 
-(U+0908)
+! Package inputenc Error: Unicode character ई (U+0908)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5719,7 +5385,7 @@ l.104 \babelprehyphenation{iast}{ī}{string = ई
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:105: Undefined control sequence.
+! Undefined control sequence.
 l.105 \babelprehyphenation
                           {iast}{u}{string = उ,}
 The control sequence at the end of the top line
@@ -5729,8 +5395,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:105: Package inputenc Error: Unicode character उ 
-(U+0909)
+! Package inputenc Error: Unicode character उ (U+0909)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5742,7 +5407,7 @@ l.105 \babelprehyphenation{iast}{u}{string = उ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:106: Undefined control sequence.
+! Undefined control sequence.
 l.106 \babelprehyphenation
                           {iast}{ū}{string = ऊ,}
 The control sequence at the end of the top line
@@ -5752,8 +5417,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:106: Package inputenc Error: Unicode character ऊ 
-(U+090A)
+! Package inputenc Error: Unicode character ऊ (U+090A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5765,7 +5429,7 @@ l.106 \babelprehyphenation{iast}{ū}{string = ऊ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:107: Undefined control sequence.
+! Undefined control sequence.
 l.107 \babelprehyphenation
                           {iast}{ṛ}{string = ऋ,}
 The control sequence at the end of the top line
@@ -5775,8 +5439,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:107: Package inputenc Error: Unicode character ṛ 
-(U+1E5B)
+! Package inputenc Error: Unicode character ṛ (U+1E5B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5789,8 +5452,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:107: Package inputenc Error: Unicode character ऋ 
-(U+090B)
+! Package inputenc Error: Unicode character ऋ (U+090B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5802,7 +5464,7 @@ l.107 \babelprehyphenation{iast}{ṛ}{string = ऋ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:108: Undefined control sequence.
+! Undefined control sequence.
 l.108 \babelprehyphenation
                           {iast}{ṝ}{string = ॠ,}
 The control sequence at the end of the top line
@@ -5812,8 +5474,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:108: Package inputenc Error: Unicode character ṝ 
-(U+1E5D)
+! Package inputenc Error: Unicode character ṝ (U+1E5D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5826,8 +5487,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:108: Package inputenc Error: Unicode character ॠ 
-(U+0960)
+! Package inputenc Error: Unicode character ॠ (U+0960)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5839,7 +5499,7 @@ l.108 \babelprehyphenation{iast}{ṝ}{string = ॠ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:109: Undefined control sequence.
+! Undefined control sequence.
 l.109 \babelprehyphenation
                           {iast}{ḷ}{string = लृ,}
 The control sequence at the end of the top line
@@ -5849,8 +5509,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:109: Package inputenc Error: Unicode character ḷ 
-(U+1E37)
+! Package inputenc Error: Unicode character ḷ (U+1E37)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5863,8 +5522,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:109: Package inputenc Error: Unicode character ल 
-(U+0932)
+! Package inputenc Error: Unicode character ल (U+0932)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5877,8 +5535,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:109: Package inputenc Error: Unicode character ृ 
-(U+0943)
+! Package inputenc Error: Unicode character ृ (U+0943)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5890,7 +5547,7 @@ l.109 ...prehyphenation{iast}{ḷ}{string = लृ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:110: Undefined control sequence.
+! Undefined control sequence.
 l.110 \babelprehyphenation
                           {iast}{ḹ}{string = लॄ,}
 The control sequence at the end of the top line
@@ -5900,8 +5557,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:110: Package inputenc Error: Unicode character ḹ 
-(U+1E39)
+! Package inputenc Error: Unicode character ḹ (U+1E39)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5914,8 +5570,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:110: Package inputenc Error: Unicode character ल 
-(U+0932)
+! Package inputenc Error: Unicode character ल (U+0932)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5928,8 +5583,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:110: Package inputenc Error: Unicode character ॄ 
-(U+0944)
+! Package inputenc Error: Unicode character ॄ (U+0944)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5941,7 +5595,7 @@ l.110 ...prehyphenation{iast}{ḹ}{string = लॄ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:111: Undefined control sequence.
+! Undefined control sequence.
 l.111 \babelprehyphenation
                           {iast}{e}{string = ए,}
 The control sequence at the end of the top line
@@ -5951,8 +5605,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:111: Package inputenc Error: Unicode character ए 
-(U+090F)
+! Package inputenc Error: Unicode character ए (U+090F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -5964,7 +5617,7 @@ l.111 \babelprehyphenation{iast}{e}{string = ए
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:112: Undefined control sequence.
+! Undefined control sequence.
 l.112 \babelprehyphenation
                           {iast}{o}{string = ओ,}
 The control sequence at the end of the top line
@@ -5974,8 +5627,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:112: Package inputenc Error: Unicode character ओ 
-(U+0913)
+! Package inputenc Error: Unicode character ओ (U+0913)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6013,7 +5665,7 @@ string = , iastestring = , ias-tostring = ,
 @\par via @@5 b=0 p=-10000 d=5100
 @@6: line 3.2- t=44325 -> @@2
 
-./babel-iast/babel-iast.sty:115: Undefined control sequence.
+! Undefined control sequence.
 l.115 \babelprehyphenation
                           {iast}{'}{string = ऽ,}
 The control sequence at the end of the top line
@@ -6023,7 +5675,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:115: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -6035,8 +5687,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:115: Package inputenc Error: Unicode character ऽ 
-(U+093D)
+! Package inputenc Error: Unicode character ऽ (U+093D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6048,7 +5699,7 @@ l.115 \babelprehyphenation{iast}{'}{string = ऽ
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:116: Undefined control sequence.
+! Undefined control sequence.
 l.116 \babelprehyphenation
                           {iast}{ṃ}{string = ं,}
 The control sequence at the end of the top line
@@ -6058,8 +5709,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:116: Package inputenc Error: Unicode character ṃ 
-(U+1E43)
+! Package inputenc Error: Unicode character ṃ (U+1E43)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6072,8 +5722,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:116: Package inputenc Error: Unicode character ं 
-(U+0902)
+! Package inputenc Error: Unicode character ं (U+0902)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6085,7 +5734,7 @@ l.116 \babelprehyphenation{iast}{ṃ}{string = ं
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:117: Undefined control sequence.
+! Undefined control sequence.
 l.117 \babelprehyphenation
                           {iast}{ḥ}{string = ः,}
 The control sequence at the end of the top line
@@ -6095,8 +5744,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:117: Package inputenc Error: Unicode character ḥ 
-(U+1E25)
+! Package inputenc Error: Unicode character ḥ (U+1E25)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6109,8 +5757,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:117: Package inputenc Error: Unicode character ः 
-(U+0903)
+! Package inputenc Error: Unicode character ः (U+0903)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6127,7 +5774,7 @@ You may provide a definition with
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:120: Undefined control sequence.
+! Undefined control sequence.
 l.120 \babelprehyphenation
                           {iast}{([0123456789])}{string = {1|0123456789|०�...
 The control sequence at the end of the top line
@@ -6137,7 +5784,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:120: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -6150,8 +5797,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ० 
-(U+0966)
+! Package inputenc Error: Unicode character ० (U+0966)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6165,8 +5811,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character १ 
-(U+0967)
+! Package inputenc Error: Unicode character १ (U+0967)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6179,8 +5824,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character २ 
-(U+0968)
+! Package inputenc Error: Unicode character २ (U+0968)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6193,8 +5837,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ३ 
-(U+0969)
+! Package inputenc Error: Unicode character ३ (U+0969)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6207,8 +5850,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ४ 
-(U+096A)
+! Package inputenc Error: Unicode character ४ (U+096A)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6221,8 +5863,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ५ 
-(U+096B)
+! Package inputenc Error: Unicode character ५ (U+096B)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6235,8 +5876,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ६ 
-(U+096C)
+! Package inputenc Error: Unicode character ६ (U+096C)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6249,8 +5889,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ७ 
-(U+096D)
+! Package inputenc Error: Unicode character ७ (U+096D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6263,8 +5902,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ८ 
-(U+096E)
+! Package inputenc Error: Unicode character ८ (U+096E)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6277,8 +5915,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-./babel-iast/babel-iast.sty:120: Package inputenc Error: Unicode character ९ 
-(U+096F)
+! Package inputenc Error: Unicode character ९ (U+096F)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6295,7 +5932,7 @@ You may provide a definition with
 @\par via @@0 b=0 p=-10000 d=100
 @@1: line 1.2- t=100 -> @@0
 
-./babel-iast/babel-iast.sty:123: Undefined control sequence.
+! Undefined control sequence.
 l.123 \babelprehyphenation
                           {iast}{[./]}{string = ।,}
 The control sequence at the end of the top line
@@ -6305,7 +5942,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./babel-iast/babel-iast.sty:123: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -6317,8 +5954,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./babel-iast/babel-iast.sty:123: Package inputenc Error: Unicode character । 
-(U+0964)
+! Package inputenc Error: Unicode character । (U+0964)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -6330,7 +5966,7 @@ l.123 ...elprehyphenation{iast}{[./]}{string = ।
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-./babel-iast/babel-iast.sty:124: Undefined control sequence.
+! Undefined control sequence.
 l.124 \babelprehyphenation
                           {iast}{[:]}{string =  –,}
 The control sequence at the end of the top line
@@ -6340,7 +5976,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 )
-./_region_.tex:65: Undefined control sequence.
+! Undefined control sequence.
 <recently read> \babelfont 
                            
 l.65 \babelfont
@@ -6351,7 +5987,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./_region_.tex:66: Undefined control sequence.
+! Undefined control sequence.
 l.66 \babelfont
                [english]{rm}{TeX Gyre Termes}
 The control sequence at the end of the top line
@@ -6388,7 +6024,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
  * Sorry!
  ********************************************
 
-./ekdosis.sty:46: Emergency stop.
+! Emergency stop.
 <read *> 
          
 l.46 \RequireLuaTeX
@@ -6397,11 +6033,11 @@ l.46 \RequireLuaTeX
 
  
 Here is how much of TeX's memory you used:
- 4649 strings out of 479304
- 91402 string characters out of 5867266
- 501311 words of memory out of 5000000
- 21861 multiletter control sequences out of 15000+600000
+ 4668 strings out of 479304
+ 91912 string characters out of 5867266
+ 501596 words of memory out of 5000000
+ 21870 multiletter control sequences out of 15000+600000
  403730 words of font info for 28 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 111i,1n,116p,10824b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
-./ekdosis.sty:46:  ==> Fatal error occurred, no output PDF file produced!
+ 111i,1n,116p,10845b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

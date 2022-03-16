@@ -2,13 +2,20 @@
  "bindu"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("article" "12pt")))
+                     '(("scrartcl" "11pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("babel" "english") ("ekdosis" "teiexport=tidy" "parnotes=true")))
+                     '(("babel" "english") ("ekdosis" "teiexport=tidy" "parnotes=true" "layout=fitapp")))
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
-    "article"
-    "art12"
+    "scrartcl"
+    "scrartcl11"
     "xcolor"
     "hyphenat"
     "babel"
@@ -48,7 +55,6 @@
     "ann"
     "ante"
     "post"
-    "ceteri"
     "codd"
     "coni"
     "contin"
@@ -56,7 +62,7 @@
     "del"
     "dub"
     "expl"
-    "explicat"
+    "explica"
     "fol"
     "foll"
     "gloss"
