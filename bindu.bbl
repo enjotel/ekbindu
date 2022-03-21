@@ -1,0 +1,58 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{nishvasa2015}{book}{}
+      \name{editor}{1}{}{%
+        {{un=0,uniquepart=base,hash=10f29d8b6d6fc551f7bbe6f907ce168b}{%
+           family={Goodall},
+           familyi={G\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Pondicherry}%
+      }
+      \list{publisher}{1}{%
+        {Institut Français de Pondichéry / Ecole française d’Extrême-Orient / Sri Aurobini Ashram Press}%
+      }
+      \strng{namehash}{10f29d8b6d6fc551f7bbe6f907ce168b}
+      \strng{fullhash}{10f29d8b6d6fc551f7bbe6f907ce168b}
+      \strng{bibnamehash}{10f29d8b6d6fc551f7bbe6f907ce168b}
+      \strng{editorbibnamehash}{10f29d8b6d6fc551f7bbe6f907ce168b}
+      \strng{editornamehash}{10f29d8b6d6fc551f7bbe6f907ce168b}
+      \strng{editorfullhash}{10f29d8b6d6fc551f7bbe6f907ce168b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{series}{Collection Indologie 128, Early Tantra Series 1}
+      \field{title}{The Niśvāsatattvasaṃhitā: The Earliest Surviving Śaiva Tantra}
+      \field{volume}{1}
+      \field{year}{2015}
+      \keyw{printsource}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
