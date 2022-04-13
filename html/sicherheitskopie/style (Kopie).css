@@ -70,7 +70,7 @@ extra {color: #68228B;}
 
 .comm {padding-left: 1em; padding-right: 1em;}
 .testium {padding-left: 1em; padding-right: 1em; text-align: bottom}
-.app {width: 80%; text-align: left; font-size: 14px; padding-left: 1em;}
+.app {width: 80%; text-align: left; font-size: 14px; padding-left: 1em;} 
 .lem {display:inline-block; font-weight: bold}
 .ref {font-size: 30px; padding: inherit;}
 .lb {font-weight: bold; font-size: 14px;}
