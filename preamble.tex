@@ -99,7 +99,18 @@
 lang=english,
 notelang=english,
 % bhook=\selectlanguage{english},
-bhook=\selectlanguage{english}\textbf{Testimonia:},
+bhook=\selectlanguage{english}\textbf{Parallels:},
+%ehook=.]
+%sep={: },
+]
+
+\newif\ifinapparatus
+\DeclareApparatus{source}[
+%bhook=\inapparatustrue,
+lang=english,
+notelang=english,
+% bhook=\selectlanguage{english},
+bhook=\selectlanguage{english}\textbf{Sources:},
 %ehook=.]
 %sep={: },
 ]
@@ -144,7 +155,7 @@ hpbmk = \textcolor{red}{hpb}
 \def\Utwo{{\sigl{U}{2}}} \def\Utwoac{\acpc{U}{2}{ac}\,} \def\Utwopc{\acpc{U}{2}{pc}\,}
 
 %%%%%%%%%%%%%% Tattvabinduyoga - List of Witnesses   %%%%%%%%%%%%%%%%%%%
-\DeclareWitness{ceteri}{\selectlanguage{english}cet.}{ceteri}[]   
+\DeclareWitness{ceteri}{\selectlanguage{english}cett.}{ceteri}[]   
 \DeclareWitness{E}{\selectlanguage{english}E}{Printed Edition}[]    
 \DeclareWitness{P}{\selectlanguage{english}P}{Pune BORI 664}[]  
 \DeclareWitness{B}{\selectlanguage{english}B}{Bodleian 485}[]       
