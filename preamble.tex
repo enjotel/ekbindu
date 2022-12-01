@@ -1,4 +1,3 @@
-
 \documentclass[10pt]{memoir}
 \setstocksize{220mm}{155mm} 	        
 \settrimmedsize{220mm}{155mm}{*}	
@@ -34,6 +33,8 @@
 \usepackage{cleveref}
 \usepackage{microtype}
 \usepackage{lineno}
+%\linenumbers
+%\usepackage[type=lowerleftT]{fgruler}
 
 
 %%%% test better pagebreaks
@@ -79,7 +80,7 @@
 %%% ekdosis
 \usepackage[teiexport=tidy,parnotes=true]{ekdosis}% =tidy cleans up HTML and XML documents by fixing markup errors and upgrading legacy code to modern standards. parnotes=footnotes below or above critical apparatus
 
-\SetLineation{lineation=page,modulo} %lineation=pagesets thenumbering to start afresh at the top of each page.
+\SetLineation{lineation=page} %lineation=pagesets thenumbering to start afresh at the top of each page. modulo makes every fifth line numbered. 
 
 \renewcommand{\linenumberfont}{\selectlanguage{english}\footnotesize} %sets language of lines to English
 
@@ -89,8 +90,7 @@
   lemmastyle=\bfseries,
   %refnumstyle=\selectlanguage{english}\bfseries,
   refnumstyle=\selectlanguage{english}\color{blue}\bfseries,
-  %appheight=0.5\textheight,
-  %fitalgorithm=fontsize, %fontsize|hybrid|areasize|squeeze
+  appheight=0.8\textheight,
 }
 
 \newif\ifinapparatus
@@ -100,6 +100,7 @@ lang=english,
 notelang=english,
 % bhook=\selectlanguage{english},
 bhook=\selectlanguage{english}\textbf{Parallels:},
+%maxentries=4, 
 %ehook=.]
 %sep={: },
 ]
@@ -110,7 +111,8 @@ bhook=\selectlanguage{english}\textbf{Parallels:},
 lang=english,
 notelang=english,
 % bhook=\selectlanguage{english},
-bhook=\selectlanguage{english}\textbf{Sources:},
+bhook=\selectlanguage{english}\textbf{Sources:},%
+%maxentries=4, 
 %ehook=.]
 %sep={: },
 ]
@@ -121,8 +123,8 @@ bhook=\selectlanguage{english}\textbf{Sources:},
   \DeclareApparatus{default}[
   %bhook=\inapparatustrue, 
   lang=english,
- %maxentries=33,
- %bhook=\selectlanguage{english},
+  %maxentries=33,
+  %bhook=\selectlanguage{english},
   sep = {] },
   delim=\hskip 0.75em,
   rule=\rule{0.7in}{0.4pt},
@@ -162,8 +164,8 @@ hpbmk = \textcolor{red}{hpb}
 \DeclareWitness{N1}{\selectlanguage{english}N\textsubscript{1}}{NGMPP 38/31}[]
 \DeclareWitness{N2}{\selectlanguage{english}N\textsubscript{2}}{NGMPP B 38/35}[]
 \DeclareWitness{L}{\selectlanguage{english}L}{LALCHAND 5876}[]  
-\DeclareWitness{D1}{\selectlanguage{english}D\textsubscript{1}}{IGNCA 30019}[] 
-\DeclareWitness{D2}{\selectlanguage{english}D\textsubscript{2}}{IGNCA 30020}[]  
+\DeclareWitness{D}{\selectlanguage{english}D}{IGNCA 30019}[] 
+%\DeclareWitness{D2}{\selectlanguage{english}D\textsubscript{2}}{IGNCA 30020}[]  
 \DeclareWitness{U1}{\selectlanguage{english}U\textsubscript{1}}{SORI 1574}[] 
 \DeclareWitness{U2}{\selectlanguage{english}U\textsubscript{2}}{SORI 6082}[]
 %%%%%%%%%%%%% Testimonia
