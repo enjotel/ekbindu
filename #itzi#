@@ -1,375 +1,96 @@
-%Ultimatives Tool zur Datierung:
-%https://www.cc.kyoto-su.ac.jp/~yanom/pancanga/
-%skp = ignored in edition
-%skm = ignored in xml
-%%%---2-DO---%%%:
-% - ENTER RDGs of N2 and make apparatus negative?!
-% - ENTER RDGs of D2!!
-% - add xml ids for cladistics
-% - produce diplomatic transcripts for saktumiva
-% - make extra layer in Apparatus for parallels in SVARODAYA, Siddhasiddhantapaddhati and Amanaska
-% - check all daṇḍas!!! now I think that it's more likely that many of them were lost in copies. Lectio difficilior! Very unconventional style of the autor! 
-% - read Sarvangayogapradipika, Maya Burger! 
-% - maybe add second ciritical edition of yogasvarodaya?!
-% - Korrekturlesen von \E!! 
-% - Verspattern einbauen!
-% - add all Testtimonia of SSP & Ysv
-% - Sigla alphabetisch ordnen und! daṇḍas mit einkollationieren
-% - präambel auslagern wie Jürgen
-% - grep-search alle Verse!!!!
-% - Mss spreadsheet
-% - sort N1,D1,B2 zu N1,N2,D1
-% - sort all sigla alphabetically 
-% - additions to U2: make footnotes for the bahir mātrā-s: explaining the inventions of female deities and tell that this is "schwer interpretierbar"
-% - Belege für source und testimonia einfügen!!!
-% - GIVE UNIQUE LABELS for TESTIMONIO AND SOurces
-% - Edition mit Sätzen übereinander nennt sich: Synoptische Edition
-% - Consider changing Lakṣya to Lakṣa
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Don't forget
-% Siddhasiddhantapaddhati Yogic Body descriptions are followed by Rāmacandra
-% Quotes of the Yogasvarodaya in the Yoga Karṇikā
-% Rāmacandra more a compiler than an author!!!
-% Identify quotes of YTB in Haṭhasanketacandrikā 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%MSS notes
-%
-%--B: i and ī are not differenciated
-%--P: no punctuation no daṇdas nothing
-%--U1: dot . serves as daṇḍa 
-%--\L and \U2 very similar
-%--figure out for U2: // ajapājapaḥ sahasra // 6000 //gha 0 16 pa 0 40// \U2?!?!?!?!?!?
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{preamble.tex}
-\author{Nils Jacob Liersch}
-\title{Yogatattvabindu of Rāmacandra\\ A Critical Edition and Annotated Translation}
-\date{\today}
-
-\parindent=15pt
-\begin{document}
-\maketitle
-\clearpage
-\tableofcontents
-\addtocounter{page}{-1}
-\thispagestyle{empty}
-\clearpage
-
-
-\chapter{The List of the 15 Yogas}
-\begin{itemize}
-\item It's not entirely clear if the list given at the beginning of the text codifying the fifteen \textit{yoga}s belongs to the original text or was a later addition by a another hand. One primary reason for this possibility is the structure of the \textit{yoga}s in the actual course of the text does not equal the list. The text begins with a description of \textit{kriyāyoga} and continues to describe \textit{siddhakuṇḍaliniyoga} and somewhat suprisingly mentions \textit{mantrayoga} in the same breath. One starts wondering why the structure of the text does not follow the codification. However the mention of \textit{jñānotpattav upāyaḥ} might be a clue why the second \textit{yoga} in the list might be \textit{jñānayoga}. So far it seems to me that there are three options or a combination of these to explain these apparent inconsistencies: 1. The text is highly corrupted. 2. The codification was a later addition of another hand. 3. The term \textit{jñānayoga} is listed due to the results of \textit{siddhakuṇḍalinīyoga}, which is the generation of knowledge due to the practice of a certain \textit{yoga} involving the central channel, as mentioned in this section of the text.
-\end{itemize}
-
-\chapter{Conventions in the Critical Apparatus}
-\section{Sigla in the Critical Apparatus}
-
-\begin{itemize}
-\item E : Printed Edition
-\item P : Pune BORI 664
-\item L : Lalchand Research Library LRL5876
-\item B : Bodleian Oxford D 4587
-\item \None : NGMPP B 38-31
-\item \Ntwo : NGMPP B 38-35 / A 1327-14
-\item \Done : IGNCA 30019
-\item \Uone : SORI 1574
-\item \Utwo: SORI 6082
-\end{itemize}
-
-The order of the readings in the critical apparatus is arranged according to the quality of readings in decending order. The critical apparatus is positive. Gemitation is not recorded. 
-
-\section{Punctuation}
-
-The very inconsistent use of punctuation marks in the witnesses at hand makes standardization necessary. A close examination of the overall usage of punctuation suggest that in the course of the texts transmission punctuations have been dropped frequently or even have been added. Particularly in the lists given in the text the copists negliance or not properly dealing with punctuation resulted in various forms of those lists with and without punctuations. Due to missing punctuation in many instances copists either made up case endings, changed the text and combined the lists' items into compounds that weren't present in the assumed original text. Even though punctuation plays a role that should'nt be underestimated, the deviation of punctuation at the end of sentences, lists and verse-numbering will only be documented in the critical apparatus of the printed edition to meaningful extend. That means, for example that emendations of obvious mistakes in punctuation will not be recorded in the critical apparatus. However, the digital edition of this work provides a way more detailled documentation of deviations in punctuation in the form of diplomatic transcripts of each witness and even a function to display sentences cummulativly on top of each other.
-
-In the printed edition of the \textit{Tattvayogabindu} the standard conventions of punctuation are followed:
-
-In verse poetry, a \textit{daṇḍa} marks the end of a half verse, half of the \textit{śloka}, and the double \textit{daṇḍa} marks the end of a verse. A half verse is a \textit{pāda}, at least in some literary works, this is concluded by a \textit{daṇḍa} and the end of a \textit{śloka} by a double \textit{daṇḍa}. In prose the single \textit{daṇḍa} indicates the end of a sentence and the double \textit{daṇḍa} marks the end of a paragraph.
-
-Variations in the usage of \textit{Avagraha} will be recorded. Items of lists will be separated by a single \textit{daṇḍa}. 
-
-\section{Sandhi}
-
-Among the witnesses we see deviating and inconsistent application of \textit{sandhi}. There is no clear evidence that originally \textit{sandhi} was intentionally not applied. This edition will therefore apply \textit{sandhi} consistently throughout the constituted text to provide a readable text sticking to contemporary conventions in Sanskrit. The variant readings concerning \textit{sandhi} are recorded consistently in the apparatus criticus. This is due to various textcritical problems arising from the inconsistent usage of punctuation which results in application or non-application of \textit{sandhi} wheter the respective witness applied a \textit{daṇḍa} or not. This is particularly the case within lists, which frequently occur in our compilation. Items were most likely originally separated by \textit{daṇḍa}. 
-
-\section{Class Nasals}
-
-Again, due to inconsistent use of class nasals among the witnesses \textit{anusvāra}s have been substituted with the respective class nasals throughout the edition.
-
-\section{Lists}
-
-Lists are very frequent in the \textit{Yogatattvabindu}. In fact, the text initially gives a list of 15 Yogas in the beginning and many more lists are have been utilized throughout the text. Many witness lost punctuation in the process of copying and as a consequence applied \textit{sandhi}, to arrive at a consistent and conveniently readable edition of the text, all list have been identified as such and normalized to the Nominativ Singular or Nominativ Plural form of the respective item. Items are separated by a double \textit{daṇḍa}. The differences in punctuation, as well as simple emendations regarding punctuation  won't be documented in the apparatus criticus. 
-\clearpage
-
-\chapter{Critical Edition}
-\clearpage
-\begin{ekdosis}
-  \begin{prose}
-    \noindent
 %-----------------------------
-%caṃdrasūryau dvayor netrayor madhye varttete/     anekavanaspatigulmalatātṛṇāni  jaṃghāromamadhye vasaṃti/ \E %%%[p.54]
+%caṃdrasūryau dvayor netrayormadhye  varttete/     anekavanaspatigulmalatātṛṇāni  jaṃghāromamadhye vasaṃti/ \E %%%[p.54]
 %caṃdrasūryau dvayor netreyor madhye vartate       anekavanaspatigulmalatātṛṇāni  jaṃghāromamadhye vasaṃti \P
-%caṃdrasūryo  dvayā--netrayo--madhye vartate//     anekavanaspatigulmalatātṛṇāni  jaṃghāroramadhye vasaṃti// \B
-%caṃdrasūryo  dvayo  netrayor madhye vartate//     anekavanaspatigulmalatātṛṇāni  jaṃghāroramadhye vasaṃti... \L
+%caṃdrasūryo    dvayānetrayomadhye   vartate//     anekavanaspatigulmalatātṛṇāni  jaṃghāroramadhye vasaṃti// \B
+%caṃdrasūryo   dvayo netrayor madhye vartate//     anekavanaspatigulmalatātṛṇāni  jaṃghāroramadhye vasaṃti... \L
 %\om                                                                 \N1
-%caṃdrasūryo  dvayor netrayor madhye varttate//    anaikavanaspatigulmatṛṇāni     jaṃghāromasthāne varttaṃte/ \D
+%caṃdrasūryo  dvayor netrayormadhye  varttate//    anaikavanaspatigulmatṛṇāni     jaṃghāromasthāne varttaṃte/ \D
 %\om                                                                 \N2
-%caṃdrasūryau        netradvaya      vasaṃti       anekavanaspatīgulmalatāni      jaṃghāromamadhye vasaṃti \U1
+%caṃdrasūryau        netradvaya vasaṃti            anekavanaspatī gulmalatāni     jaṃghāromamadhye vasaṃti \U1
 %caṃdrasūryau dvayo  netrayoḥ madhye pravartate//  anekavana/spatigulmalatātṛṇāni jaṃghāromamadhye vasati// \U2
 %-----------------------------
-%The sun and the moom exists within the two eyes. Many trees, bushes, creepers and grasses live within the hairs of the legs.  
+%
 %-----------------------------
-\note[type=source, labelb=301, lem={candrasūryau}]{Ysv\textsuperscript{PT}: candrārkau netrayormadhye jaṅghā lomasu sākṣiṇaḥ | tṛṇagulmādikañcāpi viśvarūpaṃ smaret tataḥ |}
-\note[type=source, labelb=302, lem={candrasūryau}]{SSP 3.13: candrasūryau netradvaye vasataḥ | anekavṛkṣalaṭāgulmatṛṇāni jaṅghāromakakūpasthāne vasanti |}
-candra\app{\lem[wit={ceteri}, alt={°sūryau}]{sūryau}
-  \rdg[wit={B,D,L}]{°sūryo}}
-\app{\lem[wit={D,E,P},alt={dvayor}]{dvayo\skp{r-ne}}
-  \rdg[wit={B}]{dvayā°}
-  \rdg[wit={L,U2}]{dvayo}
-  \rdg[wit={U1}]{\om}}
-\app{\lem[wit={D,E},alt={netrayor}]{\skm{r-ne}trayo\skp{r-ma}}
-  \rdg[wit={P}]{netreyor}
-  \rdg[wit={B}]{netrayo}
-  \rdg[wit={U2}]{netrayoḥ}
-  \rdg[wit={U1}]{netradvaya}}
-\app{\lem[wit={ceteri},alt={madhye}]{\skm{r-ma}dhye}
-  \rdg[wit={U1}]{\om}}
-\app{\lem[wit={ceteri}]{vartate}
-  \rdg[wit={U2}]{pravartate}
-  \rdg[wit={U1}]{vasaṃti}}/
-\app{\lem[wit={B,E,L,P}]{anekavanaspatigulmalatātṛṇāni}
-  \rdg[wit={D}]{anaikavanaspatigulmatṛṇāni}
-  \rdg[wit={U1}]{anekavanaspatīgulmalatāni}
-  \rdg[wit={U2}]{anekavana | spatigulmalatātṛṇāni}}
-jaṅghā\app{\lem[wit={ceteri},alt={°roma°}]{roma}
-  \rdg[wit={B,L}]{°rora°}}\app{\lem[wit={ceteri}]{madhye}
-  \rdg[wit={D}]{sthāne}}
-\app{\lem[wit={ceteri}]{vasanti}
-  \rdg[wit={U2}]{vasati}
-  \rdg[wit={D}]{varttaṃte}}/
-%-----------------------------
-%puruṣasya nṛtyadarśanāt gītaśravaṇāt/ vallabhavastuno  darśanāt/ yaḥ ānanda utpadyate saḥ svargalokaḥ               kathyate/ rogapīḍito durjanebhyaḥ puruṣasya yat duḥkham utpadyate   tadbahutaraṃ  narakaṃ kathyate// \E
-%puruṣasya nṛtyadarśanāt gītaśravaṇāt  vallabhavastuno  darśanāt  ya  ānanda utpadyate     svargalokaḥ               kathyate  rogapīḍato durjjanebhya puruṣasya yaduḥkham   utpadyate   tadbahutaraṃ  narakaṃ kathyate \P
-%puruṣasya nityadarśanāt gītaśravaṇāt/ vallabhavastuno  darśanāt/ yaḥ ānanda utpadyate     svargalokaḥ               kathyate  rogapīḍato durjanebhya  puruṣasya yat duḥkha  utpadyate// tadbahutaraṃ  narakaṃ kathyate// \B
-%puruṣasya nityadarśanāt gītaśravaṇāt  vallabhavastuno  darśanāt  yaḥ ānanda utpadyate     svargalokaḥ               kathyate  rogapīḍano durjanebhya  puruṣasya yad duḥkhaṃ utpadyate// tadbahutaraṃ  narakaṃ kathyate// \L
-%puruṣasya nṛtyadarśanād gītaśravaṇāt  vallabhavastuno  darśanāt  yaḥ ānanda utpadyate sa bahurānaṃdaḥ svargaphulaḥ? kathyate/ rogapīḍā   durjanebhyaḥ puruṣasya duḥkhaṃ     utpadyate// tat bahutaraṃ nakaṃ   kathyate/ \D
-%puruṣasyāvādya   nṛtyodgītaśravaṇād  vallabhavasttuno  darśanād  yā  ānanda utpadyate sa bahurānaṃdaḥ svargaphalaḥ? kathyate  rogapīḍa   durjanebhyaḥ puruṣasya duḥkham     utpadyate       bahutaraṃ narakaṃ kathyate \U1
-%puruṣasya darśanāt//   gītaśravaṇāt// vallabhavastuno  darśanāt//    ānanda utpadyate sa svargaloka                 kathyate//rogapīḍāto durjanebhyaḥ puruṣasya duḥkha      utpadyate    tadbahutaraṃ narakaṃ kathyate// \U2
+%puruṣasya nṛtyadarśanāt gītaśravaṇāt/vallabhavastuno darśanāt/ yaḥ ānanda utpadyate saḥ svargalokaḥ kathyate/ rogapīḍito durjanebhyaḥ puruṣasya yat duḥkham utpadyate tadbahutaraṃ narakaṃ kathyate// \E
+%puruṣasya nṛtyadarśanāt gītaśravaṇāt vallabhavastuno darśanāt  ya  ānanda utpadyate svargalokaḥ kathyate      rogapīḍato durjjanebhya  puruṣasya yaduḥkham utpadyate tadbahutaraṃ narakaṃ kathyate \P
+%puruṣasya nityadarśanāt gītaśravaṇāt/ vallabhavastuno darśanāt/ yaḥ ānanda utpadyate svargalokaḥ kathyate     rogapīḍato durjanebhya  puruṣasya yat duḥkha utpadyate// tadbahutaraṃ narakaṃ kathyate// \B
+%puruṣasya nityadarśanāt gītaśravaṇāt  vallabhavastuno darśanāt  yaḥ ānanda utpadyate svargalokaḥ kathyate     rogapīḍano durjanebhya  puruṣasya yad duḥkhaṃ utpadyate// tadbahutaraṃ narakaṃ kathyate// \L
 %\om                                                                 \N1
+%puruṣasya nṛtyadarśanād gītaśravaṇāt  vallabhavastuno darśanāt  yaḥ ānanda utpadyate sa bahurānaṃdaḥ svargaphulaḥ?? kathyate/ rogapīḍā durjanebhyaḥ puruṣasya duḥkhaṃ utpadyate// tat bahutaraṃ nakaṃ kathyate/ \D
 %\om                                                                 \N2
+%puruṣasyā vādya?  nṛtyogdītaśravaṇād  vallabhavasttuno darśanād yā ānanda utpadyate  sa bahurānaṃdaḥ svargaphalaḥ? kathyate   rogapīḍa durjanebhyaḥ  puruṣasya duḥkham utpadyate bahutaraṃ narakaṃ kathyate \U1
+%puruṣasya darśanāt// gītaśravaṇāt// vallabhavastuno darśanāt// ānanda utpadyate sa svargaloka kathyate// rogapīḍāto durjanebhyaḥ puruṣasya duḥkha utpadyate tadbahutaraṃ narakaṃ kathyate// \U2
 %-----------------------------
-%Of a person who generates joy because of enjoying the desired objects, because of hearing music [or] because of watching dance, is said to belong to the people of heaven. Of somone who generates suffering, who is evil, plagued and sick, he is said to belong to [people] much worse than of them from hell.    
+%
 %-----------------------------
-\note[type=source, labelb=303, lem={darśanāt}]{Ysv\textsuperscript{PT}: samagradarśanān muktaḥ svargabhogañ ca matsukham | tad etac cintayā yāti rogaśokavivarjjitaḥ |}
-\note[type=source, labelb=304, lem={darśanāt}]{SSP 3.14: yat sukhaṃ tat svargaṃ yad duḥkhaṃ tan narakaṃ yat karma tad bandhanaṃ yan nirvikalpaṃ tan muktiḥ svasvarūpadaśāyāṃ nidrādau svātmajāgaraḥ śāntir bhavati | evaṃ sarvadeheṣu viśvasvarūpaḥ parameśvaraḥ paramātmā akhaṇḍasvabhāvena ghaṭe ghaṭe citsvarūpī tiṣṭhati ||3.14||}
-\app{\lem[wit={ceteri}]{puruṣasya}
-  \rdg[wit={U1}]{puruṣasyāvādya}}
-\app{\lem[wit={D,E,P}]{nṛtyadarśanāt}
-  \rdg[wit={D}]{nityadarśanād}
-  \rdg[wit={U2}]{darśanāt ||}
-  \rdg[wit={U1}]{nṛtyod°}}\dd{}
-\app{\lem[wit={ceteri}]{gītaśravaṇāt}
-  \rdg[wit={U1}]{gītaśravaṇād}}\dd{}
- vallabhavastuno
-\app{\lem[wit={U1}]{darśanāt}
-  \rdg[wit={U1}]{darśanād}}\dd{}
-\app{\lem[wit={P}]{ya}
-  \rdg[wit={U1}]{yā}
-  \rdg[wit={B,D,E,L}]{yaḥ}
-  \rdg[wit={U2}]{\om}}
-ānanda utpadyate
-\app{\lem[wit={E}]{saḥ}
-  \rdg[wit={D,U1,U2}]{sa}}
-\app{\lem[wit={B,E,L,P}]{svargalokaḥ}
-  \rdg[wit={U2}]{svargaloka}
-  \rdg[wit={D}]{bahurānaṃdaḥ svargaphulaḥ}
-  \rdg[wit={U1}]{bahurānaṃdaḥ svargaphalaḥ}}
-kathyate/
-roga\app{\lem[wit={E},alt={°pīḍito}]{pīḍito}
-  \rdg[wit={P,B}]{°pīḍato}
-  \rdg[wit={U2}]{°pīḍāto}
-  \rdg[wit={L}]{°pīḍano}
-  \rdg[wit={D}]{°pīḍā}
-  \rdg[wit={U1}]{°pīḍa}}
-\app{\lem[wit={ceteri}]{durjanebhyaḥ}
-  \rdg[wit={P,B,L}]{durjanebhya}}
-puruṣasya
-\app{\lem[wit={L}]{yad\skp{-}duḥkhaṃ}
-  \rdg[wit={E}]{yat duḥkham}
-  \rdg[wit={B}]{yat duḥkha}
-  \rdg[wit={P}]{yaduḥkham}
-  \rdg[wit={D,U1}]{duḥkhaṃ}
-  \rdg[wit={U2}]{duḥkha}}
-utpadyate/ 
-\app{\lem[wit={ceteri}]{tad\skp{-}bahutaraṃ}
-  \rdg[wit={D}]{tat bahutaraṃ}
-  \rdg[wit={U1}]{bahutaraṃ}}
-\app{\lem[wit={ceteri}]{narakaṃ}
-  \rdg[wit={U1}]{nakaṃ}}
-kathyate/
-%-----------------------------
-%                                                                                                      atha ca yatkarmakaraṇāt manomadhye śaṃkā na bhavati    tatkarma muktikāraṇam/ \E
-%                                                                                                      atha ca yatkarmakaraṇān manomadhye śaṃkā na bhavati    tatkarma muktikāraṇam   \P %%%7662.jpg 
-%                                                                                                      atha ca yatkarmakaraṇāt manobudhye śaṃkā na bhavati    tatkarma kamuktikāraṇam// \B
-%                                                                                                      atha ca yatkarmakaraṇāt manobudhye śaṃkā na bhavati    tatkarma kamuktikāraṇam// \L
+%                                                                                                     atha ca yatkarmakaraṇāt manomadhye śaṃkā na bhavati tatkarma muktikāraṇam/ \E
+%                                                                                                     atha ca yatkarmakaraṇān manomadhye śaṃkā na bhavati tatkarmamuktikāraṇam   \P %%%7662.jpg 
+%                                                                                                     atha ca yatkarmakaraṇāt manobudhye śaṃkā na bhavati tatkarma kamuktikāraṇam// \B
+%                                                                                                     atha ca yatkarmakaraṇāt manobudhye śaṃkā na bhavati tatkarma kamuktikāraṇam// \L
 %                                                                                                     \om                                                                 \N1
-%                                                                                                      atha ca yatkarmakaraṇāt manomadhye śaṃkā na bhaviti    tatkarma muktikāraṇaṃ// \D
+%                                                                                                     atha ca yatkarmakaraṇāt manomadhye śaṃkā na bhaviti tatkarma muktikāraṇaṃ// \D
 %                                                                                                     \om                                                                  \N2
-%atha ca yatkarmakaraṇāt sarveṣāṃ lokānāṃ svamanasī ca śubhaṃ na bharate tatkarma baṃdhanam ity ucyate atha ca yatkarmakaraṇāt manomadhye śaṃkā na bhavati    tatkarma muktikāraṇam \U1
-%                                                                                                      atha ca yatkarmakaraṇān manomadhye śakā  na bhavaṃti// tatkarma muktikāraṇaṃ// \U2
+%atha ca yatkarmakaraṇāt sarveṣāṃ lokānāṃ svamanasī ca śubhaṃ na bharate tatkarma baṃdhanam ityucyate atha ca yatkarmakaraṇāt manomadhye śaṃkā na bhavati tatkarmamuktikāraṇam \U1
+%                                                                                                     atha ca yatkarmakaraṇān manomadhye śakā na bhavaṃti// tatkarmamuktikāraṇaṃ// \U2
 %-----------------------------
-%But the one whose own soul inclines cannot by execution of action cannot bear well-being, his action binds, it is taught. But in whose mind by means of execution of action fear does not arise, his action causes liberation. 
+%
 %----------------------------
-atha ca yatkarmakaraṇāt sarveṣāṃ lokānāṃ svamanasī ca śubhaṃ na bharate tatkarma baṃdhanam-ity-ucyate/
-\note[type=source, labelb=305, lem={śaṅkā}]{Ysv\textsuperscript{PT}: tad etac cintayā yāti rogaśokavivarjjitaḥ | yatkarmā karmaṇā śaṅkā manomadhye bhavedvahiḥ | tatkarmakaraṇaṃ muktir ity āha bhagavān śivaḥ |}
-\note[type=philcomm, labelb=306, lem={atha ca \ldots ity ucyate}]{This sentence is only preserved in witness U\textsubscript{1}.}
-atha ca \app{\lem[wit={P,U2},alt={yatkarmakaraṇān}]{yatkarmakaraṇā\skp{n-ma}}
-  \rdg[wit={ceteri}]{yatkarmakaraṇāt}
-}\app{\lem[wit={ceteri},alt={manomadhye}]{\skm{n-ma}nomadhye}
-  \rdg[wit={B,L}]{manobudhye}} 
-\app{\lem[wit={ceteri}]{śaṅkā}
-  \rdg[wit={U2}]{śakā}}
-na
-\app{\lem[wit={ceteri}]{bhavati}
-  \rdg[wit={U2}]{bhavaṃti}}
-tatkarma
-\app{\lem[wit={ceteri}]{muktikāraṇaṃ}
-  \rdg[wit={L,B}]{kamuktikāraṇam}}/
-%----------------------------
-%idānīṃ rājayogāc charīre    yādṛśāni cihnāni bhavanti   tāni kathyante// \E
-%idānī  rogayogācharīre     etādṛśāni cihnāni bhavaṃti   tāni kathyaṃte   \P
-%idānī  rājayogāc charīre// etādṛśāni cihnāni bhavaṃti// tāni kathyaṃte// \B 7170.jpg end 7171.jpg beginning
-%idānīṃ rājayogāc charīre   etādṛśāni cihnāni bhavaṃti   tāni kathyaṃte// \L
-%\om                                                                     \N1
-%idānīṃ rājayogāc charīre   etādṛśāni cihnāni bhavaṃti// tāni kathyaṃte// \D
-%\om                                                                     \N2
-%idānīṃ rājayogācharīre    etādṛśāni cihnāni bhavaṃti   tāni kathyaṃte   \U1
-%idānī  rājayogāśarīre     etādṛśāni cihnāni bhavaṃti// tāni kathyaṃte// \U2
-%-----------------------------
-%Now such signs arise in the body from Rājayoga. They are about to be taught. 
-%-----------------------------
-\app{\lem[wit={ceteri}]{idānīṃ}
-  \rdg[wit={B,P,U2}]{idānī}}
-\app{\lem[wit={D,E,L}]{rājayogāc\skp{-}charīre}
-  \rdg[wit={B}]{rājayogāc charīre ||}
-  \rdg[wit={U1}]{rājayogācharīre}
-  \rdg[wit={U2}]{rājayogāśarīre}
-  \rdg[wit={P}]{rogayogācharīre}}
-\app{\lem[wit={ceteri}]{etādṛśāni}
-  \rdg[wit={E}]{yādṛśāni}}
-cihnāni bhavanti/ tāni kathyante/
-%-----------------------------
-%sakalaroganāśaḥ   sakalapṛthvīṃ   paśyati/  tad anaṃtaraṃ              jñānam utpadyate// \E [p.55]
-%sakalaroganāśaḥ   sakalāṃ pṛthvīṃ paśyati   tad aṃtaraṃ                jñānam utpadyate   \P
-%sakalaroganāśaḥ   sakalapṛthvīṃ   paśyatī/  tad anaṃtaraṃ              jñānam utpadyate// \B
-%sakalaroganāśaḥ   sakalapṛthvīṃ   paśyati/  tad anaṃtaraṃ              jñānam utpadyate// \L
-%\om                                                                                       \N1
-%sakalaroganāśaḥ   sakalapṛthvīṃ   paśyatī/  tad anaṃtaraṃ tatvaviṣayaṃ jñānam utpadyate/  \D %%%p. 15 verso 
-%\om                                                                                       \N2
-%sakalarogaḥ nāśaḥ sakalapṛthvīṃ   paśyati   tad anaṃtaraṃ tatvaviṣayaṃ jñānam utpadyate   \U1
-%sakalaroganāśaḥ   sakalapṛthvīṃ   paśyati// tad anaṃtara---------------jñānam utpadyate// \U2
-%-----------------------------
-%All diseases are destroyed. He sees the entire earth. In the infinite knowledge in the realm of reality is generated.  
-%-----------------------------
-\app{\lem[wit={ceteri}]{sakalaroganāśaḥ}
-  \rdg[wit={U1}]{sakalarogaḥ nāśaḥ}}
-\app{\lem[wit={ceteri}]{sakalapṛthvīṃ}
-  \rdg[wit={P}]{sakalāṃ pṛthvīṃ}}
-paśyati/
-\app{\lem[wit={ceteri}]{tad\skp{-}anantaraṃ}
-  \rdg[wit={P}]{tad aṃtaraṃ}
-  \rdg[wit={U2}]{tad anaṃtara°}}
-\app{\lem[wit={D,U1}]{tattvaviṣayaṃ}
-  \rdg[wit={ceteri}]{\om}}
-jñānam-utpadyate/
-%-----------------------------
-%samagrā  bhāṣā  jānāti/  tataḥ puruṣasya deho vajramayo bhavati/  sarpadaṃśena    maraṇaṃ na bhavati/   \E
-%samagrāṃ bhāṣāṃ jānāti   tataḥ puruṣasya deho vajramayo bhavati   sarpadaṃśo      maraṇaṃ na bhavati    \P
-%samagrā  bhāṣa  jānāti   tataḥ puruṣasya deho vajramayo bhavati// sarpadaṃśema    maraṇaṃ na bhavatī/   \B
-%samagra  bhāṣā    jānāti tataḥ puruṣasya deho vajramayo bhavati// sarpadaṃśe      maraṇaṃ    bhavati//  \L
-%\om                                                                                                     \N1
-%samagrāṃ bhāṣāṃ jānāti/  tataḥ puruṣasya deho vajramayo bhavati/  sarpadaṃśe satī maraṇaṃ na bhavati/   \D
-%\om                                                                                                     \N2
-%samagrāṃ bhāṣāṃ jānāti   tataḥ puruṣasya deho vajramayo bhavati   sarpadaṃśe satī maraṇaṃ na bhavati    \U1
-%samagrā bhāṣā   jānāti// tataḥ puruṣasya deho vajramayo bhavati// sarpadaṃśe      maraṇaṃ na vati//     \U2
-%-----------------------------
-%He knows the entire speech. Because of that [Rājayoga?] the body of the human resembles a thunderbolt. Death through a snake-bite does not arise. 
-%-----------------------------
-\app{\lem[wit={P,D,U1}]{samagrāṃ bhāṣāṃ}
-  \rdg[wit={E,U2}]{samagrā bhāṣā}
-  \rdg[wit={B}]{samagrā bhāṣa}
-  \rdg[wit={L}]{samagra bhāṣā}}
-jānāti/
-tataḥ puruṣasya deho vajramayo bhavati
-sarpa\app{\lem[wit={E},alt={°daṃśena}]{daṃśena}
-  \rdg[wit={P}]{°daṃśo}
-  \rdg[wit={B}]{°daṃśema}
-  \rdg[wit={ceteri}]{°daṃśe}}
-\app{\lem[wit={D,U1}]{satī}
-  \rdg[wit={ceteri}]{\om}}
-maraṇaṃ
-\app{\lem[wit={ceteri}]{na}
-  \rdg[wit={L}]{\om}}
-\app{\lem[wit={ceteri}]{bhavati}
-  \rdg[wit={B}]{bhavatī}
-  \rdg[wit={U2}]{vati}}/
-%-----------------------------
-%tataḥ puruṣasya bubhukṣā--pipāsā--nidrollatā------śītoṣṇatā bādhāṃ na kurvanti/ \E
-%tataḥ puruṣasya bunnukṣā--pipāsā--nidrolmatā------śīta----tābādhā na kurvaṃti \P
-%tatpuruṣasya    babhukṣā--pipāsā--nidrollatā------śīta------bādhā na kurvanti/ \B
-%tatpuruṣasya    babhukṣā--pipāsā--nidroṣṇatā------śīta------bādhā na kurvanti... \L
+%idānīṃ rājayogāccharīre yādṛśāni cihnāni bhavanti tāni kathyante// \E
+%idānī  rogayogācharīre etādṛśāni cihnāni bhavaṃti tāni kathyaṃte   \P
+%idānī  rājayogāccharīre// etādṛśāni cihnāni bhavaṃti// tāni kathyaṃte// \B 7170.jpg end 7171.jpg beginning
+%idānīṃ rājayogāccharīre  etādṛśāni cihnāni bhavaṃti tāni kathyaṃte// \L
 %\om                                                                 \N1
-%tataḥ puruṣasya bubhukṣā--pipāsā--nidrā/ uṣṇatā// śīta nā   bādhāṃ na kuroti???/ \D
+%idānīṃ rājayogāccharīre  etādṛśāni cihnāni bhavaṃti// tāni kathyaṃte// \D
+%\om                                                                 \N2
+%idānīṃ rājayogācharīre  etādṛśāni cihnāni bhavaṃti tāni kathyaṃte \U1
+%idānī  rājayogāśarīre   etādṛśāni cihnāni bhavaṃti// tāni kathyaṃte// \U2
+%-----------------------------
+%
+%-----------------------------
+%sakalaroganāśaḥ sakalapṛthvīṃ paśyati/ tadanaṃtaraṃ jñānam utpadyate// \E [p.55]
+%sakalaroganāśaḥ sakalāṃ pṛthvīṃ paśyati tadaṃtaraṃ jñānam utpadyate \P
+%sakalaroganāśaḥ sakalapṛthvīṃ paśyatī/ tadanaṃtaraṃ jñānam utpadyate// \B
+%sakalaroganāśaḥ sakalapṛthvīṃ paśyati/ tad anaṃtaraṃ jñānam utpadyate// \L
+%\om                                                                 \N1
+%sakalaroganāśaḥ sakalapṛthvīṃ paśyatī/ tadanaṃtaraṃ tatvaviṣayaṃ jñānam utpadyate/ \D %%%p. 15 verso 
+%\om                                                                 \N2
+%sakalarogaḥ nāśaḥ sakalapṛthvīṃ paśyati tad anaṃtaraṃ tatvaviṣayaṃ jñānam utpadyate \U1
+%sakalaroganāśaḥ sakalapṛthvīṃ paśyati// tadanaṃtarajñānam utpadyate// \U2
+%-----------------------------
+%
+%-----------------------------
+%samagrā bhāṣā jānāti/ tataḥ puruṣasya deho vajramayo bhavati/ sarpadaṃśena maraṇaṃ na bhavati/   \E
+%samagrāṃ bhāṣāṃ jānāti tataḥ puruṣasya deho vajramayo bhavati sarpadaṃśo maraṇaṃ na bhavati      \P
+%samagrā bhāṣa jānāti tataḥ puruṣasya deho vajramayo bhavati// sarpadaṃśema maraṇaṃ na bhavatī/   \B
+%samagrabhāṣā  jānāti tataḥ puruṣasya deho vajramayo bhavati// sarpadaṃśe maraṇaṃ bhavati//       \L
+%\om                                                                 \N1
+%samagrāṃ bhāṣāṃ jānāti/ tataḥ puruṣasya deho vajramayo bhavati/ sarpadaṃśe satī maraṇaṃ na bhavati/ \D
+%\om                                                                 \N2
+%samagrāṃ bhāṣāṃ jānāti tataḥ puruṣasya deho vajramayo bhavati  sarpadaṃśe satī maraṇaṃ na bhavati \U1
+%samagrā bhāṣā jānāti// tataḥ puruṣasya deho vajramayo bhavati//sarpadaṃśe maraṇaṃ na vati//   \U2
+%-----------------------------
+%
+%-----------------------------
+%tataḥ puruṣasya bubhukṣāpipāsānidrollatāśītoṣṇatā bādhāṃ na kurvanti/ \E
+%tataḥ puruṣasya bunnukṣāpipāsāni drolmatāśītatābādhā na kurvaṃti \P
+%tatpuruṣasya babhukṣāpipāsānidrollatāśītabādhā na kurvanti/ \B
+%tatpuruṣasya babhukṣāpipāsānidroṣṇatāśītabādhā na kurvanti... \L
+%\om                                                                 \N1
+%tataḥ puruṣasya bubhukṣāpipāsānidrā/ uṣṇatā// śīta nā bādhāṃ na kuroti???/ \D
 %\om                                                                 \N2
 % \om                                                         \U1
-%tataḥ puruṣasya bubhukṣā--pipāsā--nidroṣṭṇatā-----śīta------bādhāṃ na kurvaṃti// \U2
+%tataḥ puruṣasya bubhukṣāpipāsānidroṣṭṇatāśīta bādhāṃ na kurvaṃti// \U2
 %-----------------------------
-%In consequnece of that, for the person affliction of hunger, thirst, sleep, heat is inactive.    
+%
 %-----------------------------
-\app{\lem[wit={ceteri}]{tataḥ}
-  \rdg[wit={B,L}]{tat°}}
-\note[type=philcomm, labelb=307, lem={tataḥ \ldots kurvanti}]{The sentence is \om in U\textsubscript{1}.}
-puruṣasya
-\app{\lem[wit={E,D,U2}]{bubhukṣā}
-  \rdg[wit={P}]{bunnukṣā}
-  \rdg[wit={B,L}]{babhukṣā}
-}pipāsa\app{\lem[wit={L},alt={°nidroṣṇatā°}]{nidroṣṇatā}
-  \rdg[wit={U2}]{°nidroṣṭṇatā°}
-  \rdg[wit={D}]{nidrā |  uṣṇatā ||}
-  \rdg[wit={E,B}]{nidrollatā}
-  \rdg[wit={P}]{nidrolmatā}
-}\app{\lem[wit={ceteri},alt={°śīta°}]{śīta}
-  \rdg[wit={P}]{śītatā}
-  \rdg[wit={E}]{śītoṣṇatā}
-  \rdg[wit={D}]{śīta nā}
-}\app{\lem[wit={P,B,L}]{bādhā}
-  \rdg[wit={E,D,U2}]{bādhāṃ}}
-na
-\app{\lem[wit={ceteri}]{kurvanti}
-  \rdg[wit={D}]{kuroti}}/ 
-\end{prose}
-\end{ekdosis}
-\end{document}
-%-----------------------------
-%vāksiddhir bhavati/  vidyatpāte kācidbādhāpi na bhavati// \E
+%vāksiddhir bhavati/ vidyatpāte kācidbādhāpi na bhavati// \E
 %vāksiddhir bhavati                                        \P
-%vāksiddhir bhavatī/  vidyutpāte kācidglānir  na bhavati// \B
-%vāksiddhir bhavati/  vidyutpāte kācidglānir  na bhavati// \L
+%vāksiddhir bhavatī/ vidyutpāte kācidglānir  na bhavati// \B
+%vāksiddhir bhavati/ vidyutpāte           kācidglānir  na bhavati// \L
 %\om                                                                 \N1
-%vāksiddhir bhavati/  vidyutpāte śarīre na kiṃcid glānir bhavati/ \D
+%vāksiddhir bhavati/ vidyutpāte śarīre na kiṃcid glānir bhavati/ \D
 %\om                                                                 \N2
-%                     vidyutpāte śarīre    kvācid glānir na bhavati  \U1
+% vidyutpāte śarīre    kvācidglānir? na bhavati  \U1
 %vāksiddhir bhavati// vidyut pāte kāciddhānir? na bhavati// \U2
 %-----------------------------
 %
@@ -445,7 +166,7 @@ na
 %grāme  sveraṃgani caye yada piṃḍam aikyaṃ satyaṃ bhavet-samarasaṃ guruvatsalānāṃ// \U2
 %-----------------------------
 %
-%----------------------------TAGESZIEL(MINIMUM 12.12.2024). 
+%----------------------------
 %idānīm avadhūtapuruṣasya lakṣaṇaṃ kathyate/ \E
 %idānīm avadhūtapuruṣasya lakṣaṇaṃ kathyate \P
 %idānīm avadhūtapuruṣasya lakṣaṇam āha/ \B DSCN7171.jpg last line
@@ -819,7 +540,7 @@ na
 %tasmin kamale niścalī kṛte sati puruṣasya samīpe maraṇaṃ nāgacchati/  \U2
 %-----------------------------
 %
-%-----------------------------TAGESZIEL IDEAL 12.12.2022 
+%----------------------------- 
 %idānīṃ hṛyakamalabhedāḥ kathyaṃte/ \E
 %idānīṃ hṛdayakamalasya bhedaḥ kathyate/ \P
 %idānīṃ hṛdayakamalasya bhedaḥ kathyate/ \B
@@ -2735,27 +2456,3 @@ na
 %-----------------------------
 %
 %-----------------------------
-%%%%deciphering last folio margin note of %N1!!!  
-%\begin{alignment}[
-%    texts=edition[class="edition"];
-%    translation[class="translation"],
-%  ]
-%\begin{edition}
-% \ekddiv{type=ed}
-%\begin{prose}homa\end{prose}
-%\end{edition}
-%\begin{translation}
-%  \ekddiv{type=trans}
-%  \begin{tlate}\end{tlate}
-%   \end{translation}
-% \end{alignment}
-%\input{translation.tex} 
-%\section{Bibliography}
-% \label{sec:bibli}
-%\printshorthands[keyword=critEd]
-%\printbibliography[title=Consulted Manuskcipts, keyword=codex]
-%\printbibliography[title=Printed Editions, keyword=printsource]
-%\printbibliography[title=Secondary Literature, keyword=seclit]
-%\end{document}
-
-
