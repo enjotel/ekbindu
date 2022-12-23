@@ -1,0 +1,621 @@
+(line 4683 ): atha rājayogaḥ || yogasvarodaye |
+(line 4684 ): 
+(line 4685 ): īśvara uvāca |
+(line 4686 ): 
+(line 4687 ): rājayogaṃ pravakṣyāmi śṛṇu sarvatra siddhidam | guhyādguhyataraṃ
+(line 4688 ): devi ! nānādharmaṃ parāt param ! rājayogena deveśi nṛpapūjyo
+(line 4689 ): bhaven naraḥ | rājayogī cirāyuś ca aṣṭaiśvaryamayo bhavet ||
+(line 4690 ): pañcadaśaprakāro'yaṃ rājayogaḥ || kriyāyogo jñānayogaḥ
+(line 4691 ): karmayogo haṭhas tathā | dhyānayogo mantrayoga urayogaś [lakṣyayogaś] ca vāsanā | [śivayogo, brahmayogo, 'dvaitayogaḥ, siddhayogo, rājayogaḥ] (15? caryāyoga, laya)
+(line 4692 ): rājaty etad brahmavaśīva ebhiś ca pañcadaśadhā | idānīṃ
+(line 4693 ): lakṣaṇañ caiṣāṃ kathayāmi śṛṇu priye ! | [KRIYĀYOGA] |
+(line 4694 ): dhyānapūjādānayajñajapahomādikā kriyā | kriyāmuktimayo yogaḥ
+(line 4695 ): sapiṇḍisiddhidāyakaḥ | yatkāromīti saṅkalpaṃ kāryārambhe manaḥ
+(line 4696 ): sadā | tatsāṅgācaraṇaṃ kurvan kriyāyogarato bhavet |
+(line 4697 ): kṣamāvivekavairāgyaśāntisantoṣanispṛhāḥ | etanmuktiyuto yo'sau
+(line 4698 ): kriyāyogo nigadyate | mātsaryaṃ mamatā māyā hiṃsā ca
+(line 4699 ): madagarvitā | kāmaḥ krodho bhayaṃ lajjā lobho mohastathā'śuciḥ |
+(line 4700 ): rāgadveṣau ghṛṇālasyaśrāntidambhakṣamābhramāḥ | yasyaitāni na
+(line 4701 ): vidyante kriyāyogī sa ucyate | sa eva muktaḥ sa jñānī caṇḍi ! nāśena
+(line 4702 ): īśvaraḥ | kriyāmuktikaro yo'sau rājayogaḥ sa muktidaḥ |
+(line 4703 ): JÑĀNAYOGAṂ pravakṣyāmi tajjñānī śivatāṃ vrajet | paṭhanāt
+(line 4704 ): smaraṇād vyānānmaṇḍanāt brahmasādhakaḥ |
+(line 4705 ): tadbhedasyaikasandhānamaṣṭaiśvaryamayo bhavet | tritīrthaṃ yatra
+(line 4706 ): nāḍī ca tripuṇyaṃ parameśvari ! | svadehe yo na jānāti sa yogī
+(line 4707 ): nāmadhārakaḥ | navacakraṃ kalādhāraṃ trilakṣaṃ vyomapañcakam
+(line 4708 ): | svadehe yo na jānāti sa yogī nāmadhārakaḥ | eṣo'sya viśvarūpasya
+(line 4709 ): rājayogo mato budhaiḥ | viśeṣaṃ kathayiṣyāmi śṛṇu caikamanāḥ
+(line 4710 ): sati ! | mūlakande sthale caikā nāḍī tejasvatī parā | gudorddhe sā
+(line 4711 ): tribhāgābhūdiḍā nāma śaśiprabhā | śaktirūpāmahānāḍī
+(line 4712 ): dhyānāt sarvārthadāyinī | dakṣiṇe'pi kulākhyeti puṃrūpā
+(line 4713 ): sūryavigrahā | madhyabhāge suṣumnākhyā brahmaviṣṇuśivātmikā
+(line 4714 ): | śuddhacittena sā vijñā vidyutkoṭisamaprabhā |
+(line 4715 ): 
+(line 4716 ): p. 832) bhuktimuktipradā dhyānādaṇimādiguṇapradā | suṣumnāntaḥ
+(line 4717 ): samāśritya navacakraṃ yathā śṛṇu | mūlādhāraṃ catuṣpatraṃ
+(line 4718 ): gudorddhe varttate mahat | tanmadhye svarṇapīṭhe tu trikoṇaṃ
+(line 4719 ): maṇḍalaṃ param | tatra vahniśikhākārā mūrttiḥ sarvatra siddhidā |
+(line 4720 ): asyā dhyānaṃ manomadhye vinā pīṭhena vāṅmayam |
+(line 4721 ): sarvaśāstrāṇisaṅkarṣaṃ sadā sphurati yogavit | liṅgamūle tu
+(line 4722 ): pīṭhābhaṃ svādhiṣṭhānantu ṣaḍdalam | tanmadhye bālasūryābhaṃ
+(line 4723 ): mahajjyotiḥ susiddhidam | dhyānācca varddhate āyuḥ
+(line 4724 ): kandarpasamatāṃ vrajet | tṛtīyaṃ nābhideśe tu digdalaṃ
+(line 4725 ): paramādbhutam | mahāmeghaprabhaṃ tattu koṭividyutsamanvitam |
+(line 4726 ): kalpāntāgnisamaṃ jyotistanmadhye saṃsthitaṃ svayam | tasya
+(line 4727 ): dhyānāccirāyuḥ syādarogo jagatāṃ varaḥ | sarvapāpavinirmukto
+(line 4728 ): jagatkṣobhakaro mahān | anāhatamaṣṭapīṭhaṃ caturthakamalaṃ hṛdi |
+(line 4729 ): sūryapatraṃ mahājyotirmahāsūkṣmantu cākṣuṣam | sūryapatraṃ
+(line 4730 ): dvādaśadalam | tanmadhye'ṣṭadalaṃ padmamūrddhavaktraṃ
+(line 4731 ): mahāprabham | prāṇavāyoḥ sthalañcāsya liṅgākārantu karṇikā |
+(line 4732 ): kālikākhyā karṇikeyaṃ asyā madhye tu kuṇḍalī | padmavatyāḥ
+(line 4733 ): prabhāṅguṣṭhapramāṇā ratnasannibhā | tasyāsaṅgī jīva iti ananto
+(line 4734 ): balarūpataḥ | asya dhyānaṃ jagadvaśyaṃ khecarīsarvago bhavet |
+(line 4735 ): bhavanti vaśyā devādyāścintākartturna cānyathā | iṣṭāniṣṭo
+(line 4736 ): bhavedvaśyaḥ satyaṃ satyaṃ na saṃśayaḥ | iṣṭasiddhirbhavettasya
+(line 4737 ): sarvajñādiguṇodayaḥ | kalāpatraṃ pañcamantu viśuddhaṃ
+(line 4738 ): kaṇṭhadeśataḥ | asya madhye pumānekaḥ koṭicandrasamaprabhaḥ |
+(line 4739 ): naśyantyasādhyarogā hi sahasrāyuśca cintanāt | ājñākhyaṃ
+(line 4740 ): ṣaṣṭhakaṃ cakraṃ bhruvormadhye dvipatrakam | agnijvālānibhaṃ
+(line 4741 ): jyotiḥ puṃsaḥ strīto vivarjitam | dhyānāccāsya
+(line 4742 ): sarvasiddhirajarāmaratāṃ vrajet | catuḥṣaṣṭidalaṃ tālumadhye
+(line 4743 ): cakrantu madhyamam | pīyūṣapūrṇaṃ koṭīndusannibhaṃ
+(line 4744 ): 
+(line 4745 ): p. 833) cāmṛtasthalī | tanmadhye ghaṭikāsaṃjñā karṇikā
+(line 4746 ): raktasannibhā | saha cendukalā tatrāmṛtadhārāṃ sravatyasau |
+(line 4747 ): etaddhyātvāmṛtaiḥ snātvā sadā yogāt pramucyate |
+(line 4748 ): unmādajvarapittādidāhaśūlādivedanāḥ | naśyanti ca śiroduḥkhaṃ
+(line 4749 ): jāḍyabhāvo'pi naśyati | sadyodhyānādbhuktaviśvaṃ
+(line 4750 ): jihvājāḍyañca naśyati | brahmarandhre'ṣṭamaṃ cakraṃ śatapatraṃ
+(line 4751 ): mahāprabham | jālandharaṃ nāma pīṭhaṃ etattu parikīrttitam |
+(line 4752 ): siddhapuṃsaḥ sthalaṃ jñātvā agnidhūmanibhā śikhā |
+(line 4753 ): ādimadhyāntahīnā strīpuṃmūrttivarttate parā | antajñānī
+(line 4754 ): bhaveddhyānādākāśe'pi samāgamaḥ | nirantaraṃ sarvavettā
+(line 4755 ): ityūcāno mahān bhavet | jaganmadhye sthito
+(line 4756 ): janturjagadbādhāvivarjitaḥ | navamantu mahāśūnyaṃ cakrantu
+(line 4757 ): tatparātparam | tadupari paraṃ kiñcinnāsti kiñcinmahāparam |
+(line 4758 ): mahācakraṃ siddhacakraṃ pūrṇagauryādisaṃjñakam | tanmadhye
+(line 4759 ): varttate padmaṃ sahasradalamadbhutam | ūrddhvavaktraṃ mahāvaktre
+(line 4760 ): varṇaśobhāpadaṃ mahat | sarvakalyāṇasampūrṇamasya tulyaṃ na
+(line 4761 ): vidyate parimāṇaṃ vaktamasya manasā vacasā na hi | trikoṇakarṇikā
+(line 4762 ): tatra varttate jagadīśvari ! | kalā saptadaśī tatra varttate parameśvari ! |
+(line 4763 ): nirañjanakalā sā tu koṭisūryasamaprabhā | koṭicandraprabhā caiva
+(line 4764 ): śītoṣṇādivivarjitā | asya dhyānāt sādhakasya manoduḥkhaṃ
+(line 4765 ): bhavenna hi | anantaparamānandasthānaṃ jñeyaṃ tadūrddhvataḥ |
+(line 4766 ): ūrddhvagatakalā tatra tasya dhyānādbhavediti | iti siddhirājayogaṃ
+(line 4767 ): strīṇāṃ bhogaṃ mahāsukham | gītavādyavinodādi saśivaṃ
+(line 4768 ): varddhate kṣitau | dhyānaṃ nirantarañcāsya puṇyapāpe sthire na hi |
+(line 4769 ): nijarūpasya dṛṣṭiḥ syāddūrasyārthañca paśyati ||
+(line 4770 ): 
+(line 4771 ): sukhasādhyaṃ LAKṢAYOGAM idānīṃ śṛṇu pārvati ! | pañcadhā
+(line 4772 ): lakṣayogaśca ūrddhalakṣādibhedataḥ | ūrddhalakṣaḥ adholakṣo
+(line 4773 ): bāhyalakṣas tathaiva ca | madhyalakṣas tathā jñeyo 'nantalakṣas tathaiva
+(line 4774 ): 
+(line 4775 ): p. 834) ca | 
+
+lakṣaṇaṃ śṛṇu caiṣāṃ hi phalaṃ jñātvā maheśvari ! |
+(line 4776 ): ākāśe dṛṣṭimāsthāya mana ūrddhantu kārayet | ūrddhalakṣo
+(line 4777 ): bhavedeṣa parameśasya caikatā | nāsikopari deveśi !
+(line 4778 ): dvādaśāṅgulamānataḥ | dṛṣṭiḥ sthirā tu karttavyā adho
+(line 4779 ): lakṣamimaṃ bhaja | athavā nāsikāgre tu sthirā dṛṣṭiriyaṃ bhavet |
+(line 4780 ): sthirā dṛṣṭiścirāyuḥ syāttathāsau sthiradṛṣṭimān | 
+
+vāhyalakṣaṃ
+(line 4781 ): svayaṃ jñeyaṃ yāti tattvanivāsinām | kāmināntu
+(line 4782 ): vahirdṛṣṭiścintādiṣu susiddhidā | eṣā vāhyamadhyalakṣā iṣṭacintā
+(line 4783 ): nirākulam | 
+
+
+antarlakṣaṃ śṛṇu śukradigvidigādivarjitam |
+(line 4784 ): calajjāgratsuṣupteṣu bhojaneṣu ca sarvadā | sarvāvasthāsu deveśi !
+(line 4785 ): cittaṃ śūnye niyojayet | karttākārayitā śunyaḥ mūrttimān śūnya
+(line 4786 ): īśvaraḥ | harṣaśokaghaṭastho'yaṃ janma mṛtyu labhet svayam |
+(line 4787 ): ghaṭasthācintyayormūrttirhatacintāsvarūpadhṛk | viṣayaṃ
+(line 4788 ): viṣavadduṣṭaṃ tyaktvā jñātvā tu mārutam | saṃjñāśūnyamanā
+(line 4789 ): bhūtvā puṇyapāpairna lipyate | bāhyamabhyantaraṃ khaṃ hi
+(line 4790 ): antarlakṣamiti smṛtam | etaddyānāt sadā kiñcit duḥkhaṃ na
+(line 4791 ): syācchivo bhavet | śūnyantu saccidānandaṃ niḥśabdaṃ
+(line 4792 ): brahmaśabditam | saśabdaṃ jñeyamākāśamiti bhedadvayantviha |
+
+
+
+(line 4793 ): idānīṃ kathayiṣyāmi RĀJAYOGASYA lakṣaṇam | rājayoge kṛte puṃbhiḥ
+(line 4794 ): siddhicihnaṃ bhavediti | paripūrṇaṃ bhavec cittaṃ jagatstho'pi
+(line 4795 ): jagadbahiḥ | na kṣobho janma mṛtyuś ca na duḥkhaṃ na sukhaṃ tathā |
+(line 4796 ): bhedābhedau manaḥsthau na jñānaṃ śīlaṃ kulaṃ tathā |
+(line 4797 ): prakāśakuśasambandhiprasaṅgo'yaṃ nirantaram |
+(line 4798 ): sarvaprakāśako'sau tu naṣṭabhedādir eva ca | asya jāterna cihnañca
+(line 4799 ): niṣkalo'yaṃ nirañjanaḥ | ananto'yaṃ mahājyotir vāñchāṃ bhogaṃ
+(line 4800 ): dadāti ca | asya citte nānurāgo virāgo na bhavediti | rājya prāpte'pi no
+(line 4801 ): harṣo hānau duḥkhaṃ bhavennahi | kvacid vastuni deśasya niḥsvane
+(line 4802 ): 
+(line 4803 ): p. 835) keṣu kutracit | 
+
+
+
+
+
+
+
+
+
+
+vidyāvidyāmitraśatrau samā dṛṣṭiśca sarvaśaḥ
+(line 4804 ): | bhogāsaktādikarttṛtvena mano no bhavet khavat | lokamadhye bhavet
+(line 4805 ): karttā manomadhye'pi niṣkriyaḥ | eṣo'pi rājayogīti sukhe duḥkhe
+(line 4806 ): samas tathā | harṣaśokau na jātveṣāṃ nodvego lokasaṅgame |
+(line 4807 ): nityollāse nirākāre nirāsane nirātmani | manasā niścalo bhūtvā
+(line 4808 ): sadā tiṣṭhet samo'pi ca | yathākāśe bhraman vāyurākāśaṃ vrajate
+(line 4809 ): svayam | tathākāśe mano līnaṃ rājayogakriyā matā |
+(line 4810 ): jagatsaṃsarganirlepaṃ padmapatrajalaṃ yathā ||
+(line 4811 ): 
+(line 4812 ): idānīṃ HAṬHAYOGAS tu kathyate haṭhasiddhidaḥ | kṛtvāsanaṃ
+(line 4813 ): pavanāśaṃ śarīre rogahārakam | pūrakaṃ kumbhakañcaiva recakaṃ
+(line 4814 ): vāyunā bhajet | itthaṃ kramotkramaṃ jñātvā pavanaṃ sādhayet
+(line 4815 ): sadā | dhautyādikarmaṣaṭkañca prakuryāddhaṭhasādhakaḥ |
+(line 4816 ): etannāḍyāntu deveśi ! vāyupūrṇaṃ pratiṣṭhitam | tato mano
+(line 4817 ): niścalaṃ syāttata ānanda eva hi | haṭhayogān na kālaḥ
+(line 4818 ): syān manonāśo bhaved yadi | idānīṃ HAṬHAYOGASYA DVITĪYAṂ
+(line 4819 ): bhedamacchṛṇu | ākāśe nāsikāgre tu sūryakoṭisamaṃ smaret |
+(line 4820 ): śvetaṃ raktaṃ tathā pītaṃ kṛṣṇamityādirūpataḥ | evaṃ dhyātvā
+(line 4821 ): cirāyuḥ syādaṅgājananavarjitam | śivatulyo mahātmāsau
+(line 4822 ): haṭhayogaprasādataḥ | haṭhājjyotirmayo bhūtvā hyantareṇa śivo
+(line 4823 ): bhavet | ato'yaṃ haṭhayogaḥ syāt siddhidaḥ siddhasevitaḥ | 
+
+idānīṃ
+(line 4824 ): JÑĀNAYOGASYA lakṣaṇaṃ kathyate śive ! | yajjñātvā
+(line 4825 ): jñānasampūrṇaḥ śivaḥ syānna punarbhavaḥ | ekameva jagat
+(line 4826 ): paśyedviśvātmā viśvabhāvanaḥ | iti kṛtvā tu vai yukto
+(line 4827 ): jñānayogaṃ samācaret | yatra tatra sthito vāpi sarvajñānamayaṃ
+(line 4828 ): jagat | ya evamasti bodhena so'pi jñānādhikāravān | prāpnoti
+(line 4829 ): śāmbhavīmantrān sadā nityaparāyaṇaḥ | yathā nyagrodhavījaṃ hi
+(line 4830 ): kṣitau vapturdrumāyate |
+
+ ādāvekastato'nekaḥ
+(line 4831 ): 
+(line 4832 ): p. 836) svabhāvācchādanādibhiḥ | varddhate'harniśaṃ vṛkṣaḥ
+(line 4833 ): patrapallavavistṛtaḥ | snehapuṣpaphalairvījairvistāro'yaṃ svabhāvataḥ
+(line 4834 ): | tathāsau nirmalo nityo nirvikāro nirañjanaḥ | eko'nekaḥ khayaṃ
+(line 4835 ): bhūyān sādhanād bahudhā sthitaḥ | pañcatattvamayo
+(line 4836 ): buddhimāyāhaṅkāravikriyaḥ | evaṃ bahuvidhaṃ viśvaṃ
+(line 4837 ): lokālokasuvistaram | ekameva na cānvo'sti yo jānāti sa tattvavit |
+
+
+(line 4838 ): sthāvarāḥ parvatādyā hi jaṅgamāḥ khecarādayaḥ |
+(line 4839 ): jaṅgamasthāvarākāraḥ saṃsāraḥ syāt sa īśvaraḥ | 
+
+
+XXX!!!hier 16.11.2022
+
+
+svabhāvalīlayā
+(line 4840 ): bhāti śūnye'sau śūnyabuddhitaḥ | yaddṛṣṭaṃ viṣayaṃ vastu
+(line 4841 ): taddṛśyamiti kathyate | yo dṛṣṭātītaḥ so'dṛśyastadā dṛṣṭaṃ hi
+(line 4842 ): manyate | svatanūbhedam evan tu saṃsāraṃ duḥkhasaṅkulam |
+
+
+
+---------------------missing in YTB??
+(line 4843 ): yatnād dūraṃ parityajya jñānayogo bhavet sudhīḥ | jñānasaṃyoga
+(line 4844 ): ekas tu ekas tu jñānayogavān | ato hi jñānato 'bhinnaṃ jñeyaṃ
+(line 4845 ): jñānāt pṛthak pṛthak | dūrīkṛtyaivamāpṛthvī bhedavākyena
+(line 4846 ): darśanāt | jñānayogī bhaved yena jñānayogastu caikakaḥ | evaṃ
+(line 4847 ): jñānānmaheśāni ! kālajit śivatāṃ vrajet | 
+--------------------missing in YTB??
+
+svabhāvabhedam etat
+(line 4848 ): śṛṇu devi ! prayatnataḥ | yacchrutvā sarvabodhaḥ syāt muktidaḥ
+(line 4849 ): siddhivāñchitaḥ | ātmano vā pṛthivyādyāḥ svabhāvaḥ
+(line 4850 ): kiñcid ucyate | ātmaiva pṛthivī dhātrī komalā ca kvacid dṛḍhā |
+(line 4851 ): kvacin manoharā sā ca vimalā ca malāmalā | durgandhā ca sugandhā
+(line 4852 ): ca nirgandhā gandhamohinī | svarṇarūpā dhāturūpā citrā ratnamayī
+(line 4853 ): parā | kvacit śvetā kvacidraktā kvacit pītā ca kṛṣṇalā | ūrvarā
+(line 4854 ): ūrvarā sā tu viṣāmṛtamayī sadā |
+
+ tathā ca
+(line 4855 ): devagandharvakinnarādyāḥ khagādayaḥ | sukhasampiṇḍito rogī
+(line 4856 ): tathaiva krodhaśāntadhīḥ | aśeṣarūpabalito nānābuddhirataḥ svayam
+(line 4857 ): | devatattvaṃ bhūtaśaktyā jīvasaṃjñā bhramātmikā | jñānayogī
+(line 4858 ): nirvikāro nistāpa eka īśvaraḥ | ātmaikamūrttimān bhūtvā nirvikalpo
+(line 4859 ): 
+(line 4860 ): p. 837) nirañjanaḥ | sukhī duḥkhī mohayukto'nantacetāḥ svabhāvataḥ
+(line 4861 ): | 
+
+strīpuṃrūpī mahān so hi parasparavimohitaḥ | amanaskaḥ
+(line 4862 ): svīyabhāvāt jñānayogī nirākulaḥ | srakcandanādivāmāsu
+(line 4863 ): svabhāvādbhogamicchukaḥ | sukhātmakaiḥ sukhasthāya
+(line 4864 ): paraduḥkhāya saccitiḥ | ātmanā manasā padbhyāṃ
+(line 4865 ): puttrādiratnasampadau | asārasāraṇāttarhi jñānadhīrmanasā bhavet |
+(line 4866 ): ātmāvivekamāgamya calaccittaṃ mahākulam | viṣayāndhatamo
+(line 4867 ): dṛṣṭvā no vetti paramātmanaḥ | amāyātmā tattvātītaḥ
+(line 4868 ): satsandhānavivarjitaḥ | sukhī duḥkhī janma mṛtyuṃ yāti satyaṃ punaḥ
+(line 4869 ): punaḥ | vairāgyādidhanaṃ tyaktvā viṣavad duḥkhakṛddhiyaḥ |
+(line 4870 ): koṭisūryasamātmeti jñānayogādvimucyate | ravī tejo ghṛtaṃ dugdhe
+(line 4871 ): tile tailaṃ svabhāvataḥ | śaśamindau kule śākhaṃ kṣāre ca lavaṇaṃ
+(line 4872 ): yathā | tathā brahmaṇi saṃsāro hyakhaṇḍaparipūrvake | 
+
+
+!!!stop hier weiter 17.11.2022
+
+idānīṃ
+(line 4873 ): vāhyalakṣāṇi siddhidāni śṛṇu priye ! | dhāraṇākhyā tu caitāni
+(line 4874 ): jñātavyāni viśeṣataḥ | līlayā bhāvayel līnaṃ jyotiḥpūrṇaṃ
+(line 4875 ): mahāparam | athavā tatra deveśi ! dhūmrākāraṃ ṣaḍaṅgulam |
+
+
+(line 4876 ): athavāṣṭāṅgulaṃ raktaṃ nāsikopari lakṣayet |
+
+(line 4877 ): dvādaśāṅgulamānaṃ vā pṛthvītattvantu pītabham | lakṣayedathavā
+(line 4878 ): tatra koṭisūryasamaprabham | tejaḥ puñjaṃ mahākāśaṃ
+(line 4879 ): tattaddhyānācchivo bhavet | ākāśamadhye ākāśoparito
+(line 4880 ): dṛṣṭisusthiram | kṛtvā dhyānādvinā sūryaṃ caṇḍasūryantu paśyati
+(line 4881 ): | athavā lakṣametattu kartturvahiḥ śivopari | 
+
+ūrddhvaṃ
+(line 4882 ): saptadaśāṅgulyaṃ pramāṇaṃ tejasā prabham | athavā
+(line 4883 ): pṛthivītattvaṃ taptakāñcanasannibham | dṛṣṭiragre tu karttavyaṃ
+(line 4884 ): lakṣametadyatātmanām | uktānāṃ yasya kasyaiva ekaśaḥ karaṇaṃ
+(line 4885 ): priye ! | balīpalitahīnaḥ syādauṣadhena vinā tathā | 
+
+sarvarogāṇi
+(line 4886 ): naśyanti mitravacca vaśī ripuḥ | jīvedvarṣasahasrantu sarvalokeṣu
+(line 4887 ): pūjitaḥ | jihvāgre prabhavedvidyā vinā śāstrāvalokanāt |
+(line 4888 ): 
+
+
+hier weiter!!!18.11.2022
+
+
+(line 4889 ): p. 838) mūlakandotthatalato brahmanāḍīsamudbhavā | śvetavarṇā
+(line 4890 ): brahmarandhraparyantameva tiṣṭhati | eṣā tu brahmarandhrākhyā
+(line 4891 ): tanmadhye varttate parā | 
+
+padmatantumamākārā koṭisūryataḍitprabhā
+(line 4892 ): | calatyūrddhaṃ mahāmūrttir asya dhyānād bhavecchivaḥ |
+(line 4893 ): aṇimādyaṣṭasiddhistu samagreṇa prasīdati |
+
+
+ lalāṭopari vā dhyātvā
+(line 4894 ): candraṃ vā jyotirīśvaram | nāśayet kuṣṭharogādīn mahāyuṣmān
+(line 4895 ): śivaḥ paraḥ | bhruvormadhye'thavā dhyātvā arkantu teja īśvaram |
+(line 4896 ): sthiradṛṣṭau rājapūjyo jīvanmuktaḥ śivo yathā |
+(line 4897 ): ātmānamātmarūpaṃ hi dhyātvā yo niṣkriyo bhavet |
+(line 4898 ): nirāśīryatatattvo'yaṃ itaro na nṛpasthitiḥ |
+(line 4899 ): 
+(line 4900 ):  idānīṃ śṛṇu nāḍīnāṃ bhedaṃ vakṣyāmi siddhidam |
+(line 4901 ): meruvāhye iḍānāmnī piṅgalayā samanvitā | suṣumnā
+(line 4902 ): bhānumārgeṇa brahmadvārāvadhi sthitā | sarasvatī sugandhā tu
+(line 4903 ): gāndhārī hastijihvakā | jñātavyā karṇayormadhye netrayośca
+(line 4904 ): tathāntimā | pūṣā cālambuṣā ceti mūlasthā kutracit tathā |
+(line 4905 ): liṅgadvārādiḍāmārge brahmasthānāvadhi priye ! | nāḍyantaṃ
+(line 4906 ): pratilomeṣu sahasrāṇāṃ dvisaptatiḥ | 
+
+
+idānīṃ dehamadhyasthāḥ
+(line 4907 ): kathyante daśa vāyavaḥ | kāryakāraṇabhāvena kathyante tāni
+(line 4908 ): cihnataḥ | prāṇavāyurhṛdi sthitvā śvāsocchvāsaṃ karoti saḥ |
+(line 4909 ): asikāntaṃ pītamīśaṃ karoti yogasaṃjñakaḥ | apāno gudadeśasthaḥ
+(line 4910 ): karotyākuñcanaṃ sa tu | stambhanañca tathāpānaḥ samāno
+(line 4911 ): nābhimaṇḍale | toṣakādipoṣakantu nāḍīnāṃ rūcidāyakaḥ |
+(line 4912 ): dīptāgnimadhye'pi tathā samānākhyā mahāparā | tālumadhye
+(line 4913 ): udānastu aśnāti pibatīti ca | śarīraṃ sakalaṃ vyāpya vyānavāyuḥ
+(line 4914 ): pratiṣṭhitaḥ | śarīre cālanaṃ teṣu karoti sthāpayatyapi | netramadhye
+(line 4915 ): kūrmanāmā nimeṣonmeṣakṛdayam | udgāre nāga ākhyātaḥ
+(line 4916 ): ūrddhavāyuḥ pracālane | kṛkaraḥ kṣutkaro jñeyo devadatto
+(line 4917 ): 
+(line 4918 ): p. 839) vijṛmbhaṇe | dhanañcayaḥ saccidākāro mṛtadehaṃ na muñcati
+(line 4919 ): | yadyapi sargakāṇḍe sarvametaduktaṃ tathāpi
+(line 4920 ): kāryakāraṇabhāvajñāpanāya punarnirdiṣṭamiti na punaruktam |
+(line 4921 ): 
+
+
+
+
+(line 4922 ):  idānīṃ madhyalakṣantu kathyate siddhikārakam | śvetaṃ
+(line 4923 ): raktaṃ tathā pītaṃ dhūmrākārantu nīlabham |
+
+(line 4924 ): agnijvālāsamānābhā vidyutpuñjasamaprabhā |
+(line 4925 ): ādityamaṇḍalākāramathavā candramaṇḍalam | 
+
+jvaladākāśatulyaṃ
+(line 4926 ): vā bhāvayedrūpamātmanaḥ | etajjyotirmayaṃ dehaṃ manomadhye tu
+(line 4927 ): lakṣayet | 
+
+eteṣāñca kṛte lakṣe nānāduḥkhaṃ praṇaśyati | manasastu
+(line 4928 ): malo yāti mahānando bhavettataḥ | 
+
+kathyate tu devyadhunākāśaṃ
+(line 4929 ): pañcabhirlakṣaṇaiḥ | ākāśantu mahākāśaṃ parākāśaṃ
+(line 4930 ): parātparam | tattvākāśaṃ sūryakāśamākāśaṃ pañcalakṣaṇam |
+
+
+(line 4931 ): savāhyābhyantare nityaṃ nirākāśantu nirmalam | karttavyaṃ
+(line 4932 ): lakṣamākāśaṃ sādhayet sādhanaṃ vinā | ghanāntarālasadṛśaṃ
+(line 4933 ): parākāśaṃ tathaiva ca | 
+
+kalpāntāgnisamaṃ jyotirmahākāśaṃ
+(line 4934 ): smarettathā | 
+
+koṭikoṭipradīpābhaṃ tattvākāśaṃ smarettathā |
+
+(line 4935 ): sūryākāśaṃ tathā koṭisūryavindusamaṃ smaret | 
+
+savāhyābhyantare
+(line 4936 ): caivamākāśaṃ lakṣayettu yaḥ | śivavadviharedviśve
+(line 4937 ): pāpapuṇyavivarjitaḥ | eteṣāñcaiva lakṣeṇa karmadvārā'ghamāharet
+(line 4938 ): | navacakraṃ kalādhāraṃ dvilakṣaṃ vyomapañcakam | samagraṃ yo
+(line 4939 ): na jānāti sa yogī nāmadhārakaḥ | 
+
+
+ṣoḍaśādhārabhedantu śṛṇu devi
+(line 4940 ): ! viśeṣataḥ | aṅguṣṭhapādayostejaḥ salakṣasthiradṛṣṭimān |
+(line 4941 ): pādāṅguṣṭhe ya ādhāraḥ prathamo yogatattvataḥ | dvitīyaṃ
+(line 4942 ): pādamūlantu pādamūlaparaṃ sa vai | pādasya pārṣṇī saṃsthāpya
+(line 4943 ): balavān prabhavenmuniḥ | pādamūle'thavā pādāṅguṣṭhamūlaṃ
+(line 4944 ): vidhārayet | tṛtīyantu gudādhāro gudasaṅkocanakriyā |
+(line 4945 ): vikāśākuñcanaṃ tasya sthiravāyau ca mṛtyujit | liṅgādhāraṃ
+(line 4946 ): caturthantu liṅgasaṅkocanantu ca | liṅgasaṅkocanābhyāsāt
+(line 4947 ): 
+(line 4948 ): p. 840) paścimādaṇḍamadhyagaḥ | vajranāḍīti tanmadhye
+(line 4949 ): punarabhyasayaṃ stathā | sañcāro vāyumanasoratisañcāra iti tridhā |
+(line 4950 ): granthitrayavibhedastu tadbhedo brahmamārgataḥ | brahmapadmo
+(line 4951 ): vāyupūrṇo bhūtvā tiṣṭhati yogirāṭ | vīryastambho bhavettena
+(line 4952 ): sādhayettu sadā yuvā | mūlādhāre brahmapadme ṣaṭpadme ca tathā
+(line 4953 ): tathā | pañcamaṃ jaṭharādhāraṃ tadā bandhayati kramāt | mṛtyunā
+(line 4954 ): bhaṅgasiddho'yaṃ mṛtyoreva kṣayaṅkaraḥ | anena
+(line 4955 ): paścimādūrddhaṃ vāyuḥ kuryādviśāladhīḥ | bandho'yaṃ
+(line 4956 ): buddhimanasoḥ pañcamādhārakālajit | nābhyādhāro bhavet
+(line 4957 ): ṣaṣṭhastatra prāṇaṃ samabhyaset | svayamutpadyate nādo nādato
+(line 4958 ): muktidantataḥ | saptamo hṛdayādhārastasmin vāyunibandhanāt |
+(line 4959 ): ūrddhaktrāṇi padmāni vikasanti mahān bhavet |
+(line 4960 ): kaṇṭhādhāro'ṣṭamastatra kaṇṭhasaṅkocalakṣaṇaḥ | jālandharākhyo
+(line 4961 ): bandhaḥ syāttasmin sati maruddṛḍhaḥ | navamo ghaṇṭikādhārastatra
+(line 4962 ): jihvāgramagrataḥ | sampivatyamṛtaṃ tasmād yogajinmṛtyujitparaḥ |
+(line 4963 ): daśamastālukādhārastatra jihvāgrataḥ kṛte | calane dohane caiva jihvā
+(line 4964 ): jaḍati lambitā | nāsikāprāptajihveyaṃ tālulagnā bhavettataḥ |
+(line 4965 ): ekādaśī bhavejjihvā talajādhāra īśvari ! | jihvāgramathane tasmin
+(line 4966 ): pānīyaṃ madhuraṃ bhavet | tatpīteṣu kavirgītijyotiśchandovidāṃ
+(line 4967 ): varaḥ | dantādhāro dvādaśeti sarvarogakṣayaṅkaraḥ |
+(line 4968 ): dhārayeddantayormadhye jihvāgrañca balādapi |
+(line 4969 ): dhṛtvārddhaghaṭikāmātraṃ sarvarogantu nāśayet | nāsādhārastato
+(line 4970 ): jñeyo nāsālakṣastrayodaśaḥ | manaḥsthirakaro yastu vāyusthirakaro
+(line 4971 ): mahān | nāsāpuṭe sthirā dṛṣṭirādhāro'yaṃ caturddaśaḥ |
+(line 4972 ): kṛte'smin svīyatejaḥ syāt pratyakṣaṃ ṣaṭtrimāsataḥ | pārthivaṃ
+(line 4973 ): truṭati kṣipraṃ pratyakṣaṃ svīyatejasā | pañcadaśo bhruvormadhye
+(line 4974 ): sthiradṛṣṭistathā dhruvam | asmin dṛṣṭiḥ sthirā koṭiḥ kiraṇāni
+(line 4975 ): sphuranti hi | netrādhāraḥ ṣoḍaśo'yamaṅgulyagreṇa cālayet |
+(line 4976 ): 
+(line 4977 ): p. 841) pṛthvīmadhye tu yatkiñcidvarttate jaṭharānalaḥ | pratyakṣaṃ
+(line 4978 ): tadbhavetsarvaṃ tadābhyāsānna saṃśayaḥ | sarvajñaḥ prabhavettena
+(line 4979 ): iti ādhāraṣoḍaśaḥ ||
+(line 4980 ): 
+
+
+
+
+(line 4981 ): idānīṃ yogamaṣṭāṅgaṃ śṛṇu lakṣaṇasaṃyutam | yamaśca
+(line 4982 ): niyamaścaiva cāsanaṃ prāṇasaṃyamaḥ | pratyāhāro dhāraṇā ca
+(line 4983 ): samādhiśca viśeṣataḥ | aṣṭāṅgayoga ebhistu caiteṣāṃ lakṣaṇaṃ
+(line 4984 ): śṛṇu | śāntiḥ santoṣa āhāro nidrālpā manaso damaḥ |
+(line 4985 ): śūnyāntaḥkaraṇañceti yamā iti prakīrttitāḥ | cāpalyantu dūre
+(line 4986 ): tyaktvā manaḥsthairyaṃ vidhāya ca | ekatra melanaṃ nityaṃ
+(line 4987 ): prāṇamātreṇa sā matiḥ | sadodāsīnabhāvastu sarvatrecchāvivarjanam
+(line 4988 ): | yathālābhena santuṣṭaḥ parameśvaramānasaḥ | mānadānaparityāga
+(line 4989 ): ete tu niyamā iti | āsanāni ca tāvanti yāvanto jīvajantavaḥ |
+(line 4990 ): prāṇāyāmastridhā ceti bahudhā prathamaṃ śṛṇu | āsane
+(line 4991 ): prāṇasaṃyāme na śaktāḥ sukumārakāḥ | mahāpuṇyaprabhāveṇa
+(line 4992 ): śakyate tu mahātmanā | iḍāṃ śaśiprabhāṃ dhyātvā mandendunā
+(line 4993 ): tu pūrayet | pūrayitvā yathāśakti dhyānayogī tu kumbhayet |
+(line 4994 ): mahājyotirmano bhūtvā vāyuḥ pūrṇakalevaraḥ | śaktitrāsantu
+(line 4995 ): santrāsya recayedvāyumarhitaḥ | piṅgalāmarkavarṇāntu
+(line 4996 ): tyajeddhyātvā śanaiḥ śanaiḥ | ayaṃ pataṅgaḥ
+(line 4997 ): kāṣṭhāgnipratyāsena punaḥ punaḥ | kṛtvā kalevaraṃ śuddhaṃ
+(line 4998 ): kuryādyatnairmahātmanā | mano nivārya saṃsāre viṣayakārye
+(line 4999 ): tathaiva ca | manovikārabhavañcaiva tyaktvā śūnyamayo bhavet |
+(line 5000 ): pratyahāro bhavatyeva sarvanindācamatkṛtaḥ | dhyānantu dvividhaṃ
+(line 5001 ): proktaṃ sthūlasūkṣmavibhedataḥ | sthūlaṃ mantramayaṃ viddhi
+(line 5002 ): sūkṣmantu mantravarjjitam | samādhirniścalā buddhiḥ
+(line 5003 ): śvāsocchvāsādivarjitaḥ | piṇḍabrahmāṇḍayoraikyaṃ
+(line 5004 ): śṛṇvidānīṃ prayatnataḥ | brahmāṇḍe santi ye cāṇḍāḥ
+(line 5005 ): piṇḍamadhye'pi te sthitāḥ | talaṃ pādāṅguṣṭhatale tasyopari
+(line 5006 ): 
+(line 5007 ): p. 842) talātalam | mahātalaṃ gulphayormadhye gulphopari rasātalam |
+(line 5008 ): sutalaṃ jaṅghayormadhye vitalaṃ jānumadhyakam |
+(line 5009 ): ūrvormadhye'talaṃ proktaṃ saptapātālamīritam | talaṃ talātalañceti
+(line 5010 ): mahātalarasātalam | saptapātālametattu sutalaṃ vitalātalam | 
+
+
+idānīṃ
+(line 5011 ): piṇḍamadhye tu saptalokaṃ śṛṇu priye ! |
+
+
+ mūlādhāre tu bhūrloko
+(line 5012 ): liṅgāgre tu bhuvastataḥ | svarloko liṅgamūle tu merumūle mahastathā
+(line 5013 ): | merucchidre janoloko merunāḍyāṃ tapastathā | kamale marttyalokastu
+(line 5014 ): iti lokaḥ pṛthak pṛthak | bhūrbhuvaḥ svarmahaśceti janaścaiva
+(line 5015 ): tapastathā | saptamaḥ satyalokastu saptaloka iti smṛtaḥ | saptalokaistu
+(line 5016 ): pātālairbhuvanāni caturdaśa | atha brahmāṇḍamadhyasthāścatvāro
+(line 5017 ): lokapālakāḥ | piṇḍamadhye tu tān jñātvā sarvasiddhīśvaro bhavet |
+(line 5018 ): indro brahmā viṣṇurīśaścatvāraścātmadevatāḥ | mūlādhāre
+(line 5019 ): catuṣpatre gajārūḍho mahāniti | sṛṣṭikarttā ca tatraiva svādhiṣṭhāne
+(line 5020 ): mahān hariḥ | maṇipūre śūlapāṇiraṣṭasiddhīśvaro mahān |
+(line 5021 ): tāludvāre tālumadhye lalāṭe vakṣakaṇṭhake | śṛṅgāṭikā kapāle ca
+(line 5022 ): lambikā brahmarandhrake | navacakramūrddhvacakrañca
+(line 5023 ): trikūṭetyekaviṃśatiḥ | brahmāṇḍāni vasantīti jñātavyāni
+(line 5024 ): prayatnataḥ | 
+
+
+sapta dvīpāni kathyante'dhunā tāni śṛṇu priye ! |
+(line 5025 ): jambūdvīpastu majjāyāṃ śākadvīpastu madhyamaḥ | śālmadvīpaḥ
+(line 5026 ): śiromadhye māṃsamadhye kuśastathā | tvaci krauñco lomamadhye
+(line 5027 ): gomayadvīpa īritaḥ | nakhamadhye tathā śvetaḥ saptadvīpā
+(line 5028 ): vasundharā | jambūḥ śākastathā śālmaḥ kuśaḥ krauñcaśca
+(line 5029 ): gomayaḥ | śvetaḥ sapteti khaṇḍāni saptakhaṇḍairvasundharā |
+(line 5030 ): guptānyetāni rūpāṇi dehamadhye sthirāṇi ca | samudrāḥ sapta
+(line 5031 ): kathyante piṇḍamadhye vyavasthitāḥ |
+(line 5032 ): lavaṇekṣusurāsarpirdadhidugdhajalāntakāḥ | lavaṇaṃ svedamadhye tu
+(line 5033 ): ikṣūrakte madhu tvaci | sarpirmedo vasā madhye dadhi kṣīraṃ lalāṭake
+(line 5034 ): |
+(line 5035 ): p. 843) vīryamadhye'mṛto jñeyaḥ pāde kūrmaḥ sthito mahān |
+(line 5036 ): idānīntu navadvāre nava khaṇḍāni saṃśṛṇu | pāyvādau bhārataṃ
+(line 5037 ): khaṇḍaṃ kāśmīraṃ trikamaṇḍalum | dvijakhaṇḍamekapādaṃ
+(line 5038 ): khaṇḍaṃ vakṣye samaṇḍalam | kaivarttaṃ garttagāndhāraṃ
+(line 5039 ): navakhaṇḍamiti sthitam |
+
+
+ idānīṃ parvatāścāṣṭau kathyante śṛṇu
+(line 5040 ): yatnataḥ | merudaṇḍe sumerustu pīṭhamadhye himālayaḥ |
+(line 5041 ): vāmaskandhe tathā dakṣe malayo mandarācalaḥ | vindhyastu dakṣiṇe
+(line 5042 ): karṇe vāme maināka īśvari ! | lalāṭe madhyadeśe tu śrīśailaḥ
+(line 5043 ): parameśvari ! | tathā brahmakapāṭasthaḥ kailāsaḥ parvato mahān |
+(line 5044 ): sumerurhimavān vindhyo malayo mandarastathā | śrīśailo
+(line 5045 ): mainākaśceti kailāso'ṣṭau ca parvatāḥ | apare parvatāḥ sarve
+(line 5046 ): aṅgulīmadhyavāsinaḥ | śarīre navanāḍīsthā narmadā ca maheśvari
+(line 5047 ): ! | iḍāyāṃ yamunā devi ! piṅgalāyāṃ sarasvatī | suṣumnāyāṃ
+(line 5048 ): vahedgaṅgā cānyonyāsu ca nāḍiṣu | gaṅgā sarasvatī godā
+(line 5049 ): narmadā yamunā tathā | kāverī candrabhāgā ca vitastā ca iḍāvatī |
+(line 5050 ): dvisaptatisahasreṣu nadīnadaparisravaḥ | itastato dehamadhye ṛkṣaśca
+(line 5051 ): saptaviṃśatiḥ | yogāśca rāśayaścaiva grahāśca tithayastathā |
+(line 5052 ): laharīṣu mīnamanī cāvāhanaṃ sthāpanaṃ tathā | sarvāṅgeṣu ca
+(line 5053 ): deveśi ! samagraṃ ṛkṣamaṇḍalam | trayastriṃśatkoṭayastu nivasanti ca
+(line 5054 ): devatāḥ | tathā pīṭhāni sarvāṇi dehamadhye sthitāni ca | hṛdaye
+(line 5055 ): vyomamadhye tu anantādyāstu vāsukiḥ | udare vyomamadhye tu pare
+(line 5056 ): nāgā vasanti hi | gandharvakinnarāḥ śūrā vidyādharāpsarādayaḥ |
+(line 5057 ): anekatīrthavarṇāśca guhyakāśca vasanti hi | anantasiddhayo buddhyā
+(line 5058 ): prakāśo varttate hṛdi | meghasya maṇḍalaṃ jñeyam aśrupāte tathaiva
+(line 5059 ): ca | candrārkau netrayormadhye jaṅghā lomasu sākṣiṇaḥ |
+(line 5060 ): tṛṇagulmādikañcāpi viśvarūpaṃ smarettataḥ |
+(line 5061 ): samagradarśanānmuktaḥ svargabhogañca matsukham |
+(line 5062 ): 
+(line 5063 ): p. 844) tadetaccintayā yāti rogaśokavivarjjitaḥ | yatkarmā karmaṇā
+(line 5064 ): śaṅkā manomadhye bhavedvahiḥ | tatkarmakaraṇaṃ muktirityāha
+(line 5065 ): bhagavān śivaḥ | yasya darśanamātreṇa rogaśokavivarjitaḥ |
+(line 5066 ): paramānandacittaḥ syāttapasvī caiva kīrttitaḥ | saptadvīpā
+(line 5067 ): bhaveddṛṣṭā tattvajñānaṃ tato bhavet | sarvabhāvaṃ vijānīyād
+(line 5068 ): vajradeho bhavettathā | sarpadaṣṭe viṣaṃ na syāt kṣudhā nidrā tṛṣā
+(line 5069 ): tathā | uṣṇatā śītatā ceti vāksiddhiḥ syānna saṃśayaḥ |
+(line 5070 ): vidyutpāte'pi dehasya kvaciddhānirna jāyate | tato'sau vāyuyogī
+(line 5071 ): syāddṛṣṭvā pṛthvīkulānvitaḥ | aṇimādyaṣṭasiddhiḥ
+(line 5072 ): syānmahāpadmodayastathā | āgacchanti samīpe ca nidhayo nātra
+(line 5073 ): saṃśayaḥ | yatrecchā gamanaṃ tatra svarge marttyerasātale |
+(line 5074 ): sphuratyājñākhyaḥ sarvatra samīpe parameśvaraḥ | kāraṇe hāraṇe
+(line 5075 ): śakto rakṣaṇe'pi ca pārvati ! | ātmamadhye mano nityaṃ nirjane nivaset
+(line 5076 ): sudhīḥ | kṛtvātmamanasoraikyaṃ prāpnoti paramaṃ padam | candraḥ
+(line 5077 ): sūryaḥ sthiro yāvat tāvaddehasthitistathā | tāvadekaṃ samābhāṣya
+(line 5078 ): prāpnoti ca sadāgatiḥ | sa bhavet kavitā dhīrā niścalā śāntireva ca |
+(line 5079 ): gurupādaprasādena tadaikyaṃ yāti siddhibhāk | 
+
+adhunā kamalānāntu
+(line 5080 ): śṛṇu saṅketamadbhutam | anekākārabhedotthaṃ kaṃ svarūpantu
+(line 5081 ): nirmalam | kamalaṃ tena vikhyātaṃ trividhaṃ tattvadehakam |
+(line 5082 ): tatrādhāraścatuṣpatre sattvarajastamodayaḥ | etadbhāvasthitaścātmā
+(line 5083 ): sādhvasādhukaro bhavet | asmin sati sthire citte yamo vandīva gacchati |
+(line 5084 ): anāhato dvitīyaṃ yatkathyate śṛṇu śraddhayā | anāhate mahāpīṭhe
+(line 5085 ): caturasrasamanvitam | varttate'ṣṭadalaṃ padmamadhovaktrantu satpuram |
+(line 5086 ): sparśaśabdarūparasagandhā buddhirmanastathā | ahaṅkāraḥ
+(line 5087 ): kramādete tatrāṣṭadalasaṃsthitāḥ | saparyā pṛthagākārā varttate
+(line 5088 ): tatra niścitam | dhyānādātmaprakāśo'sya prakāśaṃ kamalaṃ tataḥ
+(line 5089 ): |
+(line 5090 ): p. 845) yathā sūryaprakāśena ūrddhvavaktraṃ prakāśitam |
+(line 5091 ): ātmadhyānāt sadā tatra āyurvṛddhirddine dine | śaktiprasannatā
+(line 5092 ): syācca rogaśokavivarjitaḥ | yasya mudrābhyāsaśālī samyak siddhā
+(line 5093 ): ca khecarī | cidānandamayaṃ cittaṃ cetanā candrikānvitā |
+(line 5094 ): paramātmā mahāsūryaḥ sūrya ekaḥ prakāśakaḥ |
+(line 5095 ): prakāśānandayoraikyaṃ karttavyañca nirantaram | dīptastathā
+(line 5096 ): mahājyotīravirbhāti paraṃ padam | sadoditaṃ manaḥsūryaṃ
+(line 5097 ): candrajyotirivekṣate | tanmadhye nābhikarteti karaṇaṃ nā kulākulam |
+(line 5098 ): avyaktantu paraṃ tattvamanityaṃ varttate sadā | eko nāma pumānasti
+(line 5099 ): tasmāttasmāt paraṃ padam | tasmāttu paramaṃ śūnyaṃ tasmāt
+(line 5100 ): syāttu nirañjanam | 
+
+
+ete pañcaguṇopetāḥ kathyante tadguṇaṃ yathā |
+(line 5101 ): nirguṇatvaṃ nirmalatvaṃ paripūrṇatvameva ca | vyāpakatvaṃ
+(line 5102 ): kevalatvaṃ ānandasya guṇā iti | nirākāratvanityatvanijatvañca
+(line 5103 ): nirañjanam | nirṇiketanatā ceti tatpadasyeti tadguṇāḥ |
+(line 5104 ): līnatāśīrṇatāmūrcchātoyamaṇḍalatā iti | guṇāḥ pañca
+(line 5105 ): samākhyātāḥ śūnyasya paramasya vai | svabhāvaṃ sahajaṃ satyaṃ
+(line 5106 ): śāntiḥ śāntisvarūpataḥ | iti | nirañjanaguṇāḥ pañca etajjñānī
+(line 5107 ): maheśvaraḥ | vidyotpattistadānīntu kathyate śṛṇu yatnataḥ |
+(line 5108 ): ānandaparamātmeti paramānanda ekataḥ |
+(line 5109 ): prabodhaparamānandacittotpattiprabodhavān | cidudayāt prakāśaśca
+(line 5110 ): eṣāṃ pañca tathaiva ca | avināśyo'kṣayo'bhedo'dāhyo hyakhādya
+(line 5111 ): eva ca | ete pañca guṇāḥ proktā anādo nādavairiṇā |
+(line 5112 ): kiraṇasphūrttivisphūrttiharṣavat paramātmanā | tetu pañca prakāreṇa
+(line 5113 ): guṇāḥ pañca prakīrttitāḥ | vicāraśca prabhollāsā vibhāvaśca
+(line 5114 ): layas tathā | prabodhasya guṇāḥ pañca kīrttyante tena hetunā |
+(line 5115 ): abhyāsakartṛkamanāḥ sarvatattvaprabhā tathā | cidudayasya pañceti
+(line 5116 ): guṇā jñeyā viśeṣataḥ | bodhanaṃ samayatvañca vismṛtiḥ
+(line 5117 ): 
+(line 5118 ): p. 846) sakalaprabhā | prakāśasya guṇāḥ pañcacaite jñānakarāḥ
+(line 5119 ): śubhāḥ | etajjñāne tataścaiṣāṃ jñānamutpadyate mahat |
+(line 5120 ): ākāśāt pavano vāyostejastejasa eva ca | jalaṃ jalāttathā pṛthvī
+(line 5121 ): eṣāṃ pañcaguṇāstathā | agocarādvayānantagrāhyameṣāṃ
+(line 5122 ): tathātmanaḥ | sañcāraścālanaṃ śeṣe pañcadhūmrābhamambare |
+(line 5123 ): uṣmaprakāśaraktābhajvālādāhastu tejasā | prakāśādeva
+(line 5124 ): śaithilyamadhutā śvetatajjale | sthūlasākārakāṭhinyagandhaṃ
+(line 5125 ): pātamṛdau tathā | 
+
+mahābhūtāni pañceti dehamadhye'dhunā śṛṇu |
+(line 5126 ): mahābhūtāni pañceti pṛthvītejo marut khakam | eteṣāñca tathā
+(line 5127 ): pañcaguṇasthānaṃ śṛṇu priye ! | asthi māṃsaṃ loma nāḍī tvak ceti
+(line 5128 ): pṛthivīguṇāḥ | kṣudhātṛṣṇālasyanidrā glāniśca pañca vāriṇaḥ |
+(line 5129 ): rogo lajjā bhayodvegau dhāraṇā ca marudguṇāḥ | etajjñānenaiva
+(line 5130 ): teṣāṃ buddhirutpadyate śubhā | yadyapi sargakāṇḍe
+(line 5131 ): pṛthvyāderguṇā uktāstathāpyetajjñānenetyanena
+(line 5132 ): kāryakāraṇabhāvadarśanāya punarucyante | mano
+(line 5133 ): buddhirahaṅkāraścittaṃ caitanyameva ca | ete pañcaprakārāśca
+(line 5134 ): antaḥkaraṇasambhavāḥ | mananāmananaṃ jñeyaṃ buddhyādipañca
+(line 5135 ): pañca tu | vivekaśāntisantoṣakṣamāvairāgyateti ca | ete pañcaguṇā
+(line 5136 ): buddherahaṅkāraguṇān śṛṇu | ahambhāvamahañcādiyugāntaṃ
+(line 5137 ): hiṃsanaṃ tathā | vṛttiḥ smṛtirmatistyājyaṃ nirāśaṃ caitikā guṇāḥ
+(line 5138 ): | niḥspṛhatā dveṣatādhairyaṃ vimarṣacintanaṃ tathā |
+(line 5139 ): citterguṇāstrayo jīvaguṇān śṛṇu maheśvari ! | āsthā śraddhā
+(line 5140 ): kṛpā bhaktiḥ satyaṃ sattvaguṇā iti | tyāgo bhogaśca śraddhā ca
+(line 5141 ): sārthavastuspṛhā tathā | raso pañcaguṇāḥ caite tāmasasya guṇān
+(line 5142 ): śṛṇu | pramodaḥ svādakalahau vivādo bhrāntivarddhanam |
+(line 5143 ): vañcanañca tathā śokastāmasasya guṇā ime | svapnajāgratsuṣuptāni
+(line 5144 ): caitanyaṃ jīvakā guṇāḥ | etādṛśi sati tattvaṃ caitanyāttadbhavediti |
+(line 5145 ): 
+(line 5146 ): p. 847) prakṛtīcchā kriyā māyā vacaḥ pañca guṇā iti | āśā
+(line 5147 ): tṛṣṇāspṛhākāṅkṣāmithyāntaṃ prakṛteriti | unmādo vāsanā
+(line 5148 ): vāñchā cekṣitā ca guṇāḥ priye ! | śaraṇaṃ satkulācāraḥ
+(line 5149 ): kāryaniścaya ucyate | idaṃ yogarahasyañca na vācyaṃ
+(line 5150 ): mūrkhasannidhau ||
+(line 5151 ): 
+(line 5152 ): yogadeśastu tatraiva || utpātarahite deśe kaṇṭakādivivarjite |
+(line 5153 ): abhyasyate sadā yogaḥ samaḥ syāt sukhaduḥkhayoḥ | surājani
+(line 5154 ): samāśritya karttavyo nirupadrave | deśe tu sarvaśasyāḍhye
+(line 5155 ): lobhamohavivarjite | stutirnindā na karttavyā sādhunā satyavādinā ||
+(line 5156 ): yogānadhikāriṇamāha tatraiva || manomadhye dayā nāsti sadā yaḥ
+(line 5157 ): kalahapriyaḥ | svakāryalobhane śīlo gurukāryaparāṅmukhaḥ | etasmai
+(line 5158 ): ca na dātavyaṃ vaktavyaṃ tasya sannidhau | nañubhayatra sambadhyate
+(line 5159 ): na vaktavyamityarthaḥ | yogādhikāriṇo'pi tatraiva ||
+(line 5160 ): bhāvābhāvavinirmuktaḥ sarvagrahavivarjitaḥ | sadānandamayo yogī
+(line 5161 ): sadābhyāsī sadā bhavet | viruddhe duḥkhadeśe ca
+(line 5162 ): virūpe'tibhayānake | etadaniṣṭasaṃsparśe nyūnādhike balādhike |
+(line 5163 ): evambhūtasya karmāṇi saṅkalparahitāni ca | evaṃ gacchan svapan
+(line 5164 ): paśyan pāpapuṇyairna lipyate | utpannatattvabodhaḥ syāt sadā śīlasya
+(line 5165 ): sarvadā | pare dṛṣṭivilaṃ na syād vividhāni mṛtāni ca |
+(line 5166 ): antaḥkaraṇam etasya yogino niṣkriyaṃ [niṣkalā?] tu sa | sarvadā sahajastasya niṣkalādhyātmavādinaḥ | yadā prayatnaniṣpādyaṃ grāhyaṃ
+(line 5168 ): sarvam akāraṇam | yasya citte haṭhaṃ nāsti sahajānandanirbharam |
+(line 5169 ): karttavyā ca sthirā dṛṣṭis tenaiva paramaṃ sthiram | manaḥ sthirañ ca tenaiva karttavyaṃ tatparaṃ padam | idānīṃ yogamāhātmyaṃ kathyate
+(line 5171 ): yad bhavet tataḥ | guror anugrahāc chāstrapāṭhād ācāratas tathā |
+(line 5172 ): vedāntārtharahasyārthasarvajñānādupāsanāt |
+(line 5173 ): āsanād dhāraṇād dhyānāl layaṣaṭkarmasādhanāt |
+(line 5174 ): āsanāc caturaśītivairāgyatyāgasambhavāt |
+(line 5175 ): 
+(line 5176 ): p. 848) haṭhayogādvarauṣadhyāt mudrāsādhanamānataḥ |
+(line 5177 ): vanavāsādbahukleśāttathā mantrādisādhanāt |
+(line 5178 ): bahudānatapastīrthasevanād dānaśikṣaṇāt | sandhyātrayagraheṇātha
+(line 5179 ): ṣaḍadarśagrahaṇāttathā | śiromṇḍagato nyāsād yogatattvañca
+(line 5180 ): vidyate | gurupādodakaṃ śiṣṭasevinā satyavādinā |
+(line 5181 ): kanyāstrādidṛṣṭipātaharṣagativivarttanāt | prasādāt sadguroḥ samyak
+(line 5182 ): prāpnoti paramaṃ padam | na guroradhikaṃ tattvaṃ yattasmāt paramaṃ
+(line 5183 ): padam | nimeṣārddhena tasyaiva ājñāpālanato bhavet |
+(line 5184 ): mahānandaśataprāptistasmai śrīgurave namaḥ |
+(line 5185 ): nānāvikalpavibhrāntināśañca kurute tu yaḥ | sadguruḥ sa tu vijñeyo
+(line 5186 ): na tu vairaprakalpakaḥ | ata eva maheśāni ! sadguruḥ śiva āditaḥ |
+(line 5187 ): satyavādī ca sacchīlo gurubhakto dṛḍhavrataḥ | svalpācāraratātmā yo
+(line 5188 ): dānādiśīlasaṃyutaḥ | kāpaṭyalobhavinyāsau
+(line 5189 ): mahāvaṃśasamudbhavaḥ | īdṛśaḥ sadgurustasya saṅgatau yatnavān
+(line 5190 ): bhavet | tadeva manasaḥ śāntiṃ prāpnoti paramaṃ padam ||
